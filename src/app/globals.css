@@ -343,8 +343,6 @@ html,
     justify-content: center;
 
   }
-
-
  
   #certifiedPartners .swiper-pagination-bullet , #oursolution .swiper-pagination-bullet{
     display: flex !important;
@@ -356,7 +354,7 @@ html,
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
  #testimonials .swiper-wrapper .swiper-slide  {
-    padding-bottom: 10px !important;
+    padding-bottom: 0px !important;
   }
   #certifiedPartners .swiper-wrapper  {
     padding-bottom: 30px !important;
@@ -367,14 +365,9 @@ html,
     opacity:100% !important;
 
   }
-
-}
-
-
-@media (max-width: 640px) {
-
+  
   #testimonials .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets  {
-    top: 87% !important;
+    top: 85% !important;
     transform: translateY(-50%) !important;
     rotate: 90deg !important;
     transform: translateX(-50%) !important;
@@ -401,6 +394,12 @@ html,
     opacity:100% !important;
 
   }
+
+}
+
+
+@media (max-width: 640px) {
+
 
   
 

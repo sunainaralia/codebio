@@ -17,6 +17,7 @@ import { Button } from '@/components/ui/button';
 function HomePage() {
   return (
     <div>
+      <div className='md:px-20'>
       <HeroHeader
         title='Websites that mean business'
         featureText={`Make Your Brand Rise Online`}
@@ -24,9 +25,10 @@ function HomePage() {
         titleClassName='max-w-[320px] md:max-w-[500px] 2xl:max-w-[800px]  text-black text-center'
         hasLottie={true}
       />
-      <div className='px-[30px] md:px-0'>
         <WhatWeDoSection />
+      </div>
         <LogosSection />
+      <div className='px-[30px] md:px-20'>
         <OurServiceSection/>
         <OurWorkSection />
         <OurApproachSection />

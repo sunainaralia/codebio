@@ -77,7 +77,7 @@ const OurServiceSection = () => {
                     {work.tags.map((tag, idx) => (
                       <span
                         key={idx}
-                        className="px-2 py-1 border rounded-full bg-gray-100 text-xs lg:text-xl text-[black] group-hover:text-primary-white group-hover:border-primary-white"
+                        className="px-2 lg:px-5 py-1 lg:pb-2.5 lg:pt-2 border-2 rounded-full bg-gray-100 text-xs lg:text-xl text-[black] group-hover:text-primary-white font-medium group-hover:border-primary-white leading-[27px]"
                       >
                         {tag}
                       </span>

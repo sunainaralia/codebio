@@ -176,7 +176,7 @@ function TestimonialsSection() {
               }`}
           />
         </div>
-        <div className="max-sm:w-full max-md:w-[90%] max-lg:overflow-hidden max-sm:h-[740px] max-md:h-[770px] max-lg:h-[870px]">
+        <div className="max-sm:w-full 2xl:w-[90%] max-lg:overflow-hidden max-sm:h-[610px] max-md:h-[700px] max-lg:h-[870px]">
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
@@ -221,7 +221,7 @@ function TestimonialsSection() {
         </div>
 
         <div className='flex lg:hidden justify-center items-center w-full pb-3 '>
-          <AnimatedButton >Our Strength</AnimatedButton>
+          <AnimatedButton >Review all on Clutch</AnimatedButton>
         </div>
 
         {/* <div className='block md:hidden'>
@@ -275,7 +275,7 @@ TestimonialsSection.TestimonialCard = ({
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
-          <p className="h-[7em] lg:h-[12em] xl:h-[10em] 2xl:h-[7em] text-[#2B2B2B] text-2xl 2xl:text-[26px] font-normal overflow-hidden md:pe-10 lg:pe-0">
+          <p className="h-[7em] lg:h-[12em] xl:h-[10em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-2xl 2xl:text-[26px] font-normal overflow-hidden md:pe-10 lg:pe-0">
             {description}
           </p>
           <Image
@@ -296,7 +296,7 @@ TestimonialsSection.TestimonialCard = ({
             </Avatar>
           </div>
           <div className="block w-full">
-            <h2 className="text-lg xl:text-[22px] font-bold md:h-[3.5rem] md:text-start text-end">
+            <h2 className="text-base xl:text-[22px] font-bold md:h-[3.5rem] md:text-start text-end">
               {name}
             </h2>
             <Separator className="hidden md:block h-px w-full bg-primary-natural my-4" />

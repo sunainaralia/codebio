@@ -236,7 +236,7 @@ const LogosSection = () => {
   ];
 
   return (
-    <div className="sliding-logos-container gap-0 lg:gap-2.5 mb-24 md:mb-0 lg:mb-44 overflow-hidden mt-10 lg:mt-28">
+    <div className="sliding-logos-container gap-0 lg:gap-2.5 mb-24 md:mb-0 lg:mb-44 overflow-hidden mt-10 lg:mt-28 ">
       {/* Row 1 */}
       <div className="sliding-row gap-14 lg:gap-24 row1">
         {logosRow1.map((logo, index) => (

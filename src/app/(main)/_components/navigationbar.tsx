@@ -71,7 +71,7 @@ function NavigationBar() {
       />
       <div className='py-10 flex flex-row relative justify-between items-center'>
         <Menu
-          className='w-8 h-8 cursor-pointer hidden md:block'
+          className='w-12 h-9 cursor-pointer hidden md:block'
           onClick={() => setIsHidden(!isHidden)}
         />
         <Link
@@ -140,7 +140,7 @@ function NavigationBar() {
 export const SocialButton = ({ title, darkIcon, lightIcon, link, onClick }: any) => (
   <a href={link} target="_blank" rel="noopener noreferrer">
     <button onClick={onClick}>
-      <Image alt={title} src={darkIcon ?? lightIcon} height={30} width={30} />
+      <Image alt={title} src={darkIcon ?? lightIcon} height={60} width={60} className='w-[30px] h-[30px] lg:w-[60px] lg:h-[60px]' />
     </button>
   </a>
 );
