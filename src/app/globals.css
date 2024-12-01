@@ -327,14 +327,7 @@ html,
 
 @media (max-width: 768px) {
 
-  #oursolution .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
-    top: 70%!important;
-    transform: translateX(-50%)!important;
-    left: 50%!important;
-    display: flex;
-    justify-content: center;
-
-  }
+ 
   #certifiedPartners .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
     top: 95%!important;
     transform: translateX(-50%)!important;
@@ -344,7 +337,7 @@ html,
 
   }
  
-  #certifiedPartners .swiper-pagination-bullet , #oursolution .swiper-pagination-bullet{
+  #certifiedPartners .swiper-pagination-bullet{
     display: flex !important;
     width: 8px !important; 
     height: 8px !important; 
@@ -360,14 +353,13 @@ html,
     padding-bottom: 30px !important;
   }
 
-  #oursolution .swiper-pagination-bullet-active ,  #certifiedPartners .swiper-pagination-bullet-active {
-    background-color: #000 !important;
-    opacity:100% !important;
-
+ 
+  .swiper-wrapper {
+    height: 570px !important;
   }
   
   #testimonials .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets  {
-    top: 85% !important;
+    top: 95% !important;
     transform: translateY(-50%) !important;
     rotate: 90deg !important;
     transform: translateX(-50%) !important;
@@ -395,13 +387,43 @@ html,
 
   }
 
+
+
 }
 
 
 @media (max-width: 640px) {
 
 
-  
+  #oursolution .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+    top: 95%!important;
+    transform: translateX(-50%)!important;
+    left: 50%!important;
+    display: flex;
+    justify-content: center;
+    height: 30px !important;
+
+  }
+
+  #oursolution .swiper-pagination-bullet{
+    display: flex !important;
+    width: 8px !important; 
+    height: 8px !important; 
+    border: 2px solid #000000 !important; 
+    background: transparent !important;
+    opacity:40% !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  #oursolution .swiper-pagination-bullet-active  {
+    background-color: #000 !important;
+    opacity:100% !important;
+
+  }
+
+  .swiper-wrapper {
+    height: 570px !important;
+  }
 
 }
 

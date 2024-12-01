@@ -65,13 +65,15 @@ function OurOfficeLocatedSection() {
         We&#39;re Located At
       </div>
 
-      <Image
+     <div className="relative">
+     <Image
         src={map}
         width={1600}
         height={1200}
         alt=""
         className=" mx-auto py-12"
       />
+     </div>
 
       {/* <ComposableMap
         focusable={false}
