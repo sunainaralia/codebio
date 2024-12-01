@@ -46,78 +46,78 @@ export const blogCards: BlogCards[] = [
         
         detailsimage:"/blog/blogdetails4.svg"
     },
-    {
-        title: "The 6 Greatest Benefits of CRM Platforms You Need to Know",
-        description: "Digital Marketing",
-        time: "4 min read",
-        icon: "/blog/blog2.svg",
-        id: "The 6 Greatest Benefits of CRM Platforms You Need to Know",
-                detailsimage: "/blog/blogdetails1.svg",
+    // {
+    //     title: "The 6 Greatest Benefits of CRM Platforms You Need to Know",
+    //     description: "Digital Marketing",
+    //     time: "4 min read",
+    //     icon: "/blog/blog2.svg",
+    //     id: "The 6 Greatest Benefits of CRM Platforms You Need to Know",
+    //             detailsimage: "/blog/blogdetails1.svg",
         
-    },
-    {
-        title: "The Art of Cross-Channel  Marketing",
-        description: "Digital Marketing",
-        time: "5 min read",
-        icon: "/blog/blog4.svg",
-        id: "The Art of Cross-Channel  Marketing",
+    // },
+    // {
+    //     title: "The Art of Cross-Channel  Marketing",
+    //     description: "Digital Marketing",
+    //     time: "5 min read",
+    //     icon: "/blog/blog4.svg",
+    //     id: "The Art of Cross-Channel  Marketing",
         
-        detailsimage:"/blog/blogdetails1.svg"
-    },
-    {
-        time: "3 min read",
-        icon: "/blog/blog6.svg",
-        id: "Unlocking Visual Search: A Guide to Optimizing Your Content",
-        title: "Unlocking Visual Search: A Guide to Optimizing Your Content",
-        description: "Content Marketing",
+    //     detailsimage:"/blog/blogdetails1.svg"
+    // },
+    // {
+    //     time: "3 min read",
+    //     icon: "/blog/blog6.svg",
+    //     id: "Unlocking Visual Search: A Guide to Optimizing Your Content",
+    //     title: "Unlocking Visual Search: A Guide to Optimizing Your Content",
+    //     description: "Content Marketing",
         
-        detailsimage:"/blog/blogdetails1.svg"
-    },
-    {
-        title: "Why Is My Website Slow? 10 Factors Behind Slow-Loading Websites and Their Solutions",
-        description: "Web Development",
-        time: "5 min read",
-        icon: "/blog/blog1.svg",
-        id: "Why Is My Website Slow? 10 Factors Behind Slow-Loading Websites and Their Solutions",
+    //     detailsimage:"/blog/blogdetails1.svg"
+    // },
+    // {
+    //     title: "Why Is My Website Slow? 10 Factors Behind Slow-Loading Websites and Their Solutions",
+    //     description: "Web Development",
+    //     time: "5 min read",
+    //     icon: "/blog/blog1.svg",
+    //     id: "Why Is My Website Slow? 10 Factors Behind Slow-Loading Websites and Their Solutions",
         
-        detailsimage:"/blog/blogdetails1.svg"
-    },
-    {
-        title: "What Does an SEO Agency Do?",
-        description: "SEO",
-        time: "5 min read",
-        icon: "/blog/blog-02.png",
-        id: "What Does an SEO Agency Do?",
+    //     detailsimage:"/blog/blogdetails1.svg"
+    // },
+    // {
+    //     title: "What Does an SEO Agency Do?",
+    //     description: "SEO",
+    //     time: "5 min read",
+    //     icon: "/blog/blog-02.png",
+    //     id: "What Does an SEO Agency Do?",
         
-        detailsimage:"/blog/blogdetails1.svg"
-    },
-    {
-        time: "7 min read",
-        icon: "/blog/blog3.svg",
-        id: "Your Top Choice for AppDevelopment in Lucknow",
-        title: "Your Top Choice for AppDevelopment in Lucknow",
-        description: "Digital Marketing",
+    //     detailsimage:"/blog/blogdetails1.svg"
+    // },
+    // {
+    //     time: "7 min read",
+    //     icon: "/blog/blog3.svg",
+    //     id: "Your Top Choice for AppDevelopment in Lucknow",
+    //     title: "Your Top Choice for AppDevelopment in Lucknow",
+    //     description: "Digital Marketing",
         
-        detailsimage:"/blog/blogdetails1.svg"
-    }, 
-    {
-        time: "7 min read",
-        icon: "/blog/blog-00.png",
-        id: "Link Stability: Is It A Google Ranking Factor?",
-        title: "Link Stability: Is It A Google Ranking Factor?",
-        description: "SEO",
+    //     detailsimage:"/blog/blogdetails1.svg"
+    // }, 
+    // {
+    //     time: "7 min read",
+    //     icon: "/blog/blog-00.png",
+    //     id: "Link Stability: Is It A Google Ranking Factor?",
+    //     title: "Link Stability: Is It A Google Ranking Factor?",
+    //     description: "SEO",
          
-        detailsimage:"/blog/blogdetails1.svg"
-    },
-    {
-        time: "3 min read",
-        icon: "/blog/blog-01.png",
-        id: "The Importance of Web Development Services for Your Business",
-        title: "The Importance of Web Development Services for Your Business",
-        description: "Website Development",
+    //     detailsimage:"/blog/blogdetails1.svg"
+    // },
+    // {
+    //     time: "3 min read",
+    //     icon: "/blog/blog-01.png",
+    //     id: "The Importance of Web Development Services for Your Business",
+    //     title: "The Importance of Web Development Services for Your Business",
+    //     description: "Website Development",
          
-        detailsimage:"/blog/blogdetails1.svg"
-    }
+    //     detailsimage:"/blog/blogdetails1.svg"
+    // }
 ]
 
 

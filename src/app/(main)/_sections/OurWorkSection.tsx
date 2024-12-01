@@ -69,8 +69,8 @@ function OurWorkSection() {
       <div className="flex flex-wrap">
         <div className="w-full">
           <div className="relative w-full h-full">
-            {/* <img className="w-full" src="/works/work-1.png" alt="" /> */}
-            <ParallaxTiltedScroll images={[]}/>
+            <img className="w-full" src="/works/work-1.png" alt="" />
+            {/* <ParallaxTiltedScroll images={[]}/> */}
             <div className="absolute bottom-12 right-3 ">
               <Link href={"/our-work"}>
                 <AnimatedButton
