@@ -15,14 +15,16 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Preloader />
-       <SmoothWrapper>
-      <div className="">
-       <div className="md:px-20">
-       <NavigationBar />
-       </div>
-        {children}
-        <div className="md:px-20"><Footer /></div> 
-      </div>
+      <SmoothWrapper>
+        <div className="">
+          <div className="md:px-20">
+            <NavigationBar />
+          </div>
+          {children}
+          <div className="md:px-20">
+            <Footer />
+          </div>
+        </div>
       </SmoothWrapper>
     </>
   );
