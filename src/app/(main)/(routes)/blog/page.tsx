@@ -11,7 +11,7 @@ import load_more from '../../../../../public/icons/load_more.svg';
 function Blog() {
   const navigate = useRouter();
   return (
-    <div className="px-[30px] md:px-0">
+    <div className="px-[30px] md:px-20">
       <div className="pt-8 pb-1 md:pb-[80px] md:pt-[100px] 2xl:pt-[200px] xl:pb-[50px]">
         <div className="hidden md:block mx-auto lg:text-[84px] text-[42px]  uppercase font-extrabold text-center mb-2 ">
           Blogs
@@ -33,7 +33,7 @@ function Blog() {
       <div className="md:flex flex-wrap">
         {blogCards.map((card, index) => (
           <div
-            className="flex justify-center md:basis-1/3 2xl:basis-1/4 md:border-b border-[#D8D8D8] "
+            className="flex justify-center md:basis-1/2 2xl:basis-1/4 md:border-b border-[#D8D8D8] "
             key={index}
             onClick={() => navigate.push(`/blog/${card.id}`)}
           >
