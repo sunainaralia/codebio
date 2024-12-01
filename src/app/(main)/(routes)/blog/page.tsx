@@ -7,7 +7,6 @@ import BlogCard from './_components/blogCards';
 import AnimatedButton from '@/components/AnimatedButton';
 import GetInTouchSection from '@/components/sections/GetInTouchSection';
 import { useRouter } from 'next/navigation';
-import load_more from '../../../../../public/icons/load_more.svg';
 function Blog() {
   const navigate = useRouter();
   return (
@@ -44,6 +43,7 @@ function Blog() {
               description={card.description}
               icon={card.icon}
               time={card.time}
+              indexvalue={card.indexvalue}
             />
           </div>
         ))}
