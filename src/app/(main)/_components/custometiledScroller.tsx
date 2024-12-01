@@ -63,7 +63,7 @@ export const ParallaxTiltedScrollcustom = ({
   return (
     <div
       className={cn(
-        "items-start md:max-h-[1200px] rounded-3xl flex flex-col object-center overflow-hidden h-[190px] sm:h-[300px] lg:h-[1000px] xl:h-[1130px] w-full hover:scale-[1.02] transition-all duration-100", // Added height for larger screens
+        "items-start md:max-h-[1200px] rounded-3xl flex flex-col object-center overflow-hidden h-[190px] sm:h-[300px] lg:h-[700px] xl:h-[800px]  w-full hover:scale-[1.02] transition-all duration-100", // Added height for larger screens
         className
       )}
       ref={gridRef}
