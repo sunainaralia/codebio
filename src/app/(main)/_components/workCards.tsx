@@ -95,16 +95,16 @@ const WorkCards = ({
               <div className="lg:text-center text-xl sm:text-2xl xl:text-[28px] font-bold text-[#525252] py-1">
                 Strategy
               </div>
-              <div className="text-[12px] text-[#525252] sm:text-base xl:text-xl text-start lg:text-center mt-2 font-bold">
+              <div className="text-[12px] text-[#525252] sm:text-base xl:text-xl text-start lg:text-center mt-2 font-normal">
                 {strategy}
               </div>
             </div>
-            <Separator className="w-px bg-[#D8D8D8] mx-6" />
+            <Separator className="w-px bg-[#525252] mx-6" />
             <div className="flex-1">
               <div className="lg:text-center text-xl sm:text-2xl xl:text-[28px] font-bold text-[#525252] py-1">
                 Design
               </div>
-              <div className="text-[12px] text-[#525252] sm:text-base xl:text-xl text-start lg:text-center mt-2 font-bold">
+              <div className="text-[12px] text-[#525252] sm:text-base xl:text-xl text-start lg:text-center mt-2 font-normal">
                 {design}
               </div>
             </div>

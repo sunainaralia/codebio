@@ -16,12 +16,12 @@ const listOfresources = [
     image: '/illustrations/1.png',
     link: 'https://codebiosis.com/e-commerce-world-with-a-stunning-shopify-design-system/',
   },
-  // {
-  //   title: 'What Does an SEO Agency Do?',
-  //   readTime: '15min read',
-  //   image: '/illustrations/2.png',
-  //   link: 'https://codebiosis.com/what-does-an-seo-agency-do/',
-  // },
+  {
+    title: 'What Does an SEO Agency Do?',
+    readTime: '15min read',
+    image: '/illustrations/2.png',
+    link: 'https://codebiosis.com/what-does-an-seo-agency-do/',
+  },
   {
     title: 'What Is the Cost of Building an eCommerce Website in India?',
     readTime: '10min read',
@@ -34,6 +34,7 @@ const listOfresources = [
     image: '/Home_Page/homepage_images/home-resorces-img.png',
     link: 'https://codebiosis.com/ecommerce-website-development-costs-in-india/',
   },
+ 
 ];
 
 const handleBlogClick = (url: string | URL | undefined) => {

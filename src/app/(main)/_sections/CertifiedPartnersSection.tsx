@@ -207,7 +207,7 @@ const CertifiedPartnersSection = () => {
           </div>
 
           <AnimatedButton className="mt-0 hidden md:flex">
-            Our Strengths
+            Our Strength
           </AnimatedButton>
         </div>
 

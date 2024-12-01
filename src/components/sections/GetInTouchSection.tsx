@@ -30,7 +30,7 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
             <input
               type="text"
               placeholder="yournname@email.com"
-              className="w-full border-none mb-[20px] outline-none max-w-[600px]"
+              className="w-full border-none mb-[20px] text-sm md:text-[26px] font-normal text-[#8D8D8D] outline-none max-w-[600px]"
             />
             <ArrowIconButton
               invertArrow

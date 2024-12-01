@@ -58,10 +58,10 @@ function OurOfficeLocatedSection() {
   };
   return (
     <div className="pt-20">
-      <div className="text-xl text-center text-[#525252] pb-[10px]">
+      <div className="text-xl md:text-3xl  xl:text-[42px] text-center text-[#525252] pb-[10px]">
         Our Offices
       </div>
-      <div className="md:text-[40px] 2xl:text-[87px] font-bold text-center">
+      <div className="md:text-[40px] 2xl:text-[84px] font-[900]  text-center">
         We&#39;re Located At
       </div>
 
@@ -77,7 +77,7 @@ function OurOfficeLocatedSection() {
         focusable={false}
         height={1200}
         max={500}
-        className="my-10 max-w-[1600px] mx-auto"
+        className="my-10 max-w-[1600px] mx-auto h-[1000px]"
         markerHeight={40}
       >
       
@@ -125,38 +125,38 @@ function OurOfficeLocatedSection() {
         </Marker>
       </ComposableMap> */}
 
-      <div className="md:flex md:text-center md:m-auto md:px-10 justify-center ">
+      <div className="md:flex md:text-center md:m-auto lg:px-10 justify-center ">
         <div className=" flex" style={{ borderBottom: "1px solid lightGrey" }}>
           <div
             style={{ borderRight: "1px solid lightGrey" }}
-            className={`max-w-[400px] px-10 pb-[92px] pe-[100px]  opacity-50 hover:opacity-100 ${
+            className={`max-w-[740px] px-6 pb-14 xl:px-[100px]  opacity-50 hover:opacity-100 ${
               showMap === "blr" && "!opacity-100"
             } transition-all duration-300`}
           >
-            <div className="text-2xl font-bold">USA</div>
-            <div className="mt-3">
+            <div className="text-2xl font-[900] lg:text-3xl xl:text-5xl">USA</div>
+            <div className="mt-3 xl:text-[28px]">
               16192 Coastal, Lewes, Delaware 19958, Sussex County, USA
             </div>
           </div>
           <div
             style={{ borderRight: "1px solid lightGrey" }}
-            className={`max-w-[400px] px-10 pb-[92px] pe-[100px]  opacity-50 hover:opacity-100 ${
+            className={`max-w-[740px] px-6 pb-14 xl:px-[100px]  opacity-50 hover:opacity-100 ${
               showMap === "blr" && "!opacity-100"
             } transition-all duration-300`}
           >
-            <div className="text-2xl font-bold">Bengaluru</div>
-            <div className="mt-3">
+            <div className="text-2xl font-[900] lg:text-3xl xl:text-5xl">Bengaluru</div>
+            <div className="mt-3 xl:text-[28px]">
               #7A, 3rd floor, 5th crossroad, St Thomas Town Main Road,
               Kammanahalli Bengaluru -560084
             </div>
           </div>
           <div
-            className={`max-w-[400px] px-10 pb-[92px] pe-[100px]  opacity-50 hover:opacity-100 ${
+            className={`max-w-[740px] px-6 pb-14 xl:px-[100px]  opacity-50 hover:opacity-100 ${
               showMap === "blr" && "!opacity-100"
             } transition-all duration-300`}
           >
-            <div className="text-2xl font-bold">Lucknow</div>
-            <div className="mt-3">
+            <div className="text-2xl font-[900] lg:text-3xl xl:text-5xl">Lucknow</div>
+            <div className="mt-3 xl:text-[28px]">
               Unit no.FF-01, Parsvnath Planet Plaza, Lucknow, Uttar Pradesh
               226010
             </div>

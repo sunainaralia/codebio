@@ -63,7 +63,7 @@ function OurWorkSection() {
           width={30}
           className="hidden lg:block"
         />
-        <h3 className="text-xl font-normal lg:text-[42px]">Our Work</h3>
+        <h3 className="text-xl font-normal text-[#525252] lg:text-[42px]">Our Work</h3>
       </div>
 
       <div className="flex flex-wrap">
@@ -100,7 +100,7 @@ function OurWorkSection() {
 
           <Separator className="hidden lg:block h-px w-full bg-[#D8D8D8] mt-2 mb-6" />
           <Separator
-            className="block lg:hidden h-px w-full bg-[#D8D8D8] mt-2 mb-6"
+            className="block lg:hidden h-px w-full bg-[#525252] mt-2 mb-6"
             orientation="horizontal"
           />
         </div>
@@ -113,11 +113,11 @@ function OurWorkSection() {
           </div>
 
           <Separator
-            className="hidden lg:block bg-[#D8D8D8] mx-10"
+            className="hidden lg:block bg-[#525252] mx-10"
             orientation="vertical"
           />
           <Separator
-            className="block lg:hidden bg-[#D8D8D8] my-10"
+            className="block lg:hidden bg-[#525252] my-10"
             orientation="horizontal"
           />
 
@@ -128,9 +128,9 @@ function OurWorkSection() {
           </div>
         </div>
 
-        <Separator className="hidden lg:block h-px w-full bg-[#D8D8D8] mt-2 mb-6" />
+        <Separator className="hidden lg:block h-px w-full bg-[#525252] mt-2 mb-6" />
         <Separator
-          className="block lg:hidden h-px w-full bg-[#D8D8D8] mt-2 mb-6"
+          className="block lg:hidden h-px w-full bg-[#525252] mt-2 mb-6"
           orientation="horizontal"
         />
 
@@ -164,14 +164,14 @@ function OurWorkSection() {
         /> */}
 
         <div className="lg:flex w-full mt-9 lg:mt-16 xl:mt-32 mb-6">
-          <div className="lg:min-w-[100px] min-2xl:pe-10 lg:w-[calc(50%-2px)] ">
+          <div className="lg:min-w-[100px] min-2xl:pe-10 lg:w-[calc(48%-2px)] ">
             <Link href="/our-work/works4" target="_blank">
               <WorkCards {...works[3]} imgArray={axisBank} />
             </Link>
           </div>
 
           <Separator
-            className="hidden lg:block bg-[#D8D8D8] mx-10 min-[2100]:-translate-x-10"
+            className="hidden lg:block bg-[#525252] mx-10 min-[2100]:-translate-x-10"
             orientation="vertical"
           />
 
@@ -187,7 +187,7 @@ function OurWorkSection() {
                 word="Got A Project?"
               />{" "}
               <Image
-                className="w-[48px] h-[48px]  "
+                className="w-[48px] h-[48px]  lg:w-24 lg:h-24"
                 src={"/illustrations/briefcase.svg"}
                 alt=""
                 height={48}
@@ -197,7 +197,7 @@ function OurWorkSection() {
           </div>
 
           <Separator
-            className="block lg:hidden bg-[#D8D8D8] mt-10 lg:my-10"
+            className="block lg:hidden bg-[#525252] mt-10 lg:my-10"
             orientation="horizontal"
           />
         </div>

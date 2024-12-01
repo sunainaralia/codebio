@@ -14,8 +14,8 @@ function OurApproachSection() {
     router.push('/our-work');
   };
   return (
-    <div className='lg:flex justify-around flex-col md:flex-row pt-[30px] pb-14 md:py-14 lg:mt-32 gap-7 2xl:h-[480px]'>
-      <div className='h-full w-full flex flex-col justify-start items-start col-span-1 gap-2 md:gap-5'>
+    <div className='lg:flex justify-center flex-col md:flex-row pt-[30px] pb-14 md:py-14 lg:mt-44 lg:pt-28 gap-7 2xl:h-[900px]'>
+      <div className='h-full w-full flex flex-col justify-center items-start col-span-1 gap-2 md:gap-5 '>
         <div className='text-lg font-normal text-[#525252] sm:text-3xl lg:text-[42px]'>
           Our Approach
         </div>
@@ -35,7 +35,7 @@ function OurApproachSection() {
           <AnimatedButton onClick={handleWorkNavigation}>Our Process</AnimatedButton>
         </div>
       </div>
-      <Separator className='h-full w-px bg-[#D8D8D8] min-[2100px]:ms-20' />
+      <Separator className='h-full w-px bg-[#525252] min-[2100px]:ms-20' />
       <div className='hidden h-full w-full lg:flex flex-col justify-center items-center col-span-1 relative'>
         <LottieAnimation
           animationData={require('@/../public/lottiee/HomePage/Our_Approach.json')}
