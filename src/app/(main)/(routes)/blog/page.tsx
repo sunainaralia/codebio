@@ -18,11 +18,11 @@ function Blog() {
         </div>
 
         <div className="flex w-fit gap-4 items-center mb-5 mx-auto">
-          <Image src={"/vectors/Star 1.svg"} alt="" height={30} width={30} />
+           <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
           <h3 className="lg:text-[42px] text-[18px] text-[#525252]  font-normal">
             Explore the Latest Insights
           </h3>
-          <Image src={"/vectors/Star 1.svg"} alt="" height={30} width={30} />
+           <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
         </div>
 
         <div className="block md:hidden  mx-auto text-5xl uppercase font-bold text-center mb-2 ">
