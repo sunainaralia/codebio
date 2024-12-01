@@ -179,7 +179,7 @@ function TestimonialsSection() {
         <div className="max-sm:w-full 2xl:w-[90%] max-lg:overflow-hidden max-sm:h-[610px] max-md:h-[700px] max-lg:h-[870px]">
           <Swiper
             spaceBetween={30}
-            slidesPerView={1}
+            slidesPerView={2}
             direction="vertical"
             ref={sliderRef}
             onSlideChange={(e) => {
