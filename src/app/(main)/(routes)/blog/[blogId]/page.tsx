@@ -39,7 +39,7 @@ function BlogDetails() {
 
 
   return (
-    <div className="px-[30px] md:px-0">
+    <div className="px-[30px] md:px-20">
       <div className="mt-[43px] xl:mt-[110px] flex justify-between items-center">
         <Image src={"/vectors/backButton.svg"} alt="" width={80} height={80} />
         <div className="block md:hidden">
