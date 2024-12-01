@@ -21,6 +21,7 @@ import Link from "next/link";
 
 function OurWorkSection() {
   const navigate = useRouter();
+
   const works: WorkCardProps[] = [
     {
       img: "/works/work-1.png",
@@ -50,6 +51,11 @@ function OurWorkSection() {
       strategy: "Storyboarding, Voiceover",
       design: "Asset Design, Animation",
     },
+    {
+      img: "/works/work-4.png",
+      id: "works4",
+    
+    },
   ];
   return (
     <div className="-mt-[180px] md:-mt-28">
@@ -69,8 +75,12 @@ function OurWorkSection() {
       <div className="flex flex-wrap">
         <div className="w-full">
           <div className="relative w-full h-full">
-            <img className="w-full" src="/works/work-1.png" alt="" />
-            {/* <ParallaxTiltedScroll images={[]}/> */}
+            {/* <img className="w-full" src="/works/work-1.png" alt="" /> */}
+            <Link href="/our-work/works4" target="_blank">
+           
+                <WorkCards {...works[4]} imgArray={axisBank} />
+             
+            </Link>
             <div className="absolute bottom-12 right-3 ">
               <Link href={"/our-work"}>
                 <AnimatedButton
