@@ -5,7 +5,7 @@ export interface BlogCards {
     icon: string
     id: string
     time: string
-    detailsimage: string,
+    detailsimage?: string,
 }
 
 
