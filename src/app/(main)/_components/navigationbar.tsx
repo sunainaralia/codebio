@@ -140,7 +140,7 @@ function NavigationBar() {
 export const SocialButton = ({ title, darkIcon, lightIcon, link, onClick }: any) => (
   <a href={link} target="_blank" rel="noopener noreferrer">
     <button onClick={onClick}>
-      <Image alt={title} src={darkIcon ?? lightIcon} height={60} width={60} className='w-[30px] h-[30px] lg:w-[60px] lg:h-[60px]' />
+      <Image alt={title} src={darkIcon ?? lightIcon} height={60} width={60} className='w-[30px] h-[30px] lg:w-[40px] 3xl:w-[60px] lg:h-[40px] 3xl:h-[60px]' />
     </button>
   </a>
 );
