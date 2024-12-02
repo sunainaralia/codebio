@@ -207,7 +207,7 @@ function Footer() {
           <div className="md:hidden flex justify-between mt-10 mb-5 items-center">
             <Link
               href={"/terms-condition"}
-              className="text-[13px] xl:text-3xl font-medium"
+              className="text-[13px]  lg:text-lg xl:text-xl 3xl:text-3xl font-medium"
             >
               Terms & Conditions
             </Link>
@@ -222,7 +222,7 @@ function Footer() {
             />
             <Link
               href={"/privacy-policy"}
-              className="text-[13px] xl:text-3xl font-medium"
+              className="text-[13px]  lg:text-lg xl:text-xl 3xl:text-3xl font-medium"
             >
               Privacy & Cookie Policy
             </Link>
@@ -235,7 +235,7 @@ function Footer() {
                 backgroundColor: "rgba(43, 43, 43, 1)",
               }}
             />
-            <div className="text-[13px] xl:text-3xl font-medium">Sitemap</div>
+            <div className="text-[13px]  lg:text-lg xl:text-xl 3xl:text-3xl font-medium">Sitemap</div>
           </div>
         </div>
       </div>
@@ -248,27 +248,27 @@ function Footer() {
         <div className="hidden md:flex">
           <Link
             href={"/terms-condition"}
-            className="text-[13px] xl:text-3xl font-medium"
+            className="text-[13px]  lg:text-lg xl:text-xl 3xl:text-3xl font-medium"
           >
             Terms & Condtions
           </Link>
           <Separator
-            className="w-px bg-[#D8D8D8] mx-6"
+            className="w-px bg-[#D8D8D8] mx-2 xl:mx-6"
             orientation="vertical"
             style={{ backgroundColor: "rgba(43, 43, 43, 1)" }}
           />
           <Link
             href={"/privacy-policy"}
-            className="text-[13px] xl:text-3xl font-medium"
+            className="text-[13px]  lg:text-lg xl:text-xl 3xl:text-3xl font-medium"
           >
             Privacy & Cookie Policy
           </Link>
           <Separator
-            className="w-px bg-[#D8D8D8] mx-6"
+            className="w-px bg-[#D8D8D8] mx-2 xl:mx-6"
             orientation="vertical"
             style={{ backgroundColor: "rgba(43, 43, 43, 1)" }}
           />
-          <div className="text-[13px] xl:text-3xl font-medium">Sitemap</div>
+          <div className="text-[13px]  lg:text-lg xl:text-xl 3xl:text-3xl font-medium">Sitemap</div>
         </div>
       </div>
     </div>
