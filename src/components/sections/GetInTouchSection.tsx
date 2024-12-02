@@ -16,11 +16,11 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
   return (
     <div
       className={cn(
-        "mt-[27px] 2xl:mt-[60px] pb-[87px] 2xl:pb-[300px] md:pt-10 xl:pt-20 border-b border-[#D8D8D8]",
+        "mt-[27px] 2xl:mt-[60px] pb-[87px] 2xl:pb-[300px] lg:pt-10 xl:pt-20 border-b border-[#D8D8D8]",
         className
       )}
     >
-      <div className="lg:text-[84px] text-[36px] font-extrabold">
+      <div className=" lg:text-[55px] 2xl:text-[70px] 3xl:text-[84px] text-[36px] font-extrabold">
         Stay Updated !
       </div>
 
@@ -30,7 +30,7 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
             <input
               type="text"
               placeholder="yournname@email.com"
-              className="w-full border-none mb-[20px] text-sm md:text-[26px] font-normal text-[#8D8D8D] outline-none max-w-[600px]"
+              className="w-full border-none mb-[20px] text-sm md:text-lg xl:text-[26px] font-normal text-[#8D8D8D] outline-none max-w-[600px]"
             />
             <ArrowIconButton
               invertArrow

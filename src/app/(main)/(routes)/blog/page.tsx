@@ -11,20 +11,22 @@ function Blog() {
   const navigate = useRouter();
   return (
     <div className="px-[30px] md:px-20">
-      <div className="pt-8 pb-1 md:pb-[80px] md:pt-[100px] 2xl:pt-[200px] xl:pb-[50px]">
-        <div className="hidden md:block mx-auto lg:text-[84px] text-[42px]  uppercase font-extrabold text-center mb-2 ">
+      <div className="pt-8 pb-1 lg:pb-[80px] lg:pt-[100px] 2xl:pt-[200px] xl:pb-[50px]">
+        <div className="hidden md:block mx-auto lg:text-[55px] 2xl:text-[70px] 3xl:text-[84px] text-[42px]  uppercase font-extrabold text-center mb-2 ">
           Blogs
         </div>
 
-        <div className="flex w-fit gap-4 items-center mb-5 mx-auto">
-           <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
-          <h3 className="lg:text-[42px] text-[18px] text-[#525252]  font-normal">
+        <div className="flex w-fit gap-3 sm:gap-4 items-center mb-5 mx-auto  ">
+          <Image className='hidden sm:block'  src={"/vectors/Union.svg"} alt="" height={30} width={30} />
+          <Image className='sm:hidden' src={"/vectors/Union.svg"} alt="img" height={16} width={16} />
+          <h3 className=" md:text-2xl lg:text-3xl 2xl:text-[42px] text-lg text-[#525252]  font-normal  ">
             Explore the Latest Insights
           </h3>
-           <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
+          <Image className='hidden sm:block' src={"/vectors/Union.svg"} alt="" height={30} width={30} />
+          <Image className='sm:hidden' src={"/vectors/Union.svg"} alt="img" height={16} width={16} />
         </div>
 
-        <div className="block md:hidden  mx-auto text-5xl uppercase font-bold text-center mb-2 ">
+        <div className="block md:hidden  mx-auto text-[42px] uppercase  font-extrabold text-center mb-2 ">
           Blogs
         </div>
       </div>
@@ -56,7 +58,7 @@ function Blog() {
       </div>
 
       <div className="">
-        <GetInTouchSection className="md:py-32" />
+        <GetInTouchSection className=" md:py-14 lg:py-32" />
       </div>
     </div>
   );

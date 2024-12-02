@@ -48,10 +48,10 @@ function Footer() {
   return (
     <div className="sm:mt-[37px] px-[30px] md:px-0 pb-48">
       <div className="block md:flex justify-between md:pb-5 border-b border-[#D8D8D8] items-center">
-        <div className="">
+        <div>
           <LottieAnimation
             animationData={require("@/../public/lottiee/HomePage/Footer.json")}
-            className="hidden md:block max-h-[200px] lg:max-h-[300px] max-w-[200px] lg:max-w-[300px] 2xl:max-h-[338px] 2xl:max-w-[553px]"
+            className="hidden md:block max-h-[200px] lg:max-h-[300px] max-w-[200px] lg:max-w-[300px] 2xl:max-h-[338px] 2xl:max-w-[400px] 3xl:max-w-[553px]"
           />
 
           <div className="hidden md:flex flex-wrap gap-x-[30px] gap-y-[10px] 2xl:gap-x-[60px] 2xl:gap-y-[30px] mt-4 2xl:mt-[90px] mb-4 2xl:mb-[87px] w-full max-w-[400px] lg:max-w-[700px]">
@@ -88,7 +88,7 @@ function Footer() {
               width={60}
               className="hidden md:block h-[30px] w-[30px] lg:w-[60px] lg:h-[60px]"
             />
-            <h3 className="text-3xl xl:text-[80px] font-[900] relative after:absolute after:w-full after:bg-black after:border-2 after:border-black after:left-0 after:top-[40%] after:-translate-y-1/2 md:after:static md:after:border-none">
+            <h3 className="text-3xl sm:text-5xl xl:text-[55px] 2xl:text-[65px] 3xl:text-[80px] font-[900] relative after:absolute after:w-full after:bg-black after:border-2 after:border-black after:left-0 after:top-[40%] after:-translate-y-1/2 md:after:static md:after:border-none">
               Let&apos;s Talk
             </h3>
             <div className="md:hidden flex gap-4 mb-5 w-[135px] justify-end  flex-wrap">
@@ -142,13 +142,13 @@ function Footer() {
               ))}
             </div> */}
           </div>
-          <div className="hidden md:flex pb-4 2xl:pb-[50px] text-lg lg:text-3xl font-medium ">
+          <div className="hidden md:flex  pb-4 xl:pb-6 3xl:pb-[50px] text-lg xl:text-2xl 3xl:text-3xl font-medium ">
             North India • South India  • USA
           </div>
-          <div className="hidden md:block pb-[25px] text-lg lg:text-3xl font-medium">
+          <div className="hidden md:block pb-4 xl:pb-[25px] text-lg xl:text-2xl 3xl:text-3xl font-medium">
             +91 6307 080 414
           </div>
-          <div className="hidden md:block text-lg lg:text-3xl font-medium">
+          <div className="hidden md:block text-lg xl:text-2xl 3xl:text-3xl font-medium">
             sales@codebiosis.com
           </div>
           {/* <div className='hidden md:flex gap-4 my-5'>
@@ -250,7 +250,7 @@ function Footer() {
             href={"/terms-condition"}
             className="text-[13px] xl:text-3xl font-medium"
           >
-            Trems & Condtions
+            Terms & Condtions
           </Link>
           <Separator
             className="w-px bg-[#D8D8D8] mx-6"
