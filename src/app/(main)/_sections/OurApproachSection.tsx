@@ -19,7 +19,7 @@ function OurApproachSection() {
         <div className='text-lg font-normal text-[#525252] sm:text-3xl lg:text-[42px]'>
           Our Approach
         </div>
-        <h1 className=' text-[34px] md:text-6xl xl:text-[84px] md:!leading-[5rem] xl:!leading-[7rem] font-[900]'>
+        <h1 className=' text-[34px] md:text-6xl xl:text-[84px] 2xl:text-90 md:!leading-[5rem] xl:!leading-[7rem] font-[900]'>
         Build. Innovate. Grow.
         </h1>
         <div className='flex h-full w-full my-16 lg:hidden flex-col justify-center items-center col-span-1 relative'>

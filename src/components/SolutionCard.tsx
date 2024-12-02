@@ -20,10 +20,10 @@ function SolutionCard({ icon, title,cardStyling }: SolutionCardProps) {
       className={`flex flex-col items-center lg:min-w-[250px]  lg:border border-primary-natural lg:rounded-lg lg:mb-0 h-full ${cardStyling}}
       `}
     
-      >
-        <div className="flex flex-col justify-center items-center lg:flex-1 flex-0 py-7 lg:py-14 2xl:py-32">
+      > 
+        <div className="flex flex-col justify-center items-center lg:flex-1 flex-0 py-7 lg:py-10 2xl:py-28">
 
-          <Image src={icon} alt={`${title} icon`} width={180} height={180} className="w-12 h-12 lg:w-[150px] lg:h-[150px] 2xl:w-[180px] 2xl:max-w-[180px]" />
+          <Image src={icon} alt={`${title} icon`} width={180} height={180} className="w-12 h-12 lg:w-[150px] lg:h-[130px] 2xl:w-[180px] 2xl:max-w-[180px]" />
         </div>
 
         <Separator className="hidden bg-primary-natural h-px w-full" />
