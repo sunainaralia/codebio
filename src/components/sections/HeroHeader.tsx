@@ -41,7 +41,7 @@ function HeroHeader(props: {
             {props.featureText}
           </h1>
 
-          <div className="mt-4 max-w-[385px] text-center">{props.subText}</div>
+          <div className="mt-4 max-w-[385px] text-center text-[15px] sm:text-xl lg:text-2xl xl:text-3xl lg:!leading-10">{props.subText}</div>
 
           {props.buttonText && (
             <AnimatedButton>{props.buttonText}</AnimatedButton>

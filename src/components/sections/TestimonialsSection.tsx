@@ -178,28 +178,16 @@ function TestimonialsSection() {
         </div>
         <div className="max-sm:w-full 2xl:w-[90%]">
           <Swiper
-            // spaceBetween={30}
-            // slidesPerView={1}
-            // ref={sliderRef}
-            // onSlideChange={(e) => {
-            //   setCurrentSlide(e.activeIndex);
-            // }}
-            
-            // modules={[Navigation, Pagination]}
-            // pagination={{ clickable: true }}
-            // onSwiper={(swiper) => console.log(swiper)}
-            // breakpoints={{
-            //   768: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 30,
-            //   },
-
-            //   1280: {
-            //     slidesPerView: 3,
-            //     spaceBetween: 30,
-            //   },
-            // }}
-            pagination={{ clickable: true }}
+         
+            ref={sliderRef}
+            onSlideChange={(e) => {
+              setCurrentSlide(e.activeIndex);
+            }}
+            onSwiper={(swiper) => console.log(swiper)}
+            modules={[Pagination, Navigation]}
+            pagination={{
+              clickable: true,
+            }}
             slidesPerView={1}
             spaceBetween={10}
             breakpoints={{
@@ -208,7 +196,7 @@ function TestimonialsSection() {
             }}
           >
             {testimonials.map((item, index) => (
-              <SwiperSlide key={index} className="max-lg:!flex-shrink">
+              <SwiperSlide key={index} >
                 <TestimonialsSection.TestimonialCard
                   description={item.desctiption}
                   image={item.image}
@@ -276,7 +264,7 @@ TestimonialsSection.TestimonialCard = ({
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
-          <p className="h-[7em] lg:h-[12em] xl:h-[10em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-2xl 2xl:text-[26px] font-normal overflow-hidden md:pe-10 lg:pe-0">
+          <p className="h-[7em] xl:h-[10em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-xl lg:text-2xl 2xl:text-[26px] font-normal overflow-hidden">
             {description}
           </p>
           <Image
