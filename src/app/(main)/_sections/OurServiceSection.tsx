@@ -32,7 +32,7 @@ const OurServiceSection = () => {
         spaceBetween={10}
         breakpoints={{
           768: { slidesPerView: 2, spaceBetween: 20 }, // For tablets
-          1280: { slidesPerView: 3, spaceBetween: 30 }, // For desktops
+          1280: { slidesPerView: 3.05, spaceBetween: 30 }, // For desktops
         }}
         className="w-full"
       >
