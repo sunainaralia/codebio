@@ -67,12 +67,12 @@ const WorkCards = ({
             }`}
           >
             {name && (
-              <span className="text-2xl lg:text-3xl xl:text-[38px] text-black font-bold">
+              <span className="text-2xl lg:text-[26px] 3xl:text-[38px] text-black font-bold">
                 {name}
               </span>
             )}
             {!hideLowerSection && description && (
-              <span className="text-[#8D8D8D] text-sm sm:text-xl xl:text-[26px] font-normal">
+              <span className="text-[#8D8D8D] text-sm sm:text-xl   3xl:text-[26px] font-normal">
                 <span className="hidden lg:block">: {description}</span>
                 <span className="lg:hidden block">{description}</span>
               </span>
