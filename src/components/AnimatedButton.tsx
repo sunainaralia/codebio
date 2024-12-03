@@ -22,14 +22,14 @@ const AnimatedButton = ({ children, className, btnClassName,icon ,onClick }: Ani
 
   return (
     <button
-      className={cn(`mt-8 relative Animatedbutton rounded-full text-lg lg:text-[28px] font-bold ps-5 pe-3 py-2 md:py-2.5 flex flex-row justify-center items-center gap-2 z-[5] overflow-visible border border-black  ` , className)}
+      className={cn(`mt-8 relative Animatedbutton rounded-full text-lg lg:text-xl 4xl:text-[28px] font-bold ps-5 pe-3 py-2 md:py-2.5 flex flex-row justify-center items-center gap-2 z-[5] overflow-visible border border-black  ` , className)}
       onClick={onClick}
       ref={ref}
     >
       <div className="z-10">
       {children}
       </div>
-      <div className={cn("bg-primary-natural relative rounded-full h-8 lg:h-10 3xl:h-12 w-8 lg:w-10 3xl:w-12" , btnClassName)}>
+      <div className={cn("bg-primary-natural relative rounded-full h-8 lg:h-10 4xl:h-12 w-8 lg:w-10 4xl:w-12" , btnClassName)}>
         <motion.div
           initial={{ x: -15, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}

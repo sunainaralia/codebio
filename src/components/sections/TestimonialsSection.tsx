@@ -126,11 +126,11 @@ function TestimonialsSection() {
             width={30}
             className="hidden lg:inline"
           />
-          <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 3xl:text-[42px] ">
+          <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px] ">
             Testimonials
           </h3>
         </div>
-        <h2 className="text-[28px] lg:text-[26px]  3xl:text-5xl min-[1800px]:text-6xl text-[#2B2B2B] font-bold mt-2.5 sm:mt-5 lg:mt-0">
+        <h2 className="text-[28px] lg:text-[26px]  4xl:text-5xl min-[1800px]:text-6xl text-[#2B2B2B] font-bold mt-2.5 sm:mt-5 lg:mt-0">
           Their curiosity was piqued right from the start !
         </h2>
       </div>
@@ -161,7 +161,7 @@ function TestimonialsSection() {
             height={70}
             width={70}
             onClick={handlePrev}
-            className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2 scale-75 3xl:scale-100  ${
+            className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2 scale-75 4xl:scale-100  ${
               currentSlide === 0 ? "opacity-50" : ""
             }`}
           />
@@ -170,7 +170,7 @@ function TestimonialsSection() {
             width={70}
             invertArrow
             onClick={handleNext}
-            className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2 scale-75  3xl:scale-100
+            className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2 scale-75  4xl:scale-100
               ${
                 currentSlide === testimonials.length - 1 - 2 ? "opacity-50" : ""
               }`}
@@ -245,18 +245,18 @@ TestimonialsSection.TestimonialCard = ({
           alt={""}
           width={90}
           height={70}
-          className={` w-[50px] 3xl:w-[90px]  ${
+          className={` w-[50px] 4xl:w-[90px]  ${
             inverted ? "rotate-180" : ""
           } hidden lg:block`}
         />
 
-        <div className="flex flex-row md:justify-center items-start gap-3 3xl:gap-6 mb-10 sm:mb-20 md:mb-0 mt-10 3xl:mt-24">
+        <div className="flex flex-row md:justify-center items-start gap-3 4xl:gap-6 mb-10 sm:mb-20 md:mb-0 mt-10 4xl:mt-24">
           <Image
             src={"/vectors/review_appos.svg"}
             alt={""}
             width={40}
             height={40}
-            className={`rotate-180 hidden  w-[24px] 3xl:w-[40px] `}
+            className={`rotate-180 hidden  w-[24px] 4xl:w-[40px] `}
           />
           <div className="hidden md:block">
             <Avatar>
@@ -264,7 +264,7 @@ TestimonialsSection.TestimonialCard = ({
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
-          <p className="h-[7em] xl:h-[8em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-xl lg:text-[20px] 3xl:text-[26px] font-normal overflow-hidden">
+          <p className="h-[7em] xl:h-[8em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-xl lg:text-[20px] 4xl:text-[26px] font-normal overflow-hidden">
             {description}
           </p>
           <Image
@@ -285,10 +285,10 @@ TestimonialsSection.TestimonialCard = ({
             </Avatar>
           </div>
           <div className="block w-full">
-            <h2 className="text-base 3xl:text-[22px] font-bold 3xl:h-[3.5rem] md:h-[2rem] md:text-start text-end">
+            <h2 className="text-base 4xl:text-[22px] font-bold 4xl:h-[3.5rem] md:h-[2rem] md:text-start text-end">
               {name}
             </h2>
-            <Separator className="hidden md:block h-px w-full bg-primary-natural 3xl:my-4 my-2" />
+            <Separator className="hidden md:block h-px w-full bg-primary-natural 4xl:my-4 my-2" />
             <div className="flex flex-row gap-3 items-center md:justify-start justify-end">
               <h2 className="text-2xl md:text-3xl text-[#2B2B2B] font-[900] ">
                 {rating}

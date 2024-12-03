@@ -196,12 +196,12 @@ const CertifiedPartnersSection = () => {
 
   return (
     <div id="certifiedPartners">
-      <div className=" lg:mt-20 3xl:mt-44">
+      <div className=" lg:mt-20 4xl:mt-44">
         <div className="md:flex w-full justify-between items-center hidden">
           <div className="flex gap-4 items-center">
             <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
 
-            <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 3xl:text-[42px]">
+            <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px]">
               Certified Partners
             </h3>
           </div>

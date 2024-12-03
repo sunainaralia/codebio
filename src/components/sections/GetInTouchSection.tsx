@@ -16,11 +16,11 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
   return (
     <div
       className={cn(
-        "mt-[27px] 3xl:mt-[60px] pb-[87px] xl:pb-[150px] 3xl:pb-[300px] lg:pt-10 xl:pt-20 border-b border-[#D8D8D8]",
+        "mt-[27px] 4xl:mt-[60px] pb-[87px] xl:pb-[150px] 4xl:pb-[300px] lg:pt-10 xl:pt-20 border-b border-[#D8D8D8]",
         className
       )}
     >
-      <div className=" lg:text-5xl 3xl:text-[84px] text-[36px] font-extrabold">
+      <div className=" lg:text-5xl 4xl:text-[84px] text-[36px] font-extrabold">
         Stay Updated !
       </div>
 
@@ -30,15 +30,15 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
             <input
               type="text"
               placeholder="yourname@mail.com"
-              className="w-full border-none mb-2.5 3xl:mb-[20px] text-sm sm:text-lg 3xl:text-[26px] font-normal text-[#8D8D8D] outline-none max-w-[600px]"
+              className="w-full border-none mb-2.5 4xl:mb-[20px] text-sm sm:text-lg 4xl:text-[26px] font-normal text-[#8D8D8D] outline-none max-w-[600px]"
             />
             <ArrowIconButton
               invertArrow
               onClick={() => {}}
-              className=" mb-2.5 3xl:mb-[20px]"
+              className=" mb-2.5 4xl:mb-[20px]"
             />
           </div>
-          <div className="lg:text-xl text-[14px] 3xl:text-[26px] w-full mt-[40px] text-[#2B2B2B]">
+          <div className="lg:text-xl text-[14px] 4xl:text-[26px] w-full mt-[40px] text-[#2B2B2B]">
             By providing your email, you agree for us to contact you via email
             with future updates. Your data is stored securely and we never pass
             it on to third parties.

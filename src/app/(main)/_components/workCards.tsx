@@ -67,12 +67,12 @@ const WorkCards = ({
             }`}
           >
             {name && (
-              <span className="text-2xl lg:text-[26px] 3xl:text-[38px] text-black font-bold">
+              <span className="text-2xl lg:text-[26px] 4xl:text-[38px] text-black font-bold">
                 {name}
               </span>
             )}
             {!hideLowerSection && description && (
-              <span className="text-[#8D8D8D] text-sm sm:text-xl  3xl:text-[26px] font-normal">
+              <span className="text-[#8D8D8D] text-sm sm:text-xl  4xl:text-[26px] font-normal">
                 <span className="hidden lg:block">: {description}</span>
                 <span className="lg:hidden block">{description}</span>
               </span>
@@ -90,10 +90,10 @@ const WorkCards = ({
           <div className="flex lg:justify-center">
             {strategy && (
               <div className="flex-1">
-                <div className="lg:text-center text-xl sm:text-2xl lg:text-[26px] 3xl:text-[28px] font-bold text-[#525252] py-1">
+                <div className="lg:text-center text-xl sm:text-2xl lg:text-[26px] 4xl:text-[28px] font-bold text-[#525252] py-1">
                   Strategy
                 </div>
-                <div className="text-[12px] text-[#525252] sm:text-base 3xl:text-xl text-start lg:text-center mt-2 font-normal">
+                <div className="text-[12px] text-[#525252] sm:text-base 4xl:text-xl text-start lg:text-center mt-2 font-normal">
                   {strategy}
                 </div>
               </div>
@@ -103,10 +103,10 @@ const WorkCards = ({
             )}
             {design && (
               <div className="flex-1">
-                <div className="lg:text-center text-xl sm:text-2xl lg:text-[26px] 3xl:text-[28px] font-bold text-[#525252] py-1">
+                <div className="lg:text-center text-xl sm:text-2xl lg:text-[26px] 4xl:text-[28px] font-bold text-[#525252] py-1">
                   Design
                 </div>
-                <div className="text-[12px] text-[#525252] sm:text-base 3xl:text-xl text-start lg:text-center mt-2 font-normal">
+                <div className="text-[12px] text-[#525252] sm:text-base 4xl:text-xl text-start lg:text-center mt-2 font-normal">
                   {design}
                 </div>
               </div>

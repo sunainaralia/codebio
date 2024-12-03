@@ -11,16 +11,16 @@ import { ourWorkData } from "./ourWork";
 
 const OurServiceSection = () => {
   return (
-    <div id="oursolution" className="pb-12 xl:pb-0 3xl:pb-24 pt-[88px] md:pt-24 lg:pt-[150px] 4xl:pt-0 4xl:mt-[354px] 3xl:mt-[120px] ">
+    <div id="oursolution" className="pb-12 xl:pb-0 4xl:pb-24 pt-[88px] md:pt-24 lg:pt-[150px] 4xl:pt-0 4xl:mt-[354px] 4xl:mt-[120px] ">
       <div className="flex gap-4 items-center mb-5 md:mb-[70px]">
         <Image
           src={"/vectors/Union.svg"}
           alt=""
           height={30}
           width={30}
-          className="hidden md:block 3xl:h-[30px] 3xl:w-[30px] lg:h-[24px] lg:w-[24px]"
+          className="hidden md:block 4xl:h-[30px] 4xl:w-[30px] lg:h-[24px] lg:w-[24px]"
         />
-        <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 3xl:text-[42px]">
+        <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px]">
           Our Solutions
         </h3>
       </div>
@@ -49,10 +49,10 @@ const OurServiceSection = () => {
                 <div className="">
                   {" "}
                   <div className="min-h-[3 50px]">
-                    <h3 className="text-[34px] lg:text-4xl 3xl:text-6xl  text-black font-medium mb-3 text-wrap line-clamp-2">
+                    <h3 className="text-[34px] lg:text-4xl 4xl:text-6xl  text-black font-medium mb-3 text-wrap line-clamp-2">
                       {work.title}          
                     </h3>
-                    <p className="text-lg sm:text-xl  3xl:text-3xl text-gray-600 text-wrap mb-3 mt-5 leading-6 3xl:leading-10  line-clamp-3 2xl:line-clamp-5">
+                    <p className="text-lg sm:text-xl  4xl:text-3xl text-gray-600 text-wrap mb-3 mt-5 leading-6 4xl:leading-10  line-clamp-3 2xl:line-clamp-5">
                       {work.description}
                     </p>
                   </div>
@@ -76,7 +76,7 @@ const OurServiceSection = () => {
                   {work.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="px-2 h-full lg:px-5 py-1 lg:pb-2.5 lg:pt-2 border-2 rounded-full bg-gray-100 lg:text-[16px] 3xl:text-xl text-[black] group-hover:text-primary-white font-medium group-hover:border-primary-white leading-[27px]"
+                      className="px-2 h-full lg:px-5 py-1 lg:pb-2.5 lg:pt-2 border-2 rounded-full bg-gray-100 lg:text-[16px] 4xl:text-xl text-[black] group-hover:text-primary-white font-medium group-hover:border-primary-white leading-[27px]"
                     >
                       {tag}
                     </span>

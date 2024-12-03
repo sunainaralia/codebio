@@ -236,17 +236,17 @@ const LogosSection = () => {
   ];
 
   return (
-    <div className="sliding-logos-container gap-0 3xl:gap-2.5  overflow-hidden mt-10 3xl:mt-24">
+    <div className="sliding-logos-container gap-0 4xl:gap-2.5  overflow-hidden mt-10w 4xl:mt-24">
       {/* Row 1 */}
       <div className="sliding-row gap-14 lg:gap-24 row1">
         {logosRow1.map((logo, index) => (
           <Image   
-     key={index} className="lg:w-[140px]  3xl:w-[233px] w-[90px]" src={logo} alt={`Logo ${index}`} />
+     key={index} className="lg:w-[140px]  4xl:w-[233px] w-[90px]" src={logo} alt={`Logo ${index}`} />
         ))}
         {logosRow1.map((logo, index) => (
           <Image
             key={`duplicate1-${index}`}
-            className=" lg:w-[140px] 3xl:w-[233px] w-[90px]"
+            className=" lg:w-[140px] 4xl:w-[233px] w-[90px]"
              
             
             src={logo}
@@ -259,12 +259,12 @@ const LogosSection = () => {
       <div className="sliding-row gap-14 lg:gap-24 row2">
         {logosRow2.map((logo, index) => (
           <Image   
-     key={index} className="lg:w-[140px]  3xl:w-[233px] w-[90px]" src={logo} alt={`Logo ${index}`} />
+     key={index} className="lg:w-[140px]  4xl:w-[233px] w-[90px]" src={logo} alt={`Logo ${index}`} />
         ))}
         {logosRow2.map((logo, index) => (
           <Image
             key={`duplicate2-${index}`}
-            className="lg:w-[140px]  3xl:w-[233px] w-[90px]"
+            className="lg:w-[140px]  4xl:w-[233px] w-[90px]"
             
       
             src={logo}
@@ -277,13 +277,13 @@ const LogosSection = () => {
       <div className="sliding-row !gap-10 row3 pt-7 lg:pt-[72px]">
         {clientLogo.map((logo, index) => (
           <Image   width={233}
-          height={50} key={index} className="logo lg:w-[140px]  3xl:w-[233px] w-[90px]" src={logo} alt={`Logo ${index}`} />
+          height={50} key={index} className="logo lg:w-[140px]  4xl:w-[233px] w-[90px]" src={logo} alt={`Logo ${index}`} />
         ))}
         {clientLogo.map((logo, index) => (
           <Image   width={233}
           height={50}
             key={`duplicate3-${index}`}
-            className="logo lg:w-[140px]  3xl:w-[233px] w-[90px]"
+            className="logo lg:w-[140px]  4xl:w-[233px] w-[90px]"
             src={logo}
             alt={`Duplicate Logo ${index}`}
           />

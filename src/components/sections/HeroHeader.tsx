@@ -17,7 +17,7 @@ function HeroHeader(props: {
 }) {
   return (
     <>
-      <div className="md:flex justify-around items-center flex-row pt-8 pb-14 md:py-14 gap-7  lg:h-[600px] 3xl:h-[750px]">
+      <div className="md:flex justify-around items-center flex-row pt-8 pb-14 md:py-14 gap-7  lg:h-[600px] 4xl:h-[750px]">
         <div className="h-full w-full flex flex-col justify-center items-center col-span-1">
           <div className="flex flex-row items-center gap-4">
             <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
@@ -33,15 +33,15 @@ function HeroHeader(props: {
           </div>
           <h1
             className={cn(
-              "  lg:text-6xl 3xl:text-[120px] text-[42px] font-black mt-6 text-center w-full",
+              "  lg:text-6xl 4xl:text-[120px] text-[42px] font-black mt-6 text-center w-full",
               props.titleClassName,
-              "leading-[4rem] lg:leading-[5rem] 3xl:leading-[10rem]"
+              "leading-[4rem] lg:leading-[5rem] 4xl:leading-[10rem]"
             )}
           >
             {props.featureText}
           </h1>
 
-          <div className="max-w-[655px] hidden md:block text-center text-[15px] sm:text-xl lg:text-xl 3xl:text-3xl 3xl:!leading-10 mt-5 2xl:mt-10">
+          <div className="max-w-[655px] hidden md:block text-center text-[15px] sm:text-xl lg:text-xl 4xl:text-3xl 4xl:!leading-10 mt-5 2xl:mt-10">
             {props.subText}
           </div>
 
@@ -63,7 +63,7 @@ function HeroHeader(props: {
           )}
         </div>
         <div className="flex flex-col items-center md:hidden">
-          <div className="max-w-[655px] text-center text-[15px] sm:text-xl lg:text-xl 3xl:text-3xl 3xl:!leading-10 mt-5 2xl:mt-10">
+          <div className="max-w-[655px] text-center text-[15px] sm:text-xl lg:text-xl 4xl:text-3xl 4xl:!leading-10 mt-5 2xl:mt-10">
             {props.subText}
           </div>
 
