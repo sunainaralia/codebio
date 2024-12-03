@@ -6,6 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import React from "react";
 import WorkCards from "../_components/workCards";
+import WorkCardscustom from "../_components/customworkCards";
 import { ParallaxTiltedScroll } from "../_components/tiltedScroller";
 import { WorkCardProps } from "@/components/data/main";
 import {
@@ -78,7 +79,7 @@ function OurWorkSection() {
             {/* <img className="w-full" src="/works/work-1.png" alt="" /> */}
             <Link href="/our-work/works4" target="_blank">
            
-                <WorkCards {...works[4]} imgArray={axisBank} />
+                <WorkCardscustom {...works[4]} imgArray={axisBank} />
              
             </Link>
             <div className="absolute bottom-12 right-3 ">

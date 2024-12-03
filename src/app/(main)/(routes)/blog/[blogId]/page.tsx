@@ -4,13 +4,12 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import MusicButton from "../_components/musicButton";
 import { useParams } from "next/navigation";
-import { BlogCards, blogCards, blogDetailsData } from "@/components/data/blog";
+import { BlogCards, blogCards, blogDetailsData1, blogDetailsData2 } from "@/components/data/blog";
 import DetailPoints from "./_components/detailPoints";
 import { Separator } from "@/components/ui/separator";
 import BlogCard from "../_components/blogCards";
 import CardsCarousel from "@/app/(main)/_components/cardsCarousel";
 import { Button } from "@/components/ui/button";
-import blogdetails from "../../../../../../public/blog/blodDetails.svg"
 
 function BlogDetails() {
   const { blogId } = useParams();
@@ -32,6 +31,7 @@ function BlogDetails() {
         detailsimage={card.detailsimage}
         description={card.description}
         time={card.time}
+        indexvalue={card.indexvalue}
       />
     );
   });
@@ -39,7 +39,7 @@ function BlogDetails() {
 
 
   return (
-    <div className="px-[30px] md:px-0">
+    <div className="px-[30px] md:px-20">
       <div className="mt-[43px] xl:mt-[110px] flex justify-between items-center">
         <Image src={"/vectors/backButton.svg"} alt="" width={80} height={80} />
         <div className="block md:hidden">
@@ -101,7 +101,7 @@ function BlogDetails() {
 
       />
 
-      <DetailPoints data={blogDetailsData}  />
+      <DetailPoints data={blogData?.indexvalue === 0 ? blogDetailsData1 : blogDetailsData2} indexvalue={blogData?.indexvalue} />
 
       {/* <div className="py-14">
         <div className="text-3xl font-bold text-center">
