@@ -11,7 +11,7 @@ import { ourWorkData } from "./ourWork";
 
 const OurServiceSection = () => {
   return (
-    <div id="oursolution" className="pb-12 xl:pb-0 4xl:pb-24 pt-[88px] md:pt-24 lg:pt-[150px] 4xl:pt-0 4xl:mt-[354px] 4xl:mt-[120px] ">
+    <div id="oursolution" className="pb-12 4xl:pb-24 pt-[88px] md:pt-24 lg:py-[150px] 4xl:pt-0 4xl:mt-[354px] 3xl:mt-[120px] ">
       <div className="flex gap-4 items-center mb-5 md:mb-[70px]">
         <Image
           src={"/vectors/Union.svg"}
@@ -72,7 +72,7 @@ const OurServiceSection = () => {
                     className="w-full mx-auto hidden lg:block lg:w-full h-auto mb-4 rounded-lg"
                   /> */}
 
-                <div className="flex flex-wrap h-full gap-2 mt-4 lg:mt-10 items-stretch">
+                <div className="4xl:flex flex-wrap h-full gap-2 mt-4 lg:mt-10 items-stretch hidden ">
                   {work.tags.map((tag, idx) => (
                     <span
                       key={idx}

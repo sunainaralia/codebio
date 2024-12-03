@@ -22,7 +22,7 @@ function HomePage() {
         title='Websites that mean business'
         featureText={`Make Your Brand Rise Online`}
         iconPath={require('@/../public/lottiee/HomePage/Hero_Section_Home_Page.json')}
-        titleClassName='max-w-[320px] md:max-w-[500px] 2xl:max-w-[800px]  text-black text-center'
+        titleClassName='max-w-[320px] md:max-w-[500px] 2xl:max-w-[620px]  text-black text-center'
         hasLottie={true}
       />
         <WhatWeDoSection />

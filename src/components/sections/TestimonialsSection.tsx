@@ -277,14 +277,14 @@ TestimonialsSection.TestimonialCard = ({
             } lg:hidden block`}
           />
         </div>
-        <div className="div flex justify-between items-center md:block w-full">
+        <div className="div flex justify-between items-center md:block w-full ">
           <div className="block md:hidden ">
             <Avatar>
               <AvatarImage src={image} />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
-          <div className="block w-full">
+          <div className="block w-full min-h-20">
             <h2 className="text-base 4xl:text-[22px] font-bold 4xl:h-[3.5rem] md:h-[2rem] md:text-start text-end">
               {name}
             </h2>
