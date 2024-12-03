@@ -8,7 +8,7 @@ function OurStatsSection() {
   return (
     <div className='my-0 mb-10 py-0 md:my-20 xl:py-24  xl:min-h-[200px]  xl:grid grid-cols-5'>
       <div className='block xl:hidden mb-10'>
-        <h1 className='text-[36px] font-black mb-2 md:h-[1.7em]'>Our Stats</h1>
+        <h2 className='text-[36px] font-black mb-2 md:h-[1.7em]'>Our Stats</h2>
         <p className='text-sm sm:text-xl font-medium '>
           Numbers don’t lie. We have an unparalleled  track record of digital
           excellence.
@@ -29,9 +29,9 @@ function OurStatsSection() {
         <Separator className='hidden xl:block h-full w-px bg-[#D8D8D8] p-[.5px] my-4' />
       </div>
       <div className=' hidden xl:flex flex-col justify-end items-end col-span-2'>
-        <h1 className='font-[900] text-7xl 2xl:text-[96px] leading-[129px]'>Our Stats</h1>
-        <Separator className='h-px w-full bg-[#D8D8D8] my-4' />
-        <p className='text-xl 2xl:text-4xl text-right font-medium p-4 h-[6rem] 2xl:h-[3rem] text-[#2B2B2B]'>
+        <h1 className='font-[900] lg:text-[50px] text-[36px] 3xl:text-[96px] leading-[129px]'>Our Stats</h1>
+        <Separator className='h-px w-full bg-[#D8D8D8] 3xl:my-4' />
+        <p className='text-xl 3xl:text-4xl text-right font-medium p-4 h-[6rem] 3xl:h-[3rem] text-[#2B2B2B]'>
           Numbers don’t lie. We have an unparalleled 
           <br />
           track record of digital excellence.
@@ -50,11 +50,11 @@ function StatsInfo({ count, title }: { count: number; title: string }) {
       className='xl:flex flex-col justify-center items-center flex-1'
       ref={countUpRef}
     >
-      <h1 className='text-5xl 2xl:text-[78px] font-medium text-black p-1 md:h-[1.7em]'>
+      <h1 className='text-5xl 3xl:text-[78px] font-medium text-black p-1 md:h-[1.7em]'>
         <CountUp end={inView ? count : 0} start={0} duration={3} />+
       </h1>
       <Separator className='hidden xl:block h-px w-full bg-[#D8D8D8] p-[.5px] my-4' />
-      <h3 className='xl:p-4 xl:text-center xl:h-[3rem] text-base sm:text-xl 2xl:text-3xl font-normal text-[#2B2B2B]'>{title}</h3>
+      <h3 className='xl:p-4 xl:text-center xl:h-[3rem] text-base sm:text-xl 3xl:text-3xl font-normal text-[#2B2B2B]'>{title}</h3>
       <Separator className='block xl:hidden h-px w-full bg-[#D8D8D8] p-[.5px] my-4' />
     </div>
   );

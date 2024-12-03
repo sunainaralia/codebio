@@ -188,7 +188,7 @@ function OurWorkSection() {
 
           <div className="lg:min-w-[100px]  lg:w-[calc(50%-2px)] max-w-[900px] flex justify-center items-center my-16 md:my-20 lg:my-0">
             <div
-              className="flex items-center w-fit h-fit m-auto gap-4 "
+              className="flex items-center w-fit scale-75 3xl:scale-100 h-fit m-auto gap-4 "
               style={{ cursor: "pointer" }}
               onClick={() => navigate.push(`/our-work`)}
             >

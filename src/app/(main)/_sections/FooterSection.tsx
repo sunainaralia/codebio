@@ -86,9 +86,9 @@ function Footer() {
               alt=""
               height={60}
               width={60}
-              className="hidden md:block h-[30px] w-[30px] lg:w-[60px] lg:h-[60px]"
+              className="hidden md:block h-[30px] w-[30px] 3xl:w-[60px] 3xl:h-[60px]"
             />
-            <h3 className="text-3xl sm:text-5xl xl:text-[55px] 2xl:text-[65px] 3xl:text-[80px] font-[900] relative after:absolute after:w-full after:bg-black after:border-2 after:border-black after:left-0 after:-bottom-[20%] after:-translate-y-1/2 md:after:static md:after:border-none">
+            <h3 className="text-3xl sm:text-5xl xl:text-6xl 3xl:text-[80px] font-[900] relative after:absolute after:w-full after:bg-black after:border-2 after:border-black after:left-0 after:-bottom-[20%] after:-translate-y-1/2 md:after:static md:after:border-none">
               Let&apos;s Talk
             </h3>
             <div className="md:hidden flex gap-5 mb-6 w-[135px] justify-end  flex-wrap">

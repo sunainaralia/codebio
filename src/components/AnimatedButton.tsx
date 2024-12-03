@@ -29,7 +29,7 @@ const AnimatedButton = ({ children, className, btnClassName,icon ,onClick }: Ani
       <div className="z-10">
       {children}
       </div>
-      <div className={cn("bg-primary-natural relative rounded-full h-8 lg:h-12 w-8 lg:w-12" , btnClassName)}>
+      <div className={cn("bg-primary-natural relative rounded-full h-8 lg:h-10 3xl:h-12 w-8 lg:w-10 3xl:w-12" , btnClassName)}>
         <motion.div
           initial={{ x: -15, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}

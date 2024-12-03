@@ -20,7 +20,7 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
         className
       )}
     >
-      <div className=" lg:text-[55px] 2xl:text-[70px] 3xl:text-[84px] text-[36px] font-extrabold">
+      <div className=" lg:text-6xl 3xl:text-[84px] text-[36px] font-extrabold">
         Stay Updated !
       </div>
 
