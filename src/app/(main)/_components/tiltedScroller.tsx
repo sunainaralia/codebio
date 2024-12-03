@@ -68,6 +68,7 @@ export const ParallaxTiltedScroll = ({
       )}
       ref={gridRef}
     >
+      {/* testing  */}
       <motion.div
         className={cn(
           "grid items-start w-[1000px] 2xl:w-[1500px] mx-auto gap-4 ml-[-200px] 2xl:ml-[-100px] mt-[-125px] 2xl:mt-[-300px] bg-[#FF8383]",
