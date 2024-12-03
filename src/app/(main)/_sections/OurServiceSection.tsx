@@ -18,9 +18,9 @@ const OurServiceSection = () => {
           alt=""
           height={30}
           width={30}
-          className="hidden md:block"
+          className="hidden md:block 3xl:h-[30px] 3xl:w-[30px] lg:h-[24px] lg:w-[24px]"
         />
-        <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[42px]">
+        <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 3xl:text-[42px]">
           Our Solutions
         </h3>
       </div>
@@ -48,11 +48,11 @@ const OurServiceSection = () => {
               <div className="md:px-5 bg-white md:border-r-[0.5px] border-y-0 border-[#dbdbdb] text-center cursor-pointer lg:px-10 flex flex-col justify-bet ween hover:bg-primary-natural hover:text-primary-white group duration-300 snap-start hover:rounded-[20px]  md:p-10 max-md:hover:p-2 pb-14 ourworkcard">
                 <div className="">
                   {" "}
-                  <div className="min-h-[350px">
-                    <h3 className="text-[34px] lg:text-4xl 2xl:text-6xl text-black font-medium mb-3 text-wrap line-clamp-2">
+                  <div className="min-h-[3 50px]">
+                    <h3 className="text-[34px] lg:text-4xl 3xl:text-6xl  text-black font-medium mb-3 text-wrap line-clamp-2">
                       {work.title}          
                     </h3>
-                    <p className="text-lg sm:text-xl lg:text-3xl text-gray-600 text-wrap mb-3 mt-5 leading-6 lg:leading-10  line-clamp-3 2xl:line-clamp-5">
+                    <p className="text-lg sm:text-xl  3xl:text-3xl text-gray-600 text-wrap mb-3 mt-5 leading-6 3xl:leading-10  line-clamp-3 2xl:line-clamp-5">
                       {work.description}
                     </p>
                   </div>
@@ -72,11 +72,11 @@ const OurServiceSection = () => {
                     className="w-full mx-auto hidden lg:block lg:w-full h-auto mb-4 rounded-lg"
                   /> */}
 
-                <div className="flex flex-wrap gap-2 mt-4 lg:mt-10">
+                <div className="flex flex-wrap h-full gap-2 mt-4 lg:mt-10 items-stretch">
                   {work.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="px-2 lg:px-5 py-1 lg:pb-2.5 lg:pt-2 border-2 rounded-full bg-gray-100 text-xs lg:text-xl text-[black] group-hover:text-primary-white font-medium group-hover:border-primary-white leading-[27px]"
+                      className="px-2 h-full lg:px-5 py-1 lg:pb-2.5 lg:pt-2 border-2 rounded-full bg-gray-100 lg:text-[16px] 3xl:text-xl text-[black] group-hover:text-primary-white font-medium group-hover:border-primary-white leading-[27px]"
                     >
                       {tag}
                     </span>

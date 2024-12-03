@@ -68,9 +68,9 @@ function OurWorkSection() {
           alt=""
           height={30}
           width={30}
-          className="hidden lg:block"
+          className="hidden lg:block 3xl:h-[30px] 3xl:w-[30px] lg:h-[24px] lg:w-[24px]"
         />
-        <h3 className="text-xl font-normal text-[#525252] lg:text-[42px]">Our Work</h3>
+        <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 3xl:text-[42px]">Our Work</h3>
       </div>
 
       <div className="flex flex-wrap">

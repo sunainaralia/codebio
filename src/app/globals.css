@@ -322,7 +322,7 @@ html,
 @media (min-width: 1280px) {
   #oursolution .swiper-slide,
   .ourworkcard {
-    min-height: 840px;
+    /* min-height: 840px; */
   }
 }
 @media (max-width: 768px) {
@@ -415,5 +415,4 @@ html,
   /* #oursolution .swiper-wrapper {
     height: 690px !important;
   } */
-  
 }

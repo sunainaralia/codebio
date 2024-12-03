@@ -85,8 +85,8 @@ function WhatWeDoSection() {
 
   return (
     <div className="py-[34px] 2xl:pt-28  md:my-20 flex flex-col justify-center md:items-center md:text-center px-[30px] md:px-0">
-      <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[42px]">What We do</h3>
-      <h2 className=" text-[36px] md:text-5xl lg:text-6xl xl:text-[84px] lg:!leading-[5rem] xl:!leading-[7rem] font-bold hidden lg:block mt-[10px]">
+      <h3 className="text-lg font-normal text-[#525252] sm:text-[26px] 3xl:text-[42px] lg:text-[32px]">What We do</h3>
+      <h2 className=" text-[36px] md:text-5xl lg:text-[50px] 3xl:text-[84px]  lg:!leading-[70px] 3xl:!leading-[7rem] font-bold hidden lg:block mt-[10px]">
         We provide enterprise-level
         <br /> solutions to reshape your business.
       </h2>
@@ -99,13 +99,13 @@ function WhatWeDoSection() {
         ))}
       </div>
 
-      <p className="text-[#2B2B2B] text-lg md:text-[28px] !leading-10 font-normal hidden md:block  lg:mt-[65px] mt-[50px]">
+      <p className="text-[#2B2B2B] text-lg  md:text-[20px] 3xl:text-[30px] 3xl:leading-10 font-normal hidden md:block  lg:mt-[65px] mt-[50px]">
         At Codebiosis, it's our mission to transform your brand into its best digital version. We focus on a customer-centric <span className='2xl:block'>approach to create engaging, interactive, and immersive experiences that deliver top-notch results.</span>
       </p>
-      <p className="text-[#2B2B2B] text-lg md:text-[28px] !leading-10 font-normal hidden md:block mt-10 ">
-        For over a year, we’ve been delivering top-notch web design services, graphic design, brand identity, and commerce. Each project is<br /> customized to fit your business's unique needs. We start by understanding your products, target audience, and competitors to create a web<br /> design or brand identity that stands out.
+      <p className="text-[#2B2B2B] text-lg md:text-[20px] 3xl:text-[30px] 3xl:leading-10 font-normal hidden md:block mt-10 ">
+        For over a year, we’ve been delivering top-notch web design services, graphic design, brand identity, and commerce. Each project iscustomized to fit your business's unique needs. We start by understanding your products, target audience, and competitors to create a web design or brand identity that stands out.
       </p>
-      <p className="text-[#2B2B2B] text-lg font-normal md:text-center block md:hidden mt-[50px]">
+      <p className="text-[#2B2B2B] text-lg  font-normal md:text-center block md:hidden mt-[50px]">
         At Codebiosis, it's our mission to transform your brand into its best digital version. We focus on a customer-centric approach to create engaging, interactive, and immersive experiences that deliver top-notch results.
       </p>
 

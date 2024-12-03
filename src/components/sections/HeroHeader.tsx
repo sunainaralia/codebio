@@ -23,7 +23,7 @@ function HeroHeader(props: {
             <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
             <h3
               className={cn(
-                `text-lg font-normal text-[#525252] sm:text-[28px] lg:text-[42px] text-center lg:leading-[56px]`,
+                `text-lg font-normal text-[#525252] sm:text-[28px] lg:text-[32px] text-center lg:leading-[56px]`,
                 props.subText && "text-xl "
               )}
             >
@@ -33,9 +33,9 @@ function HeroHeader(props: {
           </div>
           <h1
             className={cn(
-              "lg:text-7xl 2xl:text-[120px] text-5xl font-black mt-6 text-center w-full",
+              "lg:text-[60px] 3xl:text-[120px] text-5xl font-black mt-6 text-center w-full",
               props.titleClassName,
-              "leading-[4rem] lg:leading-[6rem] 2xl:leading-[10rem]"
+              "leading-[4rem] lg:leading-[5rem] 3xl:leading-[10rem]"
             )}
           >
             {props.featureText}

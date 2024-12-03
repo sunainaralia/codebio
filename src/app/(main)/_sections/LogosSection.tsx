@@ -236,19 +236,19 @@ const LogosSection = () => {
   ];
 
   return (
-    <div className="sliding-logos-container gap-0 lg:gap-2.5  overflow-hidden mt-10  lg:mt-20 xl:mt-24">
+    <div className="sliding-logos-container gap-0 lg:gap-2.5  overflow-hidden mt-[20px] md:mt-[40px] lg:mt-20 3xl:mt-24">
       {/* Row 1 */}
       <div className="sliding-row gap-14 lg:gap-24 row1">
         {logosRow1.map((logo, index) => (
-          <Image   width={233}
-          height={91} key={index} className="h-[80px]  w-[100px] lg:w-[233px] lg:h-[180px]" src={logo} alt={`Logo ${index}`} />
+          <Image   
+     key={index} className="lg:w-[140px]  3xl:w-[233px] w-[90px]" src={logo} alt={`Logo ${index}`} />
         ))}
         {logosRow1.map((logo, index) => (
           <Image
             key={`duplicate1-${index}`}
-            className="h-[80px]  w-[100px]  lg:w-[233px] lg:h-[180px]"
-            width={233}
-            height={91}
+            className=" lg:w-[140px] 3xl:w-[233px] w-[90px]"
+             
+            
             src={logo}
             alt={`Duplicate Logo ${index}`}
           />
@@ -258,15 +258,15 @@ const LogosSection = () => {
       {/* Row 2 */}
       <div className="sliding-row gap-14 lg:gap-24 row2">
         {logosRow2.map((logo, index) => (
-          <Image   width={233}
-          height={91} key={index} className="h-[80px] w-[100px] lg:w-[233px] lg:h-[180px]" src={logo} alt={`Logo ${index}`} />
+          <Image   
+     key={index} className="lg:w-[140px]  3xl:w-[233px] w-[90px]" src={logo} alt={`Logo ${index}`} />
         ))}
         {logosRow2.map((logo, index) => (
           <Image
             key={`duplicate2-${index}`}
-            className="h-[80px] w-[100px] lg:w-[233px] lg:h-[180px]"
-            width={233}
-            height={91}
+            className="lg:w-[140px]  3xl:w-[233px] w-[90px]"
+            
+      
             src={logo}
             alt={`Duplicate Logo ${index}`}
           />
@@ -274,16 +274,16 @@ const LogosSection = () => {
       </div>
 
       {/* Row 3 */}
-      <div className="sliding-row !gap-10 row3 pt-7 lg:pt-28">
+      <div className="sliding-row !gap-10 row3 pt-7 lg:pt-[72px]">
         {clientLogo.map((logo, index) => (
           <Image   width={233}
-          height={50} key={index} className="logo w-[100px] lg:w-[233px] h-[50px]" src={logo} alt={`Logo ${index}`} />
+          height={50} key={index} className="logo lg:w-[140px]  3xl:w-[233px] w-[90px]" src={logo} alt={`Logo ${index}`} />
         ))}
         {clientLogo.map((logo, index) => (
           <Image   width={233}
           height={50}
             key={`duplicate3-${index}`}
-            className="logo w-[100px] lg:w-[233px] h-[50px]"
+            className="logo lg:w-[140px]  3xl:w-[233px] w-[90px]"
             src={logo}
             alt={`Duplicate Logo ${index}`}
           />
