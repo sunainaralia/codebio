@@ -20,7 +20,7 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
         className
       )}
     >
-      <div className=" lg:text-6xl 3xl:text-[84px] text-[36px] font-extrabold">
+      <div className=" lg:text-5xl 3xl:text-[84px] text-[36px] font-extrabold">
         Stay Updated !
       </div>
 
@@ -38,7 +38,7 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
               className=" mb-2.5 sm:mb-[20px]"
             />
           </div>
-          <div className="lg:text-[26px] text-[14px] w-full mt-[40px] text-[#2B2B2B]">
+          <div className="lg:text-xl text-[14px] 3xl:text-[26px] w-full mt-[40px] text-[#2B2B2B]">
             By providing your email, you agree for us to contact you via email
             with future updates. Your data is stored securely and we never pass
             it on to third parties.

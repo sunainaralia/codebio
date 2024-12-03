@@ -12,7 +12,7 @@ function Blog() {
   return (
     <div className="px-[30px] md:px-20">
       <div className="pt-8 pb-1 lg:pb-[80px] lg:pt-[100px] 3xl:pt-[200px] xl:pb-[50px]">
-        <div className="hidden md:block mx-auto lg:text-5xl 3xl:text-[84px] text-[42px] uppercase font-extrabold text-center mb-2 ">
+        <div className="hidden md:block mx-auto lg:text-5xl 3xl:text-[84px] text-[42px] uppercase font-[900] text-center mb-6 ">
           Blogs
         </div>
 

@@ -45,35 +45,36 @@ const handleSocialClick = (url: string | URL | undefined) => {
 };
 
 function Footer() {
+  const currentyear=new Date().getFullYear();
   return (
     <div className=" mt-7 sm:mt-[37px] px-[30px] md:px-0 pb-48">
       <div className="block md:flex justify-between md:pb-5 border-b border-[#D8D8D8] items-center">
         <div>
           <LottieAnimation
             animationData={require("@/../public/lottiee/HomePage/Footer.json")}
-            className="hidden md:block max-h-[200px] lg:max-h-[300px] max-w-[200px] lg:max-w-[250px] 2xl:max-h-[338px] 2xl:max-w-[400px] 3xl:max-w-[553px]"
+            className="hidden md:block max-h-[200px] lg:max-h-[300px] max-w-[200px] lg:max-w-[250px] 3xl:max-h-[338px] 3xl:max-w-[553px]"
           />
 
-          <div className="hidden md:flex flex-wrap gap-x-[20px] xl:gap-x-[30px] gap-y-[10px] 2xl:gap-x-[60px] 2xl:gap-y-[30px] mt-4 2xl:mt-[90px] mb-4 2xl:mb-[87px] w-full max-w-[400px] lg:max-w-[600px] xl:max-w-[700px]">
-            <Link className="text-lg lg:text-2xl 3xl:text-3xl" href={"/services"}>
+          <div className="hidden md:flex flex-wrap gap-x-[20px] gap-y-[10px] 3xl:gap-x-[60px] 3xl:gap-y-[30px] mt-4 3xl:mt-[90px] mb-4 3xl:mb-[87px] w-full max-w-[400px] lg:max-w-[600px] xl:max-w-[700px]">
+            <Link className="text-lg lg:text-xl 3xl:text-3xl" href={"/services"}>
               What We Offer
             </Link>
-            <Link className="text-lg lg:text-2xl 3xl:text-3xl" href={"/our-work"}>
+            <Link className="text-lg lg:text-xl 3xl:text-3xl" href={"/our-work"}>
               Our Work
             </Link>
-            <Link className="text-lg lg:text-2xl 3xl:text-3xl" href={"/about-us"}>
+            <Link className="text-lg lg:text-xl 3xl:text-3xl" href={"/about-us"}>
               Who We Are
             </Link>
-            <Link className="text-lg lg:text-2xl 3xl:text-3xl" href={"/blog"}>
+            <Link className="text-lg lg:text-xl 3xl:text-3xl" href={"/blog"}>
               Resources
             </Link>
-            <Link className="text-lg lg:text-2xl 3xl:text-3xl" href={"/case-study"}>
+            <Link className="text-lg lg:text-xl 3xl:text-3xl" href={"/case-study"}>
               Case Studies
             </Link>
-            <Link className="text-lg lg:text-2xl 3xl:text-3xl" href={"/contact-us"}>
+            <Link className="text-lg lg:text-xl 3xl:text-3xl" href={"/contact-us"}>
               Meet Us
             </Link>
-            <Link className="text-lg lg:text-2xl 3xl:text-3xl" href={"/careers"}>
+            <Link className="text-lg lg:text-xl 3xl:text-3xl" href={"/careers"}>
               Careers
             </Link>
           </div>
@@ -88,7 +89,7 @@ function Footer() {
               width={60}
               className="hidden md:block h-[30px] w-[30px] 3xl:w-[60px] 3xl:h-[60px]"
             />
-            <h3 className="text-3xl sm:text-5xl xl:text-6xl 3xl:text-[80px] font-[900] relative after:absolute after:w-full after:bg-black after:border-2 after:border-black after:left-0 after:-bottom-[20%] after:-translate-y-1/2 md:after:static md:after:border-none">
+            <h3 className="text-3xl sm:text-5xl 3xl:text-[80px] font-[900] relative after:absolute after:w-full after:bg-black after:border-2 after:border-black after:left-0 after:-bottom-[20%] after:-translate-y-1/2 md:after:static md:after:border-none">
               Let&apos;s Talk
             </h3>
             <div className="md:hidden flex gap-5 mb-6 w-[135px] justify-end  flex-wrap">
@@ -142,13 +143,13 @@ function Footer() {
               ))}
             </div> */}
           </div>
-          <div className="hidden md:flex  pb-4 xl:pb-6 3xl:pb-[50px] text-lg xl:text-2xl 3xl:text-3xl font-medium ">
+          <div className="hidden md:flex  pb-3 3xl:pb-[50px] text-lg xl:text-xl 3xl:text-3xl font-medium ">
             North India • South India  • USA
           </div>
-          <div className="hidden md:block pb-4 xl:pb-[25px] text-lg xl:text-2xl 3xl:text-3xl font-medium">
+          <div className="hidden md:block pb-3 3xl:pb-[25px] text-lg xl:text-xl 3xl:text-3xl font-medium">
             +91 6307 080 414
           </div>
-          <div className="hidden md:block text-lg xl:text-2xl 3xl:text-3xl font-medium">
+          <div className="hidden md:block text-lg xl:text-xl 3xl:text-3xl font-medium">
             sales@codebiosis.com
           </div>
           {/* <div className='hidden md:flex gap-4 my-5'>
@@ -169,7 +170,7 @@ function Footer() {
             />
           </div> */}
 
-          <div className="hidden md:flex gap-4 my-4 2xl:my-10">
+          <div className="hidden md:flex gap-4 my-4 3xl:my-10">
             {socials.map((social, index) => (
               <SocialButton
                 key={index}
@@ -241,8 +242,8 @@ function Footer() {
       </div>
 
       <div className="flex py-4 w-full justify-center md:justify-between">
-        <div className="text-[#8D8D8D] text-sm xl:text-3xl font-medium ">
-          © 2023, CodeBiosis Private Limited.
+        <div className="text-[#8D8D8D] text-sm lg:text-xl 3xl:text-3xl font-medium ">
+          © {currentyear}, CodeBiosis Private Limited.
         </div>
 
         <div className="hidden md:flex">
