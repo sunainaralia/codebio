@@ -6,8 +6,8 @@ import Image from "next/image";
 import React, { useCallback, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import 'swiper/css/pagination';
-import { Navigation, Pagination } from 'swiper/modules';
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import Rating from "../Rating";
 import ArrowIconButton from "../ArrowIconButton";
@@ -178,31 +178,33 @@ function TestimonialsSection() {
         </div>
         <div className="max-sm:w-full 2xl:w-[90%]">
           <Swiper
-            spaceBetween={30}
-            slidesPerView={1}
-            ref={sliderRef}
-             direction= "horizontal"
-            onSlideChange={(e) => {
-              setCurrentSlide(e.activeIndex);
-            }}
-            // className="h-full"
-            modules={[Navigation, Pagination]}
-      
-        pagination={{ clickable: true }}
-        
-            onSwiper={(swiper) => console.log(swiper)}
-            breakpoints={{
-              768: {
-                direction: "horizontal",
-                slidesPerView: 2,
-                spaceBetween: 30,
-              },
+            // spaceBetween={30}
+            // slidesPerView={1}
+            // ref={sliderRef}
+            // onSlideChange={(e) => {
+            //   setCurrentSlide(e.activeIndex);
+            // }}
+            
+            // modules={[Navigation, Pagination]}
+            // pagination={{ clickable: true }}
+            // onSwiper={(swiper) => console.log(swiper)}
+            // breakpoints={{
+            //   768: {
+            //     slidesPerView: 2,
+            //     spaceBetween: 30,
+            //   },
 
-              1280: {
-                direction: "horizontal",
-                slidesPerView: 3,
-                spaceBetween: 30,
-              },
+            //   1280: {
+            //     slidesPerView: 3,
+            //     spaceBetween: 30,
+            //   },
+            // }}
+            pagination={{ clickable: true }}
+            slidesPerView={1}
+            spaceBetween={10}
+            breakpoints={{
+              768: { slidesPerView: 2, spaceBetween: 20 }, // For tablets
+              1280: { slidesPerView: 3, spaceBetween: 30 }, // For desktops
             }}
           >
             {testimonials.map((item, index) => (
@@ -216,12 +218,11 @@ function TestimonialsSection() {
                 />
               </SwiperSlide>
             ))}
-            
           </Swiper>
         </div>
 
-        <div className='flex lg:hidden justify-center items-center w-full pb-3 '>
-          <AnimatedButton >Review all on Clutch</AnimatedButton>
+        <div className="flex lg:hidden justify-center items-center w-full pb-3 ">
+          <AnimatedButton>Review all on Clutch</AnimatedButton>
         </div>
 
         {/* <div className='block md:hidden'>
