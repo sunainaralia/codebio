@@ -313,13 +313,19 @@ html,
 #oursolution .swiper-pagination-bullet {
   display: none !important;
 }
-#oursolution .swiper {
-  height: 600px !important;
-}
+
 .swiper-slide  {
   height: 100% !important;
 }
+#oursolution .swiper {
+  height: 600px !important;
+}
 
+@media (min-width: 1700px) {
+  #oursolution .swiper {
+    height: 750px !important;
+  }
+}
 @media (min-width: 2000px) {
   #oursolution .swiper {
     height: 1050px !important;

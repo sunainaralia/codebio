@@ -34,7 +34,7 @@ function Blog() {
       <div className="md:flex flex-wrap border-b md:border-0  border-[#525252]">
         {blogCards.map((card, index) => (
           <div
-            className="flex justify-center md:basis-1/2 2xl:basis-1/4 md:border-b border-[#525252] "
+            className="flex justify-center md:basis-1/2 lg:basis-1/3 2xl:basis-1/4 md:border-b border-[#525252] "
             key={index}
             onClick={() => navigate.push(`/blog/${card.id}`)}
           >

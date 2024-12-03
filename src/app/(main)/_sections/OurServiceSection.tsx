@@ -72,7 +72,7 @@ const OurServiceSection = () => {
                     className="w-full mx-auto hidden lg:block lg:w-full h-auto mb-4 rounded-lg"
                   /> */}
 
-                <div className="4xl:flex flex-wrap gap-2 mt-4 lg:mt-10  hidden ">
+                <div className="3xl:flex flex-wrap gap-2 mt-4 lg:mt-10  hidden ">
                   {work.tags.map((tag, idx) => (
                     <span
                       key={idx}
