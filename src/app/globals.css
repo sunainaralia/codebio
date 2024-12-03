@@ -247,12 +247,9 @@ html,
   }
 }
 
-
 .animate-button-ellipse {
   animation: dash 2s linear;
 }
-
-
 
 .ob-img {
   align-items: center;
@@ -262,9 +259,6 @@ html,
   object-fit: contain;
   height: 26px;
 }
-
-
-
 
 /* logo slider */
 
@@ -289,7 +283,6 @@ html,
 
 /* Logo styling */
 
-
 /* Animation for each row with different durations */
 .row1 {
   animation: infinite-slide 20s linear infinite;
@@ -313,8 +306,6 @@ html,
   }
 }
 
-
-
 /* swiper dots*/
 #testimonials .swiper-pagination-bullet {
   display: none !important;
@@ -322,45 +313,56 @@ html,
 #oursolution .swiper-pagination-bullet {
   display: none !important;
 }
+#oursolution .swiper {
+  height: 600px !important;
+}
+.swiper-slide  {
+  height: 100% !important;
+}
 
-
+@media (min-width: 2000px) {
+  #oursolution .swiper {
+    height: 1050px !important;
+  }
+}
 @media (min-width: 1280px) {
   #oursolution .swiper-slide,
   .ourworkcard {
     /* min-height: 840px; */
   }
 }
+#oursolution .swiper-slide  {
+  margin: 0px !important;
+}
+
 
 @media (max-width: 768px) {
-
- 
-  #certifiedPartners .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
-    top: 95%!important;
-    transform: translateX(-50%)!important;
-    left: 50%!important;
+  #certifiedPartners
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 95% !important;
+    transform: translateX(-50%) !important;
+    left: 50% !important;
     display: flex !important;
     justify-content: center;
-
   }
- 
-  #certifiedPartners .swiper-pagination-bullet{
+
+  #certifiedPartners .swiper-pagination-bullet {
     display: flex !important;
-    width: 8px !important; 
-    height: 8px !important; 
-    border: 2px solid #000000 !important; 
+    width: 8px !important;
+    height: 8px !important;
+    border: 2px solid #000000 !important;
     background: transparent !important;
-    opacity:40% !important;
+    opacity: 40% !important;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
-  #certifiedPartners .swiper-wrapper  {
+  #certifiedPartners .swiper-wrapper , #oursolution .swiper-wrapper {
     padding-bottom: 30px !important;
   }
 
- 
-  /* .swiper-wrapper {
-    height: 570px !important;
-  } */
- .swiper-pagination-vertical.swiper-pagination-bullets  {
+ #oursolution .swiper {
+    height: 450px !important;
+  }
+  .swiper-pagination-vertical.swiper-pagination-bullets {
     top: 95% !important;
     transform: translateY(-50%) !important;
     rotate: 90deg !important;
@@ -368,73 +370,57 @@ html,
     left: 50% !important;
     width: 8px;
   }
+}
 
- 
+@media (max-width: 640px) {
+  #oursolution
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 95% !important;
+    transform: translateX(-50%) !important;
+    left: 50% !important;
+    display: flex !important;
+    justify-content: center;
+    height: 30px !important;
+  }
+  #testimonials
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 97% !important;
+    transform: translateX(-50%) !important;
+    left: 50% !important;
+    display: flex !important;
+    justify-content: center;
+    height: 30px !important;
+  }
+
+  #oursolution .swiper-pagination-bullet,  #testimonials .swiper-pagination-bullet {
+    display: flex !important;
+    width: 8px !important;
+    height: 8px !important;
+    border: 2px solid #000000 !important;
+    background: transparent !important;
+    opacity: 40% !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  #oursolution .swiper-pagination-bullet-active,  #testimonials .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+    opacity: 100% !important;
+
+      }    #oursolution .swiper {
+    height: 450px !important;
+  }
+  }
+  #testimonials .swiper-slide {
+    padding-bottom: 20px;
+  }
+
   
 
 
 
-}
-
-
-@media (max-width: 640px) {
-
-
-  #oursolution .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-    top: 95%!important;
-    transform: translateX(-50%)!important;
-    left: 50%!important;
-    display: flex !important;
-    justify-content: center;
-    height: 30px !important;
-
-  }
-    #testimonials  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
-    top: 95%!important;
-    transform: translateX(-50%)!important;
-    left: 50%!important;
-    display: flex !important;
-    justify-content: center;
-    height: 30px !important;
-
-  }
-
-  #oursolution .swiper-pagination-bullet , #testimonials .swiper-pagination-bullet{
-    display: flex !important;
-    width: 8px !important; 
-    height: 8px !important; 
-    border: 2px solid #000000 !important; 
-    background: transparent !important;
-    opacity:40% !important;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-
-  #oursolution .swiper-pagination-bullet-active ,  #testimonials .swiper-pagination-bullet-active  {
-    background-color: #000 !important;
-    opacity:100% !important;
-
-  /* #oursolution .swiper-wrapper {
-    height: 690px !important;
-  } */
-  }
-  #testimonials .swiper-slide {
-    padding-bottom: 20px;
-   
-}
-
-  /* .swiper-wrapper {
-    height: 570px !important;
-  } */
-
-}
 
 @media (max-width: 446.98px) {
   #testimonials .swiper-slide {
     padding-bottom: 0px;
-   
+  }
 }
-
-}
-
-
-

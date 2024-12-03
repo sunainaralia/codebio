@@ -81,7 +81,7 @@ function Footer() {
         </div>
 
         <div className="flex flex-col md:items-end ">
-          <div className="flex gap-4  justify-between md:justify-start items-start md:items-center ">
+          <div className="flex flex-col md:flex-row gap-4  justify-between md:justify-start items-start md:items-center ">
             <Image
               src={"/vectors/Union.svg"}
               alt=""
@@ -92,7 +92,7 @@ function Footer() {
             <h3 className="text-3xl sm:text-5xl 4xl:text-[80px] font-[900] relative after:absolute after:w-full after:bg-black after:border-2 after:border-black after:left-0 after:-bottom-[20%] after:-translate-y-1/2 md:after:static md:after:border-none">
               Let&apos;s Talk
             </h3>
-            <div className="md:hidden flex gap-5 mb-6 w-[135px] justify-end  flex-wrap">
+            <div className="md:hidden flex gap-5 mb-6 !w-full justify-center mt-6 flex-wrap">
               <SocialButton
                 title={"Facebook"}
                 lightIcon={"/icons/fb-social-icon.svg"}

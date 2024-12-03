@@ -264,7 +264,7 @@ TestimonialsSection.TestimonialCard = ({
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
-          <p className="h-[7em] xl:h-[8em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-xl lg:text-[20px] 4xl:text-[26px] font-normal overflow-hidden">
+          <p className="min-h-[8em] xl:h-[8em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-xl lg:text-[20px] 4xl:text-[26px] font-normal overflow-hidden">
             {description}
           </p>
           <Image
@@ -277,14 +277,14 @@ TestimonialsSection.TestimonialCard = ({
             } lg:hidden block`}
           />
         </div>
-        <div className="div flex justify-between items-center md:block w-full">
+        <div className="div flex justify-between items-center md:block w-full ">
           <div className="block md:hidden ">
             <Avatar>
               <AvatarImage src={image} />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
-          <div className="block w-full">
+          <div className="block w-full min-h-20">
             <h2 className="text-base 4xl:text-[22px] font-bold 4xl:h-[3.5rem] md:h-[2rem] md:text-start text-end">
               {name}
             </h2>

@@ -42,6 +42,7 @@ const handleBlogClick = (url: string | URL | undefined) => {
 };
 
 function ResourcesSections() {
+  const navigate = useRouter();
   const [show, setShow] = useState(0);
 
   const router = useRouter();
@@ -63,6 +64,7 @@ function ResourcesSections() {
       <div className='mt-20 4xl:mt-[175px]'>
         {listOfresources.map((res, index) => (
           <div
+          onClick={() => navigate.push(`/blog/${res.title}`)}
             className={cn(
               ' opacity-65  transition-all duration-500',
               index === show && 'opacity-100 font-bold',
