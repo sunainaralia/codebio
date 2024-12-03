@@ -55,12 +55,12 @@ function ResourcesSections() {
       <div className='flex flex-row justify-between items-center'>
         <div className='flex flex-row gap-4 items-center'>
           <Image alt='' src={'/vectors/Union.svg'} height={30} width={30} />
-          <h3 className="text-lg sm:text-xl lg:text-3xl xl:text-[42px] text-[#525252] font-normal ">Resources</h3>
+          <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 3xl:text-[42px]">Resources</h3>
         </div>
         <AnimatedButton className='mt-0' onClick={handleBlogNavigation}>Explore All</AnimatedButton>
       </div>
       <Separator className='h-px w-full bg-[#D8D8D8] my-4 mt-14' />
-      <div className='mt-[175px]'>
+      <div className='mt-20 3xl:mt-[175px]'>
         {listOfresources.map((res, index) => (
           <div
             className={cn(
@@ -95,8 +95,8 @@ ResourcesSections.ResourceCard = ({
   return (
     <div key={title} className='flex  max-lg:gap-8 flex-wrap w-full justify-between items-center '>
       <div className='div w-full lg:w-1/2 lg:pe-3'>
-        <h2 className='text-xl md:text-4xl lg:text-[30px] 2xl:text-5xl font-bold max-w-[890px] 2xl:!leading-[64px] leading-[80px] lg:leading-[40px] text-black'>{title}</h2>
-        <h4 className='font-normal text-xl lg:text-[30px] text-black mt-4 mb-5'>{readTime}</h4>
+        <h2 className='text-xl md:text-4xl lg:text-[30px] 3xl:text-5xl font-bold max-w-[890px] 3xl:!leading-[64px] leading-[80px] lg:leading-[40px] text-black'>{title}</h2>
+        <h4 className='font-normal text-xl 3xl:text-[30px] text-black my-3 3xl:mt-4  3xl:mb-5 text-[#8D8D8D]'>{readTime}</h4>
         <ArrowIconButton invertArrow onClick={() => handleBlogClick(link)} />
       </div>
       <Image src={image} width={600} height={200} alt='' className='w-full lg:w-1/2' />

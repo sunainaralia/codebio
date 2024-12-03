@@ -16,7 +16,7 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
   return (
     <div
       className={cn(
-        "mt-[27px] 2xl:mt-[60px] pb-[87px] 2xl:pb-[300px] lg:pt-10 xl:pt-20 border-b border-[#D8D8D8]",
+        "mt-[27px] 3xl:mt-[60px] pb-[87px] xl:pb-[150px] 3xl:pb-[300px] lg:pt-10 xl:pt-20 border-b border-[#D8D8D8]",
         className
       )}
     >
@@ -29,13 +29,13 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
           <div className="flex items-center border-b w-full max-w-[700px] justify-between  lg:mt-[65px] mt-[50px]">
             <input
               type="text"
-              placeholder="yournname@email.com"
-              className="w-full border-none mb-2.5 sm:mb-[20px] text-sm md:text-lg xl:text-[26px] font-normal text-[#8D8D8D] outline-none max-w-[600px]"
+              placeholder="yourname@mail.com"
+              className="w-full border-none mb-2.5 3xl:mb-[20px] text-sm sm:text-lg 3xl:text-[26px] font-normal text-[#8D8D8D] outline-none max-w-[600px]"
             />
             <ArrowIconButton
               invertArrow
               onClick={() => {}}
-              className=" mb-2.5 sm:mb-[20px]"
+              className=" mb-2.5 3xl:mb-[20px]"
             />
           </div>
           <div className="lg:text-xl text-[14px] 3xl:text-[26px] w-full mt-[40px] text-[#2B2B2B]">

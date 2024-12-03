@@ -47,8 +47,8 @@ const handleSocialClick = (url: string | URL | undefined) => {
 function Footer() {
   const currentyear=new Date().getFullYear();
   return (
-    <div className=" mt-7 sm:mt-[37px] px-[30px] md:px-0 pb-48">
-      <div className="block md:flex justify-between md:pb-5 border-b border-[#D8D8D8] items-center">
+    <div className=" mt-7 sm:mt-[37px] px-[30px] md:px-0 pb-[164px] 3xl:pb-48">
+      <div className="block md:flex justify-between md:pb-5 border-b border-[#D8D8D8]">
         <div>
           <LottieAnimation
             animationData={require("@/../public/lottiee/HomePage/Footer.json")}

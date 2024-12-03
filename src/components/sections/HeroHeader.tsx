@@ -17,7 +17,7 @@ function HeroHeader(props: {
 }) {
   return (
     <>
-      <div className="md:flex justify-around items-center flex-row pt-8 pb-14 md:py-14 gap-7 lg:h-[750px]">
+      <div className="md:flex justify-around items-center flex-row pt-8 pb-14 md:py-14 gap-7  lg:h-[600px] 3xl:h-[750px]">
         <div className="h-full w-full flex flex-col justify-center items-center col-span-1">
           <div className="flex flex-row items-center gap-4">
             <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
@@ -33,7 +33,7 @@ function HeroHeader(props: {
           </div>
           <h1
             className={cn(
-              "  lg:text-5xl 3xl:text-[120px] text-[42px] font-black mt-6 text-center w-full",
+              "  lg:text-6xl 3xl:text-[120px] text-[42px] font-black mt-6 text-center w-full",
               props.titleClassName,
               "leading-[4rem] lg:leading-[5rem] 3xl:leading-[10rem]"
             )}

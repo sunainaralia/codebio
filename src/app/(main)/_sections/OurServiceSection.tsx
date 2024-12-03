@@ -11,7 +11,7 @@ import { ourWorkData } from "./ourWork";
 
 const OurServiceSection = () => {
   return (
-    <div id="oursolution" className="pb-12 lg:pb-24 pt-[88px] md:pt-24 lg:pt-[150px] 4xl:pt-0 4xl:mt-[354px] 3xl:mt-[120px] ">
+    <div id="oursolution" className="pb-12 xl:pb-0 3xl:pb-24 pt-[88px] md:pt-24 lg:pt-[150px] 4xl:pt-0 4xl:mt-[354px] 3xl:mt-[120px] ">
       <div className="flex gap-4 items-center mb-5 md:mb-[70px]">
         <Image
           src={"/vectors/Union.svg"}
