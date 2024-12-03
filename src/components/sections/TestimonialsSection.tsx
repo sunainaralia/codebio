@@ -176,23 +176,23 @@ function TestimonialsSection() {
               }`}
           />
         </div>
-        <div className="max-sm:w-full 2xl:w-[90%] max-lg:overflow-hidden max-sm:h-[610px] max-md:h-[700px] max-lg:h-[870px]">
+        <div className="max-sm:w-full 2xl:w-[90%]">
           <Swiper
             spaceBetween={30}
-            slidesPerView={2}
-            direction="vertical"
+            slidesPerView={1}
             ref={sliderRef}
+             direction= "horizontal"
             onSlideChange={(e) => {
               setCurrentSlide(e.activeIndex);
             }}
-            className="h-full"
+            // className="h-full"
             modules={[Navigation, Pagination]}
       
         pagination={{ clickable: true }}
         
             onSwiper={(swiper) => console.log(swiper)}
             breakpoints={{
-              1024: {
+              768: {
                 direction: "horizontal",
                 slidesPerView: 2,
                 spaceBetween: 30,
