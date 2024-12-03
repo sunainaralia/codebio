@@ -93,9 +93,9 @@ ResourcesSections.ResourceCard = ({
   image,
 }: ResourceCardProps) => {
   return (
-    <div key={title} className='flex  max-lg:gap-8 flex-wrap w-full justify-between '>
+    <div key={title} className='flex  max-lg:gap-8 flex-wrap w-full justify-between items-center '>
       <div className='div w-full lg:w-1/2 lg:pe-3'>
-        <h2 className='text-xl md:text-4xl 2xl:text-5xl font-bold max-w-[890px] !leading-[64px] text-black'>{title}</h2>
+        <h2 className='text-xl md:text-4xl lg:text-[30px] 2xl:text-5xl font-bold max-w-[890px] 2xl:!leading-[64px] leading-[80px] lg:leading-[40px] text-black'>{title}</h2>
         <h4 className='font-normal text-xl lg:text-[30px] text-black mt-4 mb-5'>{readTime}</h4>
         <ArrowIconButton invertArrow onClick={() => handleBlogClick(link)} />
       </div>

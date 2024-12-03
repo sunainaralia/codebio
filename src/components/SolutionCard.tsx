@@ -21,7 +21,7 @@ function SolutionCard({ icon, title,cardStyling }: SolutionCardProps) {
       `}
     
       > 
-        <div className="flex flex-col justify-center items-center lg:flex-1 flex-0 py-7 lg:py-10 2xl:py-28">
+        <div className="flex flex-col justify-center items-center lg:flex-1 flex-0 py-7 lg:py-20 2xl:py-36">
 
           <Image src={icon} alt={`${title} icon`} width={180} height={180} className="w-12 h-12 lg:w-[150px] lg:h-[130px] 2xl:w-[180px] 2xl:max-w-[180px]" />
         </div>

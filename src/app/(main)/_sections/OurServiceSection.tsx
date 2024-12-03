@@ -11,7 +11,7 @@ import { ourWorkData } from "./ourWork";
 
 const OurServiceSection = () => {
   return (
-    <div id="oursolution" className="pb-12 lg:p b-24 pt-2.5 md:pt-24">
+    <div id="oursolution" className="pb-12 lg:pb-24 pt-[88px] md:pt-24 lg:pt-[150px] 4xl:pt-0 4xl:mt-[354px] 3xl:mt-[120px] ">
       <div className="flex gap-4 items-center mb-5 md:mb-[70px]">
         <Image
           src={"/vectors/Union.svg"}
@@ -43,9 +43,9 @@ const OurServiceSection = () => {
               target="_blank"
               key={index}
               passHref
-              className=""
+              className="!h-full "
             >
-              <div className="md:px-5 bg-white md:border-r-[0.5px] border-y-0 border-[#dbdbdb] text-center cursor-pointer lg:px-10 flex flex-col justify-between hover:bg-primary-natural hover:text-primary-white group duration-300 snap-start hover:rounded-[20px]  md:p-10 max-md:hover:p-2 pb-14">
+              <div className="md:px-5 bg-white md:border-r-[0.5px] border-y-0 border-[#dbdbdb] text-center cursor-pointer lg:px-10 flex flex-col justify-bet ween hover:bg-primary-natural hover:text-primary-white group duration-300 snap-start hover:rounded-[20px]  md:p-10 max-md:hover:p-2 pb-14 ourworkcard">
                 <div className="">
                   {" "}
                   <div className="min-h-[350px">
