@@ -300,6 +300,7 @@ TestimonialsSection.TestimonialCard = ({
         <Separator className="md:hidden block h-px w-full bg-primary-natural my-4" />
         <Separator className=" h-full w-px bg-primary-natural my-4" />
       </div>
+      {/* done */}
     </>
   );
 };
