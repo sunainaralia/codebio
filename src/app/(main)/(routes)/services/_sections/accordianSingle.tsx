@@ -36,15 +36,15 @@ const AccordianSingle = ({
             <div className='flex w-full justify-between items-center'>
               <LottieAnimation
                 animationData={require(`@/../public/lottiee/OurService/DV.json`)}
-                className={`w-16 h-16 max-h-16 max-w-16 ${
+                className={`w-12 h-10 lg:w-28  lg:h-28  lg:max-h-28  lg:max-w-28 ${
                   id % 2 == 0 ? 'order-last' : ''
                 }`}
               />
-              <AnimatedButton className='hidden md:flex mt-0 h-fit'>
+              <AnimatedButton className='hidden md:flex mt-0 h-fit text-[28px] font-bold text-[#2B2B2B]'>
                 Let us Help
               </AnimatedButton>
               <div
-                className={`md:hidden block text-3xl uppercase font-bold ${
+                className={`md:hidden block text-[34px] uppercase font-[900] ${
                   id % 2 != 0 ? 'order-first' : ''
                 }`}
               >
@@ -52,15 +52,15 @@ const AccordianSingle = ({
               </div>
             </div>
 
-            <div className='hidden md:block text-4xl my-10 uppercase font-bold'>
+            <div className='hidden md:block text-4xl lg:text-5xl xl:text-[72px] py-6 xl:pb-10 xl:pt-9 uppercase font-[900]'>
               {service}
             </div>
 
             <div className='flex w-full my-5 justify-between'>
-              <div className='md:w-[400px] text-[#2B2B2B] md:text-start text-center'>
+              <div className='max-w-[900px] text-[#2B2B2B] text-start text-[15px] sm:text-xl md:text-2xl xl:text-3xl xl:!leading-10'>
                 {serviceDataMain[service].description.text}
               </div>
-              <div className='hidden md:block text-2xl underline underline-offset-8'>
+              {/* <div className='hidden md:block text-2xl underline underline-offset-8'>
                 <AccordionTrigger
                   className='gap-4'
                   icon={'/vectors/triggerUp.svg'}
@@ -70,19 +70,19 @@ const AccordianSingle = ({
                 >
                   Explore All
                 </AccordionTrigger>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className='hidden md:block'>
             <AccordionContent>
-              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  relative z-10 py-10 max-w-7xl mx-auto px-5 my-10'>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  relative z-10 py-10 mx-auto my-10'>
                 {Object.keys(serviceDataMain[service].sections)?.map(
                   (data: string, index: number) => (
                     <div
                       className={cn(
-                        'p-12 min-w-[300px] border-0 border-b border-t-0 lg:border-r border-[#D8D8D8]',
-                        index % 3 === 0 && 'lg:border-l border-[#D8D8D8]',
-                        index < 3 && 'lg:border-b-1 border-[#D8D8D8]',
+                        'p-12 min-w-[300px] border-0 border-b border-t-0 lg:border-r border-[#525252]',
+                        index % 3 === 0 && 'lg:border-l border-[#525252]',
+                        index < 3 && 'lg:border-b-1 border-[#525252]',
                         index >=
                           Object.keys(serviceDataMain[service].sections)
                             .length -

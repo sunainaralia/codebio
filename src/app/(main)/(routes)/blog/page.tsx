@@ -25,7 +25,7 @@ function Blog() {
            <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
         </div>
 
-        <div className="block md:hidden  mx-auto text-5xl uppercase font-bold text-center mb-2 ">
+        <div className="block md:hidden  mx-auto text-5xl uppercase font-bold text-center mb-2">
           Blogs
         </div>
       </div>

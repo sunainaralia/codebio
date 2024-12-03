@@ -82,15 +82,16 @@ export const serviceDataMain : any =
     },
     "sections": { 
       "Shopify Theme Builds": "We create custom Shopify themes tailored to your brand's unique identity and business needs, ensuring a seamless and engaging shopping experience for your customers.",
-      "System Integration": "Our system integration services connect various software and applications, enhancing functionality and streamlining your operations for improved efficiency and productivity.",
-      "Magento Theme & Custom Builds": "Specializing in Magento, we design and develop custom themes and builds that provide a robust and scalable platform for your e-commerce business.",
-      "Shopify App Solutions": "Developing custom Shopify apps to extend the functionality of your store, we ensure enhanced performance and a superior user experience.",
       "Replatforming": "Transitioning to headless commerce, we offer re-platforming services that enhance your website's speed, flexibility, and user experience.",
+      "Headless commerce": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "System Integration": "Our system integration services connect various software and applications, enhancing functionality and streamlining your operations for improved efficiency and productivity.",
       "International Expansion": "Helping your business expand globally, we offer solutions to overcome the complexities of international e-commerce, including localization and compliance.",
+      "Wordpress Theme & Custom Builds": "Creating custom WordPress themes and builds, we offer flexible and user-friendly solutions that cater to your content management and e-commerce needs.",
+      "Magento Theme & Custom Builds": "Specializing in Magento, we design and develop custom themes and builds that provide a robust and scalable platform for your e-commerce business.",
       "Angular & Laravel Builds": "Our expertise in Angular and Laravel allows us to create dynamic and high-performing web applications tailored to your specific business requirements.",
+      "Data Migration": "We handle data migration with precision, ensuring a smooth transition of your data from old systems to new, minimizing downtime and data loss.",      
+      "Shopify App Solutions": "Developing custom Shopify apps to extend the functionality of your store, we ensure enhanced performance and a superior user experience.",
       "Custom React Based Web Applications": "Developing custom React-based web applications, we deliver high-performance and scalable solutions that provide an exceptional user experience.",
-      "Wordpress Theme & Custom Builds": "Creating custom WordPress themes and builds, we offer flexible and user-friendly solutions that cater to your content management and e-commerce needs.",      
-      "Data Migration": "We handle data migration with precision, ensuring a smooth transition of your data from old systems to new, minimizing downtime and data loss.",
       
     }
   },
