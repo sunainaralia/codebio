@@ -10,7 +10,7 @@ import { Separator } from '@radix-ui/react-separator';
 
 function ServicesPage() {
   return (
-    <div className='px-[30px] md:px-0'>
+    <div className='px-[30px] md:px-20'>
       {/* Hero header */}
       <div className='md:my-20'>
         <HeroHeader

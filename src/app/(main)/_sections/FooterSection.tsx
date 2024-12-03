@@ -241,7 +241,7 @@ function Footer() {
       </div>
 
       <div className="flex py-4 w-full justify-center md:justify-between">
-        <div className="text-[#8D8D8D] text-sm xl:text-3xl font-medium ">
+        <div className="text-[#8D8D8D] text-sm xl:text-2xl 3xl:text-3xl font-medium ">
           © 2023, CodeBiosis Private Limited.
         </div>
 
@@ -276,4 +276,4 @@ function Footer() {
 }
 
 export default Footer;
-// just a comment
+

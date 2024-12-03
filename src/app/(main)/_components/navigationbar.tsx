@@ -76,7 +76,7 @@ function NavigationBar() {
         />
         <Link
           href={'/'}
-          className='text-xl absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold'
+          className='text-[60px] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold'
         >
           <LottieAnimation
             animationData={require('@/../public/lottiee/HomePage/Logo_JSON.json')}

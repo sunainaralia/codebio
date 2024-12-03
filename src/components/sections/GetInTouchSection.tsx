@@ -26,19 +26,19 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
 
       <div className="md:flex justify-between items-end">
         <div className="w-full md:max-w-[800px]">
-          <div className="flex border-b w-full max-w-[700px] justify-between  lg:mt-[65px] mt-[50px]">
+          <div className="flex items-center border-b w-full max-w-[700px] justify-between  lg:mt-[65px] mt-[50px]">
             <input
               type="text"
               placeholder="yournname@email.com"
-              className="w-full border-none mb-[20px] text-sm md:text-lg xl:text-[26px] font-normal text-[#8D8D8D] outline-none max-w-[600px]"
+              className="w-full border-none mb-2.5 sm:mb-[20px] text-sm md:text-lg xl:text-[26px] font-normal text-[#8D8D8D] outline-none max-w-[600px]"
             />
             <ArrowIconButton
               invertArrow
               onClick={() => {}}
-              className=" mb-[20px]"
+              className=" mb-2.5 sm:mb-[20px]"
             />
           </div>
-          <div className="lg:text-[26px] text-[14px] w-full mt-[40px]">
+          <div className="lg:text-[26px] text-[14px] w-full mt-[40px] text-[#2B2B2B]">
             By providing your email, you agree for us to contact you via email
             with future updates. Your data is stored securely and we never pass
             it on to third parties.

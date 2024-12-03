@@ -12,7 +12,7 @@ function Blog() {
   return (
     <div className="px-[30px] md:px-20">
       <div className="pt-8 pb-1 lg:pb-[80px] lg:pt-[100px] 2xl:pt-[200px] xl:pb-[50px]">
-        <div className="hidden md:block mx-auto lg:text-[55px] 2xl:text-[70px] 3xl:text-[84px] text-[42px]  uppercase font-extrabold text-center mb-2 ">
+        <div className="hidden md:block mx-auto lg:text-[55px] 2xl:text-[70px] 3xl:text-[84px] text-[42px] uppercase font-extrabold text-center mb-2 ">
           Blogs
         </div>
 
@@ -31,10 +31,10 @@ function Blog() {
         </div>
       </div>
 
-      <div className="md:flex flex-wrap">
+      <div className="md:flex flex-wrap border-b md:border-0  border-[#525252]">
         {blogCards.map((card, index) => (
           <div
-            className="flex justify-center md:basis-1/2 2xl:basis-1/4 md:border-b border-[#D8D8D8] "
+            className="flex justify-center md:basis-1/2 2xl:basis-1/4 md:border-b border-[#525252] "
             key={index}
             onClick={() => navigate.push(`/blog/${card.id}`)}
           >
@@ -50,9 +50,9 @@ function Blog() {
           </div>
         ))}
       </div>
-      <div className='hidden md:flex justify-center pt-0 md:pt-12 2xl:pt-[150px]'>
+      {/* <div className='hidden md:flex justify-center pt-0 md:pt-12 2xl:pt-[150px]'>
         <Image src={"/icons/load_more.svg"} alt="" height={30} width={30} />
-      </div>
+      </div> */}
       <div className="flex justify-center py-[60px] text-[18px]">
         <AnimatedButton>Load More</AnimatedButton>
       </div>
