@@ -1,4 +1,4 @@
-/* eslint-disable react/display-name */
+/* eslint-disable react/display-name*/
 "use client";
 
 import { Separator } from "@radix-ui/react-separator";
