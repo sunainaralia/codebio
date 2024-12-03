@@ -71,7 +71,7 @@ function OurOfficeLocatedSection() {
         width={1600}
         height={1200}
         alt=""
-        className=" mx-auto py-12"
+        className=" mx-auto py-16"
       />
      </div>
 
@@ -131,7 +131,7 @@ function OurOfficeLocatedSection() {
         <div className=" flex" style={{ borderBottom: "1px solid lightGrey" }}>
           <div
             style={{ borderRight: "1px solid lightGrey" }}
-            className={`max-w-[740px] px-6 pb-14 4xl:px-[100px]  opacity-50 hover:opacity-100 ${
+            className={`max-w-[740px] px-6 pb-14 4xl:px-[100px]  ${
               showMap === "blr" && "!opacity-100"
             } transition-all duration-300`}
           >
@@ -142,7 +142,7 @@ function OurOfficeLocatedSection() {
           </div>
           <div
             style={{ borderRight: "1px solid lightGrey" }}
-            className={`max-w-[740px] px-6 pb-14 4xl:px-[100px]  opacity-50 hover:opacity-100 ${
+            className={`max-w-[740px] px-6 pb-14 4xl:px-[100px]   ${
               showMap === "blr" && "!opacity-100"
             } transition-all duration-300`}
           >
@@ -153,7 +153,7 @@ function OurOfficeLocatedSection() {
             </div>
           </div>
           <div
-            className={`max-w-[740px] px-6 pb-14 4xl:px-[100px]  opacity-50 hover:opacity-100 ${
+            className={`max-w-[740px] px-6 pb-14 4xl:px-[100px]   ${
               showMap === "blr" && "!opacity-100"
             } transition-all duration-300`}
           >

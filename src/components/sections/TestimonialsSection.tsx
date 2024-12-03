@@ -156,7 +156,7 @@ function TestimonialsSection() {
       </div> */}
       <Separator className="hidden lg:block h-px w-full bg-transparent my-4" />
       <div className="py-8 pt-1">
-        <div className="flex flex-row lg:justify-end items-center gap-6 2xl:translate-y-14 lg:mb-5 2xl:mb-0 relative z-10">
+        <div className="flex flex-row lg:justify-end items-center gap-6 2xl:translate-y-14 lg:mb-5 2xl:mb-0 relative z-10 ">
           <ArrowIconButton
             height={70}
             width={70}
@@ -177,7 +177,7 @@ function TestimonialsSection() {
           />
         </div>
         <div className="max-sm:w-full 2xl:w-[90%]">
-          <Swiper
+          <Swiper 
          
             ref={sliderRef}
             onSlideChange={(e) => {
