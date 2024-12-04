@@ -139,16 +139,16 @@ function BlogDetails() {
         </div>
       </div> */}
 
-      <div className="py-[20px] md:py-[60px] xl:py-[125px]">
+      <div className="py-[20px] md:py-[60px] 3xl:py-[125px]">
         <div className="flex justify-between items-center flex-col xl:flex-row gap-y-[35px] ">
           <div className="xl:w-[49%] ">
-            <div className="flex gap-4 items-center mb-5">
-              <h3 className="text-3xl md:text-[48px] 2xl:text-[60px] font-bold">
+            <div className="flex gap-4 items-center mb-5 max-xl:justify-center ">
+              <h3 className="text-3xl md:text-[48px] 2xl:text-[60px] font-bold  ">
                 Conclusion :{" "}
               </h3>
             </div>
 
-            <div className="text-[#525252] text-lg md:text-2xl 2xl:text-[30px] lg:leading-[40px] leading-[21px] 2xl:max-w-[900px] mt-10 ">
+            <div className="text-[#525252] text-lg md:text-[22px] 3xl:text-[30px] 3xl:leading-[40px] lg:leading-[26px] leading-[21px] 2xl:max-w-[900px] mt-[35px] ">
               In the competitive world of e-commerce, a stunning Shopify design
               system can give you the edge you need to dominate the market. By
               focusing on consistent branding, intuitive navigation, mobile
@@ -175,31 +175,31 @@ function BlogDetails() {
             <div className="flex gap-3 xl:gap-6 text-4xl font-semibold items-center justify-center 2xl:max-w-[825px] flex-wrap ">
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
                 Shopify
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
                 Design System
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
                 Web Development
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
                 E-Commerce
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
                 Shopify Design
               </Button>

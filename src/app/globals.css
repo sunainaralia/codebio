@@ -5,10 +5,10 @@
 /*FONTS*/
 
 @font-face {
-  font-family: 'Satoshi-Variable';
-  src: url('/fonts/Satoshi-Variable.woff2') format('woff2'),
-    url('/fonts/Satoshi-Variable.woff') format('woff'),
-    url('/fonts/Satoshi-Variable.ttf') format('truetype');
+  font-family: "Satoshi-Variable";
+  src: url("/fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("/fonts/Satoshi-Variable.woff") format("woff"),
+    url("/fonts/Satoshi-Variable.ttf") format("truetype");
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
@@ -26,110 +26,110 @@
 */
 
 @font-face {
-  font-family: 'Satoshi-Variable';
-  src: url('/fonts/Satoshi-VariableItalic.woff2') format('woff2'),
-    url('/fonts/Satoshi-VariableItalic.woff') format('woff'),
-    url('/fonts/Satoshi-VariableItalic.ttf') format('truetype');
+  font-family: "Satoshi-Variable";
+  src: url("/fonts/Satoshi-VariableItalic.woff2") format("woff2"),
+    url("/fonts/Satoshi-VariableItalic.woff") format("woff"),
+    url("/fonts/Satoshi-VariableItalic.ttf") format("truetype");
   font-weight: 300 900;
   font-display: swap;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Light.woff2') format('woff2'),
-    url('/fonts/Satoshi-Light.woff') format('woff'),
-    url('/fonts/Satoshi-Light.ttf') format('truetype');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Light.woff2") format("woff2"),
+    url("/fonts/Satoshi-Light.woff") format("woff"),
+    url("/fonts/Satoshi-Light.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-LightItalic.woff2') format('woff2'),
-    url('/fonts/Satoshi-LightItalic.woff') format('woff'),
-    url('/fonts/Satoshi-LightItalic.ttf') format('truetype');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-LightItalic.woff2") format("woff2"),
+    url("/fonts/Satoshi-LightItalic.woff") format("woff"),
+    url("/fonts/Satoshi-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
-    url('/fonts/Satoshi-Regular.woff') format('woff'),
-    url('/fonts/Satoshi-Regular.ttf') format('truetype');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("/fonts/Satoshi-Regular.woff") format("woff"),
+    url("/fonts/Satoshi-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Italic.woff2') format('woff2'),
-    url('/fonts/Satoshi-Italic.woff') format('woff'),
-    url('/fonts/Satoshi-Italic.ttf') format('truetype');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Italic.woff2") format("woff2"),
+    url("/fonts/Satoshi-Italic.woff") format("woff"),
+    url("/fonts/Satoshi-Italic.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Medium.woff2') format('woff2'),
-    url('/fonts/Satoshi-Medium.woff') format('woff'),
-    url('/fonts/Satoshi-Medium.ttf') format('truetype');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("/fonts/Satoshi-Medium.woff") format("woff"),
+    url("/fonts/Satoshi-Medium.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-MediumItalic.woff2') format('woff2'),
-    url('/fonts/Satoshi-MediumItalic.woff') format('woff'),
-    url('/fonts/Satoshi-MediumItalic.ttf') format('truetype');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-MediumItalic.woff2") format("woff2"),
+    url("/fonts/Satoshi-MediumItalic.woff") format("woff"),
+    url("/fonts/Satoshi-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Bold.woff2') format('woff2'),
-    url('/fonts/Satoshi-Bold.woff') format('woff'),
-    url('/fonts/Satoshi-Bold.ttf') format('truetype');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("/fonts/Satoshi-Bold.woff") format("woff"),
+    url("/fonts/Satoshi-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-BoldItalic.woff2') format('woff2'),
-    url('/fonts/Satoshi-BoldItalic.woff') format('woff'),
-    url('/fonts/Satoshi-BoldItalic.ttf') format('truetype');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-BoldItalic.woff2") format("woff2"),
+    url("/fonts/Satoshi-BoldItalic.woff") format("woff"),
+    url("/fonts/Satoshi-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Black.woff2') format('woff2'),
-    url('/fonts/Satoshi-Black.woff') format('woff'),
-    url('/fonts/Satoshi-Black.ttf') format('truetype');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Black.woff2") format("woff2"),
+    url("/fonts/Satoshi-Black.woff") format("woff"),
+    url("/fonts/Satoshi-Black.ttf") format("truetype");
   font-weight: 900;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-BlackItalic.woff2') format('woff2'),
-    url('/fonts/Satoshi-BlackItalic.woff') format('woff'),
-    url('/fonts/Satoshi-BlackItalic.ttf') format('truetype');
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-BlackItalic.woff2") format("woff2"),
+    url("/fonts/Satoshi-BlackItalic.woff") format("woff"),
+    url("/fonts/Satoshi-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-display: swap;
   font-style: italic;
@@ -138,7 +138,7 @@
 body,
 html,
 * {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
 }
 
 /* styles/Preloader.css */
@@ -340,24 +340,41 @@ html,
   display: none !important;
 }
 
-#oursolution .swiper-slide,
-.ourworkcard {
-  min-height: auto;
+.swiper-slide  {
+  height: 100% !important;
+}
+#oursolution .swiper {
+  height: 600px !important;
 }
 
+@media (min-width: 1700px) {
+  #oursolution .swiper {
+    height: 750px !important;
+  }
+}
+@media (min-width: 2000px) {
+  #oursolution .swiper {
+    height: 1050px !important;
+  }
+}
 @media (min-width: 1280px) {
   #oursolution .swiper-slide,
   .ourworkcard {
-    min-height: 840px;
+    /* min-height: 840px; */
   }
 }
+#oursolution .swiper-slide  {
+  margin: 0px !important;
+}
+
+
 @media (max-width: 768px) {
   #certifiedPartners
     .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     top: 95% !important;
     transform: translateX(-50%) !important;
     left: 50% !important;
-    display: flex;
+    display: flex !important;
     justify-content: center;
   }
 
@@ -370,19 +387,13 @@ html,
     opacity: 40% !important;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
-  /* #testimonials .swiper-wrapper .swiper-slide {
-    padding-bottom: 0px !important;
-  }
-  #certifiedPartners .swiper-wrapper {
+  #certifiedPartners .swiper-wrapper , #oursolution .swiper-wrapper {
     padding-bottom: 30px !important;
-  } */
-  /* 
-  #oursolution .swiper-wrapper,
-  .ourworkcard {
-    height: 700px !important;
-  } */
+  }
 
-  #testimonials .swiper-vertical > .swiper-pagination-bullets,
+ #oursolution .swiper {
+    height: 450px !important;
+  }
   .swiper-pagination-vertical.swiper-pagination-bullets {
     top: 95% !important;
     transform: translateY(-50%) !important;
@@ -390,25 +401,6 @@ html,
     transform: translateX(-50%) !important;
     left: 50% !important;
     width: 8px;
-  }
-
-  #testimonials .swiper-pagination-bullet {
-    display: flex !important;
-    width: 8px !important;
-    height: 8px !important;
-    border: 2px solid #000000 !important;
-    opacity: 40% !important;
-
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-
-  /* Change color for the active dot */
-  #testimonials .swiper-pagination-bullet {
-    background-color: transparent !important;
-  }
-  #testimonials .swiper-pagination-bullet-active {
-    background-color: #000 !important;
-    opacity: 100% !important;
   }
 }
 
@@ -418,12 +410,21 @@ html,
     top: 95% !important;
     transform: translateX(-50%) !important;
     left: 50% !important;
-    display: flex;
+    display: flex !important;
+    justify-content: center;
+    height: 30px !important;
+  }
+  #testimonials
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 97% !important;
+    transform: translateX(-50%) !important;
+    left: 50% !important;
+    display: flex !important;
     justify-content: center;
     height: 30px !important;
   }
 
-  #oursolution .swiper-pagination-bullet {
+  #oursolution .swiper-pagination-bullet,  #testimonials .swiper-pagination-bullet {
     display: flex !important;
     width: 8px !important;
     height: 8px !important;
@@ -433,13 +434,25 @@ html,
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
-  #oursolution .swiper-pagination-bullet-active {
+  #oursolution .swiper-pagination-bullet-active,  #testimonials .swiper-pagination-bullet-active {
     background-color: #000 !important;
     opacity: 100% !important;
+
+      }    #oursolution .swiper {
+    height: 450px !important;
+  }
+  }
+  #testimonials .swiper-slide {
+    padding-bottom: 20px;
   }
 
-  /* #oursolution .swiper-wrapper {
-    height: 690px !important;
-  } */
   
+
+
+
+
+@media (max-width: 446.98px) {
+  #testimonials .swiper-slide {
+    padding-bottom: 0px;
+  }
 }

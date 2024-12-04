@@ -32,30 +32,14 @@ const WorkCardscustom = ({
   onClick?: () => void;
 }) => {
   return (
-    <div className="w-full max-2xl:max-w-[1500px] 2xl:!w-full 2xl:px-16">
+    <div className="w-full max-2xl:max-w-[1500px] 2xl:!w-full ">
       <div className="relative">
         {cardType === "horizontal" ? (
           <ParallaxHorizontalScroll images={imgArray || images} />
         ) : (
           <ParallaxTiltedScrollcustom images={imgArray || images} />
         )}
-        <span
-          onClick={onClick}
-          className="absolute -bottom-10 outline outline-8 outline-primary-white right-5 w-14 h-14 bg-primary-natural rounded-full p-2 md:hidden flex justify-center items-center"
-        >
-          <svg
-            width="17"
-            height="22"
-            viewBox="0 0 17 22"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.438008 4.97485L0.438008 0.200779L16.3516 8.39096L16.3516 13.6106L0.438006 21.8008L0.438007 17.0267L11.673 11.0008L0.438008 4.97485Z"
-              fill="white"
-            />
-          </svg>
-        </span>
+        
       </div>
 
       <div className="flex flex-col justify-between h-full">
