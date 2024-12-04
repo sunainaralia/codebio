@@ -12,7 +12,7 @@ const Awards = () => {
       </div>
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       {/* <div className="flex mt-16 4xl:mt-36 4xl:mb-[300px]"> */}
-      <div className="p-10 4xl:p-16 flex flex-wrap gap-6 border-x border-[#525252]">
+      <div className="p-5 xl:p-10 4xl:p-16 flex flex-wrap gap-6 border-x border-[#525252]">
           <Image
             src="/services/award_01-1.svg"
             alt=""
@@ -25,7 +25,7 @@ const Awards = () => {
             through a unique approach.
           </div>
         </div>
-        <div className="p-10 4xl:p-16 flex flex-col gap-6  border-x border-[#525252]">
+        <div className="p-5 xl:p-10 4xl:p-16 flex flex-col gap-6  border-x border-[#525252]">
           <Image
             src="/services/award_03-1.svg"
             alt=""
@@ -38,7 +38,7 @@ const Awards = () => {
             through a unique approach.
           </div>
         </div>
-        <div className="p-10 4xl:p-16 flex flex-col gap-6  border-x border-[#525252]">
+        <div className="p-5 xl:p-10 4xl:p-16 flex flex-col gap-6  border-x border-[#525252]">
           <Image
             src="/services/award_02-1.svg"
             alt=""

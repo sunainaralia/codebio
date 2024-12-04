@@ -81,9 +81,9 @@ const AccordianSingle = ({
                   (data: string, index: number) => (
                     <div
                       className={cn(
-                        'p-6 3xl:p-12 min-w-[300px] border-0 border-b border-t-0 lg:border-r border-[#525252]',
-                        index % 3 === 0 && 'lg:border-l border-[#525252]',
-                        index < 3 && 'lg:border-b-1 border-[#525252]',
+                        'p-6 3xl:p-12 min-w-[300px] border-0 border-b border-t-0 lg:border-x xl:border-l-0 border-[#525252]',
+                        index % 3 === 0 && 'xl:border-l border-[#525252]',
+                        index < 3 && 'xl:border-b-1 border-[#525252]',
                         index >=
                           Object.keys(serviceDataMain[service].sections)
                             .length -

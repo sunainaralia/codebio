@@ -50,7 +50,7 @@ const LetsCollab = ({
         orientation="vertical"
       />
 
-      <div className="flex gap-4 lg:gap-8 text-3xl lg:text-5xl 4xl:text-[70px] font-[900] items-center justify-center md:w-[49%] md:mt-0 mt-10">
+      <div className="flex gap-4 xl:gap-8 text-3xl xl:text-5xl 4xl:text-[70px] font-[900] items-center justify-center md:w-[49%] md:mt-0 mt-10">
         <FlipWords word={title} className="z-[5] w-fit px-0 pb-2" border={8} />
         <Image
           className="w-[48px] h-[48px]  4xl:w-24 4xl:h-20"

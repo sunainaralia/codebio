@@ -20,7 +20,7 @@ function ServicesPage() {
           iconPath={require('@/../public/lottiee/OurService/Service_Hero_Section.json')}
           subText='Driving e-commerce success with data-infused UX design and effective and amazing graphics.'
           buttonText='Get Services'
-          titleClassName='text-3xl 4xl:text-[84px] !leading-[2.5rem] md:!leading-[3rem] lg:!leading-[4rem] 2xl:!leading-[5rem] 4xl:!leading-[7rem] font-[900]'
+          titleClassName='text-3xl 4xl:text-[84px] !leading-[2.5rem] md:!leading-[3rem] lg:!leading-[5rem] 4xl:!leading-[7rem] font-[900]'
         />
       </div>
 
