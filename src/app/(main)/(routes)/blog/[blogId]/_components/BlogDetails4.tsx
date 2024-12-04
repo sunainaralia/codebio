@@ -21,6 +21,7 @@ function BlogDetails4() {
                 </div>
                 <div className='my-5'>
                     <ul className=' list-disc ms-10'>
+                    {/* text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] font-normal mt-[15px] xl:mt-[30px] xl:leading-[40px] leading-[21px] */}
                         <li className=" font-normal text-[15px] md:text-xl xl:text-2xl  3xl:text-[30px] text-[#525252] mt-4 3xl:mt-[30px] xl:leading-[40px] leading-[21px]">
                             Identifying your target audience and defining your brand persona:Understand who your ideal customers are and tailor your content to resonate with them. Define your brand voice, values, and personality to create a consistent and authentic presence.
                         </li>
