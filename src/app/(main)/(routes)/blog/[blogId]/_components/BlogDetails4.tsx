@@ -41,7 +41,7 @@ function BlogDetails4() {
                 <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Creating Compelling Content: Engaging Your Audience
                 </div>
-                <div className="text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px]  !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px]">
+                <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold mt-4  xl:mt-[25px]">
                     Compelling content is the heart of successful social media marketing. Here’s how to captivate your audience:
                 </div>
                 <ol className=' mt-[30px] list-decimal md:ms-10 marker:font-medium'>
@@ -55,7 +55,7 @@ function BlogDetails4() {
                 <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Growing Your Social Media Presence: Building and Engaging Your Community
                 </div>
-                <div className="text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px]  !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px]">
+                <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold mt-4  xl:mt-[25px]">
                     Building a strong and engaged community is crucial for sustained success on social media. Consider the following strategies:
                 </div>
                 <ul className='list-decimal md:ms-10 marker:font-medium'>
@@ -69,7 +69,7 @@ function BlogDetails4() {
                 <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Analytics and Measurement: Tracking Success and Optimizing Performance
                 </div>
-                <div className="text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px]  !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px]">
+                <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold mt-4  xl:mt-[25px]">
                     To ensure your social media efforts are paying off, track and measure your performance:
                 </div>
                 <ul className='list-decimal md:ms-10 marker:font-medium'>
