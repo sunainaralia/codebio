@@ -13,11 +13,11 @@ const DetailPoints = ({ data, indexvalue }: any) => {
                     data.map((point: any, index: number) => (
                         <div className="mt-[43px] xl:pt-12 3xl:pt-[100px]" key={index}>
                             {/* text-xl sm:text-2xl md:text-3xl xl:text-[40px] 3xl:text-[52px] */}
-                            {point.maintitle && <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] md:leading-[3rem] 4xl:leading-[70px] font-bold 3xl:mt-[25px] pb-[43px]">
+                            {point.maintitle && <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold 3xl:mt-[25px] pb-[43px]">
                                 {point.maintitle}
                             </div>}
                             {/* text-lg sm:text-2xl md:text-3xl 2xl:text-[36px] 3xl:text-[42px] */}
-                            <div className=" text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] font-bold 3xl:mt-[25px]">
+                            <div className=" text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold 3xl:mt-[25px]">
                                 {point.title}
                             </div>
                             {/* text-[15px] md:text-xl 2xl:text-2xl 3xl:text-[30px] 3xl:leading-[40px] leading-[21px] */}

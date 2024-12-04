@@ -4,17 +4,19 @@ function BlogDetails4() {
     return (
         <div>
             <div className="pt-[43px] xl:pt-[100px]">
-                <div className="text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px] !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px]">
+            {/* text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px] !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px] */}
+                <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold mt-4  xl:mt-[25px] ">
                     Setting the Foundation of Social Media Marketing for Restaurant
                 </div>
                 <div className=" font-normal text-[15px] md:text-xl xl:text-2xl  3xl:text-[30px] text-[#525252] mt-4 3xl:mt-[30px] xl:leading-[40px] leading-[21px]">Before diving into the strategies, let’s establish a clear understanding of restaurant social media marketing. It encompasses the use of social media platforms to promote your restaurant, engage with your audience, and drive customer actions. By leveraging social media effectively, you can create brand awareness, showcase your menu and ambiance, share updates and promotions, and build a loyal community of customers.
                 </div>
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
-                <div className="text-[26px] sm:text-[33px] lg:text-[40px] 2xl:text-[52px] font-bold !leading-[27px] md:!leading-10 3xl:!leading-[70px]">
+                <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Setting the Foundation ofSocial Media Marketing forRestaurant
                 </div>
-                <div className="text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px] !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px]">
+                {/* text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] */}
+                <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold mt-4  xl:mt-[25px] ">
                     To ensure success in your restaurant’s social media marketing efforts, you need a solid strategy in place. Here are the key steps to consider:
                 </div>
                 <div className='my-5'>
@@ -35,7 +37,7 @@ function BlogDetails4() {
                 </div>
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
-                <div className="text-[26px] sm:text-[33px] lg:text-[40px] 2xl:text-[52px] font-bold !leading-[27px] md:!leading-10 3xl:!leading-[70px]">
+                <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Creating Compelling Content: Engaging Your Audience
                 </div>
                 <div className="text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px]  !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px]">
@@ -49,7 +51,7 @@ function BlogDetails4() {
                 </ol>
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
-                <div className="text-[26px] sm:text-[33px] lg:text-[40px] 2xl:text-[52px] font-bold !leading-[27px] md:!leading-10 3xl:!leading-[70px]">
+                <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Growing Your Social Media Presence: Building and Engaging Your Community
                 </div>
                 <div className="text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px]  !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px]">
@@ -63,7 +65,7 @@ function BlogDetails4() {
                 </ul>
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
-                <div className="text-[26px] sm:text-[33px] lg:text-[40px] 2xl:text-[52px] font-bold !leading-[27px] md:!leading-10 3xl:!leading-[70px]">
+                <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Analytics and Measurement: Tracking Success and Optimizing Performance
                 </div>
                 <div className="text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px]  !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px]">
@@ -77,7 +79,7 @@ function BlogDetails4() {
                 </ul>
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
-                <div className="text-[26px] sm:text-[33px] lg:text-[40px] 2xl:text-[52px] font-bold !leading-[27px] md:!leading-10 3xl:!leading-[70px]">
+                <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Staying Ahead: Emerging Trends and Best Practices in Restaurant Social Media Marketing
                 </div>
                 <ul className='list-decimal md:ms-10 marker:font-medium'>
