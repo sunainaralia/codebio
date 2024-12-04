@@ -48,7 +48,7 @@ function BlogDetails() {
         </div>
       </div>
 
-      <div className="text-center text-[30px] md:text-5xl 2xl:text-[72px]  font-[900] pt-20 xl:pt-[130px] md:max-w-[1150px] mx-auto   ">
+      <div className="text-center text-[30px] md:text-5xl 4xl:text-[72px] font-[900] pt-20 xl:pt-[130px] md:max-w-[1150px] mx-auto 4xl:!leading-[97px]">
         {blogData?.title}
       </div>
       <div className="w-full sm:w-[250px] mx-auto my-[15px] sm:my-5 border-b-[.5px] rounded-[5px] border-[#525252]"></div>
