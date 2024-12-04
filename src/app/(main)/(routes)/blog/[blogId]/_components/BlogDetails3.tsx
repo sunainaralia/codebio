@@ -8,7 +8,7 @@ function BlogDetails3() {
                 <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] leading-[24px] md:leading-[3rem] 4xl:leading-[56px] font-bold xl:mt-[25px]">
                     Estimated eCommerce Website Development Costs in India
                 </div>
-                {/* text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] xl:leading-[40px] leading-[21px] */}
+                {/* text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] 4xl:leading-10  */}
                 <div className="text-[#525252] text-[15px] sm:text-lg  md:text-[20px] 4xl:text-[30px]  4xl:leading-10 font-normal mt-1 sm:mt-[15px] 3xl:mt-[30px] ">
                     The cost for eCommerce website development generally falls within the following ranges:
                 </div>
@@ -20,7 +20,7 @@ function BlogDetails3() {
                         <li className=' font-normal text-[15px] sm:text-lg  md:text-[20px] 4xl:text-[30px] text-[#525252] 4xl:leading-[40px] '>  <span className=' font-bold sm:me-2'> Large eCommerce Websites: </span> ₹10 lakhs to ₹1 crore</li>
                     </ul>
                 </div>
-                <div className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] font-normal mt-[15px] xl:mt-[30px] xl:leading-[40px] leading-[21px]">These estimates depend on factors such as the number of products, payment gateway integrations, and third-party tools required.
+                <div className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] 4xl:leading-10 font-normal mt-[15px] xl:mt-[30px] ">These estimates depend on factors such as the number of products, payment gateway integrations, and third-party tools required.
                 </div>
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
@@ -34,7 +34,7 @@ function BlogDetails3() {
                         <li className=' font-normal text-[15px] sm:text-lg  md:text-[20px] 4xl:text-[30px] text-[#525252] 4xl:leading-[40px]'>  <span className=' font-bold sm:me-2'>Large eCommerce Websites: </span>₹10 lakhs to ₹1 crore, accommodating up to 10,000 products</li>
                     </ul>
                 </div>
-                <div className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] font-normal mt-[15px] xl:mt-[30px] xl:leading-[40px] leading-[21px]">Each of these plans typically includes one year of maintenance.
+                <div className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] 4xl:leading-10 font-normal mt-[15px] xl:mt-[30px] ">Each of these plans typically includes one year of maintenance.
                 </div>
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
@@ -45,7 +45,7 @@ function BlogDetails3() {
                 <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] leading-[24px] md:leading-[3rem] 4xl:leading-[56px] font-bold  my-5 2xl:my-[30px]">
                     Site Domain & Hosting Services:
                 </div>
-                <ul className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] font-normal xl:leading-[40px] leading-[21px] list-disc md:ms-10 marker:font-medium "><li>The cost of a domain name in India ranges from $20 to $60 while hosting services can go up to $350 per month, depending on your business needs and site traffic.</li>
+                <ul className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] 4xl:leading-10 font-normal  list-disc md:ms-10 marker:font-medium "><li>The cost of a domain name in India ranges from $20 to $60 while hosting services can go up to $350 per month, depending on your business needs and site traffic.</li>
                 </ul>
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
@@ -65,7 +65,7 @@ function BlogDetails3() {
                 <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] leading-[24px] md:leading-[3rem] 4xl:leading-[56px] font-bold md:mt-[40px]">
                     Content Creation:
                 </div>
-                <div className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] font-normal mt-[15px] xl:mt-[30px] xl:leading-[40px] leading-[21px]">
+                <div className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] 4xl:leading-10 font-normal mt-[15px] xl:mt-[30px] ">
                     High-quality content, including text, images, and videos, is crucial for engaging users and improving SEO. A professional content writer can add around $1400 to your development costs, helping you create persuasive and SEO-friendly content.
                 </div>
             </div>
@@ -85,7 +85,7 @@ function BlogDetails3() {
                 <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold ">
                     Why Invest in a Professional eCommerce Website Development Package in 2024?
                 </div>
-                <div className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] font-normal mt-[15px] xl:mt-[30px] xl:leading-[40px] leading-[21px]">
+                <div className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] 4xl:leading-10 font-normal mt-[15px] xl:mt-[30px] ">
                     Opting for a professional eCommerce development package offers several advantages:
                 </div>
                   <div >
