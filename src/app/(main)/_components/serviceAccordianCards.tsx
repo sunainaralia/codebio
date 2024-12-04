@@ -12,10 +12,10 @@ const ServiceAccordianCards = ({
   section, data, index
 }: ServiceAccordianCardsProps) => {
   return (
-    <div className="group hover:bg-black transition duration-300 p-4 rounded-md cursor-pointer">
-      <div className="w-full flex justify-between mb-6 items-center gap-4">
+    <div className="group hover:bg-black transition duration-300 3xl:p-4 rounded-md cursor-pointer">
+      <div className="w-full flex justify-between items-center gap-4">
 
-        <div className="text-lg font-semibold text-black group-hover:text-white transition duration-300">
+        <div className="text-lg sm:text-xl lg:text-3xl 3xl:text-4xl text-black font-bold text-black group-hover:text-white transition duration-300">
 
           {data}
 
@@ -25,12 +25,12 @@ const ServiceAccordianCards = ({
 
         animationData={require(`@/../public/lottiee/OurService/${serviceDataMain[section].description.icon}${(index + 1) > 9 ? index + 1 : `0${index + 1}`}.json`)} 
         
-        className="w-10 h-10 max-h-10 max-w-10 transition duration-300 group-hover:filter group-hover:invert" 
+        className="w-10 h-[60px] max-h-[60px] max-w-10 transition duration-300 group-hover:filter group-hover:invert" 
 
         />
 
       </div>
-      <div className="text-[#000000] text-sm">{serviceDataMain[section].sections[data]}</div>
+      <div className="text-[#000000] text-sm sm:text-base lg:text-xl 4xl:text-3xl mt-3 lg:mt-6 4xl:mt-24 4xl:!leading-10">{serviceDataMain[section].sections[data]}</div>
     </div>
   );
 };

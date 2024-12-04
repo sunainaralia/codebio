@@ -12,7 +12,7 @@ interface AnimatedButtonProps {
   onClick?: () => void;
 }
 
-const AnimatedButton = ({ children, className, btnClassName,icon ,onClick }: AnimatedButtonProps) => {
+const AnimatedButton = ({ children, className, btnClassName, icon, onClick }: AnimatedButtonProps) => {
   let ref = useRef<HTMLButtonElement>(null);
 
   const inView = useInView(ref, {
@@ -22,14 +22,14 @@ const AnimatedButton = ({ children, className, btnClassName,icon ,onClick }: Ani
 
   return (
     <button
-      className={cn(`mt-8 relative Animatedbutton rounded-full text-lg lg:text-[28px] font-bold ps-5 pe-3 py-2 md:py-2.5 flex flex-row justify-center items-center gap-2 z-[5] overflow-visible border border-black  ` , className)}
+      className={cn(`mt-8 relative Animatedbutton rounded-full text-lg lg:text-xl 4xl:text-[28px] font-bold ps-5 pe-3 py-2 md:py-2.5 flex flex-row justify-center items-center gap-5 z-[5] overflow-visible border border-black  ` , className)}
       onClick={onClick}
       ref={ref}
     >
-      <div className="z-10">
-      {children}
+      <div className="z-10 text-[#2B2B2B] text-lg lg:text-2xl 3xl:text-[28px] font-bold ">
+        {children}
       </div>
-      <div className={cn("bg-primary-natural relative rounded-full h-8 lg:h-12 w-8 lg:w-12" , btnClassName)}>
+      <div className={cn("bg-primary-natural relative rounded-full h-8 xl:h-12 w-8 xl:w-12", btnClassName)}>
         <motion.div
           initial={{ x: -15, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -42,10 +42,20 @@ const AnimatedButton = ({ children, className, btnClassName,icon ,onClick }: Ani
           className="relative h-full"
         >
           <Image
-            className="absolute top-0 p-[10px]"
-            alt=""
+            className=" xl:block hidden absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2   "
+            alt="img"
             src={icon ? icon : "/icons/angle_icon.svg"}
-            fill
+            // fill      //fill commented and width & height is used instead.
+            width={15}
+            height={20}
+          />
+          <Image
+            className=" xl:hidden absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2   "
+            alt="img"
+            src={icon ? icon : "/icons/angle_icon.svg"}
+            // fill      //fill commented and width & height is used instead.
+            width={10}
+            height={13}
           />
         </motion.div>
       </div>

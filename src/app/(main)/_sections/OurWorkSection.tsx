@@ -14,6 +14,8 @@ import {
   images,
   kotakBank,
   mainPresentation,
+  ourWorkAlmondImg,
+  ourWorkMainImg,
   tataSonet,
 } from "@/components/data/images";
 import { FlipWords } from "../_components/flipWords";
@@ -59,7 +61,7 @@ function OurWorkSection() {
     },
   ];
   return (
-    <div className="md:mt-28 xl:mt-48">
+    <div className="4xl:mt-44 ">
       <Separator className="lg:hidden block h-px w-full bg-[#D8D8D8] mb-7" />
 
       <div className="flex gap-4 items-center  mb-8 lg:mb-[100px] lg:mx-[32px] mx-0 relative z-[2]">
@@ -68,9 +70,9 @@ function OurWorkSection() {
           alt=""
           height={30}
           width={30}
-          className="hidden lg:block"
+          className="hidden lg:block 4xl:h-[30px] 4xl:w-[30px] lg:h-[24px] lg:w-[24px]"
         />
-        <h3 className="text-xl font-normal text-[#525252] lg:text-[42px]">Our Work</h3>
+        <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px]">Our Work</h3>
       </div>
 
       <div className="flex flex-wrap">
@@ -79,7 +81,7 @@ function OurWorkSection() {
             {/* <img className="w-full" src="/works/work-1.png" alt="" /> */}
             <Link href="/our-work/works4" target="_blank">
            
-                <WorkCardscustom {...works[4]} imgArray={axisBank} />
+                <WorkCardscustom {...works[4]} imgArray={ourWorkMainImg} />
              
             </Link>
             <div className="absolute bottom-12 right-3 ">
@@ -119,7 +121,7 @@ function OurWorkSection() {
         <div className="lg:flex w-full lg:w-full  mt-9 lg:mt-16 xl:mt-32 mb-6 justify-center">
           <div className="lg:min-w-[100px]  lg:w-[calc(50%-2px)]">
             <Link href="/our-work/works2" target="_blank">
-              <WorkCards {...works[1]} imgArray={kotakBank} />
+              <WorkCards {...works[1]} imgArray={ourWorkAlmondImg} />
             </Link>
           </div>
 
@@ -188,7 +190,7 @@ function OurWorkSection() {
 
           <div className="lg:min-w-[100px]  lg:w-[calc(50%-2px)] max-w-[900px] flex justify-center items-center my-16 md:my-20 lg:my-0">
             <div
-              className="flex items-center w-fit h-fit m-auto gap-4 "
+              className="flex items-center w-fit scale-75 4xl:scale-100 h-fit m-auto gap-4 "
               style={{ cursor: "pointer" }}
               onClick={() => navigate.push(`/our-work`)}
             >

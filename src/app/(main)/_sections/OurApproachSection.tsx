@@ -14,12 +14,12 @@ function OurApproachSection() {
     router.push('/our-work');
   };
   return (
-    <div className='lg:flex justify-center flex-col md:flex-row pt-[30px] pb-14 md:py-14 lg:mt-44 lg:pt-28 gap-7 2xl:h-[900px]'>
-      <div className='h-full w-full flex flex-col justify-center items-start col-span-1 gap-2 md:gap-5 '>
-        <div className='text-lg font-normal text-[#525252] sm:text-3xl lg:text-[42px]'>
+    <div className='lg:flex justify-center flex-col md:flex-row pb-14 md:pb-14 lg:mt-44 4xl:pt-28 4xl:gap-7 gap-4 4xl:h-[900px]'>
+      <div className='h-full w-full flex flex-col justify-center items-start col-span-1 gap-2 md:gap-4 '>
+        <div className='text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px]'>
           Our Approach
         </div>
-        <h1 className=' text-[34px] md:text-6xl xl:text-[84px] md:!leading-[5rem] xl:!leading-[7rem] font-[900]'>
+        <h1 className=' text-[34px] md:text-6xl lg:text-[50px] 4xl:text-[84px]  md:!leading-[5rem] 4xl:!leading-[7rem] font-[900]'>
         Build. Innovate. Grow.
         </h1>
         <div className='flex h-full w-full my-16 lg:hidden flex-col justify-center items-center col-span-1 relative'>
@@ -28,7 +28,7 @@ function OurApproachSection() {
             className='max-h-[400px] max-w-[400px]'
           />
         </div>
-        <p className='text-[15px] md:text-2xl lg:text-3xl text-center lg:text-start text-[#2B2B2B]'>
+        <p className='text-[15px] md:text-[20px] 4xl:text-3xl text-center lg:text-start text-[#2B2B2B]'>
         We build strong digital foundations, innovate with the latest technology, and drive growth by boosting traffic and engagement. Our mission is to turn your digital goals into real-world success.
         </p>
         <div className='flex lg:block justify-center items-center w-full pb-3'>

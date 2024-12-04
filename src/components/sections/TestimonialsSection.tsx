@@ -1,4 +1,4 @@
-/* eslint-disable react/display-name */
+/* eslint-disable react/display-name*/
 "use client";
 
 import { Separator } from "@radix-ui/react-separator";
@@ -6,8 +6,8 @@ import Image from "next/image";
 import React, { useCallback, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import 'swiper/css/pagination';
-import { Navigation, Pagination } from 'swiper/modules';
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import Rating from "../Rating";
 import ArrowIconButton from "../ArrowIconButton";
@@ -117,8 +117,8 @@ function TestimonialsSection() {
 
   return (
     <div id="testimonials" className="pb-10  lg:flex flex-col ">
-      <div className="lg:flex flex-row justify-between items-center mb-10">
-        <div className="flex flex-row gap-4 items-center">
+      <div className="lg:flex flex-row justify-between  mb-10 items-center">
+        <div className="flex gap-4 items-center">
           <Image
             alt=""
             src={"/vectors/Union.svg"}
@@ -126,11 +126,11 @@ function TestimonialsSection() {
             width={30}
             className="hidden lg:inline"
           />
-          <h3 className="text-lg sm:text-xl lg:text-3xl xl:text-[42px] text-[#525252] font-normal ">
+          <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px] ">
             Testimonials
           </h3>
         </div>
-        <h2 className="text-[28px] lg:text-3xl xl:text-4xl 2xl:text-5xl min-[1800px]:text-6xl text-[#2B2B2B] font-bold mt-2.5 sm:mt-5 lg:mt-0">
+        <h2 className="text-[28px] lg:text-[26px]  4xl:text-5xl min-[1800px]:text-6xl text-[#2B2B2B] font-bold mt-2.5 sm:mt-5 lg:mt-0">
           Their curiosity was piqued right from the start !
         </h2>
       </div>
@@ -156,12 +156,12 @@ function TestimonialsSection() {
       </div> */}
       <Separator className="hidden lg:block h-px w-full bg-transparent my-4" />
       <div className="py-8 pt-1">
-        <div className="flex flex-row lg:justify-end items-center gap-6 2xl:translate-y-14 lg:mb-5 2xl:mb-0 relative z-10">
+        <div className="flex flex-row lg:justify-end items-center gap-6 2xl:translate-y-14 lg:mb-5 2xl:mb-0 relative z-10 ">
           <ArrowIconButton
             height={70}
             width={70}
             onClick={handlePrev}
-            className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2 ${
+            className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2 scale-75 4xl:scale-100  ${
               currentSlide === 0 ? "opacity-50" : ""
             }`}
           />
@@ -170,58 +170,47 @@ function TestimonialsSection() {
             width={70}
             invertArrow
             onClick={handleNext}
-            className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2
+            className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2 scale-75  4xl:scale-100
               ${
                 currentSlide === testimonials.length - 1 - 2 ? "opacity-50" : ""
               }`}
           />
         </div>
-        <div className="max-sm:w-full 2xl:w-[90%] max-lg:overflow-hidden max-sm:h-[610px] max-md:h-[700px] max-lg:h-[870px]">
-          <Swiper
-            spaceBetween={30}
-            slidesPerView={2}
-            direction="vertical"
+        <div className="max-sm:w-full 2xl:w-[90%]">
+          <Swiper 
+         
             ref={sliderRef}
             onSlideChange={(e) => {
               setCurrentSlide(e.activeIndex);
             }}
-            className="h-full"
-            modules={[Navigation, Pagination]}
-      
-        pagination={{ clickable: true }}
-        
             onSwiper={(swiper) => console.log(swiper)}
+            modules={[Pagination, Navigation]}
+            pagination={{
+              clickable: true,
+            }}
+            slidesPerView={1}
+            spaceBetween={10}
             breakpoints={{
-              1024: {
-                direction: "horizontal",
-                slidesPerView: 2,
-                spaceBetween: 30,
-              },
-
-              1280: {
-                direction: "horizontal",
-                slidesPerView: 3,
-                spaceBetween: 30,
-              },
+              768: { slidesPerView: 2, spaceBetween: 20 }, // For tablets
+              1280: { slidesPerView: 3, spaceBetween: 30 }, // For desktops
             }}
           >
             {testimonials.map((item, index) => (
-              <SwiperSlide key={index} className="max-lg:!flex-shrink">
+              <SwiperSlide key={index} >
                 <TestimonialsSection.TestimonialCard
                   description={item.desctiption}
                   image={item.image}
-                  name={item.name}
+                  name={item.name}  
                   rating={item.rating}
                   inverted={index % 2 == 0}
                 />
               </SwiperSlide>
             ))}
-            
           </Swiper>
         </div>
 
-        <div className='flex lg:hidden justify-center items-center w-full pb-3 '>
-          <AnimatedButton >Review all on Clutch</AnimatedButton>
+        <div className="flex lg:hidden justify-center items-center w-full pb-3 ">
+          <AnimatedButton>Review all on Clutch</AnimatedButton>
         </div>
 
         {/* <div className='block md:hidden'>
@@ -256,18 +245,18 @@ TestimonialsSection.TestimonialCard = ({
           alt={""}
           width={90}
           height={70}
-          className={` w-[50px] xl:w-[90px] ${
+          className={` w-[50px] 4xl:w-[90px]  ${
             inverted ? "rotate-180" : ""
           } hidden lg:block`}
         />
 
-        <div className="flex flex-row md:justify-center items-start gap-3 xl:gap-6 mb-10 sm:mb-20 md:mb-0 mt-10 xl:mt-24">
+        <div className="flex flex-row md:justify-center items-start gap-3 4xl:gap-6 mb-10 sm:mb-20 md:mb-0 mt-10 4xl:mt-24">
           <Image
             src={"/vectors/review_appos.svg"}
             alt={""}
             width={40}
             height={40}
-            className={`rotate-180 hidden`}
+            className={`rotate-180 hidden  w-[24px] 4xl:w-[40px] `}
           />
           <div className="hidden md:block">
             <Avatar>
@@ -275,7 +264,7 @@ TestimonialsSection.TestimonialCard = ({
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
-          <p className="h-[7em] lg:h-[12em] xl:h-[10em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-2xl 2xl:text-[26px] font-normal overflow-hidden md:pe-10 lg:pe-0">
+          <p className="min-h-[8em] xl:h-[8em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-xl lg:text-[20px] 4xl:text-[26px] font-normal overflow-hidden">
             {description}
           </p>
           <Image
@@ -288,18 +277,18 @@ TestimonialsSection.TestimonialCard = ({
             } lg:hidden block`}
           />
         </div>
-        <div className="div flex justify-between items-center md:block w-full">
+        <div className="div flex justify-between items-center md:block w-full ">
           <div className="block md:hidden ">
             <Avatar>
               <AvatarImage src={image} />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
-          <div className="block w-full">
-            <h2 className="text-base xl:text-[22px] font-bold md:h-[3.5rem] md:text-start text-end">
+          <div className="block w-full min-h-20">
+            <h2 className="text-base 4xl:text-[22px] font-bold 4xl:h-[3.5rem] md:h-[2rem] md:text-start text-end">
               {name}
             </h2>
-            <Separator className="hidden md:block h-px w-full bg-primary-natural my-4" />
+            <Separator className="hidden md:block h-px w-full bg-primary-natural 4xl:my-4 my-2" />
             <div className="flex flex-row gap-3 items-center md:justify-start justify-end">
               <h2 className="text-2xl md:text-3xl text-[#2B2B2B] font-[900] ">
                 {rating}
@@ -311,6 +300,7 @@ TestimonialsSection.TestimonialCard = ({
         <Separator className="md:hidden block h-px w-full bg-primary-natural my-4" />
         <Separator className=" h-full w-px bg-primary-natural my-4" />
       </div>
+      {/* done */}
     </>
   );
 };

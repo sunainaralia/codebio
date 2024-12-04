@@ -91,6 +91,54 @@ export const mainPresentation = [
     "/Home_Page/Home_Page_Project_Showcase/Main_Presentation_Images/08.png",
     "/Home_Page/Home_Page_Project_Showcase/Main_Presentation_Images/09.png",
 ]
+export const ourWorkAlmondImg = [
+    "/works/almond-img1.png",
+    "/works/almond-img2.png",
+    "/works/almond-img3.png",
+    "/works/almond-img4.png",
+    "/works/almond-img5.png",
+    "/works/almond-img3.png",
+    "/works/almond-img1.png",
+    "/works/almond-img2.png",
+    "/works/almond-img3.png",
+    "/works/almond-img4.png",
+    "/works/almond-img5.png",
+    "/works/almond-img3.png",
+    
+]
+export const ourWorkMainImg = [
+    "/works/main-img1.png",
+    "/works/main-img2.png",
+    "/works/main-img3.png",
+    "/works/main-img4.png",
+    "/works/main-img5.png",
+    "/works/main-img6.png",
+    "/works/main-img7.png",
+    "/works/main-img8.png",
+    "/works/main-img9.png",
+    "/works/main-img10.png",
+    "/works/main-img11.png",
+    "/works/main-img12.png",
+    "/works/main-img13.png",
+    "/works/main-img14.png",
+    "/works/main-img1.png",
+    "/works/main-img2.png",
+    "/works/main-img3.png",
+    "/works/main-img4.png",
+    "/works/main-img5.png",
+    "/works/main-img6.png",
+    "/works/main-img7.png",
+    "/works/main-img8.png",
+    "/works/main-img9.png",
+    "/works/main-img10.png",
+    "/works/main-img11.png",
+    "/works/main-img12.png",
+    "/works/main-img13.png",
+    "/works/main-img14.png",
+    
+    
+    
+]
 
 export const tataSonet = [
     "/Home_Page/Home_Page_Project_Showcase/TATA_Sonnets_Home_Page_Showcase_Screens/Tata_Sonnets_01.png",

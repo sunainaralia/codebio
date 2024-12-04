@@ -76,11 +76,11 @@ function NavigationBar() {
         />
         <Link
           href={'/'}
-          className='text-xl absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold'
+          className='text-[60px] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold'
         >
           <LottieAnimation
             animationData={require('@/../public/lottiee/HomePage/Logo_JSON.json')}
-            className='max-h-[60px] max-w-[240px]'
+            className='4xl:max-h-[90px] 4xl:max-w-[404px]  md:h-[60px] md:w-[240px]  h-[36px] w-[161px]  '
           />
         </Link>
         <div className='hidden md:flex flex-row justify-center items-center gap-3'>
@@ -140,7 +140,7 @@ function NavigationBar() {
 export const SocialButton = ({ title, darkIcon, lightIcon, link, onClick }: any) => (
   <a href={link} target="_blank" rel="noopener noreferrer">
     <button onClick={onClick}>
-      <Image alt={title} src={darkIcon ?? lightIcon} height={60} width={60} className='w-[30px] h-[30px] lg:w-[60px] lg:h-[60px]' />
+      <Image alt={title} src={darkIcon ?? lightIcon} height={60} width={60} className='w-[30px] h-[30px] lg:w-[35px] 4xl:w-[60px] lg:h-[35px] 4xl:h-[60px]' />
     </button>
   </a>
 );

@@ -38,6 +38,10 @@ const config: Config = {
           '100%': { transform: 'translateX(-100%)' },
         },
       },
+      screens: {
+        "3xl": "1700px",
+        "4xl": "2000px"
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
