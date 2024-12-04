@@ -63,6 +63,9 @@ export const FlipWords = ({
               duration: 0.5,
             }}
             className="inline-block"
+            style={{
+              paddingBottom: "15px", // Add padding between text and border
+            }}
           >
             {letter === " " ? "\u00A0" : letter}
           </motion.span>

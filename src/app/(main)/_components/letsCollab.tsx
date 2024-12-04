@@ -11,28 +11,54 @@ interface LetsCollabProps {
   subGHeading?: string;
 }
 
-const LetsCollab = (
-    {className, title, substring , subGHeading}: LetsCollabProps
-) => {
+const LetsCollab = ({
+  className,
+  title,
+  substring,
+  subGHeading,
+}: LetsCollabProps) => {
   return (
-    <div className={cn("md:flex justify-between",
-        className
-    )}>
+    <div className={cn("md:flex justify-between", className)}>
       <div className="md:w-[49%] ">
         <div className="flex gap-4 items-center justify-center md:justify-start mb-5">
-          <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
-          <h3 className="text-xl ">{subGHeading || "Let's Collaborate"}</h3>
+          <Image
+            src={"/vectors/Union.svg"}
+            className="w-4 h-4 4xl:w-[30px] 4xl:h-[30px]"
+            alt=""
+            height={30}
+            width={30}
+          />
+          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] 4xl:text-4xl text-black font-normal ">
+            {subGHeading || "Let's Collaborate"}
+          </h3>
+          <Image
+            src={"/vectors/Union.svg"}
+            className="w-4 h-4 4xl:w-[30px] 4xl:h-[30px]"
+            alt=""
+            height={30}
+            width={30}
+          />
         </div>
 
-        <div className="text-[#525252] md:max-w-[500px] text-sm text-center md:text-start">
-         {substring}
+        <div className="text-[#525252] md:max-w-[930px] 4xl:!leading-10 text-sm sm:base lg:text-xl 4xl:text-3xl font-normal text-center md:text-start">
+          {substring}
         </div>
       </div>
 
-      <Separator className="w-px bg-[#D8D8D8] my-4 h-auto" orientation="vertical" />
+      <Separator
+        className="w-px bg-[#525252] my-4 h-auto"
+        orientation="vertical"
+      />
 
-      <div className="flex gap-3 text-4xl font-semibold items-center justify-center md:w-[49%] md:mt-0 mt-10">
-        <FlipWords word={title} className="z-[5] w-fit px-0 pb-2" border={4} /><Image src={"/illustrations/briefcase.svg"} alt="" height={48} width={48} />
+      <div className="flex gap-4 lg:gap-8 text-3xl lg:text-5xl 4xl:text-[70px] font-[900] items-center justify-center md:w-[49%] md:mt-0 mt-10">
+        <FlipWords word={title} className="z-[5] w-fit px-0 pb-2" border={8} />
+        <Image
+          className="w-[48px] h-[48px]  4xl:w-24 4xl:h-20"
+          src={"/illustrations/briefcase.svg"}
+          alt=""
+          height={48}
+          width={48}
+        />
       </div>
     </div>
   );

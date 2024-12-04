@@ -22,7 +22,7 @@ const AnimatedButton = ({ children, className, btnClassName,icon ,onClick }: Ani
 
   return (
     <button
-      className={cn(`mt-8 relative Animatedbutton rounded-full text-lg lg:text-xl 4xl:text-[28px] font-bold ps-5 pe-3 py-2 md:py-2.5 flex flex-row justify-center items-center gap-2 z-[5] overflow-visible border border-black  ` , className)}
+      className={cn(`mt-8 relative Animatedbutton rounded-full text-lg lg:text-xl 4xl:text-[28px] font-bold ps-5 pe-3 py-2 md:py-2.5 flex flex-row justify-center items-center gap-5 z-[5] overflow-visible border border-black  ` , className)}
       onClick={onClick}
       ref={ref}
     >
