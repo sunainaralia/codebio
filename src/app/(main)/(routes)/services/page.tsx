@@ -20,17 +20,17 @@ function ServicesPage() {
           iconPath={require('@/../public/lottiee/OurService/Service_Hero_Section.json')}
           subText='Driving e-commerce success with data-infused UX design and effective and amazing graphics.'
           buttonText='Get Services'
-          titleClassName='text-[42px] 4xl:text-[84px] xl:!leading-[5rem] 4xl:!leading-[9rem] font-[900]'
+          titleClassName='text-3xl 4xl:text-[84px] !leading-[2.5rem] md:!leading-[3rem] lg:!leading-[5rem] 4xl:!leading-[7rem] font-[900]'
         />
       </div>
 
       <ServiceAccordian />
 
-      {/* <Awards /> */}
+      <Awards />  
 
       <LetsCollab
         title='Got A Project ?'
-        className='py-10 md:my-10 md:mt-28'
+        className='pb-10 md:mb-10 lg:mt-28'
         substring='We’re a team of creatives who are excited about unique ideas and help companies to create amazing identity by crafting top-notch UI/UX & E-Commerce stores.'
       />
       <Separator

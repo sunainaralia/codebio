@@ -12,13 +12,17 @@ const DetailPoints = ({ data, indexvalue }: any) => {
                 {
                     data.map((point: any, index: number) => (
                         <div className="mt-[43px] xl:pt-12 3xl:pt-[100px]" key={index}>
-                            {point.maintitle && <div className="text-xl sm:text-2xl md:text-3xl xl:text-[40px] 3xl:text-[52px] font-bold 3xl:mt-[25px] pb-[43px]">
+                            {/* text-xl sm:text-2xl md:text-3xl xl:text-[40px] 3xl:text-[52px] */}
+                            {point.maintitle && <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] md:leading-[3rem] 4xl:leading-[70px] font-bold 3xl:mt-[25px] pb-[43px]">
                                 {point.maintitle}
                             </div>}
-                            <div className="text-lg sm:text-2xl md:text-3xl 2xl:text-[36px] 3xl:text-[42px] font-bold 3xl:mt-[25px]">
+                            {/* text-lg sm:text-2xl md:text-3xl 2xl:text-[36px] 3xl:text-[42px] */}
+                            <div className=" text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] font-bold 3xl:mt-[25px]">
                                 {point.title}
                             </div>
-                            <div className="text-[#525252] text-[15px] md:text-xl 2xl:text-2xl 3xl:text-[30px] font-normal mt-[15px] 3xl:mt-[30px] 3xl:leading-[40px] leading-[21px]">
+                            {/* text-[15px] md:text-xl 2xl:text-2xl 3xl:text-[30px] 3xl:leading-[40px] leading-[21px] */}
+                            {/* text-sm sm:text-base lg:text-xl 4xl:text-3xl */}
+                            <div className="text-[#525252] text-[15px] sm:text-lg  md:text-[20px] 4xl:text-[30px]  4xl:leading-10 font-normal mt-[15px] 3xl:mt-[30px] ">
                                 {point.description}
                             </div>
 

@@ -23,7 +23,7 @@ function HeroHeader(props: {
             <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
             <h3
               className={cn(
-                `text-lg font-normal text-[#525252] sm:text-[28px] lg:text-[32px] text-center lg:leading-[56px]`,
+                `text-lg font-normal text-[#525252] sm:text-[26px] lg:text-[32px] text-center lg:leading-[56px]`,
                 props.subText && "text-xl "
               )}
             >
@@ -46,7 +46,7 @@ function HeroHeader(props: {
           </div>
 
           {props.buttonText && (
-            <AnimatedButton className="hidden md:block">
+            <AnimatedButton className="hidden md:flex">
               {props.buttonText}
             </AnimatedButton>
           )}
@@ -56,7 +56,7 @@ function HeroHeader(props: {
           {props.hasLottie ? (
             <LottieAnimation
               animationData={props.iconPath ?? ""}
-              className="max-h-[300px] max-w-[300px] md:max-h-[500px] md:max-w-[400px] "
+              className="max-h-[300px] max-w-[300px] md:max-h-[500px] md:max-w-[500px] "
             />
           ) : (
             <Image src={props.iconPath ?? ""} alt="" fill />

@@ -3,7 +3,7 @@
 import LottieAnimation from '@/app/(main)/_components/lottiePlayer';
 import ServiceAccordianCards from '@/app/(main)/_components/serviceAccordianCards';
 import AnimatedButton from '@/components/AnimatedButton';
-import { serviceDataMain } from '@/components/data/services';
+import { serviceDataMain, serviceDataMobile } from '@/components/data/services';
 +7;
 import {
   Accordion,
@@ -31,7 +31,7 @@ const AccordianSingle = ({
   return (
     <div>
       <Accordion type='single' value={value}>
-        <AccordionItem value={'true'} className='my-5 py-5 border-none'>
+        <AccordionItem value={'true'} className='my-5 py-2.5 border-none'>
           <div className=''>
             <div className='flex w-full justify-between items-center'>
               <LottieAnimation
@@ -40,7 +40,7 @@ const AccordianSingle = ({
                   id % 2 == 0 ? 'order-last' : ''
                 }`}
               />
-              <AnimatedButton className='hidden md:flex mt-0 h-fit text-[28px] font-bold text-[#2B2B2B]'>
+              <AnimatedButton className='hidden md:flex mt-0 h-fit text-xl lg:text-[28px] font-bold text-[#2B2B2B]'>
                 Let us Help
               </AnimatedButton>
               <div
@@ -52,13 +52,14 @@ const AccordianSingle = ({
               </div>
             </div>
 
-            <div className='hidden md:block text-4xl lg:text-5xl xl:text-[72px] py-6 xl:pb-10 xl:pt-9 uppercase font-[900]'>
+            <div className='hidden md:block text-2xl lg:text-5xl 4xl:text-[72px] py-3 lg:py-6 4xl:pb-10 4xl:pt-9 uppercase font-[900]'>
               {service}
             </div>
 
-            <div className='flex w-full my-5 justify-between'>
-              <div className='max-w-[900px] text-[#2B2B2B] text-start text-[15px] sm:text-xl md:text-2xl xl:text-3xl xl:!leading-10'>
-                {serviceDataMain[service].description.text}
+            <div className='flex w-full mt-8 lg:my-5 justify-between'>
+              <div className='max-w-[900px] text-[#2B2B2B] text-start text-[15px] sm:text-base lg:text-xl 4xl:text-3xl 4xl:!leading-10'>
+               <span className='hidden md:block'> {serviceDataMain[service].description.text}</span>
+               <span className='md:hidden block'> {serviceDataMobile[service].description.text}</span>
               </div>
               {/* <div className='hidden md:block text-2xl underline underline-offset-8'>
                 <AccordionTrigger
@@ -75,14 +76,14 @@ const AccordianSingle = ({
           </div>
           <div className='hidden md:block'>
             <AccordionContent>
-              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  relative z-10 py-10 mx-auto my-10'>
+              <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 relative z-10 4xl:py-10 mx-auto my-6 lg:my-10'>
                 {Object.keys(serviceDataMain[service].sections)?.map(
                   (data: string, index: number) => (
                     <div
                       className={cn(
-                        'p-12 min-w-[300px] border-0 border-b border-t-0 lg:border-r border-[#525252]',
-                        index % 3 === 0 && 'lg:border-l border-[#525252]',
-                        index < 3 && 'lg:border-b-1 border-[#525252]',
+                        'p-6 3xl:p-12 min-w-[300px] border-0 border-b border-t-0 lg:border-x xl:border-l-0 border-[#525252]',
+                        index % 3 === 0 && 'xl:border-l border-[#525252]',
+                        index < 3 && 'xl:border-b-1 border-[#525252]',
                         index >=
                           Object.keys(serviceDataMain[service].sections)
                             .length -
@@ -121,12 +122,12 @@ const AccordianSingle = ({
               </div>
             </AccordionContent>
           </div>
-          <div className=''>
+          <div className='flex gap-2 flex-wrap md:hidden mt-8'>
             {Object.keys(serviceDataMain[service].sections).map(
               (data, index) => (
                 <Button
                   key={index}
-                  className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'
+                  className='inline-block bg-gray-200 rounded-full px-2.5 h-[35px] text-[11px] sm:text-base font-bold text-[#2B2B2B]'
                   variant={'outline'}
                 >
                   {data}
