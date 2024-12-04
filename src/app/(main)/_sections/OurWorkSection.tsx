@@ -14,6 +14,8 @@ import {
   images,
   kotakBank,
   mainPresentation,
+  ourWorkAlmondImg,
+  ourWorkMainImg,
   tataSonet,
 } from "@/components/data/images";
 import { FlipWords } from "../_components/flipWords";
@@ -79,7 +81,7 @@ function OurWorkSection() {
             {/* <img className="w-full" src="/works/work-1.png" alt="" /> */}
             <Link href="/our-work/works4" target="_blank">
            
-                <WorkCardscustom {...works[4]} imgArray={axisBank} />
+                <WorkCardscustom {...works[4]} imgArray={ourWorkMainImg} />
              
             </Link>
             <div className="absolute bottom-12 right-3 ">
@@ -119,7 +121,7 @@ function OurWorkSection() {
         <div className="lg:flex w-full lg:w-full  mt-9 lg:mt-16 xl:mt-32 mb-6 justify-center">
           <div className="lg:min-w-[100px]  lg:w-[calc(50%-2px)]">
             <Link href="/our-work/works2" target="_blank">
-              <WorkCards {...works[1]} imgArray={kotakBank} />
+              <WorkCards {...works[1]} imgArray={ourWorkAlmondImg} />
             </Link>
           </div>
 
