@@ -173,30 +173,37 @@ html,
 }
 
 .switchParent {
-  padding: 4px;
-  background-color: black;
-  border-radius: 25px;
-  cursor: pointer;
-  overflow: hidden;
-  height: fit-content;
-  width: fit-content;
-}
-.switch {
   position: relative;
-  width: 120px;
-  height: 40px;
+  width: 94px;
+  height: 35px;
   background-color: black;
-  border-radius: 20px;
+  border-radius: 40px;
   cursor: pointer;
   overflow: hidden;
-  color: white;
+}
+
+@media (min-width:768px){
+  .switchParent{
+    width: 130px;
+    height: 50px;
+  }
+}
+@media (min-width:1700px){
+  .switchParent{
+    width: 180px;
+    height: 70px;
+  }
+}
+
+.stopped {
+  left: 7px;
+  color: black;
 }
 
 .slider {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 40%;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
   line-height: 40px;
   border-radius: 20px;
@@ -207,13 +214,32 @@ html,
   background-color: white;
 }
 
-.playing {
-  left: 60%;
-  color: black;
+
+@media (min-width:1700px){
+  .slider{
+    width: 50px;
+    height: 50px;
+  }
+  .stopped {
+    left: 15px;
+    color: black;
+  }
+}
+@media (min-width:768px){
+  .slider{
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width:768px){
+  .slider{
+    width: 25px;
+    height: 25px;
+  }
 }
 
-.stopped {
-  left: 0;
+.playing {
+  left: 60%;
   color: black;
 }
 

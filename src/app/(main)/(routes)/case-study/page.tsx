@@ -97,7 +97,7 @@ const CaseStudiesPage = () => {
           ))}
       </div>
       <div className="flex justify-center py-14">
-        <AnimatedButton className="px-4 py-2 bg-blue-500 text-black rounded-full">
+        <AnimatedButton >
           Load More
         </AnimatedButton>
       </div>
