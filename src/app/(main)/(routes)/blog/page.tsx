@@ -9,6 +9,7 @@ import GetInTouchSection from '@/components/sections/GetInTouchSection';
 import { useRouter } from 'next/navigation';
 function Blog() {
   const navigate = useRouter();
+  // just a comment
   return (
     <div className="px-[30px] md:px-20">
       <div className="pt-8 pb-1 lg:pb-[80px] lg:pt-[100px] 4xl:pt-[200px] xl:pb-[50px]">

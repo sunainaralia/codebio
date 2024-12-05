@@ -28,16 +28,9 @@ const LetsCollab = ({
             height={30}
             width={30}
           />
-          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] 4xl:text-4xl text-black font-normal ">
+          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] 4xl:text-4xl 4xl:leading-[48px] text-black font-medium ">
             {subGHeading || "Let's Collaborate"}
           </h3>
-          <Image
-            src={"/vectors/Union.svg"}
-            className="w-4 h-4 4xl:w-[30px] 4xl:h-[30px]"
-            alt=""
-            height={30}
-            width={30}
-          />
         </div>
 
         <div className="text-[#525252] md:max-w-[930px] 4xl:!leading-10 text-sm sm:base lg:text-xl 4xl:text-3xl font-normal text-center md:text-start">
