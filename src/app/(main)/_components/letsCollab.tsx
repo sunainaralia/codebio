@@ -18,7 +18,7 @@ const LetsCollab = ({
   subGHeading,
 }: LetsCollabProps) => {
   return (
-    <div className={cn("md:flex justify-between px-10 lg:px-[100px] 4xl:mt-[300px] lg:mt-[100px] mt-[50px]", className)}>
+    <div className={cn("md:flex justify-between 4xl:mt-[300px] lg:mt-[100px] mt-[50px]", className)}>
       <div className="md:w-[49%] ">
         <div className="flex gap-4 items-center justify-center md:justify-start mb-5">
           <Image

@@ -11,13 +11,13 @@ import { Separator } from "@/components/ui/separator";
 
 function OurTeam() {
   return (
-    <div>
-      <div className="3xl:mt-[150px] lg:mt-[100px] mt-[60px] 4xl:mb-[175px] md:mb-[50px]">
+    <div className="px-10 md:px-20">
+      <div className="3xl:mt-[150px] lg:mt-[100px] mt-[60px] 4xl:mb-[175px] mb-[50px]">
         <div className=" mx-auto text-3xl  lg:text-4xl xl:text-5xl 4xl:text-[84px] uppercase font-[900] text-center mb-[25px]  ">
           Our Team
         </div>
 
-        <div className="flex w-fit gap-4 items-center md:mb-5 mx-auto">
+        <div className="flex w-fit gap-4 items-center mb-5 mx-auto">
           <Image  className='h-[16px] w-[16px] md:w-[28px] md:h-[28px]  3xl:h-[36px]  3xl:w-[36px] 3xl:mt-[30px]' src={"/vectors/Star 1.svg"} alt="" height={30} width={30} />
           <h3 className="text-md text-center md:text-xl 3xl:text-[42px] text-[#525252] font-normal 3xl:mt-[30px]">
             Brilliant Minds Behind CodeBiosis
