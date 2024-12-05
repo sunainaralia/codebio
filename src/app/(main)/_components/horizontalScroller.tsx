@@ -68,7 +68,7 @@ export const ParallaxHorizontalScroll = ({
             >
               <Image
                 src={el}
-                className={cn("gap-2 h-full rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0", imageH && imageW && `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px] `)}
+                className={cn("gap-2 h-full top-0 rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0", imageH && imageW && `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px] `)}
                 height={imageH || 400}
                 width={imageW || 400}
                 alt="thumbnail"
