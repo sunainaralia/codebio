@@ -87,7 +87,7 @@ function OurWorkSection() {
             <div className="absolute bottom-12 right-3 ">
               <Link href={"/our-work"}>
                 <AnimatedButton
-                  className="bg-[#2B2B2B] text-primary-white hidden lg:flex"
+                  className="bg-[#2B2B2B] !text-primary-white hidden lg:flex"
                   btnClassName="bg-primary-white"
                   icon="/vectors/blacktick.svg"
                 >
