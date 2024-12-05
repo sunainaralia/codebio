@@ -46,7 +46,7 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
         </div>
 
         <AnimatedButton
-          className="hidden xl:flex w-fit h-fit  mt-[40px]"
+          className="hidden xl:flex w-fit h-fit "
           onClick={handleContactNavigation}
         >
           Get in touch

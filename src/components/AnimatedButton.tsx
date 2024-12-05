@@ -26,7 +26,7 @@ const AnimatedButton = ({ children, className, btnClassName, icon, onClick }: An
       onClick={onClick}
       ref={ref}
     >
-      <div className="z-10 text-[#2B2B2B] text-lg lg:text-2xl 3xl:text-[28px] font-bold ">
+      <div className={cn(`z-10 text-[#2B2B2B] text-lg lg:text-2xl 3xl:text-[28px] font-bold` , className)}>
         {children}
       </div>
       <div className={cn("bg-primary-natural relative rounded-full h-8 xl:h-12 w-8 xl:w-12", btnClassName)}>
