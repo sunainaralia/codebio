@@ -27,7 +27,7 @@ const TeamCards = ({
   };
 
   return (
-    <div >
+    <div className="w-[80%]">
       <div className="flex justify-between gap-24">
         <div className="">
           <Image src={image} alt="" width={200} height={200} />
@@ -61,10 +61,10 @@ const TeamCards = ({
         <div className="font-medium 3xl:text-[30px] lg:text-[22px] text-[16px] mt-[15px] text-[#000000] 3xl:leading-[40px]">{role}</div>
         <div className="text-[#525252] 2xl:leading-[32px] text-[12px] 3xl:text-[24px] lg:text-[18px] max-w-[650px] 3xl:mt-[45px] lg:mt-[30px]">{description}</div>
       </div>
-
-      <div className="3xl:max-w-[820px] xl:w-[400px] lg:w-[700px] md:w-[600px]  3xl:mt-[45px] mt-[30px] 3xl:mb-[100px] lg:mb-[50px] mb-[30px]">
+`1  `
+      <div className="3xl:max-w-[100%] xl:w-[400px] lg:w-[700px] md:w-[600px]  3xl:mt-[45px] mt-[30px] 3xl:mb-[100px] lg:mb-[50px] mb-[30px]">
         <div className="3xl:text-[40px] lg:text-[28px] text-[20px]">Expert in:</div>
-        <div className="flex gap-1 flex-wrap 3xl:mt-[40px] lg:mt-[30px] mt-[25px] ">
+        <div className="flex gap-1 flex-wrap 3xl:mt-[40px] lg:mt-[30px] mt-[25px]  4xl:w-[900px] 3xl:w-[800px] w-full">
             {
                 tags.map((tag, index) => (
                     <Button variant={"outline"} key={index} className="text-[10px] me-[14px] mt-[10px] lg:text-[20px] rounded-3xl">

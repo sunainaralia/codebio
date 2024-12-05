@@ -12,7 +12,7 @@ import { Separator } from "@/components/ui/separator";
 function OurTeam() {
   return (
     <div>
-      <div className="my-10">
+      <div className="3xl:mt-[150px] lg:mt-[100px] mt-[60px] 3xl:mb-[275px] lg:mb-[150px] mb-[90px]">
         <div className=" mx-auto text-3xl  xl:text-4xl 3xl:text-[84px] uppercase font-[900] text-center mb-[25px]  ">
           Our Team
         </div>
@@ -30,13 +30,13 @@ function OurTeam() {
         {team.map((card, index) => (
           <div
             className={cn(
-              "flex justify-center basis-1/2 border-b border-[#D8D8D8] my-4 py-4"
+              "flex justify-center basis-1/2 border-b border-[#D8D8D8] mt-[100px]"
             )}
             key={index}
           >
             <div
               className={cn(
-                "w-full flex items-start justify-center",
+                "w-full flex items-start justify-center ",
                 index % 2 === 0 && "border-r border-[#D8D8D8]"
               )}
             >
