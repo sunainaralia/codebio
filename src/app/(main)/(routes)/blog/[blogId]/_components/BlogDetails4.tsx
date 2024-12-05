@@ -8,30 +8,30 @@ function BlogDetails4() {
                 <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold mt-4  xl:mt-[25px] ">
                     Setting the Foundation of Social Media Marketing for Restaurant
                 </div>
-                <div className=" font-normal text-[15px] md:text-xl xl:text-2xl  3xl:text-[30px] text-[#525252] mt-4 3xl:mt-[30px] xl:leading-[40px] leading-[21px]">Before diving into the strategies, let’s establish a clear understanding of restaurant social media marketing. It encompasses the use of social media platforms to promote your restaurant, engage with your audience, and drive customer actions. By leveraging social media effectively, you can create brand awareness, showcase your menu and ambiance, share updates and promotions, and build a loyal community of customers.
+                
+                <div className=" font-normal text-[15px] sm:text-lg  md:text-[20px] 4xl:text-[30px]  4xl:leading-10 text-[#525252] mt-4 3xl:mt-[30px] ">Before diving into the strategies, let’s establish a clear understanding of restaurant social media marketing. It encompasses the use of social media platforms to promote your restaurant, engage with your audience, and drive customer actions. By leveraging social media effectively, you can create brand awareness, showcase your menu and ambiance, share updates and promotions, and build a loyal community of customers.
                 </div>
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
                 <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Setting the Foundation ofSocial Media Marketing forRestaurant
                 </div>
-                {/* text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] */}
                 <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold mt-4  xl:mt-[25px] ">
                     To ensure success in your restaurant’s social media marketing efforts, you need a solid strategy in place. Here are the key steps to consider:
                 </div>
                 <div className='my-5'>
                     <ul className=' list-disc ms-10'>
-                    {/* text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] font-normal mt-[15px] xl:mt-[30px] xl:leading-[40px] leading-[21px] */}
-                        <li className=" font-normal text-[15px] md:text-xl xl:text-2xl  3xl:text-[30px] text-[#525252] mt-4 3xl:mt-[30px] xl:leading-[40px] leading-[21px]">
+                    {/* text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] font-normal mt-[15px] xl:mt-[30px]  */}
+                        <li className=" font-normal text-[15px] sm:text-lg  md:text-[20px] 4xl:text-[30px]  4xl:leading-10 text-[#525252] mt-4 3xl:mt-[30px] ">
                             Identifying your target audience and defining your brand persona:Understand who your ideal customers are and tailor your content to resonate with them. Define your brand voice, values, and personality to create a consistent and authentic presence.
                         </li>
-                        <li className=" font-normal text-[15px] md:text-xl xl:text-2xl  3xl:text-[30px] text-[#525252] mt-4 3xl:mt-[30px] xl:leading-[40px] leading-[21px]">
+                        <li className=" font-normal text-[15px] sm:text-lg  md:text-[20px] 4xl:text-[30px]  4xl:leading-10 text-[#525252] mt-4 3xl:mt-[30px] ">
                             Selecting the right social media platforms for your restaurant:Focus your efforts on platforms that align with your target audience and restaurant concept. Instagram, Facebook, and Twitter are popular choices but consider other platforms like Pinterest or TikTok if they align with your brand and goals.
                         </li>
-                        <li className=" font-normal text-[15px] md:text-xl xl:text-2xl  3xl:text-[30px] text-[#525252] mt-4 3xl:mt-[30px] xl:leading-[40px] leading-[21px]">
+                        <li className=" font-normal text-[15px] sm:text-lg  md:text-[20px] 4xl:text-[30px]  4xl:leading-10 text-[#525252] mt-4 3xl:mt-[30px] ">
                             Developing clear goals and objectives:Determine what you want to achieve through social media marketing. Whether it’s increasing brand awareness, driving more foot traffic, or boosting online orders, having clear goals will guide your strategy.
                         </li>
-                        <li className=" font-normal text-[15px] md:text-xl xl:text-2xl  3xl:text-[30px] text-[#525252] mt-4 3xl:mt-[30px] xl:leading-[40px] leading-[21px]">
+                        <li className=" font-normal text-[15px] sm:text-lg  md:text-[20px] 4xl:text-[30px]  4xl:leading-10 text-[#525252] mt-4 3xl:mt-[30px] ">
                             Conducting competitive analysis:Research your competitors’ social media presence to gain insights into their strategies. Identify what works well for them and find ways to differentiate your restaurant.
                         </li>
                     </ul>
@@ -41,7 +41,7 @@ function BlogDetails4() {
                 <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Creating Compelling Content: Engaging Your Audience
                 </div>
-                <div className="text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px]  !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px]">
+                <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold mt-4  xl:mt-[25px]">
                     Compelling content is the heart of successful social media marketing. Here’s how to captivate your audience:
                 </div>
                 <ol className=' mt-[30px] list-decimal md:ms-10 marker:font-medium'>
@@ -55,7 +55,7 @@ function BlogDetails4() {
                 <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Growing Your Social Media Presence: Building and Engaging Your Community
                 </div>
-                <div className="text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px]  !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px]">
+                <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold mt-4  xl:mt-[25px]">
                     Building a strong and engaged community is crucial for sustained success on social media. Consider the following strategies:
                 </div>
                 <ul className='list-decimal md:ms-10 marker:font-medium'>
@@ -69,7 +69,7 @@ function BlogDetails4() {
                 <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
                     Analytics and Measurement: Tracking Success and Optimizing Performance
                 </div>
-                <div className="text-xl sm:text-[22px] md:text-3xl xl:text-[35px] 3xl:text-[42px] font-bold mt-4  xl:mt-[25px]  !leading-[27px]  md:!leading-[40px] 3xl:!leading-[56px]">
+                <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold mt-4  xl:mt-[25px]">
                     To ensure your social media efforts are paying off, track and measure your performance:
                 </div>
                 <ul className='list-decimal md:ms-10 marker:font-medium'>
