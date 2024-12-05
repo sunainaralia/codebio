@@ -139,7 +139,7 @@ function BlogDetails() {
         </div>
       </div> */}
 
-      <div className="py-[20px] md:py-[60px] 3xl:py-[125px]">
+      <div className="py-[20px] md:py-16 ">
         <div className="flex justify-between items-center flex-col xl:flex-row gap-y-[35px] ">
           <div className="xl:w-[49%] ">
             <div className="flex gap-4 items-center mb-5 max-xl:justify-center ">
