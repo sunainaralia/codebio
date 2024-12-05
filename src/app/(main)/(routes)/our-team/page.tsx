@@ -46,9 +46,9 @@ function OurTeam() {
         ))}
       </div>
 
-      <AnimatedButton className="w-fit mx-auto my-14">Know Them</AnimatedButton>
+      <AnimatedButton className="w-fit mx-auto">Know Them</AnimatedButton>
 
-      <div className="py-14">
+      <div className="py-14 px-10 md:px-20">
         <LetsCollab
           title="Join Our Team"
           substring="We’re a team of creatives who are excited about unique ideas and help digital and fin-tech companies to create amazing identity."
