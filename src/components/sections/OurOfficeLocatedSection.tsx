@@ -128,7 +128,7 @@ function OurOfficeLocatedSection() {
       </ComposableMap> */}
 
       <div className="md:flex md:text-center md:m-auto lg:px-10 justify-center ">
-        <div className=" flex" style={{ borderBottom: "1px solid lightGrey" }}>
+        <div className=" md:flex" style={{ borderBottom: "1px solid lightGrey" }}>
           <div
             style={{ borderRight: "1px solid lightGrey" }}
             className={`max-w-[740px] px-6 pb-14 4xl:px-[100px]  ${
