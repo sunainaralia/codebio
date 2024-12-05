@@ -65,7 +65,7 @@ function CareersPage() {
   return (
     <div>
       <div className="my-10">
-        <div className="w-[900px] mx-auto text-5xl uppercase font-bold text-center mb-2 ">
+        <div className="w-[900px] mx-auto text-5xl 3xl:text-[84px] uppercase font-bold text-center mb-2 ">
           CAREERS
         </div>
 
