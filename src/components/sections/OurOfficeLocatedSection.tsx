@@ -136,7 +136,7 @@ function OurOfficeLocatedSection() {
             } transition-all duration-300`}
           >
             <div className="text-2xl font-[900] lg:text-3xl 4xl:text-5xl">USA</div>
-            <div className="mt-3 text-xl 4xl:text-[28px]">
+            <div className="mt-3 text-xl 4xl:text-[28px] 4xl:!leading-9 font-medium">
               16192 Coastal, Lewes, Delaware 19958, Sussex County, USA
             </div>
           </div>
@@ -147,9 +147,9 @@ function OurOfficeLocatedSection() {
             } transition-all duration-300`}
           >
             <div className="text-2xl font-[900] lg:text-3xl 4xl:text-5xl">Bengaluru</div>
-            <div className="mt-3 text-xl 4xl:text-[28px]">
-              #7A, 3rd floor, 5th crossroad, St Thomas Town Main Road,
-              Kammanahalli Bengaluru -560084
+            <div className="mt-3 text-xl 4xl:text-[28px] 4xl:!leading-9 font-medium">
+            NO.11 (407/52) 28TH CROSS, 11th Main Rd, 4th Block, Jayanagar, Bengaluru, Karnataka 560011
+
             </div>
           </div>
           <div
@@ -158,9 +158,8 @@ function OurOfficeLocatedSection() {
             } transition-all duration-300`}
           >
             <div className="text-2xl font-[900] lg:text-3xl 4xl:text-5xl">Lucknow</div>
-            <div className="mt-3 text-xl 4xl:text-[28px]">
-              Unit no.FF-01, Parsvnath Planet Plaza, Lucknow, Uttar Pradesh
-              226010
+            <div className="mt-3 text-xl 4xl:text-[28px] 4xl:!leading-9 font-medium">
+            302-03, 3rd Floor, Aakriti Tower, Vidhan Sabha Marg, Hazratganj, Lucknow, Uttar Pradesh 226018
             </div>
           </div>
         </div>

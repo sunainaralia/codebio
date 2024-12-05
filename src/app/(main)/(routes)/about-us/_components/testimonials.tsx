@@ -68,34 +68,36 @@ function TestimonialsSection() {
       <div className='md:flex flex-row justify-between items-center mb-5 md:mb-0'>
         <div className='hidden md:flex flex-row gap-4 items-center'>
           <Image alt='' src={'/vectors/Union.svg'} height={30} width={30} />
-          <h3 className='text-xl'>Testimonials</h3>
+          <h3 className='text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px]'>Testimonials</h3>
         </div>
-        <h2 className='text-3xl font-semibold'>
+        <h2 className='text-[28px] lg:text-[26px] 4xl:text-6xl text-[#2B2B2B] font-bold mt-2.5 sm:mt-5 lg:mt-0'>
           Some friends we’ve made in the process !
         </h2>
       </div>
-      <Separator className='hidden md:block h-px w-full bg-[#D8D8D8] my-4' />
+      <Separator className='hidden md:block h-px w-full bg-[#525252] my-4' />
       <div className='hidden md:flex justify-around flex-row py-14 gap-7 h-[200px]'>
         <div className='h-full w-full flex flex-col justify-center col-span-1'>
-          <div className='text-3xl font-semibold'>Excellent Team</div>
-          <p>
+          <div className='text-[15px] sm:text-lg lg:text-xl 4xl:text-4xl 4xl:!leading-[41px]'>Excellent Team</div>
+          <p className='text-[15px] sm:text-lg lg:text-xl 4xl:text-3xl 4xl:!leading-[41px]'>
           Our team stands out for its creativity and skill. We bring together diverse talents to craft exceptional web development, digital marketing, and design solutions. With a shared commitment to excellence, we turn ideas into successful outcomes and drive innovation in every project.
           </p>
         </div>
-        <Separator className='h-full w-px bg-[#D8D8D8]' />
+        <Separator className='h-full w-px bg-[#525252]' />
         <div className='h-full w-full flex flex-col justify-center col-span-1 relative'>
-          <div className='text-3xl font-semibold'>Best Solution Providers</div>
-          <p>
+          <div className='text-[15px] sm:text-lg lg:text-xl 4xl:text-3xl 4xl:!leading-[41px]'>Best Solution Providers</div>
+          <p className='text-[15px] sm:text-lg lg:text-xl 4xl:text-3xl 4xl:!leading-[41px]'>
           We deliver tailored solutions that align with your business goals. Combining cutting-edge technology with industry expertise, we solve complex challenges and drive sustainable growth, exceeding your expectations.
           </p>
         </div>
       </div>
-      <Separator className='hidden md:block h-px w-full bg-[#D8D8D8] my-4' />
+      <Separator className='hidden md:block h-px w-full bg-[#525252] my-4' />
       <div className='mt-20 md:mt-0'>
         <Marquee speed={40}>
           <div className='flex gap-20 w-full px-2 py-4 ob-img'>
             {clientLogos.slice(0, 10).map((logo, index) => (
-              <img
+              <Image
+              width={100}
+              height={100}
                 src={`/logos/HomeClientLogo/${logo}`}
                 alt={`Client Logo ${logo}`}
                 key={index}

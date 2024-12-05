@@ -15,17 +15,17 @@ function OurStatsSection() {
         </p>
       </div>
       <div className='flex'>
-        <StatsInfo count={140} title='Succeeded Projects' />
+        <StatsInfo count={180} title='Succeeded Projects' />
         <Separator className='hidden xl:block h-full w-px bg-[#D8D8D8] p-[.5px] my-4' />
       </div>
       <Separator className='block xl:hidden h-full w-px bg-[#D8D8D8] p-[.5px] my-4' />
       <div className='flex'>
-        <StatsInfo count={4000} title='Working hours were spent' />
+        <StatsInfo count={10000} title='Working hours were spent' />
         <Separator className='hidden xl:block h-full w-px bg-[#D8D8D8] p-[.5px] my-4' />
       </div>
       <Separator className='block xl:hidden h-full w-px bg-[#D8D8D8] p-[.5px] my-4' />
       <div className='flex'>
-        <StatsInfo count={120} title='Stores Optimized' />
+        <StatsInfo count={150} title='Stores Optimized' />
         <Separator className='hidden xl:block h-full w-px bg-[#D8D8D8] p-[.5px] my-4' />
       </div>
       <div className=' hidden xl:flex flex-col justify-end items-end col-span-2'>

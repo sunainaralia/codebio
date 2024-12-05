@@ -131,7 +131,7 @@ function CareersPage() {
           <Separator className="h-px w-full max-w-[100px] bg-[#D8D8D8] my-4 mx-auto" />
           <div className="mt-12">
             {recuritmentData.map((item, index) => (
-              <div className={cn("flex gap-4 items-center my-4 pl-6 border-l border-[#525252] cursor-pointer" , currentCard === index && "font-semibold")} onClick={() => setCurrentCard(index)} key={index}>
+              <div className={cn("flex gap-4 items-center text-3xl my-4 pl-6 border-l border-[#525252] cursor-pointer" , currentCard === index && "font-[900] text-4xl")} onClick={() => setCurrentCard(index)} key={index}>
                 {item.title}
               </div>
             ))}

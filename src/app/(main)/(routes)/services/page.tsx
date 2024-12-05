@@ -26,7 +26,7 @@ function ServicesPage() {
 
       <ServiceAccordian />
 
-      <Awards />  
+      {/* <Awards />   */}
 
       <LetsCollab
         title='Got A Project ?'
