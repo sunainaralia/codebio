@@ -40,4 +40,3 @@ const DetailPoints = ({ data, indexvalue }: any) => {
 
 export default DetailPoints;
 
-// just a comment

@@ -290,7 +290,7 @@ function TestimonialsSection() {
           </div>
         </Marquee>
       </div> */}
-      <div className="sliding-logos-container gap-0 4xl:gap-2.5  overflow-hidden mt-10w 4xl:mt-24">
+      <div className="sliding-logos-container gap-0 4xl:gap-2.5  overflow-hidden">
         {/* Row 1 */}
         <div className="sliding-row gap-14 lg:gap-24 row1">
           {logosRow1.map((logo, index) => (

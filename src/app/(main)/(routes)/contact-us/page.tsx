@@ -8,9 +8,9 @@ import { Separator } from '@/components/ui/separator';
 
 function ContactUs() {
   return (
-    <div className='px-[30px] md:px-0'>
+    <div className='px-[30px] md:px-20'>
       <div className='3xl:mt-[150px] lg:mt-[90px] mt-[30px] '>
-        <div className=' mx-auto text-3xl  xl:text-4xl 4xl:text-[84px] uppercase font-[900] text-center mb-[25px] '>
+        <div className=' mx-auto text-3xl  xl:text-4xl 4xl:text-[84px] uppercase font-[900] text-center mb-[15px] sm:mb-[25px] '>
           CONTACT US
         </div>
 
@@ -25,7 +25,7 @@ function ContactUs() {
 
       <Form />
 
-      <div className='py-14'>
+      <div className='pt-[84px] md:pt-24 2xl:pt-[140px] 4xl:pt-[200px]'>
         <OurOfficeLocatedSection />
       </div>
       <div className='py-14'>
