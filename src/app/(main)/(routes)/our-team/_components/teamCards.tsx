@@ -57,21 +57,21 @@ const TeamCards = ({
       </div>
 
       <div className="">
-        <div className="text-2xl md:text-3xl 4xl:text-[60px] font-semibold capitalize 3xl:mt-[49px] mt-[30px]">{name}</div>
+        <div className="text-2xl md:text-3xl 4xl:text-[60px] 4xl:leading-[80px] font-semibold capitalize 3xl:mt-[49px] mt-[30px]">{name}</div>
         <div className="font-medium 4xl:text-[30px] lg:text-[22px] text-[16px] mt-[15px] text-[#000000] 3xl:leading-[40px]">{role}</div>
         <div className="text-[#525252] 2xl:leading-[32px] text-[12px] 4xl:text-[24px] lg:text-[18px] 3xl:mt-[45px] lg:mt-[30px]">{description}</div>
       </div>
 
-      <div className="w-full 3xl:mt-[45px]">
-        <div className="4xl:text-[40px] lg:text-[28px] text-[20px]">Expert in:</div>
-        <div className="flex gap-2.5 flex-wrap 3xl:mt-[40px] lg:mt-[30px] mt-[25px]  4xl:w-[900px] 3xl:w-[800px] w-full">
-            {
-                tags.map((tag, index) => (
-                    <Button variant={"outline"} key={index} className="text-[10px] lg:text-lg 4xl:text-xl rounded-3xl">
-                        {tag}
-                    </Button>
-                ))
-            }
+      <div className="w-full mt-6 3xl:mt-[45px]">
+        <div className="4xl:text-[40px] lg:text-[28px] text-[20px] font-bold">Expert in:</div>
+        <div className="flex gap-2.5 flex-wrap 3xl:mt-[40px] lg:mt-[30px] mt-[25px]  4xl:w-[900px] 3xl:w-[700px] w-full">
+          {
+            tags.map((tag, index) => (
+              <Button variant={"outline"} key={index} className="text-xs lg:text-lg 4xl:text-xl rounded-3xl">
+                {tag}
+              </Button>
+            ))
+          }
         </div>
       </div>
     </div>
