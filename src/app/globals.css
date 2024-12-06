@@ -394,6 +394,7 @@ html,
  #oursolution .swiper {
     height: 450px !important;
   }
+ 
   .swiper-pagination-vertical.swiper-pagination-bullets {
     top: 95% !important;
     transform: translateY(-50%) !important;
@@ -444,6 +445,7 @@ html,
   }
   #testimonials .swiper-slide {
     padding-bottom: 20px;
+    height: 100%  !important;
   }
 
 @media (max-width: 446.98px) {

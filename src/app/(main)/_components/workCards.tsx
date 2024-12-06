@@ -67,7 +67,7 @@ const WorkCards = ({
             }`}
           >
             {name && (
-              <span className="text-2xl lg:text-[26px] 4xl:text-[38px] text-black font-bold">
+              <span className="text-2xl lg:text-[22px] 4xl:text-[38px] text-black font-bold">
                 {name}
               </span>
             )}
@@ -90,7 +90,7 @@ const WorkCards = ({
           <div className="flex lg:justify-center">
             {strategy && (
               <div className="flex-1">
-                <div className="lg:text-center text-xl sm:text-2xl lg:text-[26px] 4xl:text-[28px] font-bold text-[#525252] py-1">
+                <div className="lg:text-center text-xl sm:text-2xl lg:text-[22px] 4xl:text-[28px] font-bold text-[#525252] py-1">
                   Strategy
                 </div>
                 <div className="text-[12px] text-[#525252] sm:text-base 4xl:text-xl text-start lg:text-center mt-2 font-normal">
@@ -103,7 +103,7 @@ const WorkCards = ({
             )}
             {design && (
               <div className="flex-1">
-                <div className="lg:text-center text-xl sm:text-2xl lg:text-[26px] 4xl:text-[28px] font-bold text-[#525252] py-1">
+                <div className="lg:text-center text-xl sm:text-2xl lg:text-[22px] 4xl:text-[28px] font-bold text-[#525252] py-1">
                   Design
                 </div>
                 <div className="text-[12px] text-[#525252] sm:text-base 4xl:text-xl text-start lg:text-center mt-2 font-normal">

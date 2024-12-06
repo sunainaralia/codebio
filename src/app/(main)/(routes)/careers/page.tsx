@@ -63,15 +63,9 @@ function CareersPage() {
     },
   ];
   return (
-<<<<<<< HEAD
     <div className="px-[30px] md:px-20">
       <div className=" pt-[30px] pb-[50px] sm:py-24 md:py-[120px] 3xl:pt-[150px] 3xl:pb-[250px]  ">
         <div className=" mx-auto lg:text-5xl 2xl:text-[56px] 4xl:text-[84px] sm:text-[42px] text-[30px] uppercase font-[900] text-center mb-[15px] sm:mb-6 leading-[40px] sm:leading-[3rem] 4xl:leading-[113px] ">
-=======
-    <div>
-      <div className="my-10">
-        <div className="w-[900px] mx-auto text-5xl 3xl:text-[84px] uppercase font-bold text-center mb-2 ">
->>>>>>> f78ea85ddf701b2208fda1034b45d9e0be847b7b
           CAREERS
         </div>
 
@@ -94,7 +88,7 @@ function CareersPage() {
             {/* <Image src={"/vectors/Star 1.svg"} alt="" height={20} width={20} /> */}
             <Image className='hidden sm:block' src={"/vectors/Union.svg"} alt="img" height={36} width={36} />
             <Image className='sm:hidden' src={"/vectors/Union.svg"} alt="img" height={16} width={16} />
-            <h3 className="font-normal text-[#525252] text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px]">Job Openings</h3>
+            <h3 className="font-normal text-[#525252] text-lg sm:text-xl lg:text-[28px] 4xl:text-[42px]">Job Openings</h3>
           </div>
 
           <div className="lg:text-6xl 4xl:text-[120px] text-[36px] sm:text-[42px] leading-[48px] sm:leading-[4rem] lg:leading-[5rem] 4xl:leading-[10rem] uppercase font-[900] text-black my-7 4xl:mt-9 4xl:mb-[50px] ">Join Team</div>

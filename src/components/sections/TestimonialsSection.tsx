@@ -126,11 +126,11 @@ function TestimonialsSection() {
             width={30}
             className="hidden lg:inline"
           />
-          <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px] ">
+          <h3 className="text-lg font-normal text-[#525252] sm:text-xl lg:text-[28px] 4xl:text-[42px] ">
             Testimonials
           </h3>
         </div>
-        <h2 className="text-[28px] lg:text-[26px]  4xl:text-5xl min-[1800px]:text-6xl text-[#2B2B2B] font-bold mt-2.5 sm:mt-5 lg:mt-0">
+        <h2 className="text-[28px] lg:text-[22px]  4xl:text-5xl min-[1800px]:text-6xl text-[#2B2B2B] font-bold mt-2.5 sm:mt-5 lg:mt-0">
           Their curiosity was piqued right from the start !
         </h2>
       </div>
@@ -239,7 +239,7 @@ TestimonialsSection.TestimonialCard = ({
 }: TestimonialsardProps) => {
   return (
     <>
-      <div className="md:flex flex-col justify-start items-start gap-6 md:py-0">
+      <div className="md:flex flex-col justify-start items-start gap-6 md:py-0 !h-full">
         <Image
           src={"/vectors/review_appos.svg"}
           alt={""}
@@ -264,7 +264,7 @@ TestimonialsSection.TestimonialCard = ({
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
-          <p className="min-h-[8em] xl:h-[8em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-xl lg:text-[20px] 4xl:text-[26px] font-normal overflow-hidden">
+          <p className="min-h-[8em] xl:h-[8em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-xl lg:text-[20px] 4xl:text-[26px] font-normal overflow-hidden line-clamp-6">
             {description}
           </p>
           <Image
@@ -285,7 +285,7 @@ TestimonialsSection.TestimonialCard = ({
             </Avatar>
           </div>
           <div className="block w-full min-h-20">
-            <h2 className="text-base 4xl:text-[22px] font-bold 4xl:h-[3.5rem] md:h-[2rem] md:text-start text-end">
+            <h2 className="text-base 4xl:text-[22px] font-bold 4xl:h-[3.5rem] md:h-[2.5rem] md:text-start text-end">
               {name}
             </h2>
             <Separator className="hidden md:block h-px w-full bg-primary-natural 4xl:my-4 my-2" />

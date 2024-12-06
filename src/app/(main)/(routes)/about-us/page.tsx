@@ -91,7 +91,7 @@ function AboutUs() {
       <div className="w-fit mx-auto pb-[60px] pt-6 sm:py-20 px-[30px] md:px-20">
         <div className="flex w-fit gap-4 items-center mb-5 mx-auto">
           <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
-          <h3 className="text-lg font-normal text-[#525252] sm:text-[26px] 4xl:text-[42px] lg:text-[32px]">
+          <h3 className="text-lg font-normal text-[#525252] sm:text-xl 4xl:text-[42px] lg:text-[22px]">
             Capabilities
           </h3>
           <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />

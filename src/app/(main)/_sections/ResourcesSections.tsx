@@ -52,13 +52,13 @@ function ResourcesSections() {
   };
 
   return (
-    <div className='hidden md:flex py-14  min-h-[200px]  flex-col '>
+    <div className='hidden md:flex min-h-[200px]  flex-col '>
       <div className='flex flex-row justify-between items-center'>
         <div className='flex flex-row gap-4 items-center'>
           <Image alt='' src={'/vectors/Union.svg'} height={30} width={30} />
-          <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px]">Resources</h3>
+          <h3 className="text-lg font-normal text-[#525252] sm:text-xl lg:text-[28px] 4xl:text-[42px]">Resources</h3>
         </div>
-        <AnimatedButton className='mt-0' onClick={handleBlogNavigation}>Explore All</AnimatedButton>
+        <AnimatedButton className='!mt-0' onClick={handleBlogNavigation}>Explore All</AnimatedButton>
       </div>
       <Separator className='h-px w-full bg-[#D8D8D8] my-4 mt-14' />
       <div className='mt-20 4xl:mt-[175px]'>

@@ -11,7 +11,7 @@ import { ourWorkData } from "./ourWork";
 
 const OurServiceSection = () => {
   return (
-    <div id="oursolution" className="pb-12 4xl:pb-24 pt-[88px] md:pt-24 lg:pt-[100px] 2xl:pb-[150px] 4xl:pt-0 4xl:mt-[254px] md:mt-28 3xl:mt-[100px] ">
+    <div id="oursolution" className="pb-12 4xl:pb-24 pt-[88px] md:pt-0 lg:pt-[10px] 2xl:pb-[150px] 4xl:pt-0 4xl:mt-[254px] md:mt-28 3xl:mt-[100px] ">
       <div className="flex gap-4 items-center mb-5  lg:mb-[70px]">
         <Image
           src={"/vectors/Union.svg"}
@@ -20,7 +20,7 @@ const OurServiceSection = () => {
           width={30}
           className="hidden md:block 4xl:h-[30px] 4xl:w-[30px] lg:h-[24px] lg:w-[24px]"
         />
-        <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px]">
+        <h3 className="text-lg font-normal text-[#525252] sm:text-xl lg:text-[28px] 4xl:text-[42px]">
           Our Solutions
         </h3>
       </div>
