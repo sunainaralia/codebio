@@ -26,18 +26,18 @@ function OurTeam() {
         </div>
       </div>
 
-      <div className="flex flex-wrap py-14 justify-center">
+      <div className="flex flex-wrap py-6 md:py-10 3xl:py-14 4xl:py-[150px] justify-center">
         {team.map((card, index) => (
           <div
             className={cn(
-              "flex justify-center basis-1/2 border-b border-[#D8D8D8] mt-[100px ] py-[30px] 3xl:py-[100px]"
+              "flex justify-center lg:basis-1/2 border-b border-[#D8D8D8] mt-[100px ] py-[30px] sm:py-10 lg:py-16 3xl:py-[100px]"
             )}
             key={index}
           >
             <div
               className={cn(
                 "w-full flex items-start justify-center ",
-                index % 2 === 0 && "border-r border-[#D8D8D8]"
+                index % 2 === 0 && "lg:border-r lg:border-[#D8D8D8]"
               )}
             >
               <TeamCards {...card} />
@@ -48,7 +48,7 @@ function OurTeam() {
 
       <AnimatedButton className="w-fit mx-auto">Know Them</AnimatedButton>
 
-      <div className="py-14">
+      <div className="py-10 2xl:py-14">
         <LetsCollab
           title="Join Our Team"
           substring="We’re a team of creatives who are excited about unique ideas and help digital and fin-tech companies to create amazing identity."
