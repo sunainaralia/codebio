@@ -172,34 +172,34 @@ function BlogDetails() {
             orientation="horizontal"
           />
           <div className="xl:w-[49%] ">
-            <div className="flex gap-3 xl:gap-6 text-4xl font-semibold items-center justify-center 2xl:max-w-[825px] flex-wrap ">
+            <div className="flex gap-3 xl:gap-6 text-4xl font-semibold items-center max-4xl:justify-center 4xl:ps-[100px] 2xl:max-w-[825px] flex-wrap ">
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px] !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
-                Shopify
+              Social Media
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px] !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
-                Design System
+               Digital Marketing
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px] !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
-                Web Development
+               Online Presence
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px] !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
-                E-Commerce
+               B2C
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 md:py-[28px] font-bold text-[11px] sm:text-lg md:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px] !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
                 Shopify Design
               </Button>

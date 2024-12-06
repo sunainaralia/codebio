@@ -14,7 +14,7 @@ function BlogDetails4() {
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
                 <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold">
-                    Setting the Foundation ofSocial Media Marketing forRestaurant
+                    Setting the Foundation of Social Media Marketing forRestaurant
                 </div>
                 <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] 4xl:leading-[56px] font-bold mt-4  xl:mt-[25px] ">
                     To ensure success in your restaurant’s social media marketing efforts, you need a solid strategy in place. Here are the key steps to consider:
