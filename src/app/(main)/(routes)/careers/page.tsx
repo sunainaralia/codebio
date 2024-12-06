@@ -153,7 +153,7 @@ function CareersPage() {
         </div>
       </div>
 
-      <div className="pt-[100px] pb-20 lg:py-[150px] 2xl:py-[250px] 4xl:pt-[350px] 4xl:pb-[310px]">
+      <div className="">
         <LetsCollab title="Meet the team" className="" substring="From creative thinkers to technical experts, our team is united by a passion for innovation and a dedication to excellence. Get to know the faces behind our success stories, and discover what drives each member to contribute their unique skills and perspectives to our mission." subGHeading="Brilliant Minds Behind CodeBiosis" />
       </div>
     </div>

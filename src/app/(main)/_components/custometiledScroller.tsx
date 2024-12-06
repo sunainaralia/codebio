@@ -80,11 +80,7 @@ export const ParallaxTiltedScrollcustom = ({
             <div
               key={partIdx}
               className={cn(
-<<<<<<< HEAD
-                "flex w-full h-[240px] 4xl:h-[260px] overflow-x-hidden gap-2 sm:gap-4 justify-center items-center", // Ensure each part is centered
-=======
                 "flex w-full h-[120px]  md:h-[180px] 2xl:h-[240px] 4xl:h-[260px] overflow-x-hidden gap-2 sm:gap-4 justify-center items-center", // Ensure each part is centered
->>>>>>> 9c77c45daf7c703f8935ea5cfc6703c55cdafb0e
                 imageH ? `h-[${imageH}px]` : "" // Image height remains the same
               )}
             >
