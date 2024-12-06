@@ -6,12 +6,12 @@ import CountUp from "react-countup";
 
 function OurStatsRightSection() {
   return (
-    <div className="my-20 mt-5 py-24  min-h-[200px]  grid grid-cols-5">
-      <div className="flex col-span-2">
+    <div className="my-20 mt-5 pb-20 lg:py-24  min-h-[200px]  grid grid-cols-5">
+      <div className="flex col-span-5 xl:col-span-2">
         <div className="flex flex-col w-full items-start  ">
-          <h1 className="text-[36px] font-black mb-2 md:h-[1.7em]">Our Stats</h1>
-          <Separator className="h-px w-full bg-[#D8D8D8] my-4" />
-          <p className="text-sm sm:text-xl font-medium ">
+          <h1 className="text-[36px] lg:text-[50px] 4xl:text-[96px] leading-[129px] font-black mb-2">Our Stats</h1>
+          <Separator className="h-px w-full bg-[#525252] my-4" />
+          <p className="text-sm sm:text-xl 4xl:text-4xl font-medium p-4 h-[6rem] 4xl:h-[3rem] text-[#2B2B2B">
             Numbers don’t lie. We have an unparalleled 
             <br />
             track record of digital excellence.
@@ -19,15 +19,15 @@ function OurStatsRightSection() {
         </div>
         <Separator className="h-full w-px bg-[#525252] p-[.5px] my-4" />
       </div>
-      <div className="flex">
+      <div className="flex col-span-1    ">
         <StatsInfo count={180} title="Succeeded Projects" />
         <Separator className="h-full w-px bg-[#525252] p-[.5px] my-4" />
       </div>
-      <div className="flex">
+      <div className="flex col-span-1">
         <StatsInfo count={10000} title="Working hours were spent" />
         <Separator className="h-full w-px bg-[#525252] p-[.5px] my-4" />
       </div>
-      <div className="flex">
+      <div className="flex col-span-1">
         <StatsInfo count={150} title="Stores Optimized" />
         <Separator className="h-full w-px bg-[#525252] p-[.5px] my-4" />
       </div>

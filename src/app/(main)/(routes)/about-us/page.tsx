@@ -243,7 +243,7 @@ function AboutUs() {
         />
       </div>
 
-      <div className="mb-20 md:mb-0 hidden lg:block">
+      <div className="mb-20  md:my-44 hidden lg:block">
         <TestimonialsSection />
       </div>
       <div className="hidden md:block px-[30px] md:px-20">
