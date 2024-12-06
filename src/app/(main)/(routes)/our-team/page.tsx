@@ -12,7 +12,7 @@ import { Separator } from "@/components/ui/separator";
 function OurTeam() {
   return (
     <div>
-      <div className="my-10">
+      <div className="4xl:my-[150px]">
         <div className="w-[900px] mx-auto text-5xl uppercase font-bold text-center mb-2 ">
           Our Team
         </div>
