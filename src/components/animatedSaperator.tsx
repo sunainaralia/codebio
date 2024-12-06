@@ -20,7 +20,7 @@ const AnimatedSeparator: React.FC<AnimatedSeparatorProps> = ({
       transition={{ duration: duration }}
     >
       <Separator
-        className={cn(className, "h-px bg-[#D8D8D8] w-full opacity-50")}
+        className={cn(className, "h-px bg-[#525252] w-full opacity-50")}
       />
     </motion.div>
   );

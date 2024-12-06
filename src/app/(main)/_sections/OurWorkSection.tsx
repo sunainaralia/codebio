@@ -61,7 +61,7 @@ function OurWorkSection() {
     },
   ];
   return (
-    <div className="4xl:mt-44 ">
+    <div className=" md:mt-24 4xl:mt-44 ">
       <Separator className="lg:hidden block h-px w-full bg-[#D8D8D8] mb-7" />
 
       <div className="flex gap-4 items-center  mb-8 lg:mb-[100px] lg:mx-[32px] mx-0 relative z-[2]">

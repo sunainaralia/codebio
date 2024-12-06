@@ -57,7 +57,7 @@ function OurOfficeLocatedSection() {
     );
   };
   return (
-    <div className="pt-20">
+    <div >
       <div className="text-lg font-normal text-[#525252] sm:text-[26px] 4xl:text-[42px] lg:text-[32px] text-center">
         Our Offices
       </div>
@@ -65,15 +65,15 @@ function OurOfficeLocatedSection() {
         We&#39;re Located At
       </div>
 
-     <div className="relative">
-     <Image
-        src={map}
-        width={1600}
-        height={1200}
-        alt=""
-        className=" mx-auto py-16"
-      />
-     </div>
+      <div className="relative">
+        <Image
+          src={map}
+          width={1600}
+          height={1200}
+          alt=""
+          className=" mx-auto py-16"
+        />
+      </div>
 
       {/* <ComposableMap
         focusable={false}
@@ -127,40 +127,34 @@ function OurOfficeLocatedSection() {
         </Marker>
       </ComposableMap> */}
 
-      <div className="md:flex md:text-center md:m-auto lg:px-10 justify-center ">
-        <div className=" flex" style={{ borderBottom: "1px solid lightGrey" }}>
+      <div className="flex md:text-center md:m-auto 3xl:px-10 justify-center ">
+        <div className="flex flex-col xl:flex-row xl:border-b xl:border-[#525252] " >
           <div
-            style={{ borderRight: "1px solid lightGrey" }}
-            className={`max-w-[740px] px-6 pb-14 4xl:px-[100px]  ${
-              showMap === "blr" && "!opacity-100"
-            } transition-all duration-300`}
+            className={`xl:px-6 mt-6 sm:mt-10 xl:mt-0 pb-5 sm:pb-9 xl:pb-14 4xl:px-[100px] max-xl:border-b max-xl:border-[#525252] xl:border-r xl:border-[#525252] ${showMap === "blr" && "!opacity-100"
+              } transition-all duration-300`}
           >
-            <div className="text-2xl font-[900] lg:text-3xl 4xl:text-5xl">USA</div>
-            <div className="mt-3 text-xl 4xl:text-[28px]">
+            <div className="text-2xl font-[900] md:text-3xl 4xl:text-5xl">USA</div>
+            <div className="mt-1 md:mt-3 text-sm md:text-xl 4xl:text-[28px] 4xl:!leading-9 font-medium">
               16192 Coastal, Lewes, Delaware 19958, Sussex County, USA
             </div>
           </div>
           <div
-            style={{ borderRight: "1px solid lightGrey" }}
-            className={`max-w-[740px] px-6 pb-14 4xl:px-[100px]   ${
-              showMap === "blr" && "!opacity-100"
-            } transition-all duration-300`}
+            className={`xl:px-6 mt-6 sm:mt-10 xl:mt-0 pb-5 sm:pb-9 xl:pb-14 4xl:px-[100px] max-xl:border-b max-xl:border-[#525252] xl:border-r xl:border-[#525252]  ${showMap === "blr" && "!opacity-100"
+              } transition-all duration-300`}
           >
-            <div className="text-2xl font-[900] lg:text-3xl 4xl:text-5xl">Bengaluru</div>
-            <div className="mt-3 text-xl 4xl:text-[28px]">
-              #7A, 3rd floor, 5th crossroad, St Thomas Town Main Road,
-              Kammanahalli Bengaluru -560084
+            <div className="text-2xl font-[900] md:text-3xl 4xl:text-5xl">Bengaluru</div>
+            <div className="mt-1 md:mt-3 text-sm md:text-xl 4xl:text-[28px] 4xl:!leading-9 font-medium">
+              NO.11 (407/52) 28TH CROSS, 11th Main Rd, 4th Block, Jayanagar, Bengaluru, Karnataka 560011
+
             </div>
           </div>
           <div
-            className={`max-w-[740px] px-6 pb-14 4xl:px-[100px]   ${
-              showMap === "blr" && "!opacity-100"
-            } transition-all duration-300`}
+            className={`xl:px-6 mt-6 sm:mt-10 xl:mt-0 pb-5 sm:pb-9 xl:pb-14 4xl:px-[100px] max-xl:border-b max-xl:border-[#525252]  ${showMap === "blr" && "!opacity-100"
+              } transition-all duration-300`}
           >
-            <div className="text-2xl font-[900] lg:text-3xl 4xl:text-5xl">Lucknow</div>
-            <div className="mt-3 text-xl 4xl:text-[28px]">
-              Unit no.FF-01, Parsvnath Planet Plaza, Lucknow, Uttar Pradesh
-              226010
+            <div className="text-2xl font-[900] md:text-3xl 4xl:text-5xl">Lucknow</div>
+            <div className="mt-1 md:mt-3 text-sm md:text-xl 4xl:text-[28px] 4xl:!leading-9 font-medium">
+              302-03, 3rd Floor, Aakriti Tower, Vidhan Sabha Marg, Hazratganj, Lucknow, Uttar Pradesh 226018
             </div>
           </div>
         </div>

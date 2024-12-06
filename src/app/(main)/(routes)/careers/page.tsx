@@ -63,35 +63,47 @@ function CareersPage() {
     },
   ];
   return (
+<<<<<<< HEAD
+    <div className="px-[30px] md:px-20">
+      <div className=" pt-[30px] pb-[50px] sm:py-24 md:py-[120px] 3xl:pt-[150px] 3xl:pb-[250px]  ">
+        <div className=" mx-auto lg:text-5xl 2xl:text-[56px] 4xl:text-[84px] sm:text-[42px] text-[30px] uppercase font-[900] text-center mb-[15px] sm:mb-6 leading-[40px] sm:leading-[3rem] 4xl:leading-[113px] ">
+=======
     <div>
       <div className="my-10">
-        <div className="w-[900px] mx-auto text-5xl uppercase font-bold text-center mb-2 ">
+        <div className="w-[900px] mx-auto text-5xl 3xl:text-[84px] uppercase font-bold text-center mb-2 ">
+>>>>>>> f78ea85ddf701b2208fda1034b45d9e0be847b7b
           CAREERS
         </div>
 
-        <div className="flex w-fit gap-4 items-center mb-5 mx-auto">
-          <Image src={"/vectors/Star 1.svg"} alt="" height={30} width={30} />
-          <h3 className="text-xl text-[#525252]">
-            Our friendly team would love to hear from you
+        <div className="flex w-fit gap-3 sm:gap-4 items-center mx-auto">
+          {/* <Image src={"/vectors/Star 1.svg"} alt="" height={30} width={30} /> */}
+          <Image className='hidden sm:block' src={"/vectors/Union.svg"} alt="img" height={30} width={30} />
+          <Image className='sm:hidden' src={"/vectors/Union.svg"} alt="img" height={16} width={16} />
+          <h3 className="md:text-2xl lg:text-3xl 4xl:text-[42px] text-lg text-[#525252]  font-normal">
+            Explore Exciting Opportunities
           </h3>
-          <Image src={"/vectors/Star 1.svg"} alt="" height={30} width={30} />
+          {/* <Image src={"/vectors/Star 1.svg"} alt="" height={30} width={30} /> */}
+          <Image className='hidden sm:block' src={"/vectors/Union.svg"} alt="img" height={30} width={30} />
+          <Image className='sm:hidden' src={"/vectors/Union.svg"} alt="img" height={16} width={16} />
         </div>
       </div>
 
-      <div className="grid grid-cols-2 py-14 grid-rows-2 gap-12">
+      <div className="grid lg:grid-cols-2 lg:grid-rows-2 gap-y-[ 100px] gap-10 lg:gap-14 3xl:gap-[100px]">
         <div className=" row-span-2">
-          <div className="flex gap-2 items-center">
-            <Image src={"/vectors/Star 1.svg"} alt="" height={20} width={20} />
-            <h3 className=" text-[#525252]">Job Openings</h3>
+          <div className="flex gap-[22px]  items-center">
+            {/* <Image src={"/vectors/Star 1.svg"} alt="" height={20} width={20} /> */}
+            <Image className='hidden sm:block' src={"/vectors/Union.svg"} alt="img" height={36} width={36} />
+            <Image className='sm:hidden' src={"/vectors/Union.svg"} alt="img" height={16} width={16} />
+            <h3 className="font-normal text-[#525252] text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px]">Job Openings</h3>
           </div>
 
-          <div className="text-7xl uppercase font-bold my-8">Join Team</div>
+          <div className="lg:text-6xl 4xl:text-[120px] text-[36px] sm:text-[42px] leading-[48px] sm:leading-[4rem] lg:leading-[5rem] 4xl:leading-[10rem] uppercase font-[900] text-black my-7 4xl:mt-9 4xl:mb-[50px] ">Join Team</div>
 
-          <div className="mt-8">
-            <div className="">Please send your resume here:</div>
+          <div className="text-center lg:text-start   ">
+            <p className="text-sm sm:text-lg  md:text-xl  4xl:text-[30px]  4xl:leading-10">Please send your resume here:</p>
             <a
               href="mailto:career@codebiosis.com"
-              className="text-xl font-bold underline underline-offset-8 mt-5"
+              className="text-2xl md:text-3xl xl:text-4xl 4xl:text-[54px] 4xl:leading-[100px] font-bold underline underline-offset-8 mt-1 "
             >
               career@codebiosis.com
             </a>
@@ -100,38 +112,46 @@ function CareersPage() {
 
         {jobs.map((job, index) => (
           <div
-            className="col-span-1 text-[#525252] mt-4 border-b border-[#D8D8D8] pb-4 flex justify-between pr-4"
+            // mt-[120px]
+            className="col-span-1 text-[#525252] mt-5 border-b border-[#D8D8D8] flex justify-between lg:items-center  "
             key={index}
           >
             <div className="">
-              <h3 className="text-lg font-semibold">{job.title}</h3>
-              <div className=" ">{"(" + job.experience + " Experience)"}</div>
+              <h3 className="font-bold text-xl  md:text-2xl 2xl:text-3xl 4xl:text-4xl 4xl:leading-[60px] ">{job.title}</h3>
+              <div className="font-normal text-sm sm:text-lg  md:text-xl  4xl:text-[30px]  4xl:leading-[60px] pb-5 4xl:pb-10 mt-2.5 lg:mt-0 ">{"(" + job.experience + " Experience)"}</div>
             </div>{" "}
             <div className="">
-              <Image src={"/careers/goto.svg"} alt="" height={12} width={12} />
+              <Image className="mt-2 lg:mt-0" src={"/careers/goto.svg"} alt="img" height={12} width={12} />
             </div>
           </div>
         ))}
-        <div className="col-span-1">
+        <div className="col-span-1 4xl:pt-7 ">
           <div className="flex w-full h-full justify-center items-center">
-            <AnimatedButton className="w-fit h-fit">Apply Now</AnimatedButton>
+            <AnimatedButton className="w-fit h-fit">Get in Touch</AnimatedButton>
           </div>
         </div>
       </div>
-     
-     <div className="py-14">
-      <CardsCareers />
+
+      <div className="pt-[100px] md:pt-[150px] 3xl:pt-[250px] ">
+        <CardsCareers />
       </div>
-      <div className="flex py-14 justify-between">
-        <div className="w-[49%]">
-          <Recuritprocess data={recuritmentData[currentCard]}/>
+
+      <div className="flex pt-[70px] md:pt-[250px] 3xl:pt-[350px] justify-between item s-center flex-wrap flex-col max-lg:gap-y-10 lg:flex-row ">
+        <div className="lg:hidden r">
+          <div className=" text-[34px] lg:text-4xl 4xl:text-6xl  text-black mb-3 text-wrap line-clamp-2 font-black text-center">Recuritment Process</div>
+          <Separator className="h-px max-w-[120px] lg:max-w-[250px] bg-[#525252] mt-1 sm:mt-6 mb-[60px]  mx-auto" />
         </div>
-        <div className="w-[49%]">
-          <div className="text-3xl font-bold text-center">Recuritment Process</div>
-          <Separator className="h-px w-full max-w-[100px] bg-[#D8D8D8] my-4 mx-auto" />
-          <div className="mt-12">
+        <div className=" lg:w-[49%]">
+          <Recuritprocess data={recuritmentData[currentCard]} />
+        </div>
+        <div className=" lg:w-[42%] 4xl:w-[48%]">
+          <div className="hidden lg:block">
+            <div className="text-[30px] sm:text-[34px] lg:text-4xl 4xl:text-6xl  text-black mb-3 text-wrap line-clamp-2 font-black text-center">Recuritment Process</div>
+            <Separator className="h-px max-w-[120px] lg:max-w-[250px] bg-[#525252] mt-1 sm:mt-6 mb-[60px]  mx-auto" />
+          </div>
+          <div className="">
             {recuritmentData.map((item, index) => (
-              <div className={cn("flex gap-4 items-center my-4 pl-6 border-l border-[#525252] cursor-pointer" , currentCard === index && "font-semibold")} onClick={() => setCurrentCard(index)} key={index}>
+              <div className={cn("flex gap-4 items-center my-6 pl-5 border-l border-[#525252] cursor-pointer font-normal text-lg  md:text-xl  4xl:text-[30px] 3xl:leading-[3rem] 4xl:leading-[100px] text-[#2B2B2B]", currentCard === index && " text-xl md:text-2xl 4xl:text-[36px] font-bold 2xl:leading-[3rem] 4xl:leading-[100px] ")} onClick={() => setCurrentCard(index)} key={index}>
                 {item.title}
               </div>
             ))}
@@ -139,7 +159,9 @@ function CareersPage() {
         </div>
       </div>
 
-      <LetsCollab title="Meet the team" className="py-14" substring="From creative thinkers to technical experts, our team is united by a passion for innovation and a dedication to excellence. Get to know the faces behind our success stories, and discover what drives each member to contribute their unique skills and perspectives to our mission." subGHeading="Brilliant Minds Behind CodeBiosis"/>
+      <div className="pt-[100px] pb-20 lg:py-[150px] 2xl:py-[250px] 4xl:pt-[350px] 4xl:pb-[310px]">
+        <LetsCollab title="Meet the team" className="" substring="From creative thinkers to technical experts, our team is united by a passion for innovation and a dedication to excellence. Get to know the faces behind our success stories, and discover what drives each member to contribute their unique skills and perspectives to our mission." subGHeading="Brilliant Minds Behind CodeBiosis" />
+      </div>
     </div>
   );
 }

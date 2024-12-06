@@ -3,14 +3,16 @@ import React from 'react'
 
 const Recuritprocess = ({data }: any) => {
   return (
-    <div className='border w-fit overflow-hidden border-[#D8D8D8] rounded-3xl'>
-        <Image className='' src={"/careers/card.svg"} alt="" width={500} height={300}/>
+    <div className='border w-fit overflow-hidden border-[#525252] rounded-[20px]'>
+        <Image className='' src={"/careers/card.svg"} alt="img" width={1050} height={370}/>
 
-        <div className="font-semibold text-xl px-4 pt-4">
-            {data.title}
-        </div>
-        <div className="text-sm text-[#525252] max-w-[500px] p-4">
-            {data.description}
+        <div className='p-6 lg:p-10 4xl:pt-[35px] 4xl:ps-[70px] 4xl:pb-[63px]  '>
+          <div className="text-lg sm:text-3xl lg:text-[28px] 4xl:text-[42px] md:leading-[3rem] 4xl:leading-[100px] font-bold">
+              {data.title}
+          </div>
+          <div className="text-[15px] sm:text-lg  md:text-[20px] 4xl:text-[30px]  4xl:leading-10  text-[#525252] 4xl:max-w-[766px] ">
+              {data.description}
+          </div>
         </div>
     </div>
   )
