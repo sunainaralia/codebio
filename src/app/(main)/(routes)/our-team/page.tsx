@@ -55,7 +55,6 @@ function OurTeam() {
           subGHeading="Look Out Open Positions"
         />
       </div>
-
       <Separator className="mt-14 w-full bg-[#D8D8D8] h-px " />
     </div>
   );
