@@ -12,10 +12,10 @@ const ServiceAccordianCards = ({
   section, data, index
 }: ServiceAccordianCardsProps) => {
   return (
-    <div className="group hover:bg-black transition duration-300 3xl:p-4 rounded-md cursor-pointer">
-      <div className="w-full flex justify-between items-center gap-4">
+    <div className="group transition duration-300 3xl:p-4 rounded-md cursor-pointer ">
+      <div className="w-full flex justify-between items-center gap-4 ">
 
-        <div className="text-lg sm:text-xl lg:text-3xl 3xl:text-4xl text-black font-bold text-black group-hover:text-white transition duration-300">
+        <div className="text-lg sm:text-xl lg:text-2xl 3xl:text-3xl 4xl:text-4xl text-black font-bold text-black group-hover:text-[#fff] transition duration-300">
 
           {data}
 
@@ -30,7 +30,7 @@ const ServiceAccordianCards = ({
         />
 
       </div>
-      <div className="text-[#000000] text-sm sm:text-base lg:text-xl 4xl:text-3xl mt-3 lg:mt-6 4xl:mt-24 4xl:!leading-10">{serviceDataMain[section].sections[data]}</div>
+      <div className="text-[#525252] text-normal text-sm sm:text-base lg:text-xl 4xl:text-3xl mt-3 lg:mt-6 4xl:mt-24 4xl:!leading-10 group-hover:text-[#fff] duration-300">{serviceDataMain[section].sections[data]}</div>
     </div>
   );
 };

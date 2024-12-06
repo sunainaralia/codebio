@@ -52,7 +52,7 @@ const AccordianSingle = ({
               </div>
             </div>
 
-            <div className='hidden md:block text-2xl lg:text-5xl 4xl:text-[72px] py-3 lg:py-6 4xl:pb-10 4xl:pt-9 uppercase font-[900]'>
+            <div className='hidden md:block text-2xl md:text-3xl xl:text-4xl 3xl:text-5xl 4xl:text-[72px] py-3 lg:py-6 4xl:pb-10 4xl:pt-9 uppercase font-[900]'>
               {service}
             </div>
 
@@ -61,17 +61,7 @@ const AccordianSingle = ({
                <span className='hidden md:block'> {serviceDataMain[service].description.text}</span>
                <span className='md:hidden block'> {serviceDataMobile[service].description.text}</span>
               </div>
-              {/* <div className='hidden md:block text-2xl underline underline-offset-8'>
-                <AccordionTrigger
-                  className='gap-4'
-                  icon={'/vectors/triggerUp.svg'}
-                  onClick={() => {
-                    setValue(value === 'true' ? 'false' : 'true');
-                  }}
-                >
-                  Explore All
-                </AccordionTrigger>
-              </div> */}
+              
             </div>
           </div>
           <div className='hidden md:block'>
@@ -81,7 +71,7 @@ const AccordianSingle = ({
                   (data: string, index: number) => (
                     <div
                       className={cn(
-                        'p-6 3xl:p-12 min-w-[300px] border-0 border-b-[0.5px] border-t-0 lg:border-x-[0.5px] xl:border-l-0 border-[#525252]',
+                        'p-6 3xl:p-12 min-w-[300px] border-0 border-b-[0.5px] border-t-0 lg:border-x-[0.5px] xl:border-l-0 border-[#525252] hover:bg-[#2D2D2D] group duration-300',
                         index % 3 === 0 && 'xl:border-l-[0.5px] border-[#525252]',
                         index < 3 && 'xl:border-b-[0.5px] border-[#525252]',
                         index >=
