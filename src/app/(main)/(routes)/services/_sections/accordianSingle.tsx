@@ -52,7 +52,7 @@ const AccordianSingle = ({
               </div>
             </div>
 
-            <div className='hidden md:block text-2xl md:text-3xl xl:text-4xl 3xl:text-5xl 4xl:text-[72px] py-3 lg:py-6 4xl:pb-10 4xl:pt-9 uppercase font-[900]'>
+            <div className='hidden md:block text-2xl md:text-3xl xl:text-4xl 3xl:text-5xl 4xl:text-[72px] py-3 lg:py-6 4xl:pb-10 4xl:pt-9 uppercase font-[900] md:font-bold'>
               {service}
             </div>
 
@@ -66,12 +66,13 @@ const AccordianSingle = ({
           </div>
           <div className='hidden md:block'>
             <AccordionContent>
-              <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 relative z-10 4xl:py-10 mx-auto my-6 lg:my-10'>
+              <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 relative z-10 4xl:py-10 mx-auto my-6 lg:my-10 lg:ring-offset-0'>
                 {Object.keys(serviceDataMain[service].sections)?.map(
                   (data: string, index: number) => (
                     <div
                       className={cn(
                         'p-6 3xl:p-12 min-w-[300px] border-0 border-b-[0.5px] border-t-0 lg:border-x-[0.5px] xl:border-l-0 border-[#525252] hover:bg-[#2D2D2D] group duration-300',
+                        
                         index % 3 === 0 && 'xl:border-l-[0.5px] border-[#525252]',
                         index < 3 && 'xl:border-b-[0.5px] border-[#525252]',
                         index >=

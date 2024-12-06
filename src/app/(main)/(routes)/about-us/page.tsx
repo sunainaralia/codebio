@@ -90,15 +90,15 @@ function ImageCarousel() {
 
 function AboutUs() {
   return (
-    <div className='px-[30px] md:px-20'>
-      <div className='w-fit mx-auto pb-[60px] pt-6 sm:py-20'>
+    <div className=''>
+      <div className='w-fit mx-auto pb-[60px] pt-6 sm:py-20 px-[30px] md:px-20'>
         <div className='flex w-fit gap-4 items-center mb-5 mx-auto'>
           <Image src={'/vectors/Union.svg'} alt='' height={30} width={30} />
           <h3 className='text-lg font-normal text-[#525252] sm:text-[26px] 4xl:text-[42px] lg:text-[32px]'>Capabilities</h3>
           <Image src={'/vectors/Union.svg'} alt='' height={30} width={30} />
         </div>
 
-        <div className='font-[900] mx-auto text-3xl lg:text-4xl xl:text-5xl  4xl:text-[80px] text-center mb-5 4xl:mb-12 md:!leading-[50px] lg:!leading-[60px] xl:!leading-[75px] 4xl:!leading-[112px] px-10 xl:px-20 mt-3.5 hidden md:block'>
+        <div className='font-[900] mx-auto text-3xl lg:text-4xl 2xl:text-5xl  4xl:text-[80px] text-center mb-5 4xl:mb-12 md:!leading-[50px] lg:!leading-[60px] 2xl:!leading-[75px] 4xl:!leading-[112px] px-10 xl:px-20 mt-3.5 hidden md:block'>
           Delivering creative solutions with expert precision, transforming your digital vision into impactful, measurable results and success.
         </div>
         <div className='font-[900] mx-auto text-3xl lg:text-4xl xl:text-5xl  4xl:text-[80px] text-center sm:mb-5 4xl:mb-12 md:!leading-[50px] lg:!leading-[60px] xl:!leading-[75px] 4xl:!leading-[112px] md:px-10 xl:px-20 mt-3.5 block md:hidden !leading-10'>
@@ -114,8 +114,8 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className='mb-[60px] xl:my-20 4xl"my-[120px]'>
-        <div className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl 4xl:text-6xl font-bold text-black text-center'>
+      <div className='mb-[60px] xl:my-20 4xl"my-[120px] px-[30px] md:px-20'>
+        <div className='text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl 4xl:text-6xl font-bold text-black text-center'>
           What Makes Us Awesome
         </div>
         <Separator className='h-px w-full max-w-[250px] bg-[#525252] my-5 mx-auto' />
@@ -129,7 +129,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className='md:flex md:py-14'>
+      <div className='md:flex md:py-14 px-[30px] md:px-20 '>
         <div className='md:w-[49%] md:px-10'>
          <div className='flex flex-row md:flex-col justify-between items-center mb-7'> <LottieAnimation
             animationData={require('@/../public/lottiee/aboutUs/Vision.json')}
@@ -166,7 +166,7 @@ function AboutUs() {
         />
       </div>
 
-      <div className='md:py-14'>
+      <div className='md:py-14 px-[30px] md:px-20'>
         {/* <div className="flex">
            <Image src={"/aboutus/1.jpg"} alt="" width={500} height={500} style={{
             clipPath:"polygon(280px 10px, calc( 100% - 145px) 34px, 100% 60px, 100% calc( 100% - 85px), calc( 100% - 159px) calc( 100% - 33px), 282px calc( 100% - 10px), 190px calc( 100% - 2px), 189px 0px);"
@@ -188,40 +188,43 @@ function AboutUs() {
           <ImageCarousel />
         </div>
 
-        <div className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl 4xl:text-6xl font-bold text-black text-center'>
+        <div className='text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl 4xl:text-6xl font-bold text-black text-center'>
           Our Vibe
-          <Separator className='h-px w-full max-w-[250px] bg-[#525252] my-4 mx-auto' />
+          <Separator className='h-px w-full max-w-[150px] 2xl:max-w-[250px] bg-[#525252] my-4 mx-auto' />
         </div>
         <div className='max-w-[1850px] text-[15px] sm:text-lg lg:text-xl 4xl:text-3xl 4xl:!leading-10 mx-auto text-start md:text-center pt-4 xl:pt-10 4xl:pt-14 text-[#525252]'>
           Our vibe is all about creativity, collaboration, and making things happen. We believe in combining fresh ideas with smart strategies to create digital experiences that truly stand out. Whether we're building websites, driving digital marketing campaigns, or designing user experiences, we bring energy and passion to every project. We’re laid-back but focused, professional yet approachable, and always ready to push boundaries. At the heart of it all is our belief in teamwork and innovation, helping our clients succeed while enjoying the journey together. We keep things fun, flexible, and full of possibility.
         </div>
       </div>
 
-      <div className='py-14'>
+      <div className='py-14 px-[30px] md:px-20'>
         <HeroHeader
           hasLottie
           iconPath={require('@/../public/lottiee/aboutUs/What We Offer.json')}
           subText='There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.'
           title='What We offer'
           featureText='Strategy. Design. Development.'
-          titleClassName='text-3xl 4xl:text-[84px] !leading-[2.5rem] md:!leading-[3rem] lg:!leading-[5rem] 4xl:!leading-[7rem] font-[900]'
+          titleClassName='text-3xl lg:text-5xl  2xl:text-[55px] 4xl:text-[84px] !leading-[2.5rem] md:!leading-[3rem] lg:!leading-[5rem] 4xl:!leading-[7rem] font-[900]'
           buttonText='Explore Our Services'
         />
       </div>
 
-      <div className='mb-20 md:mb-0'>
+      <div className='mb-20 md:mb-0 hidden lg:block'>
         <TestimonialsSection />
       </div>
-      <div className='hidden md:block'>
+      <div className='hidden md:block px-[30px] md:px-20'>
         <OurStatsRightSection />
       </div>
-      <div className='mt-[160px] md:mt-0'>
+      <div className='mt-[160px] md:mt-0 px-[30px] md:px-20'>
         <LetsCollab
           title='Got a Project'
           substring='We’re a team of creatives who are excited about unique ideas and help companies to create amazing identity by crafting top-notch UI/UX & E-Commerce stores.'
         />
       </div>
+      <div className='px-[30px] md:px-20'>
+        
       <GetInTouchSection />
+      </div>
     </div>
   );
 }
