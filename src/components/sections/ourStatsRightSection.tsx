@@ -46,6 +46,7 @@ function StatsInfo({ count, title }: { count: number; title: string }) {
     </div>
   );
 }
+// done
 
 export default OurStatsRightSection;
 
