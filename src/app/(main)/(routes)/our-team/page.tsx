@@ -11,32 +11,32 @@ import { Separator } from "@/components/ui/separator";
 
 function OurTeam() {
   return (
-    <div>
-      <div className="my-10">
-        <div className="w-[900px] mx-auto text-5xl uppercase font-bold text-center mb-2 ">
+    <div className="px-10 md:px-20">
+      <div className="3xl:mt-[150px] lg:mt-[100px] mt-[60px] 4xl:mb-[175px] mb-[50px]">
+        <div className=" mx-auto text-3xl  lg:text-4xl xl:text-5xl 4xl:text-[84px] uppercase font-[900] text-center mb-[25px]  ">
           Our Team
         </div>
 
         <div className="flex w-fit gap-4 items-center mb-5 mx-auto">
-          <Image src={"/vectors/Star 1.svg"} alt="" height={30} width={30} />
-          <h3 className="text-xl text-[#525252]">
+          <Image  className='h-[16px] w-[16px] md:w-[28px] md:h-[28px]  3xl:h-[36px]  3xl:w-[36px] 3xl:mt-[30px]' src={"/vectors/Star 1.svg"} alt="" height={30} width={30} />
+          <h3 className="text-md text-center md:text-xl 3xl:text-[42px] text-[#525252] font-normal 3xl:mt-[30px]">
             Brilliant Minds Behind CodeBiosis
           </h3>
-          <Image src={"/vectors/Star 1.svg"} alt="" height={30} width={30} />
+          <Image  className='h-[16px] w-[16px] md:w-[28px] md:h-[28px]  3xl:h-[36px]  3xl:w-[36px] 3xl:mt-[30px]' src={"/vectors/Star 1.svg"} alt="" height={30} width={30} />
         </div>
       </div>
 
-      <div className="flex flex-wrap py-14">
+      <div className="flex flex-wrap py-14 justify-center">
         {team.map((card, index) => (
           <div
             className={cn(
-              "flex justify-center basis-1/2 border-b border-[#D8D8D8] my-4 py-4"
+              "flex justify-center basis-1/2 border-b border-[#D8D8D8] mt-[100px ] py-[30px] 3xl:py-[100px]"
             )}
             key={index}
           >
             <div
               className={cn(
-                "w-full flex items-start justify-center",
+                "w-full flex items-start justify-center ",
                 index % 2 === 0 && "border-r border-[#D8D8D8]"
               )}
             >
@@ -46,7 +46,7 @@ function OurTeam() {
         ))}
       </div>
 
-      <AnimatedButton className="w-fit mx-auto my-14">Know Them</AnimatedButton>
+      <AnimatedButton className="w-fit mx-auto">Know Them</AnimatedButton>
 
       <div className="py-14">
         <LetsCollab

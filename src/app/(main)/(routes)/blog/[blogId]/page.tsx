@@ -57,7 +57,7 @@ function BlogDetails() {
       </div>
 
       <div className=" py-10 lg:pb-[80px] lg:pt-[98px] 2xl:pt-[130px] 2xl:pb-[100px] hidden md:block">
-        <MusicButton musicLink="/blog/Song.mp3" />
+        {/* <MusicButton musicLink="/blog/Song.mp3" /> */}
       </div>
 
       <div>

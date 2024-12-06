@@ -35,9 +35,9 @@ const socials = [
 ];
 
 const menuItems = [
-  { title: 'What We Offer', link: '/services' },
+  { title: 'Services', link: '/services' },
   { title: 'Our Work', link: '/our-work' },
-  { title: 'Who We Are', link: '/about-us' },
+  { title: 'About As', link: '/about-us' },
   { title: 'Resources', link: '/blog' },
   // { title: 'Case Studies', link: '/case-study' },
   // { title: "Meet Us", link: "/our-team" },
@@ -45,9 +45,9 @@ const menuItems = [
 ];
 
 const linkMap: any = {
-  '/services': 'What We Offer',
+  '/services': 'Services',
   '/our-work': 'Our Work',
-  '/about-us': 'Who We Are',
+  '/about-us': 'About As',
   '/blog': 'Resources',
   '/case-study': 'Case Studies',
   '/': 'Home',

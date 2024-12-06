@@ -344,7 +344,7 @@ html,
   height: 100% !important;
 }
 #oursolution .swiper {
-  height: 600px !important;
+  height: 530px !important;
 }
 
 @media (min-width: 1700px) {
@@ -354,7 +354,7 @@ html,
 }
 @media (min-width: 2000px) {
   #oursolution .swiper {
-    height: 1050px !important;
+    height: 950px !important;
   }
 }
 @media (min-width: 1280px) {
@@ -407,7 +407,7 @@ html,
 @media (max-width: 640px) {
   #oursolution
     .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-    top: 95% !important;
+    top: 97% !important;
     transform: translateX(-50%) !important;
     left: 50% !important;
     display: flex !important;

@@ -272,7 +272,7 @@ const CertifiedPartnersSection = () => {
         </div>
 
         <div className="flex justify-center items-center mb-20">
-          <AnimatedButton className="md:hidden flex mt-9">
+          <AnimatedButton className="md:hidden flex">
             Our Strengths
           </AnimatedButton>
         </div>
