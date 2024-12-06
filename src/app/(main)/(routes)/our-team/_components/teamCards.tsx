@@ -67,7 +67,7 @@ const TeamCards = ({
         <div className="flex gap-2.5 flex-wrap 3xl:mt-[40px] lg:mt-[30px] mt-[25px]  4xl:w-[900px] 3xl:w-[700px] w-full">
           {
             tags.map((tag, index) => (
-              <Button variant={"outline"} key={index} className="text-xs lg:text-lg 4xl:text-xl rounded-3xl">
+              <Button variant={"outline"} key={index} className="text-xs lg:text-lg 4xl:text-xl rounded-[40px]">
                 {tag}
               </Button>
             ))
