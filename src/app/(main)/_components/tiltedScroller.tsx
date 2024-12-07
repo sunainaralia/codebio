@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef, useEffect } from "react";
 import Image from "next/image";
@@ -63,7 +63,7 @@ export const ParallaxTiltedScroll = ({
   return (
     <div
       className={cn(
-        "items-start  md:max-h-[350px] rounded-3xl flex flex-col object-center overflow-hidden h-[200px] sm:h-[300px] lg:h-[350px] w-full hover:scale-[1.02] transition-all duration-100",
+        "  rounded-3xl flex flex-col object-center overflow-hidden h-[200px] sm:h-[300px] lg:!h-[750px] w-full hover:scale-[1.02] transition-all duration-100 justify-center items-center",
         className
       )}
       ref={gridRef}
@@ -71,12 +71,12 @@ export const ParallaxTiltedScroll = ({
       {/* testing  */}
       <motion.div
         className={cn(
-          "grid items-start w-[1000px] 2xl:w-[1500px] mx-auto gap-4 ml-[-200px] 2xl:ml-[-100px] mt-[-125px] 2xl:mt-[-300px] bg-[#FF8383]",
+          "grid items-start sm:w-full mx-auto gap-4 bg-[#FF8383]",
           childrenClassName
         )}
         transformTemplate={(z) => `rotate(${-30}deg)`}
       >
-        {[firstPart, secondPart, thirdPart].map((part, partIdx) => (
+        {[firstPart, secondPart, thirdPart,firstPart].map((part, partIdx) => (
           <div
             key={partIdx}
             className={cn(
@@ -106,7 +106,7 @@ export const ParallaxTiltedScroll = ({
                       "gap-2 h-[150px] md:h-[300px] w-[500px] rounded-md max-w-[500px] md:aspect-video object-cover !m-0 !p-0",
                       [
                         imageH
-                          ? `h-[150px] md:h-[${imageH}px] md:max-h-[${imageH}px]`
+                          ? `h-[398px] md:h-[${imageH}px] md:max-h-[${imageH}px]`
                           : "",
                         imageW ? `w-[${imageW}px] max-w-[${imageW}px]` : "",
                       ]
@@ -124,3 +124,10 @@ export const ParallaxTiltedScroll = ({
     </div>
   );
 };
+
+
+
+
+
+
+

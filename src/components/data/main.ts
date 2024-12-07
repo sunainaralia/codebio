@@ -19,7 +19,7 @@ export const works : WorkCardProps[] = [
       strategy: "Brand Strategy, UX Strategy",
       design: "UI/UX Design, Art Direction",
       imageArr:kotakBank,
-      mainDescription:'We have produced a well-designed website that allows our users to visit the site in a simple and efficient manner. We make it a point to maintain the information fresh and available at all times, thanks to a dedicated post-deployment crew.'
+      mainDescription:'We redesigned their website with an engaging UI/UX and implemented backend optimizations to improve speed and user experience.'
     },
     {
       img: "/ourWork/work-02.svg",
@@ -29,7 +29,7 @@ export const works : WorkCardProps[] = [
       description: "E-commerce Store, Skincare",
       strategy: "Brand, Development",
       design: "UI/UX Design",
-      mainDescription: `We have produced a well-designed website that allows our users to visit the site in a simple and efficient manner. We make it a point to maintain the information fresh and available at all times, thanks to a dedicated post-deployment crew.`
+      mainDescription: `We built an eCommerce platform that reflects their brand heritage and enhances user experience and streamlined their UI/UX to improve client interaction.`
     },
     {
       img: "/ourWork/work-03.svg",
@@ -39,6 +39,6 @@ export const works : WorkCardProps[] = [
       description: "E-commerce Store, Skincare",
       strategy: "Optimization, Development",
       design: "UI/UX Design, Development",
-      mainDescription:`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or less normal distribution of letters,`
+      mainDescription:`We overhauled their site with a luxurious UI/UX design and implemented eCommerce features to boost engagement and conversions.`
     },
   ];
