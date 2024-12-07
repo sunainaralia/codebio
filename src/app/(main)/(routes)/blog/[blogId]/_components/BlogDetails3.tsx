@@ -39,13 +39,13 @@ function BlogDetails3() {
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
             {/* text-[26px] md:text-[33px] lg:text-[40px] 2xl:text-[52px] font-bold !leading-[27px] md:!leading-10 3xl:!leading-[70px] */}
-                <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold ">
+                <div className="text-xl sm:text-2xl xl:text-[28px] 2xl:text-4xl 4xl:text-[52px] leading-[27px] xl:leading-[3rem] 4xl:leading-[70px] font-bold  ">
                     Factors Influencing eCommerce Website Development Prices in India
                 </div>
-                <div className="text-lg sm:text-xl lg:text-[28px] 4xl:text-[42px] leading-[24px] md:leading-[3rem] 4xl:leading-[56px] font-bold  my-5 2xl:my-[30px]">
+                <div className="text-lg sm:text-xl xl:text-2xl 4xl:text-[42px] 4xl:leading-[56px] font-bold  my-5 2xl:my-[30px]">
                     Site Domain & Hosting Services:
                 </div>
-                <ul className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] 4xl:leading-10 font-normal  list-disc md:ms-10 marker:font-medium "><li>The cost of a domain name in India ranges from $20 to $60 while hosting services can go up to $350 per month, depending on your business needs and site traffic.</li>
+                <ul className="text-[#525252] text-[15px] lg:text-xl xl:text-2xl 2xl:text-[30px] 4xl:leading-10 font-normal list-disc md:ms-10 marker:font-medium "><li>The cost of a domain name in India ranges from $20 to $60 while hosting services can go up to $350 per month, depending on your business needs and site traffic.</li>
                 </ul>
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
@@ -82,7 +82,7 @@ function BlogDetails3() {
                 </div>
             </div>
             <div className="pt-[43px] xl:pt-[100px]">
-                <div className="text-xl sm:text-[38px] 4xl:text-[52px] leading-[27px] sm:leading-[3rem] 4xl:leading-[70px] font-bold ">
+                <div className="text-xl sm:text-2xl xl:text-[28px] 2xl:text-4xl 4xl:text-[52px] leading-[27px] xl:leading-[3rem] 4xl:leading-[70px] font-bold  ">
                     Why Invest in a Professional eCommerce Website Development Package in 2024?
                 </div>
                 <div className="text-[#525252] text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] 4xl:leading-10 font-normal mt-[15px] xl:mt-[30px] ">

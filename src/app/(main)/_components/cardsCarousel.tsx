@@ -50,7 +50,7 @@ const CardsCarousel = ({ data }: any) => {
           {data.map((card: any) => (
             <CarouselItem
               key={card.id}
-              className="basis-[50%] flex justify-center"
+              className="basis-[50%] flex justify-center border-l"
             >
               <div className="">
                 {card}{" "}
