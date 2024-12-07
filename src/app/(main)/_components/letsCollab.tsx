@@ -30,6 +30,7 @@ const LetsCollab = ({
           />
           <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] 4xl:text-4xl 4xl:leading-[48px] text-black font-medium ">
             {subGHeading || "Let's Collaborate"}
+            
           </h3>
         </div>
 

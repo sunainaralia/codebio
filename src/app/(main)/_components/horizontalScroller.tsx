@@ -55,55 +55,96 @@ export const ParallaxHorizontalScroll = ({
   const thirdPart = images.slice(2 * third);
 
   return (
-    <div
-      className={cn("items-start max-h-[350px] md:h-[350px] rounded-md max-w-[600px] object-center overflow-hidden h-full w-full hover:scale-[1.02] transition-all duration-100", className)}
-      ref={gridRef}
-    >
-      <div className="grid items-start mx-auto gap-4 overflow-x-hidden">
-        <div className={cn("flex w-full h-[200px] md:h-[350px] overflow-x-hidden gap-4 mt-[-50px]", imageH && imageW && `h-[${imageH}px] mt-[-300px]`)}>
-          {firstPart.map((el, idx) => (
-            <motion.div
-              style={{ x: translateFirst, transitionDuration: "2s" }}
-              key={`grid-1-${idx}`}
-            >
-              <Image
-                src={el}
-                className={cn("gap-2 h-full top-0 rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0", imageH && imageW && `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px] `)}
-                height={imageH || 400}
-                width={imageW || 400}
-                alt="thumbnail"
-                loading="lazy"
-              />
-            </motion.div>
-          ))}
-        </div>
-        <div className={cn("flex w-full h-[150px] md:h-[350px] overflow-x-hidden gap-4", imageH && imageW && `h-[${imageH}px]`)}>
-          {secondPart.map((el, idx) => (
-            <motion.div style={{ x: translateSecond, transitionDuration: "2s" }} key={`grid-2-${idx}`}>
-              <Image
-                src={el}
-                className={cn("gap-2 h-[150px] md:h-[350px] rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0", imageH && imageW && `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px]`)}
-                height={imageH || 400}
-                width={imageW || 400}
-                alt="thumbnail"
-                loading="lazy"
-              />
-            </motion.div>
-          ))}
-        </div>
-        <div className={cn("flex w-full h-[150px] md:h-[350px] overflow-x-hidden gap-4", imageH && imageW && `h-[${imageH}px]`)}>
-          {thirdPart.map((el, idx) => (
-            <motion.div style={{ x: translateThird, transitionDuration: "2s" }} key={`grid-3-${idx}`}>
-              <Image
-                src={el}
-                className={cn("gap-2 h-[150px] md:h-[350px] rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0", imageH && imageW && `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px]`)}
-                height={imageH || 400}
-                width={imageW || 400}
-                alt="thumbnail"
-                loading="lazy"
-              />
-            </motion.div>
-          ))}
+    <div className="w-full mx-auto  rounded-[25px]">
+      <div
+        className={cn(
+          "items-start max-h-[350px] md:h-[350px] rounded-md max-w-[600px] object-center overflow-hidden h-full w-full hover:scale-[1.02] transition-all duration-100 ",
+          className
+        )}
+        ref={gridRef}
+      >
+        <div className="grid items-start mx-auto gap-4 overflow-x-hidden rotate-[-20deg] mt-[-300px]">
+          <div
+            className={cn(
+              "flex w-full h-[150px] md:h-[350px] overflow-x-hidden gap-4 ",
+              imageH && imageW && `h-[${imageH}px]  `
+            )}
+          >
+            {firstPart.map((el, idx) => (
+              <motion.div
+                style={{ x: translateFirst, transitionDuration: "2s" }}
+                key={`grid-1-${idx}`}
+              >
+                <Image
+                  src={el}
+                  className={cn(
+                    "gap-2 h-[150px] md:h-full rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0",
+                    imageH &&
+                      imageW &&
+                      `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px] `
+                  )}
+                  height={imageH || 400}
+                  width={imageW || 400}
+                  alt="thumbnail"
+                  loading="lazy"
+                />
+              </motion.div>
+            ))}
+          </div>
+          <div
+            className={cn(
+              "flex w-full h-[150px] md:h-[350px] overflow-x-hidden gap-4",
+              imageH && imageW && `h-[${imageH}px]`
+            )}
+          >
+            {secondPart.map((el, idx) => (
+              <motion.div
+                style={{ x: translateSecond, transitionDuration: "2s" }}
+                key={`grid-2-${idx}`}
+              >
+                <Image
+                  src={el}
+                  className={cn(
+                    "gap-2 h-[150px] md:h-[350px] rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0",
+                    imageH &&
+                      imageW &&
+                      `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px]`
+                  )}
+                  height={imageH || 400}
+                  width={imageW || 400}
+                  alt="thumbnail"
+                  loading="lazy"
+                />
+              </motion.div>
+            ))}
+          </div>
+          <div
+            className={cn(
+              "flex w-full h-[150px] md:h-[350px] overflow-x-hidden gap-4",
+              imageH && imageW && `h-[${imageH}px]`
+            )}
+          >
+            {thirdPart.map((el, idx) => (
+              <motion.div
+                style={{ x: translateThird, transitionDuration: "2s" }}
+                key={`grid-3-${idx}`}
+              >
+                <Image
+                  src={el}
+                  className={cn(
+                    "gap-2 h-[150px] md:h-[350px] rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0",
+                    imageH &&
+                      imageW &&
+                      `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px]`
+                  )}
+                  height={imageH || 400}
+                  width={imageW || 400}
+                  alt="thumbnail"
+                  loading="lazy"
+                />
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
