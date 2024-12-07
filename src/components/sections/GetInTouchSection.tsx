@@ -16,7 +16,7 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
   return (
     <div
       className={cn(
-        "mt-[27px] 4xl:mt-[60px] pb-[87px] xl:pb-[150px] 4xl:pb-[300px] lg:pt-10 xl:pt-20 border-b border-[#D8D8D8]",
+        "mt-[27px] 4xl:mt-[60px] pb-[87px] xl:pb-[150px] 4xl:pb-[300px] lg:pt-10 4xl:pt-20 border-b border-[#D8D8D8]",
         className
       )}
     >

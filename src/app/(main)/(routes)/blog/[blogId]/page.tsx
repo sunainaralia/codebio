@@ -62,7 +62,7 @@ function BlogDetails() {
 
       <div>
         {/* <Image
-          src={"/vectors/Star 1.svg"}
+          src={"/vectors/Union.svg"}
           alt=""
           height={20}
           width={20}

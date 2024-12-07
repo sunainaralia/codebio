@@ -18,7 +18,7 @@ const LetsCollab = ({
   subGHeading,
 }: LetsCollabProps) => {
   return (
-    <div className={cn("md:flex justify-between 2xl:my-[200px] lg:my-[150px] sm:mb-[100px] sm:mt-10 mt-[50px] mb-20", className)}>
+    <div className={cn("md:flex items-center justify-between 4xl:my-[200px] lg:my-24 sm:mb-[100px] sm:mt-10 mt-[50px] mb-20", className)}>
       <div className="md:w-[49%] ">
         <div className="flex gap-4 items-center justify-center md:justify-start mb-5">
           <Image
@@ -39,7 +39,7 @@ const LetsCollab = ({
       </div>
 
       <Separator
-        className="w-px bg-[#525252] my-4 h-auto"
+        className="w-px bg-[#525252] my-4 md:h-[200px]"
         orientation="vertical"
       />
 

@@ -70,13 +70,13 @@ function CareersPage() {
         </div>
 
         <div className="flex w-fit gap-3 sm:gap-4 items-center mx-auto">
-          {/* <Image src={"/vectors/Star 1.svg"} alt="" height={30} width={30} /> */}
+          {/* <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} /> */}
           <Image className='hidden sm:block' src={"/vectors/Union.svg"} alt="img" height={30} width={30} />
           <Image className='sm:hidden' src={"/vectors/Union.svg"} alt="img" height={16} width={16} />
           <h3 className="md:text-2xl lg:text-3xl 4xl:text-[42px] text-lg text-[#525252]  font-normal">
             Explore Exciting Opportunities
           </h3>
-          {/* <Image src={"/vectors/Star 1.svg"} alt="" height={30} width={30} /> */}
+          {/* <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} /> */}
           <Image className='hidden sm:block' src={"/vectors/Union.svg"} alt="img" height={30} width={30} />
           <Image className='sm:hidden' src={"/vectors/Union.svg"} alt="img" height={16} width={16} />
         </div>
@@ -85,7 +85,7 @@ function CareersPage() {
       <div className="grid lg:grid-cols-2 lg:grid-rows-2 gap-y-[ 100px] gap-10 lg:gap-14 3xl:gap-[100px]">
         <div className=" row-span-2">
           <div className="flex gap-[22px]  items-center">
-            {/* <Image src={"/vectors/Star 1.svg"} alt="" height={20} width={20} /> */}
+            {/* <Image src={"/vectors/Union.svg"} alt="" height={20} width={20} /> */}
             <Image className='hidden sm:block' src={"/vectors/Union.svg"} alt="img" height={36} width={36} />
             <Image className='sm:hidden' src={"/vectors/Union.svg"} alt="img" height={16} width={16} />
             <h3 className="font-normal text-[#525252] text-lg sm:text-xl lg:text-[28px] 4xl:text-[42px]">Job Openings</h3>

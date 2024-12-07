@@ -18,11 +18,11 @@ function OurTeam() {
         </div>
 
         <div className="flex w-fit gap-4 items-center  mx-auto">
-          <Image  className='h-[16px] w-[16px] md:w-[28px] md:h-[28px]  3xl:h-[36px]  3xl:w-[36px] ' src={"/vectors/Star 1.svg"} alt="" height={30} width={30} />
+          <Image  className='h-[16px] w-[16px] md:w-[28px] md:h-[28px]  3xl:h-[36px]  3xl:w-[36px] ' src={"/vectors/Union.svg"} alt="" height={30} width={30} />
           <h3 className="text-md text-center md:text-xl 3xl:text-[42px] text-[#525252] font-normal ">
             Brilliant Minds Behind CodeBiosis
           </h3>
-          <Image  className='h-[16px] w-[16px] md:w-[28px] md:h-[28px]  3xl:h-[36px]  3xl:w-[36px] ' src={"/vectors/Star 1.svg"} alt="" height={30} width={30} />
+          <Image  className='h-[16px] w-[16px] md:w-[28px] md:h-[28px]  3xl:h-[36px]  3xl:w-[36px] ' src={"/vectors/Union.svg"} alt="" height={30} width={30} />
         </div>
       </div>
 

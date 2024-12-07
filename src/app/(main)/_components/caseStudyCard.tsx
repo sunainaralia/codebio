@@ -23,33 +23,44 @@ const CaseStudyCard: FC<CaseStudyProps> = ({
 }) => {
   const navigate = useRouter();
   return (
-    <div className={cn("max-w-[600px] px-4 rounded overflow-hidden", className)}>
-      <div className="relative">
-        <Image
-          src={image}
-          alt={title}
-          width={400}
-          height={300}
-          className="w-full"
-        />
-        <Image
-          src="/icons/angle_icon.svg"
-          alt=""
-          width={25}
-          height={25}
-          className="absolute bottom-3 right-3 bg-primary-natural rounded-full p-2"
-          onClick={() => navigate.push(`/case-study/${id}`)}
-        />
-      </div>
-      <div className="py-4">
-        <div className="font-bold text-xl mb-2">{title}</div>
-        <p className="text-gray-700 text-base">{description}</p>
-      </div>
-      <div className="pt-4 pb-2">
+    <div
+      className={cn(
+        " px-4 xl:px-12 3xl:px-24 rounded overflow-hidden my-12 3xl:my-28 !h-full",
+        className
+      )}
+    >
+    
+        <div className="relative">
+          <Image
+            src={image}
+            alt={title}
+            width={400}
+            height={300}
+            className="w-full"
+          />
+          <Image
+            src="/icons/angle_icon.svg"
+            alt=""
+            width={25}
+            height={25}
+            className="absolute bottom-3 right-3 bg-primary-natural rounded-full p-2 lg:w-12 lg:h-12"
+            onClick={() => navigate.push(`/case-study/${id}`)}
+          />
+        </div>
+        <div className="py-5 2xl:py-12 flex flex-col gap-5">
+          <div className="font-bold text-xl md:text-xl lg:text-2xl 4xl:text-[38px] 3xl:mb-2">
+            {title}
+          </div>
+          <p className="text-[#525252] text-base xl:text-xl 2xl:text-2xl max-w-[700px]">
+            {description}
+          </p>
+        </div>
+    
+      <div className="pb-2 flex flex-wrap gap-2 3xl:gap-5">
         {categories.map((category) => (
           <Button
             key={category}
-            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            className="inline-block rounded-full px-2 xl:px-4 py-1.5 xl:py-3 text-base xl:text-xl 3xl:text-[28px] border-[#2B2B2B] text-[#2B2B2B] font-bold"
             variant={"outline"}
           >
             {category}

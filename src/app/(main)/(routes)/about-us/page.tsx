@@ -140,7 +140,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="md:flex md:py-14 4xl:pt-36 px-[30px] md:px-20 ">
+      <div className="md:flex md:py-14 4xl:pt-36 px-[30px] md:px-20 mb-[150px]">
         <div className="md:w-[49%] md:px-5 xl:px-10">
           <div className="flex flex-row md:flex-col justify-between max-md:items-center mb-7">
             {" "}
@@ -160,7 +160,7 @@ function AboutUs() {
           </div>
         </div>
         <Separator
-          className="h-auto md:w-px bg-[##525252] p-[.5px] hidden md:block"
+          className="h-[400px] md:w-px bg-[#525252] p-[.5px] hidden md:block"
           orientation="vertical"
         />
         <Separator
