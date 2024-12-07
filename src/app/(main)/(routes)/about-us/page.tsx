@@ -10,6 +10,7 @@ import OurStatsRightSection from "@/components/sections/ourStatsRightSection";
 import LetsCollab from "../../_components/letsCollab";
 import GetInTouchSection from "@/components/sections/GetInTouchSection";
 import LottieAnimation from "../../_components/lottiePlayer";
+import PanoramaSlider from "./_components/PanoramaSlider";
 
 const images = [
   "/aboutus/o4.jpg",
@@ -115,7 +116,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className='mb-[60px] xl:my-20 4xl"my-[120px] px-[30px] md:px-20'>
+      <div className='mb-[60px] xl:my-10 4xl"my-[120px] px-[30px] md:px-20'>
         <div className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl 4xl:text-6xl font-bold text-black text-center">
           What Makes Us Awesome
         </div>
@@ -192,6 +193,10 @@ function AboutUs() {
         />
       </div>
 
+      <div className="">
+          {/* <ImageCarousel /> */}
+          <PanoramaSlider/>
+        </div>
       <div className="md:py-14 px-[30px] md:px-20">
         {/* <div className="flex">
            <Image src={"/aboutus/1.jpg"} alt="" width={500} height={500} style={{
@@ -210,9 +215,7 @@ function AboutUs() {
           className='m-auto my-14'
         /> */}
 
-        <div className="md:py-14">
-          <ImageCarousel />
-        </div>
+        
 
         <div className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl 4xl:text-6xl font-bold text-black text-center">
           Our Vibe
@@ -243,13 +246,13 @@ function AboutUs() {
         />
       </div>
 
-      <div className="mb-20  md:my-44 hidden lg:block">
+      <div className="mb-20  md:my-16 4xl:mt-36 hidden lg:block">
         <TestimonialsSection />
       </div>
-      <div className="hidden md:block px-[30px] md:px-20">
+      <div className="hidden lg:block px-[30px] md:px-20">
         <OurStatsRightSection />
       </div>
-      <div className="mt-[160px] md:mt-0 px-[30px] md:px-20">
+      <div className="  md:mt-0 px-[30px] md:px-20">
         <LetsCollab
           title="Got a Project"
           substring="We’re a team of creatives who are excited about unique ideas and help companies to create amazing identity by crafting top-notch UI/UX & E-Commerce stores."

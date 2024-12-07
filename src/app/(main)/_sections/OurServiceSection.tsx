@@ -65,13 +65,7 @@ const OurServiceSection = () => {
                     className="w-full h-full mx-auto mb-4 rounded-lg lg:mt-7 4xl:mt-10 object-cover"
                   />
                 </div>
-                {/* <Image
-                    src={work.image}
-                    alt={work.title}
-                    width={100}
-                    height={100}
-                    className="w-full mx-auto hidden lg:block lg:w-full h-auto mb-4 rounded-lg"
-                  /> */}
+                
 
                 <div className="3xl:flex flex-wrap gap-2 mt-4 lg:mt-5 4xl:mt-7  hidden ">
                   {work.tags.map((tag, idx) => (
