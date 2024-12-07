@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -56,12 +57,11 @@ const OurServiceSection = () => {
                       {work.description}
                     </p>
                   </div>
-                  <Image
+                  <img
                     src={work.image}
                     alt={work.title}
-                    quality={100}
-                    width={100}
-                    height={100}
+                    // width={100}
+                    // height={100}
                     className="w-full h-full mx-auto mb-4 rounded-lg lg:mt-7 4xl:mt-10 object-cover"
                   />
                 </div>

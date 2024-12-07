@@ -8,20 +8,32 @@ const GetInTouchSection = () => {
   const socials = [
     {
       title: 'linkedin',
-      darkIcon: '/icons/LinkedIn.svg',
-      lightIcon: '/icons/LinkedIn_light.svg',
+      darkIcon: '/icons/linkdin-social-icon.svg',
+      lightIcon: '/icons/linkdin-social-icon.svg',
       link: '#',
     },
     {
       title: 'Instagram',
-      darkIcon: '/icons/Instagram.svg',
-      lightIcon: '/icons/Instagram_light.svg',
+      darkIcon: '/icons/insta-social-icon.svg',
+      lightIcon: '/icons/insta-social-icon.svg',
       link: '#',
     },
     {
       title: 'Facebook',
-      darkIcon: '/icons/Facebook.svg',
-      lightIcon: '/icons/Facebook_light.svg',
+      darkIcon: '/icons/fb-social-icon.svg',
+      lightIcon: '/icons/fb-social-icon.svg',
+      link: '#',
+    },
+    {
+      title: 'be',
+      darkIcon: '/icons/be-social-icon.svg',
+      lightIcon: '/icons/be-social-icon.svg',
+      link: '#',
+    },
+    {
+      title: 'browser',
+      darkIcon: '/icons//web-browser-icon.svg',
+      lightIcon: '/icons/web-browser-icon.svg',
       link: '#',
     },
   ];
