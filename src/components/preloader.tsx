@@ -27,7 +27,7 @@ const Preloader = () => {
       case "/our-work/*":
         return "Our Projects";
       case "/about-us":
-        return "Who We Are";
+        return "About Us";
       case "/blog":
         return "Our Blog";
       case "/contact-us":
@@ -69,7 +69,7 @@ const Preloader = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "100%" }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-6xl font-semibold text-primary-white"
+            className="text-5xl md:text-6xl font-semibold text-primary-white"
           >
             {getPathTitle()}
           </motion.h1>
