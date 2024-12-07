@@ -65,7 +65,7 @@ const CaseStudiesPage = () => {
         <Image src={"/vectors/Union.svg"} alt="" height={20} width={20} />
         <h2 className="text-[22px] text-center md:text-xl 3xl:text-[42px] text-[#525252] font-normal">{"Case Studies"}</h2>
       </div>
-      <div className="flex justify-left mt-12 3xl:mt-20">
+      <div className="flex justify-left mt-6 lg:mt-12 3xl:mt-20">
         {categories.map((category) => (
           <button
             key={category}

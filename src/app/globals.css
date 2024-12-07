@@ -182,25 +182,6 @@ html,
   overflow: hidden;
 }
 
-@media (min-width:768px){
-  .switchParent{
-    width: 130px;
-    height: 50px;
-  }
-  
-  #panorama .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-}
-@media (min-width:1700px){
-  .switchParent{
-    width: 180px;
-    height: 70px;
-  }
-}
 
 .stopped {
   left: 7px;
@@ -221,6 +202,25 @@ html,
   background-color: white;
 }
 
+@media (min-width:768px){
+  .switchParent{
+    width: 130px;
+    height: 50px;
+  }
+  
+  #panorama .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+@media (min-width:1700px){
+  .switchParent{
+    width: 180px;
+    height: 70px;
+  }
+}
 
 @media (min-width:1700px){
   .slider{
@@ -238,7 +238,7 @@ html,
     height: 35px;
   }
 }
-@media (max-width:768px){
+@media (max-width:767.98px){
   .slider{
     width: 25px;
     height: 25px;
@@ -246,7 +246,7 @@ html,
   #panorama .swiper-slide img {
     display: block;
     width: 100%;
-    height: 154px;
+    height: 200px;
     object-fit: cover;
   }
 }
@@ -370,6 +370,22 @@ html,
   height: 530px !important;
 }
 
+@media (min-width: 1024px) {
+  #panorama .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1280px) {
+  #panorama .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}
 @media (min-width: 1700px) {
   #oursolution .swiper {
     height: 750px !important;
@@ -381,7 +397,7 @@ html,
   #panorama .swiper-slide img {
     display: block;
     width: 100%;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
   }
 }
@@ -389,13 +405,14 @@ html,
   #oursolution .swiper {
     height: 950px !important;
   }
-}
-@media (min-width: 1280px) {
-  #oursolution .swiper-slide,
-  .ourworkcard {
-    /* min-height: 840px; */
+  #panorama .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
   }
 }
+
 #oursolution .swiper-slide  {
   margin: 0px !important;
 }

@@ -140,7 +140,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="md:flex md:py-14 4xl:pt-36 px-[30px] md:px-20 mb-[150px]">
+      <div className="md:flex md:py-14 4xl:pt-36 px-[30px] md:px-20 xl:mb-10 4xl:mb-[150px]">
         <div className="md:w-[49%] md:px-5 xl:px-10">
           <div className="flex flex-row md:flex-col justify-between max-md:items-center mb-7">
             {" "}
@@ -148,7 +148,9 @@ function AboutUs() {
               animationData={require("@/../public/lottiee/aboutUs/Vision.json")}
               className="max-w-[64px] lg:max-w-[100px] max-h-[64px] lg:max-h-[100px]"
             />
-            <div className="text-3xl xl:text-4xl 4xl:text-[72px] font-bold xl:my-6">Our Vision</div>
+            <div className="text-3xl xl:text-4xl 4xl:text-[72px] font-bold xl:my-6">
+              Our Vision
+            </div>
           </div>
           <div className="text-[#2B2B2B]  text-[15px] sm:text-lg lg:text-xl 4xl:text-3xl 4xl:!leading-10">
             Our vision is to lead in the digital world by delivering innovative,
@@ -175,7 +177,9 @@ function AboutUs() {
               animationData={require("@/../public/lottiee/aboutUs/Results.json")}
               className="max-w-[64px] lg:max-w-[100px] max-h-[64px] lg:max-h-[100px]"
             />
-            <div className="text-3xl xl:text-4xl 4xl:text-[72px] font-bold xl:my-6">Our Mission</div>
+            <div className="text-3xl xl:text-4xl 4xl:text-[72px] font-bold xl:my-6">
+              Our Mission
+            </div>
           </div>
           <div className="text-[#2B2B2B] text-[15px] sm:text-lg lg:text-xl 4xl:text-3xl 4xl:!leading-10">
             Our mission is to empower businesses with innovative, user-focused
@@ -194,29 +198,10 @@ function AboutUs() {
       </div>
 
       <div className="">
-          {/* <ImageCarousel /> */}
-          <PanoramaSlider/>
-        </div>
-      <div className="md:py-14 px-[30px] md:px-20">
-        {/* <div className="flex">
-           <Image src={"/aboutus/1.jpg"} alt="" width={500} height={500} style={{
-            clipPath:"polygon(280px 10px, calc( 100% - 145px) 34px, 100% 60px, 100% calc( 100% - 85px), calc( 100% - 159px) calc( 100% - 33px), 282px calc( 100% - 10px), 190px calc( 100% - 2px), 189px 0px);"
-           }}/>
-           <Image src={"/aboutus/2.jpg"} alt="" width={500} height={500} className="" style={{
-            clipPath:"polygon(236px 44px, calc( 100% - 94px) 59px, 100% 60px, 100% calc( 100% - 85px), calc( 100% - 109px) calc( 100% - 72px), 250px calc( 100% - 52px), 0px calc( 100% - 2px), 0px 0px);"
-           }}/>
-        </div> */}
-
-        {/* <Image
-          src={'/aboutus/imgGal.svg'}
-          alt=''
-          width={3000}
-          height={1500}
-          className='m-auto my-14'
-        /> */}
-
-        
-
+        {/* <ImageCarousel /> */}
+        <PanoramaSlider />
+      </div>
+      <div className="md:pb-14 px-[30px] md:px-20">
         <div className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl 4xl:text-6xl font-bold text-black text-center">
           Our Vibe
           <Separator className="h-px w-full max-w-[150px] 2xl:max-w-[250px] bg-[#525252] my-4 mx-auto" />

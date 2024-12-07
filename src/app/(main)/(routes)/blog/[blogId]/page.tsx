@@ -41,14 +41,14 @@ function BlogDetails() {
   return (
     <div className="px-[30px] md:px-20">
       <div className="mt-[43px] xl:mt-[110px] flex justify-between items-center">
-        <Image className="hidden md:block" src={"/vectors/backButton.svg"} alt="img" width={80} height={80} />
-        <Image className="md:hidden" src={"/vectors/backButton.svg"} alt="img" width={45} height={45} />
+        <Image className="hidden md:block h-12 w-12 4xl:w-28 4xl:h-28" src={"/vectors/backButton.svg"} alt="img" width={80} height={80} />
+        <Image className="md:hidden h-12 w-12 4xl:w-28 4xl:h-28" src={"/vectors/backButton.svg"} alt="img" width={45} height={45} />
         <div className="block md:hidden">
           <MusicButton musicLink="/blog/Song.mp3" />
         </div>
       </div>
 
-      <div className="text-center text-[30px] md:text-5xl 4xl:text-[72px] font-[900] pt-20 xl:pt-[130px] md:max-w-[1150px] mx-auto md:!leading-[80px] 4xl:!leading-[97px]">
+      <div className="text-center text-[30px] md:text-5xl 4xl:text-[72px] font-[900] pt-20 4xl:pt-[130px] md:max-w-[1150px] mx-auto md:!leading-[80px] 4xl:!leading-[97px]">
         {blogData?.title}
       </div>
       <div className="w-full sm:w-[250px] mx-auto my-[15px] sm:my-5 border-b-[.5px] rounded-[5px] border-[#525252]"></div>
@@ -56,9 +56,9 @@ function BlogDetails() {
         {blogData?.description} | {blogData?.time}
       </div>
 
-      <div className=" py-10 lg:pb-[80px] lg:pt-[98px] 2xl:pt-[130px] 2xl:pb-[100px] hidden md:block">
+      {/* <div className=" py-10 lg:pb-[80px] lg:pt-[98px] 2xl:pt-[130px] 2xl:pb-[100px] hidden md:block"> */}
         {/* <MusicButton musicLink="/blog/Song.mp3" /> */}
-      </div>
+      {/* </div> */}
 
       <div>
         {/* <Image
@@ -85,7 +85,7 @@ function BlogDetails() {
         </div> */}
       </div>
 
-      <div className="text-[#525252] text-xl lg:text-[30px] font-normal max-md:mt-10 mb-[43px] 2xl:mb-[59px] lg:leading-[40px] leading-[21px] ">
+      <div className="text-[#525252] text-xl lg:text-[30px] font-normal max-md:mt-10 mb-[43px] 2xl:mb-[59px] lg:leading-[40px] leading-[21px] mt-24">
         In the fast-paced world of e-commerce, standing out from the competition
         is crucial. A visually appealing and user-friendly website can make all
         the difference in capturing the attention of potential customers and

@@ -7,7 +7,8 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
-import Image from "next/image";
+import Image from "next/image"
+import upperCurve from '../../../../../../public/vectors/slider-curve.svg';
 
 // Array of images
 const images = [
@@ -57,9 +58,11 @@ const images = [
 
 const PanoramaSlider = () => {
   return (
-    <div id="panorama" className="">
+    <div id="panorama" className="relative">
+        <Image width={100} height={100} className="w-screen absolute top-12 md:top-9 lg:top-7 left-0 z-10" src={upperCurve} alt="curve" />
+        <Image width={100} height={100} className="w-screen absolute scale-110 bottom-12 md:bottom-9 lg:bottom-7 left-0 z-10 rotate-180" src={upperCurve} alt="curve" />
       <Swiper
-        effect={"coverflow"}
+        // effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={3}
