@@ -175,7 +175,7 @@ function BlogDetails() {
             <div className="flex gap-3 xl:gap-6 text-4xl font-semibold items-center max-4xl:justify-center 4xl:ps-[100px] 2xl:max-w-[825px] flex-wrap ">
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px] !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px]  !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
               Social Media
               </Button>
