@@ -88,7 +88,7 @@ function ImageCarousel() {
 
 function AboutUs() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden~">
       <div className="w-fit mx-auto pb-[60px] pt-6 sm:py-20 px-[30px] md:px-20">
         <div className="flex w-fit gap-4 items-center mb-5 mx-auto">
           <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
