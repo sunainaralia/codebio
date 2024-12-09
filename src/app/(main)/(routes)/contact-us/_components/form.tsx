@@ -95,9 +95,11 @@ const Form = () => {
           </p>
         </div>
       </form>
-      <AnimatedButton className="w-fit mx-auto text-lg lg:text-xl 3xl:text-[28px] font-bold text-[#2B2B2B] ">
-        Send Message
-      </AnimatedButton>
+      <div className="mt-14 lg:mt-0 ">
+        <AnimatedButton className="w-fit mx-auto text-lg lg:text-xl 3xl:text-[28px] font-bold text-[#2B2B2B] ">
+          Send Message
+        </AnimatedButton>
+      </div>
     </div>
   );
 };

@@ -142,13 +142,13 @@ function AboutUs() {
 
       <div className="md:flex md:py-14 4xl:pt-36 px-[30px] md:px-20 xl:mb-10 4xl:mb-[150px]">
         <div className="md:w-[49%] md:px-5 xl:px-10">
-          <div className="flex flex-row md:flex-col justify-between max-md:items-center mb-7">
+          <div className="flex flex-row md:flex-col justify-between max-md:items-center mb-5 3xl:mb-7">
             {" "}
             <LottieAnimation
               animationData={require("@/../public/lottiee/aboutUs/Vision.json")}
-              className="max-w-[64px] lg:max-w-[100px] max-h-[64px] lg:max-h-[100px]"
+              className="max-w-[64px] 3xl:max-w-[100px] max-h-[64px] 3xl:max-h-[100px]"
             />
-            <div className="text-3xl xl:text-4xl 4xl:text-[72px] font-bold xl:my-6">
+            <div className="text-3xl xl:text-4xl 4xl:text-[72px] font-bold xl:mt-2 4xl:my-6">
               Our Vision
             </div>
           </div>
@@ -171,13 +171,13 @@ function AboutUs() {
         />
 
         <div className="md:w-[49%] md:px-5 xl:px-10">
-          <div className="flex flex-row md:flex-col justify-between max-md:items-center mb-7">
+          <div className="flex flex-row md:flex-col justify-between max-md:items-center mb-5 3xl:mb-7">
             {" "}
             <LottieAnimation
               animationData={require("@/../public/lottiee/aboutUs/Results.json")}
-              className="max-w-[64px] lg:max-w-[100px] max-h-[64px] lg:max-h-[100px]"
+              className="max-w-[64px] 3xl:max-w-[100px] max-h-[64px] 3xl:max-h-[100px]"
             />
-            <div className="text-3xl xl:text-4xl 4xl:text-[72px] font-bold xl:my-6">
+            <div className="text-3xl xl:text-4xl 4xl:text-[72px] font-bold xl:mt-2 4xl:my-6">
               Our Mission
             </div>
           </div>

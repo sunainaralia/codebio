@@ -36,6 +36,7 @@ import CaseStudyCard from "../../_components/caseStudyCard";
 import LetsCollab from "../../_components/letsCollab";
 import { cn } from "@/lib/utils";
 import AnimatedButton from "@/components/AnimatedButton";
+import { Separator } from "@/components/ui/separator";
 
 const categories = [
   "All",
@@ -72,7 +73,7 @@ const CaseStudiesPage = () => {
             className={`p-1 sm:p-2 border-b border-[#525252] ${
               selectedCategory === category
                 ? "text-white me-4 sm:me-10 xl:me-14 text-lg md:text-3xl lg:text-4xl 2xl:text-5xl 4xl:text-6xl font-bold text-[black]"
-                : "text-gray-700 text-xs lg:text-xl 4xl:text-3xl sm:pe-5 xl:pe-12 "
+                : "text-gray-700 text-xs border-b-[.5px] lg:text-xl 4xl:text-3xl sm:pe-5 xl:pe-12 "
             }`}
             onClick={() => setSelectedCategory(category)}
           >
@@ -84,9 +85,9 @@ const CaseStudiesPage = () => {
         {filteredCaseStudies
           .slice(0, visibleCaseStudies)
           .map((caseStudy, index) => (
-            <div className="border-b border-[#525252]" key={index}>
+            <div className="border-b-[.5px] border-[#525252]" key={index}>
               <div
-                className={cn(index % 2 === 0 && "sm:border-r border-[#525252]")}
+                className={cn(index % 2 === 0 && "sm:border-r-[.5px] rounded border-[#525252]")}
               >
                 <CaseStudyCard
                   {...caseStudy}
@@ -108,6 +109,7 @@ const CaseStudiesPage = () => {
         }
         className="4xl:py-14"
       />
+       <Separator className='h-px w-full bg-[#525252] mt-14 mx-auto' />
     </div>
   );
 };

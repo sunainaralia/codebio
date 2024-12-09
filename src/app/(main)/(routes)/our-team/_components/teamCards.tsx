@@ -27,21 +27,21 @@ const TeamCards = ({
   };
 
   return (
-    <div className="w-[90%]">
+    <div className="w-full sm:w-[90%]">
       <div className="flex justify-between gap-24">
         <div className="">
-          <Image src={image} alt="" width={200} height={200} />
+          <Image src={image} alt="img" width={200} height={200} />
         </div>
 
-        <div className="flex items-start justify-between w-[300px]">
-          <div className="flex  text-[#000] font-semibold text-2xl 4xl:text-[60px] lg:text-[30px] xl:text-4xl items-center gap-5 4xl:gap-8">
+        <div className="flex items-start justify-between 4xl:gap-10 w-[400px] sm:w-[200px] lg:w-[350px] 2xl:w-[300px]">
+          <div className="flex  text-[#000] font-bold text-2xl 4xl:text-[60px] lg:text-[30px] xl:text-4xl items-center gap-2 md:gap-5 4xl:gap-8">
             {experience}{" "}
-            <span className="text-sm 3xl:text-[20px] lg:text-[17px]  leading-[27px]">
+            <span className="text-sm 3xl:text-[20px] lg:text-[17px] font-medium lg:leading-[27px]">
               Years of Experience
             </span>
           </div>
           <div className="flex flex-col gap-1 items-center">
-            <Image src={icon} alt="" width={30} height={30} />
+            <Image src={icon} className="3xl:w-[65px] 3xl:h-[100px]  " alt="img" width={30} height={30} />
             <SocialButton
               title={name}
               darkIcon={socials.linkedin.darkIcon}
@@ -57,8 +57,8 @@ const TeamCards = ({
       </div>
 
       <div className="">
-        <div className="text-2xl md:text-3xl 4xl:text-[60px] 4xl:leading-[80px] font-semibold capitalize 3xl:mt-[49px] mt-[30px]">{name}</div>
-        <div className="font-medium 4xl:text-[30px] lg:text-[22px] text-[16px] mt-[15px] text-[#000000] 3xl:leading-[40px]">{role}</div>
+        <div className="text-2xl md:text-3xl 4xl:text-[60px] 4xl:leading-[80px] font-semibold capitalize 3xl:mt-[49px] mt-5 sm:mt-[30px]">{name}</div>
+        <div className="font-normal 4xl:text-[30px] lg:text-[22px] text-[16px] mt-[15px] text-[#000000] 3xl:leading-[40px]">{role}</div>
         <div className="text-[#525252] 2xl:leading-[32px] text-[12px] 4xl:text-[24px] lg:text-[18px] 3xl:mt-[45px] lg:mt-[30px]">{description}</div>
       </div>
 

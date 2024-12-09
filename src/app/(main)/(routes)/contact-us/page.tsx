@@ -14,12 +14,12 @@ function ContactUs() {
           CONTACT US
         </div>
 
-        <div className='flex w-fit gap-4  mx-auto'>
-          <Image src={'/vectors/Union.svg'} alt='' height={36} width={36} className='h-[16px] w-[16px] md:w-[28px] md:h-[28px]  3xl:h-[36px]  3xl:w-[36px] 4xl:mt-[30px]'/>
+        <div className='flex w-fit gap-4 max-lg:items-center mx-auto'>
+          <Image src={'/vectors/Union.svg'} alt='' height={36} width={36} className='h-[16px] w-[16px] md:w-[28px] md:h-[28px]  4xl:h-[36px]  3xl:w-[36px] 4xl:mt-5'/>
           <h3 className='text-md text-center md:text-xl 4xl:text-[42px] text-[#525252] font-normal 4xl:mt-[30px]'>
             Our friendly team would love to hear from you
           </h3>
-          <Image src={'/vectors/Union.svg'} alt='' height={36} width={36} className='3xl:h-[36px]  3xl:w-[36px] md:w-[28px] md:h-[28px] h-[16px] w-[16px] 4xl:mt-[30px]'/>
+          <Image src={'/vectors/Union.svg'} alt='' height={36} width={36} className='h-[16px] w-[16px] md:w-[28px] md:h-[28px]  4xl:h-[36px]  3xl:w-[36px] 4xl:mt-5'/>
         </div>
       </div>
 
@@ -38,7 +38,7 @@ function ContactUs() {
 
       <GetInTouchSection />
 
-      <Separator className='h-px w-full bg-[#D8D8D8] mt-14 mx-auto' />
+      <Separator className='h-px w-full bg-[#525252] mt-14 mx-auto' />
     </div>
   );
 }

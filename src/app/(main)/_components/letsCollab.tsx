@@ -22,7 +22,7 @@ const LetsCollab = ({
       <div className="md:w-[49%] ">
         <div className="flex gap-4 items-center justify-center md:justify-start mb-5">
           <Image
-            src={"/vectors/Union.svg"}
+            src={"/vectors/starJoin.svg"}
             className="w-4 h-4 4xl:w-[30px] 4xl:h-[30px]"
             alt=""
             height={30}

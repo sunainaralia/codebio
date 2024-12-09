@@ -43,7 +43,7 @@ const CaseStudyCard: FC<CaseStudyProps> = ({
             alt=""
             width={25}
             height={25}
-            className="absolute bottom-3 right-3 bg-primary-natural rounded-full p-2 lg:w-12 lg:h-12"
+            className="absolute bottom-3 right-3 bg-primary-natural rounded-full p-2 3xl::w-12 3xl::h-12"
             onClick={() => navigate.push(`/case-study/${id}`)}
           />
         </div>
