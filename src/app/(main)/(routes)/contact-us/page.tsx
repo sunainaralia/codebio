@@ -28,7 +28,7 @@ function ContactUs() {
       <div className='pt-[84px] md:pt-24 2xl:pt-[140px] 4xl:pt-[200px]'>
         <OurOfficeLocatedSection />
       </div>
-      <div className='py-14'>
+      <div className='py-5 3xl:py-14'>
         <LetsCollab
           title='Join Our Team'
           subGHeading='Look Out Open Positions'

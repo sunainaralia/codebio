@@ -39,7 +39,7 @@ const GetInTouchSection = () => {
   ];
 
   return (
-    <div className='3xl:mt-[300px] lg:mt-[120px] md:mt-[80px] mt-[30px]  3xl:mb-[350px] lg:mb-[130px] mb-[85px]'>
+    <div className='lg:mt-10  mt-[30px]  3xl:mb-[350px] lg:mb-[130px] mb-[85px]'>
       <div className=' mx-auto text-center text-3xl lg:text-[50px] 3xl:text-[72px] pt-2 font-bold mb-1 lg:mb-5 3xl:leading-[97px]'>
         Get In Touch
       </div>
