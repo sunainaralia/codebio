@@ -20,16 +20,16 @@ function HeroHeader(props: {
       <div className="md:flex justify-around items-center flex-row pt-8 pb-14 md:py-14 gap-7  lg:h-[600px] 4xl:h-[750px]">
         <div className="h-full w-full flex flex-col justify-center items-center col-span-1">
           <div className="flex flex-row items-center gap-4">
-            <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
+            <Image src={"/vectors/Union.svg"} alt="" height={22} width={22} />
             <h3
               className={cn(
-                `text-lg font-normal text-[#525252] sm:text-[26px] lg:text-[32px] text-center lg:leading-[56px]`,
+                `text-lg font-normal text-[#525252] sm:text-xl lg:text-[22px] text-center lg:leading-10`,
                 props.subText && "text-xl "
               )}
             >
               {props.title}
             </h3>
-            <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
+            <Image src={"/vectors/Union.svg"} alt="" height={22} width={22} />
           </div>
           <h1
             className={cn(

@@ -40,7 +40,9 @@ function HomePage() {
           <OurOfficeLocatedSection />
         </div>
 
-        <GetInTouchSection />
+        <div className='md:pt-10'>
+          <GetInTouchSection />
+        </div>
       </div>
     </div>
   );

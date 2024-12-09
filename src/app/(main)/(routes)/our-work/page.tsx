@@ -11,7 +11,7 @@ import OurStatsSection from '@/components/sections/OurStatsSection';
 
 function Work() {
   return (
-    <div className='px-[30px] md:px-0'>
+    <div className='px-[30px] md:px-20'>
       {
         works.map((work) => <BannerDetails key={work.id} {...work} buttonText="View full Details"/>)
       } 

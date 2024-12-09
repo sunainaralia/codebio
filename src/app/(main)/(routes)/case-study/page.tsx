@@ -60,19 +60,19 @@ const CaseStudiesPage = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="px-[30px] md:px-20">
       <div className="flex gap-4 items-center pt-14 mb-5">
-        <Image src={"/vectors/Star 1.svg"} alt="" height={20} width={20} />
-        <h2 className="text-xl ">{"Case Studies"}</h2>
+        <Image src={"/vectors/Union.svg"} alt="" height={20} width={20} />
+        <h2 className="text-[22px] text-center md:text-xl 3xl:text-[42px] text-[#525252] font-normal">{"Case Studies"}</h2>
       </div>
-      <div className="flex justify-left pb-8">
+      <div className="flex justify-left mt-6 lg:mt-12 3xl:mt-20">
         {categories.map((category) => (
           <button
             key={category}
-            className={`p-2 border-b border-[#8D8D8D] ${
+            className={`p-1 sm:p-2 border-b border-[#525252] ${
               selectedCategory === category
-                ? "bg-blue-500 text-white text-xl mx-4"
-                : "bg-gray-200 text-gray-700 text-sm"
+                ? "text-white me-4 sm:me-10 xl:me-14 text-lg md:text-3xl lg:text-4xl 2xl:text-5xl 4xl:text-6xl font-bold text-[black]"
+                : "text-gray-700 text-xs lg:text-xl 4xl:text-3xl sm:pe-5 xl:pe-12 "
             }`}
             onClick={() => setSelectedCategory(category)}
           >
@@ -80,23 +80,23 @@ const CaseStudiesPage = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 pb-14 justify-center ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 pb-14 justify-center">
         {filteredCaseStudies
           .slice(0, visibleCaseStudies)
           .map((caseStudy, index) => (
-            <div className="py-12 border-b border-[#D8D8D8]" key={index}>
+            <div className="border-b border-[#525252]" key={index}>
               <div
-                className={cn(index % 2 === 0 && "border-r border-[#D8D8D8]")}
+                className={cn(index % 2 === 0 && "sm:border-r border-[#525252]")}
               >
                 <CaseStudyCard
                   {...caseStudy}
-                  className="max-w-[600px] mx-auto "
+                  className="!h-full"
                 />
               </div>
             </div>
           ))}
       </div>
-      <div className="flex justify-center py-14">
+      <div className="flex justify-center 4xl:py-14">
         <AnimatedButton >
           Load More
         </AnimatedButton>
@@ -106,7 +106,7 @@ const CaseStudiesPage = () => {
         substring={
           "We're a team of creatives who are excited about unique ideas and help companies to create amazing identity by crafting top-notch UI/UX & E-Commerce stores."
         }
-        className="py-14"
+        className="4xl:py-14"
       />
     </div>
   );

@@ -58,7 +58,7 @@ function OurOfficeLocatedSection() {
   };
   return (
     <div >
-      <div className="text-lg font-normal text-[#525252] sm:text-[26px] 4xl:text-[42px] lg:text-[32px] text-center">
+      <div className="text-lg font-normal text-[#525252] sm:text-xl 4xl:text-[42px] lg:text-[22px] text-center">
         Our Offices
       </div>
       <div className=" text-[36px] md:text-5xl lg:text-[50px] 4xl:text-[84px]  lg:!leading-[70px] 4xl:!leading-[7rem] font-bold block mt-[10px] text-center">

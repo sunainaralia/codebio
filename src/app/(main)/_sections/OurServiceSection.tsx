@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,7 +12,7 @@ import { ourWorkData } from "./ourWork";
 
 const OurServiceSection = () => {
   return (
-    <div id="oursolution" className="pb-12 4xl:pb-24 pt-[88px] md:pt-24 lg:pt-[100px] 2xl:pb-[150px] 4xl:pt-0 4xl:mt-[254px] md:mt-28 3xl:mt-[100px] ">
+    <div id="oursolution" className="pb-12 4xl:pb-24 pt-[88px] md:pt-0 lg:pt-[10px] 2xl:pb-[150px] 4xl:pt-0 4xl:mt-[254px] md:mt-28 3xl:mt-[100px] ">
       <div className="flex gap-4 items-center mb-5  lg:mb-[70px]">
         <Image
           src={"/vectors/Union.svg"}
@@ -20,7 +21,7 @@ const OurServiceSection = () => {
           width={30}
           className="hidden md:block 4xl:h-[30px] 4xl:w-[30px] lg:h-[24px] lg:w-[24px]"
         />
-        <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px]">
+        <h3 className="text-lg font-normal text-[#525252] sm:text-xl lg:text-[28px] 4xl:text-[42px]">
           Our Solutions
         </h3>
       </div>
@@ -56,22 +57,15 @@ const OurServiceSection = () => {
                       {work.description}
                     </p>
                   </div>
-                  <Image
+                  <img
                     src={work.image}
                     alt={work.title}
-                    quality={100}
-                    width={100}
-                    height={100}
+                    // width={100}
+                    // height={100}
                     className="w-full h-full mx-auto mb-4 rounded-lg lg:mt-7 4xl:mt-10 object-cover"
                   />
                 </div>
-                {/* <Image
-                    src={work.image}
-                    alt={work.title}
-                    width={100}
-                    height={100}
-                    className="w-full mx-auto hidden lg:block lg:w-full h-auto mb-4 rounded-lg"
-                  /> */}
+                
 
                 <div className="3xl:flex flex-wrap gap-2 mt-4 lg:mt-5 4xl:mt-7  hidden ">
                   {work.tags.map((tag, idx) => (

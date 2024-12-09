@@ -201,7 +201,7 @@ const CertifiedPartnersSection = () => {
           <div className="flex gap-4 items-center">
             <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
 
-            <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px]">
+            <h3 className="text-lg font-normal text-[#525252] sm:text-xl lg:text-[28px] 4xl:text-[42px]">
               Certified Partners
             </h3>
           </div>

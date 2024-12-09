@@ -28,7 +28,7 @@ function SolutionCard({ icon, title,cardStyling }: SolutionCardProps) {
 
         <Separator className="hidden bg-primary-natural h-px w-full" />
         <div className="w-full flex flex-col justify-center items-center lg:border-t border-[#2b2b2b] lg:h-[120px] 4xl:h-[210px]      px-4 pb-6 lg:pb-0">
-          <h1 className="break-normal text-center font-semibold text-sm lg:text-[26px] 4xl:text-[38px] lg:leading-[36px]">
+          <h1 className="break-normal text-center font-semibold text-sm lg:text-[22px] 4xl:text-[38px] lg:leading-[36px]">
             {title}
           </h1>
         </div>

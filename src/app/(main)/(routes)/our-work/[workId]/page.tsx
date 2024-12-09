@@ -211,9 +211,9 @@ function WorkDetails() {
       <div className='md:py-20'>
         <div className='w-full md:flex justify-between'>
           <div className='flex gap-4 items-center mb-5 justify-center md:justify-start'>
-            <Image src={'/vectors/Star 1.svg'} alt='' height={30} width={30} />
+            <Image src={'/vectors/Union.svg'} alt='' height={30} width={30} />
             <h3 className='text-xl '>Discover More</h3>
-            <Image src={'/vectors/Star 1.svg'} alt='' height={30} width={30} className='block md:hidden' />
+            <Image src={'/vectors/Union.svg'} alt='' height={30} width={30} className='block md:hidden' />
           </div>
           <AnimatedButton className='hidden md:flex mt-0'>
             All Projects

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Image from "next/image";
@@ -41,28 +42,28 @@ function BlogDetails() {
   return (
     <div className="px-[30px] md:px-20">
       <div className="mt-[43px] xl:mt-[110px] flex justify-between items-center">
-        <Image className="hidden md:block" src={"/vectors/backButton.svg"} alt="img" width={80} height={80} />
-        <Image className="md:hidden" src={"/vectors/backButton.svg"} alt="img" width={45} height={45} />
+        <Image className="hidden md:block h-12 w-12 4xl:w-28 4xl:h-28" src={"/vectors/backButton.svg"} alt="img" width={80} height={80} />
+        <Image className="md:hidden h-12 w-12 4xl:w-28 4xl:h-28" src={"/vectors/backButton.svg"} alt="img" width={45} height={45} />
         <div className="block md:hidden">
-          <MusicButton musicLink="/blog/Song.mp3" />
+          {/* <MusicButton musicLink="/blog/Song.mp3" /> */}
         </div>
       </div>
 
-      <div className="text-center text-[30px] md:text-5xl 4xl:text-[72px] font-[900] pt-20 xl:pt-[130px] md:max-w-[1150px] mx-auto md:!leading-[80px] 4xl:!leading-[97px]">
+      <div className="text-center text-[30px] md:text-4xl xl:text-5xl 4xl:text-[72px] font-[900] pt-16 4xl:pt-[130px] md:max-w-[1150px] mx-auto lg:!leading-[50px] xl:!leading-[70px] 4xl:!leading-[97px]">
         {blogData?.title}
       </div>
       <div className="w-full sm:w-[250px] mx-auto my-[15px] sm:my-5 border-b-[.5px] rounded-[5px] border-[#525252]"></div>
-      <div className="text-center text-[#8D8D8D] text-lg sm:text-xl md:text-2xl xl:text-[34px] font-normal  ">
+      <div className="text-center text-[#8D8D8D] text-lg sm:text-xl xl:text-2xl 2xl:text-[34px] font-normal  ">
         {blogData?.description} | {blogData?.time}
       </div>
 
-      <div className=" py-10 lg:pb-[80px] lg:pt-[98px] 2xl:pt-[130px] 2xl:pb-[100px] hidden md:block">
+      {/* <div className=" py-10 lg:pb-[80px] lg:pt-[98px] 2xl:pt-[130px] 2xl:pb-[100px] hidden md:block"> */}
         {/* <MusicButton musicLink="/blog/Song.mp3" /> */}
-      </div>
+      {/* </div> */}
 
       <div>
         {/* <Image
-          src={"/vectors/Star 1.svg"}
+          src={"/vectors/Union.svg"}
           alt=""
           height={20}
           width={20}
@@ -85,7 +86,7 @@ function BlogDetails() {
         </div> */}
       </div>
 
-      <div className="text-[#525252] text-xl lg:text-[30px] font-normal max-md:mt-10 mb-[43px] 2xl:mb-[59px] lg:leading-[40px] leading-[21px] ">
+      <div className="text-[#525252] text-xl xl:text-[28px] font-normal max-md:mt-10 mb-[43px] 2xl:mb-[59px] xl:leading-[40px] leading-[24px] mt-16 lg:mt-24">
         In the fast-paced world of e-commerce, standing out from the competition
         is crucial. A visually appealing and user-friendly website can make all
         the difference in capturing the attention of potential customers and
@@ -139,16 +140,16 @@ function BlogDetails() {
         </div>
       </div> */}
 
-      <div className="py-[20px] md:py-16 ">
+      <div className="py-[20px] mt-5 lg:mt-0 4xl:py-16 ">
         <div className="flex justify-between items-center flex-col xl:flex-row gap-y-[35px] ">
           <div className="xl:w-[49%] ">
             <div className="flex gap-4 items-center mb-5 max-xl:justify-center ">
-              <h3 className="text-3xl md:text-[48px] 2xl:text-[60px] font-bold  ">
+              <h3 className="text-3xl xl:text-4xl 2xl:text-[48px] 4xl:text-[60px] font-bold  ">
                 Conclusion :{" "}
               </h3>
             </div>
 
-            <div className="text-[#525252] text-lg md:text-[22px] 3xl:text-[30px] 3xl:leading-[40px] lg:leading-[26px] leading-[21px] 2xl:max-w-[900px] mt-[35px] ">
+            <div className="text-[#525252] text-[15px] md:text-xl 3xl:text-[30px] 3xl:leading-[40px] lg:leading-[26px] leading-[21px] 2xl:max-w-[900px] mt-5 ">
               In the competitive world of e-commerce, a stunning Shopify design
               system can give you the edge you need to dominate the market. By
               focusing on consistent branding, intuitive navigation, mobile
@@ -163,43 +164,43 @@ function BlogDetails() {
           </div>
 
           <Separator
-            className="w-px bg-[#D8D8D8] h-[530px] xl:block hidden"
+            className="w-px bg-[#525252] h-[530px] xl:block hidden"
             orientation="vertical"
           />
 
           <Separator
-            className=" bg-[#D8D8D8] w-[100%] xl:hidden block"
+            className=" bg-[#525252] w-[100%] xl:hidden block"
             orientation="horizontal"
           />
           <div className="xl:w-[49%] ">
             <div className="flex gap-3 xl:gap-6 text-4xl font-semibold items-center max-4xl:justify-center 4xl:ps-[100px] 2xl:max-w-[825px] flex-wrap ">
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px]  !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-0 sm:py-2 lg:py-3 xl:py-4 font-bold text-[11px] sm:text-base xl:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
               Social Media
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px] !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-0 sm:py-2 lg:py-3 xl:py-4 font-bold text-[11px] sm:text-base xl:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
                Digital Marketing
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px] !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-0 sm:py-2 lg:py-3 xl:py-4 font-bold text-[11px] sm:text-base xl:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
                Online Presence
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px] !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-0 sm:py-2 lg:py-3 xl:py-4 font-bold text-[11px] sm:text-base xl:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
                B2C
               </Button>
               <Button
                 variant={"outline"}
-                className="px-2.5 md:px-4 py-2.5 3xl:py-[28px] !leading-[28px] max-md:!leading-[18px] font-bold text-[11px] md:text-lg 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
+                className="px-2.5 md:px-4 py-0 sm:py-2 lg:py-3 xl:py-4 font-bold text-[11px] sm:text-base xl:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
                 Shopify Design
               </Button>
@@ -208,11 +209,11 @@ function BlogDetails() {
         </div>
       </div>
 
-      <div className="py-[20px] md:py-14 xl:my-[70px]">
+      <div className="py-[20px] md:py-14 4xl:my-[70px]">
         <CardsCarousel data={finalCards} />
       </div>
 
-      <Separator className="w-full h-px mt-6 mb-10 bg-[#D8D8D8]" />
+      <Separator className="w-full h-px mt-6 mb-10 bg-[#525252]" />
     </div>
   );
 }

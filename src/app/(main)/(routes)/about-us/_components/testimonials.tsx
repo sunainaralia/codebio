@@ -226,11 +226,11 @@ function TestimonialsSection() {
         <div className="md:flex flex-row justify-between items-center mb-5 md:mb-0">
           <div className="hidden md:flex flex-row gap-4 items-center">
             <Image alt="" src={"/vectors/Union.svg"} height={30} width={30} />
-            <h3 className="text-lg font-normal text-[#525252] sm:text-3xl lg:text-[28px] 4xl:text-[42px]">
+            <h3 className="text-lg font-normal text-[#525252] sm:text-xl lg:text-[28px] 4xl:text-[42px]">
               Testimonials
             </h3>
           </div>
-          <h2 className="text-[28px] lg:text-[26px] 4xl:text-6xl text-[#2B2B2B] font-bold mt-2.5 sm:mt-5 lg:mt-0">
+          <h2 className="text-[28px] lg:text-[22px] 4xl:text-6xl text-[#2B2B2B] font-bold mt-2.5 sm:mt-5 lg:mt-0">
             Some friends we’ve made in the process !
           </h2>
         </div>
