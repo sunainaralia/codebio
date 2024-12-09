@@ -25,14 +25,14 @@ const Form = () => {
           <input
             type="text"
             name="name"
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5      3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Full Name *"
             required
           />
           <input
             type="email"
             name="email"
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5      3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Your Email Address *"
             required
           />
@@ -42,14 +42,14 @@ const Form = () => {
           <input
             type="text"
             name="company"
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5      3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Your Phone / Contact Number *"
             required
           />
           <input
             type="text"
             name="phone"
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5      3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Your Company / Organization’s Name"
             required
           />
@@ -59,14 +59,14 @@ const Form = () => {
           <input
             type="text"
             name="company"
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5      3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Your Company / Store URL"
             required
           />
           <input
             type="text"
             name="phone"
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5      3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Company Location"
             required
           />
@@ -76,7 +76,7 @@ const Form = () => {
           <input
             type="text"
             name="message"
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5      3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="How can we help ? *"
             required
           />
