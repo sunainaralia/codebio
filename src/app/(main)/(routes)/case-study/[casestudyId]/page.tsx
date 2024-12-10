@@ -35,16 +35,15 @@ const CaseStudyDetail = () => {
       image: "/caseStudy/card1.svg",
       categories: ["UX", "e-Commerce", "SEO"],
     },
-    
+
     // More cards...
   ];
-
 
   const cardsArray: React.JSX.Element[] = [];
 
   data.map((card) => {
     cardsArray.push(<CaseStudyCard key={card.id} {...card} />);
-  })
+  });
 
   // Define items for Approach section
   const approachItems = [
@@ -102,41 +101,55 @@ const CaseStudyDetail = () => {
   ];
 
   return (
-    <div className="relative">
+    <div className="relative px-[30px] md:px-20">
       <div
-        className="nx-auto mt-10 h-full bg-cover bg-center flex items-center justify-center"
+        className="mx-auto mt-10 w-full h-full bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage: `url('/caseStudy/bannerOne.svg')`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          width: "1300px",
-          height: "750px",
+          width: "100%",
+          height: "70vh",
         }}
       ></div>
-      <div className="p-10">
+      <div className="pt-8 md:pt-14 pb-10 md:pb-24 lg:pt-24 lg:pb-[175px]">
         {/* Title and Industry */}
-        <div className="flex justify-between gap-10 items-start mb-10">
+        <div className="flex flex-col md:flex-row justify-between gap-5 lg:gap-10 items-start mb-10">
           <div className="flex-1">
-            <h1 className="text-4xl font-bold pb-8">TATA Sonnets</h1>{" "}
-            <div className="text-xl pb-8">
-              {" "}
-              <span className="font-semibold">Industry:</span>
-              <br /> {/* Added line break */}
-              <span style={{ color: "#525252" }}>Coffee, eCommerce</span>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl 4xl:text-6xl font-bold text-black">
+              TATA Sonnets
+            </h1>{" "}
+            <div className="text-xl mt-5 flex flex-col gap-3">
+              <span className="text-lg sm:text-xl md:text-2xl lg:text-[28px] 4xl:text-4xl 4xl:leading-[48px] text-[#525252] font-bold ">
+                Industry:
+              </span>
+
+              <span
+                className="text-[15px] md:text-lg 2xl:text-2xl"
+                style={{ color: "#525252" }}
+              >
+                Coffee, eCommerce
+              </span>
             </div>
-            <div className="text-xl pb-8">
-              {" "}
-              <span className="font-semibold">What We Did:</span>
-              <br /> {/* Added line break */}
-              <span style={{ color: "#525252" }}>
+            <div className="text-xl pt-0.5 mt-12 flex flex-col gap-3">
+              <span className="text-lg sm:text-xl md:text-2xl lg:text-[28px] 4xl:text-4xl 4xl:leading-[48px] text-[#525252] font-bold ">
+                What We Did:
+              </span>
+
+              <span
+                className="text-[15px] md:text-lg 2xl:text-2xl"
+                style={{ color: "#525252" }}
+              >
                 Brand Strategy, UX Strategy, Art Direction, UI/UX
               </span>
             </div>
           </div>
           {/* Overview */}
-          <div className="flex-1 ml-10">
-            <h2 className="text-2xl font-bold mb-4">Overview:</h2>
-            <p className="text-lg leading-relaxed" style={{ color: "#525252" }}>
+          <div className="flex-1 lg:ml-10">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] 4xl:text-4xl 4xl:leading-[48px] text-[#525252] font-bold ">
+              Overview:
+            </h2>
+            <p className="text-[#525252] text-[15px] md:text-lg 3xl:text-2xl 3xl:leading-[40px] lg:leading-[26px] leading-[21px] 2xl:max-w-[900px] mt-5">
               Tata Sonnets is a premium brand under the Tata Group, specializing
               in luxury home fragrances. With a commitment to quality and
               innovation, Tata Sonnets offers a range of exquisite scents
@@ -184,7 +197,10 @@ const CaseStudyDetail = () => {
         {/* Project Goals */}
         <div className="flex-1 ml-30">
           <div className="flex items-center mb-4">
-          <LottieAnimation animationData={require("@/../public/lottiee/Case_Study/Mission.json")} className="max-w-12 max-h-12 mr-4" />
+            <LottieAnimation
+              animationData={require("@/../public/lottiee/Case_Study/Mission.json")}
+              className="max-w-12 max-h-12 mr-4"
+            />
             <h2 className="text-3xl m-4 font-bold">Project Goals :</h2>
           </div>
           <div className="mb-4">
