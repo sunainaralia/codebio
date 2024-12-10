@@ -25,7 +25,7 @@ const CaseStudyCard: FC<CaseStudyProps> = ({
   return (
     <div
       className={cn(
-        " px-4 xl:px-12 3xl:px-24 rounded overflow-hidden my-12 3xl:my-28 !h-full",
+        " ps-4 xl:px-12 3xl:px-24 rounded overflow-hidden my-12 3xl:my-28 !h-full",
         className
       )}
     >
