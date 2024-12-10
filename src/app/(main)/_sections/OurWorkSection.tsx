@@ -119,7 +119,7 @@ function OurWorkSection() {
         </div>
 
         <div className="lg:flex w-full lg:w-full  mt-9 lg:mt-16 xl:mt-32 mb-6 justify-center">
-          <div className="lg:min-w-[100px]  lg:w-[calc(50%-2px)]">
+          <div className="lg:w-[calc(50%-2px)] ">
             <Link href="/our-work/works2" target="_blank">
               <WorkCards {...works[1]} imgArray={ourWorkAlmondImg} />
             </Link>
