@@ -20,16 +20,16 @@ const CaseStudySection: React.FC<SectionProps> = ({
 }) => {
   return (
     <div className="flex-1">
-      <div className="mb-4">
-        <div className="flex items-center mb-4 pt-10">
-          <LottieAnimation animationData={logoSrc} className="w-12 h-12 mr-4" />
-          <h2 className="text-2xl font-bold">{title}</h2>
+      <div className="md:mb-4">
+        <div className="flex items-center pt-10">
+          <LottieAnimation animationData={logoSrc} className="w-12 h-12 lg:w-[70px] lg:h-[70px] mr-4" />
+          <h2 className="text-xl md:text-4xl lg:text-[30px] 4xl:text-5xl font-bold max-w-[890px] 4xl:!leading-[64px] lg:leading-[40px] text-black">{title}</h2>
         </div>
-        <div className=" flex gap-[2%] flex-wrap mt-10">
+        <div className=" flex flex-col sm:flex-row gap-[2%] flex-wrap ">
           {items.map((item, index) => (
-            <div className="mb-5 w-[49%]" key={index}>
-              <h3 className="text-xl mb-3 font-semibold">{item.heading}</h3>
-              <p className="text-[#525252] max-w-[550px]"  style={{ color: "#525252" }}>{item.description}</p>
+            <div key={index} className="w-full sm:w-[49%] mt-5 md:mt-12 2xl:mt-[60px]">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[26px] 4xl:text-4xl 4xl:leading-[48px] text-[#525252] font-bold">{item.heading}</h3>
+              <p className="text-[#525252] text-[15px] md:text-base 3xl:text-2xl 3xl:leading-[40px] lg:leading-[26px] leading-[21px] 2xl:max-w-[900px]  mt-1 md:mt-3"  style={{ color: "#525252" }}>{item.description}</p>
             </div>
           ))}
         </div>
