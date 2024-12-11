@@ -9,9 +9,9 @@ function OurStatsRightSection() {
     <div className="my-20 mt-5 py-24  min-h-[200px]  grid grid-cols-5">
       <div className="flex col-span-2">
         <div className="flex flex-col w-full items-start  ">
-          <h1 className="text-7xl font-semibold p-2 h-[1.55em]">Our Stats</h1>
+          <h1 className="3xl:text-[96px] 2xl:text-[90px] lg:text-[70px] sm:text-[50px] text-[42px] font-semibold p-2 h-[1.55em]">Our Stats</h1>
           <Separator className="h-px w-full bg-[#D8D8D8] my-4" />
-          <p className="text-xl font-medium p-4 h-[4em]">
+          <p className="lg:text-[30px] text-[20px] sm:text-[25px] font-medium p-4 ">
             Numbers don’t lie. We have an unparalleled 
             <br />
             track record of digital excellence.
@@ -28,7 +28,7 @@ function OurStatsRightSection() {
         <Separator className="h-full w-px bg-[#D8D8D8] my-4" />
       </div>
       <div className="flex">
-        <StatsInfo count={120} title="Stores Optimized" />
+        <StatsInfo count={80} title="Stores Optimized" />
         <Separator className="h-full w-px bg-[#D8D8D8] my-4" />
       </div>
     </div>
