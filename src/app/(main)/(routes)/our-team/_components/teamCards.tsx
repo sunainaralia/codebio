@@ -17,12 +17,12 @@ const TeamCards = ({
 }: TeamInterface) => {
   const socials = {
     linkedin: {
-      darkIcon: "/icons/LinkedIn.svg",
-      lightIcon: "/icons/LinkedIn_light.svg",
+      darkIcon: "/icons/linkdin-social-icon.svg",
+      lightIcon: "/icons/linkdin-social-icon.svg",
     },
     insta: {
-      darkIcon: "/icons/Instagram.svg",
-      lightIcon: "/icons/Instagram_light.svg",
+      darkIcon: "/icons/insta-social-icon.svg",
+      lightIcon: "/icons/insta-social-icon.svg",
     },
   };
 

@@ -63,7 +63,7 @@ export const ParallaxTiltedScroll = ({
   return (
     <div
       className={cn(
-        "  rounded-3xl flex flex-col object-center overflow-hidden h-[200px] sm:h-[300px] lg:!h-[750px] w-full hover:scale-[1.02] transition-all duration-100 justify-center items-center",
+        "  rounded-3xl flex flex-col object-center overflow-hidden h-[200px] sm:h-[300px] lg:!h-[350px] w-full hover:scale-[1.02] transition-all duration-100 justify-center items-center",
         className
       )}
       ref={gridRef}
@@ -71,7 +71,7 @@ export const ParallaxTiltedScroll = ({
       {/* testing  */}
       <motion.div
         className={cn(
-          "grid items-start sm:w-full mx-auto gap-4 bg-[#FF8383]",
+          "grid items-start lg:ms-[-70px] mt-[120px]  4xl:mt-[200px] w-[110%] lg:w-[140%]  mx-auto gap-4 bg-[#FF8383]",
           childrenClassName
         )}
         transformTemplate={(z) => `rotate(${-30}deg)`}
@@ -80,7 +80,7 @@ export const ParallaxTiltedScroll = ({
           <div
             key={partIdx}
             className={cn(
-              "flex w-full h-[150px] md:h-[280px] overflow-x-hidden gap-4",
+              "flex w-full h-[150px] sm:h-[250px] xl:h-[220px] 4xl:h-[280px] overflow-x-hidden gap-4",
               imageH ? `h-[${imageH}px]` : ""
             )}
           >
@@ -103,7 +103,7 @@ export const ParallaxTiltedScroll = ({
                   <Image
                     src={el}
                     className={cn(
-                      "gap-2 h-[150px] md:h-[300px] w-[500px] rounded-md max-w-[500px] md:aspect-video object-cover !m-0 !p-0",
+                      "gap-2  md:h-[300px] w-[200]  sm:w-[500px] rounded-md max-w-[500px] md:aspect-video object-cover !m-0 !p-0",
                       [
                         imageH
                           ? `h-[398px] md:h-[${imageH}px] md:max-h-[${imageH}px]`

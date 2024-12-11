@@ -26,35 +26,38 @@ function WorkDetails() {
   const navigate = useRouter();
   console.log(cardsData[0]);
   return (
-    <div className=''>
-      <div className='my-10'>
+    <div className="px-[30px] md:px-20">
+      <div className=' mt-9 md:mt-14 4xl:mt-28'>
         <Image
           src={'/vectors/backButton.svg'}
           alt=''
-          width={40}
-          height={40}
+          width={50}
+          height={50}
+          className='4xl:w-[120px] 4xl:h-[120px] xl:w-[80px] xl:h-[80px] '
           onClick={() => window.history.back()}
         />
       </div>
-      <div className='w-fit text-center mx-auto py-10 pb-20'>
-        <div className='text-3xl font-bold'>{data?.name}</div>
+      <div className='w-fit text-center mx-auto pt-4 md:py-16 2xl:py-24 4xl:pt-[130px] 4xl:pb-52'>
+        <div className='4xl:text-[72px] 2xl:text-6xl lg:text-5xl text-4xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center'>{data?.name}</div>
         <Separator
-          className='h-px w-[100px] bg-[#D8D8D8] my-4 mx-auto'
+          className='h-[.5px] w-[250px] bg-[#525252] my-4 lg:my-5 mx-auto'
           orientation='horizontal'
         />
-        <div className='text-[#8D8D8D]'>{data?.description}</div>
+        <div className='4xl:text-[34px] xl:text-2xl lg:text-xl text-base font-normal text-[#8D8D8D] text-center 3xl:leading-[45px]'>{data?.description}</div>
       </div>
-      <Image
-        src={data.img}
-        alt=''
-        width={1200}
-        height={600}
-        className='w-full'
-      />
+      <div className='mt-12  '>
+        <Image
+          src={data.img}
+          alt=''
+          width={1200}
+          height={600}
+          className='w-full'
+        />
+      </div>
 
       <div className='text-sm text-[#525252] text-center'>
-        <div className='font-bold py-4'>March 1,2021</div>
-        <div className='md:w-[1000px] mx-auto'>
+        <div className='font-bold mt-6 mb-4 3xl:mt-12 3xl:mb-7 text-base md:text-xl lg:text-2xl 3xl:text-[28px] 3xl:leading-[37px] text-[#525252] '>March 1, 2021</div>
+        <div className='3xl:text-[30px] xl:text-2xl md:text-xl text-[15px] font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto'>
           Developed the platform with crystal clear visions and an agile
           development cycle. Redefined visual system for the clients with
           upgraded search tools and content which help boost the site
@@ -63,19 +66,25 @@ function WorkDetails() {
         </div>
       </div>
 
-      <div className='my-20'>
+      <div>
+        <p className='hidden md:block 4xl:text-[70px] xl:text-6xl md:text-5xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center mt-12 lg:mt-28 2xl:mb-8 mb-4 '>Their Problem</p>
+        <p className='3xl:text-[30px] xl:text-2xl md:text-xl text-base font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto '>Secure Inteli struggled with a slow, underperforming website that wasn’t converting leads effectively. Their site lacked modern design and the security features necessary to attract high-value clients in the cybersecurity sector.</p>
+      </div>
+
+      <div className='mt-20 4xl:mt-[118px]  '>
         <div className='md:flex w-full justify-between'>
           <div className='md:w-[49%]'>
-            <div className='text-3xl flex gap-2 font-bold items-center'>
+            <div className='4xl:text-[70px] xl:text-6xl md:text-5xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] flex items-center'>
               <Image
                 src='/worksDetail/tasks.svg'
                 alt=''
-                width={60}
-                height={60}
+                width={56}
+                height={50}
+                className='4xl:w-[136px] 4xl:h-[120px] lg:w-20 lg:h-20 '
               />{' '}
               Our Tasks
             </div>
-            <div className='max-w-[500px] text-center md:text-start'>
+            <div className='max-w-[500px] text-center md:text-start 4xl:text-[36px] xl:text-2xl lg:text-xl text-base font-normal text-[#525252] 3xl:leading-[45px] mt-6 '>
               {data.mainDescription}
             </div>
           </div>

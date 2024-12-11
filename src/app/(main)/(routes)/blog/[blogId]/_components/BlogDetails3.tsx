@@ -9,7 +9,7 @@ function BlogDetails3() {
                     Estimated eCommerce Website Development Costs in India
                 </div>
                 {/* text-[15px] md:text-xl xl:text-2xl 2xl:text-[30px] 4xl:leading-10  */}
-                <div className="text-[#525252] text-[15px] sm:text-lg  md:text-lg 4xl:text-[30px]  4xl:leading-10 font-normal mt-1 sm:mt-[15px] 3xl:mt-[30px] ">
+                <div className="text-[#525252] text-[15px] sm:text-lg  4xl:text-[30px]  4xl:leading-10 font-normal mt-1 sm:mt-[15px] 3xl:mt-[30px] ">
                     The cost for eCommerce website development generally falls within the following ranges:
                 </div>
                 <div className='3xl:my-7 my-5 '>

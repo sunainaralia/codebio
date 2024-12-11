@@ -8,32 +8,32 @@ const GetInTouchSection = () => {
   const socials = [
     {
       title: 'linkedin',
-      darkIcon: '/icons/linkdin-social-icon.svg',
-      lightIcon: '/icons/linkdin-social-icon.svg',
+      darkIcon: '/icons/LinkedIn.svg',
+      lightIcon: '/icons/LinkedIn.svg',
       link: '#',
     },
     {
       title: 'Instagram',
-      darkIcon: '/icons/insta-social-icon.svg',
-      lightIcon: '/icons/insta-social-icon.svg',
+      darkIcon: '/icons/Instagram.svg',
+      lightIcon: '/icons/Instagram.svg',
       link: '#',
     },
     {
       title: 'Facebook',
-      darkIcon: '/icons/fb-social-icon.svg',
-      lightIcon: '/icons/fb-social-icon.svg',
+      darkIcon: '/icons/Facebook.svg',
+      lightIcon: '/icons/Facebook.svg',
       link: '#',
     },
     {
       title: 'be',
-      darkIcon: '/icons/be-social-icon.svg',
-      lightIcon: '/icons/be-social-icon.svg',
+      darkIcon: '/icons/be-social-icon-dark.svg',
+      lightIcon: '/icons/be-social-icon-dark.svg',
       link: '#',
     },
     {
       title: 'browser',
-      darkIcon: '/icons//web-browser-icon.svg',
-      lightIcon: '/icons/web-browser-icon.svg',
+      darkIcon: '/icons/browser-dark-icon.svg',
+      lightIcon: '/icons/browser-dark-icon.svg',
       link: '#',
     },
   ];
@@ -90,9 +90,9 @@ const GetInTouchSection = () => {
         <Separator className='hidden md:block h-[.5px] md:h-auto w-full md:w-[.5px] bg-[#525252]  md:my-0 my-5' />
 
 
-        <div className='max-md:hidden  flex max-md:w-full md:block  md:text-center text-[#2b2b2b] justify-between items-center'>
+        <div className='max-md:hidden flex max-md:w-full md:block  md:text-center text-[#2b2b2b] justify-between items-center max-w-[300px]'>
           <div className='font-black text-[24px] 3xl:text-[48px] xl:text-[35px] text-[#000]'>Socials</div>
-          <div className='flex flex-row justify-center items-center gap-3 3xl:gap-10 mt-5'>
+          <div className='flex flex-wrap justify-center items-center gap-3 3xl:gap-x-10 mt-11'>
             {socials.map((social, index) => (
               <SocialButton
                 key={index}
