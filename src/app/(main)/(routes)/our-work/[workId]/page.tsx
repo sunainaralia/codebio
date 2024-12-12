@@ -1,7 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 import React, { useEffect, useState } from 'react';
 import { WorkCardProps, works } from '@/components/data/main';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams, usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { Separator } from '@/components/ui/separator';
 import {
@@ -18,12 +19,23 @@ function WorkDetails() {
   const [cardsData, setCardsData] = useState<WorkCardProps[]>([]);
   const { workId } = useParams();
   useEffect(() => {
-    setData(works.filter((work) => work.id === workId)[0]);
+    const detailPage=works.filter((work) => work.id === workId)[0]
+    if (!detailPage) {
+      navigate.push('/our-work');
+      return;
+    }
+    else{
+    setData(detailPage);
+    }
 
     setCardsData(works.filter((work) => work.id !== workId));
   }, []);
 
   const navigate = useRouter();
+  const pathname = usePathname(); 
+
+
+
   console.log(cardsData[0]);
   return (
     <div className="px-[30px] md:px-20">
