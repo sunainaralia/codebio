@@ -75,7 +75,7 @@ function WorkDetails() {
         />
       </div>
 
-      <div className='text-sm text-[#525252] text-center'>
+      <div className='text-center'>
         <div className='font-bold mt-6 mb-4 3xl:mt-12 3xl:mb-7 text-base md:text-xl lg:text-2xl 3xl:text-[28px] 3xl:leading-[37px] text-[#525252] '>March 1, 2021</div>
         <div className='3xl:text-[30px]  md:text-xl text-[15px] font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto'>
           Developed the platform with crystal clear visions and an agile
@@ -196,15 +196,15 @@ function WorkDetails() {
             <div className='text-[28px] md:text-3xl 3xl:text-[42px] leading-[56px] font-bold'>
               What Client Said
             </div>
-                <Image
-                  src='/worksDetail/quotes.svg'
-                  alt='img'
-                  width={90}
-                  height={30}
-                  className='3xl:w-[157px] 3xl:h-[50px] mt-2 2xl:mt-5 '
-                />
+            <Image
+              src='/worksDetail/quotes.svg'
+              alt='img'
+              width={90}
+              height={30}
+              className='3xl:w-[157px] 3xl:h-[50px] mt-2 2xl:mt-5 '
+            />
           </div>
-         
+
           <div className='flex 2xl:justify-end justify-center  '>
             <p className=' 3xl:text-[30px] md:text-xl text-[15px] font-normal text-[#525252] 3xl:leading-[40px] mt-7 4xl:mt-[52px] text-center 2xl:text-right  2xl:w-[60%] '>CodeBiosis transformed our digital presence with an intuitive, secure, and high-performing website. Our clients love the new interface, and we've seen a remarkable increase in client inquiries</p>
           </div>
@@ -249,45 +249,55 @@ function WorkDetails() {
         </div> */}
       </div>
 
-      <Separator
+      {/* <Separator
         className='block md:hidden h-px w-full bg-[#525252] my-20'
         orientation='horizontal'
-      />
+      /> */}
 
-      <div className='py-20'>
-        <div className='w-fit text-center mx-auto'>
-          <div className='text-3xl font-bold uppercase'>Design</div>
-          <Separator className='h-px w-full my-3 bg-[#525252]' />
-          <div className='text-[#8D8D8D]'>Our Creative Process</div>
+      <div className='mt-10 sm:mt-16 md:mt-24 2xl:mt-36 4xl:mt-[290px]  '>
+        <div className='max-sm:flex max-sm:flex-col-reverse'>
+          <div className='w-fit text-center mx-auto  max-sm:flex max-sm:items-center max-sm:mt-10'>
+            <div className='4xl:text-[72px] 2xl:text-6xl lg:text-5xl text-4xl font-black text-[#2B2B2B] 4xl:leading-[97px] text-center uppercase'>Design</div>
+            <Separator className='hidden sm:block h-[.5px] w-full my-3 2xl:my-5 bg-[#525252]' />
+            <Separator className='sm:hidden h-[45px] w-[.5px] mx-5 bg-[#525252]' />
+            <div className='4xl:text-[34px] xl:text-2xl lg:text-xl text-lg font-normal text-[#8D8D8D] text-center 3xl:leading-[45px]'>Our Creative Process</div>
+          </div>
+
+          <div className='sm:mt-12 4xl:mt-[100px] '>
+            <DesignUpperImage className='mx-auto ' imageUpper={'/worksDetail/des1.svg'} />
+          </div>
         </div>
-
-        <div className=''>
-          <DesignUpperImage imageUpper={'/worksDetail/des1.svg'} />
-          <DesignText text="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet." />
+        <div>
+          <DesignText className='4xl:mt-12 mt-7 3xl:text-[30px]  md:text-xl text-[15px] font-normal text-[#525252] text-center 3xl:leading-[40px] xl:w-[85%] mx-auto' text="The redesign of Secure Inteli’s website focused on combining sleek, intuitive interfaces with cutting-edge encryption protocols. The clean, modern aesthetic helped elevate their professional image, while the enhanced functionality ensured a secure and seamless browsing experience for their clients." />
           <DesignLowerImage
             img1='/worksDetail/des2.svg'
             img2='/worksDetail/des3.svg'
           />
         </div>
-
-        <div className='w-fit mx-auto py-6'>
-          <AnimatedButton>Load More</AnimatedButton>
-        </div>
       </div>
 
-      <div className='md:py-20'>
-        <div className='w-full md:flex justify-between'>
-          <div className='flex gap-4 items-center mb-5 justify-center md:justify-start'>
-            <Image src={'/vectors/Union.svg'} alt='' height={30} width={30} />
-            <h3 className='text-xl '>Discover More</h3>
-            <Image src={'/vectors/Union.svg'} alt='' height={30} width={30} className='block md:hidden' />
+      <div className='w-fit mx-auto mt-24 4xl:mt-28'>
+        <AnimatedButton>Load More</AnimatedButton>
+      </div>
+
+      <div className='mt-[100px] md:mt-36 4xl:mt-[235px] '>
+        <Separator
+          className='block md:hidden h-[.3px] w-full bg-[#525252] mb-10'
+          orientation='horizontal'
+        />
+        <div className='w-full md:flex justify-between items-center'>
+          <div className='flex gap-4 items-center justify-center md:justify-start'>
+            <Image className='md:hidden' src={'/vectors/Union.svg'} alt='img' height={15} width={15} />
+            <Image src={'/vectors/starJoin.svg'} alt='' height={30} width={30} className='hidden md:block 4xl:w-[50px] 4xl:h-[50px] ' />
+            <h3 className='text-lg md:text-[28px] lg:text-3xl 3xl:text-[42px] leading-[56px] font-normal text-[#525252] '>Discover More</h3>
+            <Image className='md:hidden' src={'/vectors/Union.svg'} alt='img' height={15} width={15} />
           </div>
-          <AnimatedButton className='hidden md:flex mt-0'>
+          <AnimatedButton className='hidden md:flex !mt-0'>
             All Projects
           </AnimatedButton>
         </div>
 
-        <div className='md:flex w-full mt-12 mb-6 justify-center'>
+        <div className='md:flex w-full mt-16 4xl:mt-[120px] justify-center'>
           <div className=''>
             <WorkCards
               {...cardsData[0]}
@@ -313,8 +323,10 @@ function WorkDetails() {
           </div>
         </div>
 
-        <div className='block md:hidden'>
-          <AnimatedButton className=' mt-20 mx-auto'>All Projects</AnimatedButton>
+        <div className=' justify-center mt-[75px] flex md:hidden' >
+        <AnimatedButton className=' !mt-0'>
+            All Projects
+          </AnimatedButton>
         </div>
       </div>
 

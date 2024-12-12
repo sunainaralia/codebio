@@ -14,22 +14,26 @@ interface DesignBoxProps {
 }
 export const DesignUpperImage = ({imageUpper,className}:DesignBoxProps) => {
   return (
-    <Image src={imageUpper || ""} alt="" className={cn("mt-14",className)} width={2100} height={700}/>
+    <Image src={imageUpper || ""} alt="" className={cn(className)} width={2100} height={700}/>
   )
 }
 
 export const DesignText = ({text , className}:DesignBoxProps) => {
   return (
-    <p className={cn("my-8 text-center px-2 text-[#525252]",className)}>{text}</p>
+    <p className={cn(" text-center ",className)}>{text}</p>
   )
 }
 
 export const DesignLowerImage = ({img1,img2,className,classNameSeparator}:DesignBoxProps) => {
   return (
-    <div className={cn("md:flex items-center w-full justify-center mt-16 mb-12",className)}>
-      <Image src={img1 || ""} alt="" className='' width={500} height={300}/>
-      <Separator className={`h-auto md:min-h-[200px] md:w-px bg-[#D8D8D8] md:mx-10`}/>
-      <Image src={img2 || ""} alt="" width={500} height={300}/>
+    <div className={cn("md:flex items-center w-full justify-center mt-9 md:mt-20 4xl:mt-40",className)}>
+
+        <Image src={img1 || ""} alt="" className='4xl:w-[950px] 4xl:h-[500px] 2xl:min-w-[600px] 2xl:min-h-[300px] md:w-[45%] md:h-[45%]  mx-auto ' width={370} height={194}/>
+   
+      <Separator className={`4xl:h-[500px] 2xl:min-h-80 min-h-28 hidden md:block  md:w-[.5px] bg-[#525252] md:mx-10 4xl:mx-24`}/>
+
+        <Image src={img2 || ""} alt="img" className='4xl:w-[950px] 4xl:h-[500px] 2xl:min-w-[600px] 2xl:min-h-[300px] md:w-[45%] md:h-[45%]  mx-auto mt-10 md:mt-0' width={370} height={194}/>
+
     </div>
   )
 }
