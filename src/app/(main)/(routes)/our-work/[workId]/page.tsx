@@ -77,7 +77,7 @@ function WorkDetails() {
             <div className='4xl:text-[70px] xl:text-6xl md:text-5xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] flex items-center'>
               <Image
                 src='/worksDetail/tasks.svg'
-                alt=''
+                alt='img'
                 width={56}
                 height={50}
                 className='4xl:w-[136px] 4xl:h-[120px] lg:w-20 lg:h-20 '
