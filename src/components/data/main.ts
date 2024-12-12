@@ -11,6 +11,7 @@ export interface WorkCardProps {
     imageArr?: string[];
   }
 export const works : WorkCardProps[] = [
+   
     {
       img: "/ourWork/work-01.svg",
       id: "works2",
