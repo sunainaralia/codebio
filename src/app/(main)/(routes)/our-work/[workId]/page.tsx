@@ -19,24 +19,32 @@ function WorkDetails() {
   const [cardsData, setCardsData] = useState<WorkCardProps[]>([]);
   const { workId } = useParams();
   useEffect(() => {
-    const detailPage=works.filter((work) => work.id === workId)[0]
+    const detailPage = works.filter((work) => work.id === workId)[0]
     if (!detailPage) {
       navigate.push('/our-work');
       return;
     }
-    else{
-    setData(detailPage);
+    else {
+      setData(detailPage);
     }
 
     setCardsData(works.filter((work) => work.id !== workId));
   }, []);
 
   const navigate = useRouter();
-  const pathname = usePathname(); 
-
-
+  const pathname = usePathname();
 
   console.log(cardsData[0]);
+
+  const ServiceProvidedArr = [
+    { serviceName: "UI/UX Design" },
+    { serviceName: "Custom Development (encryption protocols" },
+    { serviceName: "SEO, Digital Marketing, and Social Media Posts" },
+    { serviceName: "CRM Integration (Zoho)" },
+    { serviceName: "Monthly Maintenance and Support" },
+  ]
+
+
   return (
     <div className="px-[30px] md:px-20">
       <div className=' mt-9 md:mt-14 4xl:mt-28'>
@@ -69,7 +77,7 @@ function WorkDetails() {
 
       <div className='text-sm text-[#525252] text-center'>
         <div className='font-bold mt-6 mb-4 3xl:mt-12 3xl:mb-7 text-base md:text-xl lg:text-2xl 3xl:text-[28px] 3xl:leading-[37px] text-[#525252] '>March 1, 2021</div>
-        <div className='3xl:text-[30px] xl:text-2xl md:text-xl text-[15px] font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto'>
+        <div className='3xl:text-[30px]  md:text-xl text-[15px] font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto'>
           Developed the platform with crystal clear visions and an agile
           development cycle. Redefined visual system for the clients with
           upgraded search tools and content which help boost the site
@@ -79,14 +87,18 @@ function WorkDetails() {
       </div>
 
       <div>
-        <p className='hidden md:block 4xl:text-[70px] xl:text-6xl md:text-5xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center mt-12 lg:mt-28 2xl:mb-8 mb-4 '>Their Problem</p>
-        <p className='3xl:text-[30px] xl:text-2xl md:text-xl text-base font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto '>Secure Inteli struggled with a slow, underperforming website that wasn’t converting leads effectively. Their site lacked modern design and the security features necessary to attract high-value clients in the cybersecurity sector.</p>
+        <p className='hidden md:block 4xl:text-[70px]  lg:text-5xl md:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center mt-12 lg:mt-20 2xl:mt-28 2xl:mb-8 mb-4 '>Their Problem</p>
+        <p className='3xl:text-[30px]  md:text-xl text-base font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto '>Secure Inteli struggled with a slow, underperforming website that wasn’t converting leads effectively. Their site lacked modern design and the security features necessary to attract high-value clients in the cybersecurity sector.</p>
       </div>
 
-      <div className='mt-20 4xl:mt-[118px]  '>
-        <div className='md:flex w-full justify-between'>
-          <div className='md:w-[49%]'>
-            <div className='4xl:text-[70px] xl:text-6xl md:text-5xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] flex items-center'>
+      <Separator
+        className='mt-10 mb-5 sm:mb-0 lg:hidden w-auto h-[.5px] bg-[#525252] '
+        orientation='horizontal'
+      />
+      <div className='sm:mt-10 lg:mt-20 4xl:mt-[118px]  '>
+        <div className='flex flex-col lg:flex-row w-full justify-between'>
+          <div className='lg:w-[49%] 4xl:pe-[100px] '>
+            <div className='4xl:text-[70px]  lg:text-5xl md:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] flex items-center'>
               <Image
                 src='/worksDetail/tasks.svg'
                 alt='img'
@@ -96,75 +108,109 @@ function WorkDetails() {
               />{' '}
               Our Tasks
             </div>
-            <div className='max-w-[500px] text-center md:text-start 4xl:text-[36px] xl:text-2xl lg:text-xl text-base font-normal text-[#525252] 3xl:leading-[45px] mt-6 '>
+            <p className=' text-center lg:text-start 4xl:text-[36px] lg:text-2xl md:text-xl text-base font-normal text-[#525252] 4xl:leading-[45px] mt-4 2xl:mt-6 '>
               {data.mainDescription}
-            </div>
+            </p>
           </div>
           <Separator
-            className='w-px h-auto bg-[#D8D8D8] mx-6'
+            className='hidden lg:block w-[.5px] h-auto bg-[#525252] mx-6'
             orientation='vertical'
           />
-          <div className='flex gap-8 md:w-[49%] justify-center my-10 md:my-0'>
-            <div className='text-3xl flex gap-2 font-bold items-center'>
-              <Image
-                src='/worksDetail/strategy.svg'
-                alt=''
-                width={60}
-                height={60}
-              />{' '}
-              <div className='text-base  text-[#525252]'>
-                Strategy{' '}
-                <div className='font-medium text-sm'>{data.strategy}</div>
-              </div>
-            </div>{' '}
-            <div className='max-w-[500px]'></div>
-            <div className='text-3xl flex gap-2 font-bold items-center'>
-              <Image
-                src='/worksDetail/design.svg'
-                alt=''
-                width={60}
-                height={60}
-              />
-              <div className='text-base  text-[#525252]'>
-                Design <div className='font-medium text-sm'>{data.design}</div>
-              </div>
-            </div>{' '}
-            <div className='max-w-[500px]'></div>
+          <div className='flex gap-8 lg:w-[49%] justify-between sm:justify-center 4xl:justify-start 4xl:ps-[100px] items-center mt-9 lg:mt-0 '>
+            <div >
+              <div className=' flex gap-4 3xl:gap-10  items-center'>
+                <Image
+                  src='/worksDetail/strategy.svg'
+                  alt='img'
+                  width={48}
+                  height={48}
+                  className='4xl:w-[100px] 4xl:h-[100px] lg:w-[60px] lg:h-[60px]'
+                />{' '}
+                <div>
+                  <div className='4xl:text-[36px] xl:text-2xl lg:text-xl text-lg font-bold text-[#525252] 3xl:leading-[48px] '>
+                    Strategy :{' '}  </div>
+                  <div className='hidden lg:block font-normal 3xl:text-xl text-[#525252] text-sm 4xl:mt-2.5'>{data.strategy}</div>
+                </div>
+              </div>{' '}
+              <div className='lg:hidden font-normal 3xl:text-xl text-[#525252] text-xs mt-3'>{data.strategy}</div>
+            </div>
+
+            <div>
+              <div className=' flex gap-4 3xl:gap-10  items-center'>
+                <Image
+                  src='/worksDetail/design.svg'
+                  alt=''
+                  width={48}
+                  height={48}
+                  className='4xl:w-[100px] 4xl:h-[100px] lg:w-[60px] lg:h-[60px]'
+                />
+                <div>
+                  <div className='4xl:text-[36px] xl:text-2xl lg:text-xl text-lg font-bold text-[#525252] 3xl:leading-[48px] '>
+                    Design : </div>
+                  <div className='hidden lg:block font-normal 3xl:text-xl text-[#525252] text-sm 4xl:mt-2.5'>{data.design}</div>
+                </div>
+              </div>{' '}
+              <div className='lg:hidden font-normal 3xl:text-xl text-[#525252] text-xs mt-3'>{data.design}</div>
+            </div>
+
           </div>
         </div>
 
-        <div className='max-w-[1000px] mx-auto text-center text-[#525252] my-20'>
-          Enhanced the aesthetics to reinforce user experience and
-          visibility. Incorporated accessibility to widen the user spectrum.
-          Augmented to the features by using third-party integrations as per
-          client requirements. A dedicated post-deployment team maintains the
-          deliverables and updates them on a regular basis.
+        <div className='mt-10 sm:mt-14 md:mt-[117px]'>
+          <h1 className='hidden md:block 4xl:text-[70px]  lg:text-5xl md:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center md:mb-7 4xl:mb-12 '>How We Solved It</h1>
+          <div className=' 3xl:text-[30px]  md:text-xl text-[15px] font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto '>
+            Enhanced the aesthetics to reinforce user experience and
+            visibility. Incorporated accessibility to widen the user spectrum.
+            Augmented to the features by using third-party integrations as per
+            client requirements. A dedicated post-deployment team maintains the
+            deliverables and updates them on a regular basis.
+          </div>
         </div>
 
         <Separator
-          className='h-px w-full bg-[#D8D8D8]'
+          className='4xl:mt-[150px] 2xl:mb-14 xl:mt-20 mt-9 mb-10 h-[.5px] w-full bg-[#525252]'
           orientation='horizontal'
         />
       </div>
 
-      <div className='md:py-20'>
-        <div className='flex w-full justify-between'>
-          <div className=''>
-            <div className='text-3xl flex gap-2 font-bold'>
-              What Client Said
-            </div>
-            <div className='text-sm text-[#8D8D8D]'>Reviewd on Clutch</div>
-          </div>
-
-          <Image
-            src='/worksDetail/quotes.svg'
-            alt=''
-            width={100}
-            height={100}
+      <div className='hidden md:block'>
+        <p className=' 4xl:text-[70px]  lg:text-5xl md:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] '>Services Provided</p>
+        <div className='4xl:mt-20 mt-10 flex flex-wrap max-4xl:justify-between'>
+          {ServiceProvidedArr.map((items, i) => {
+            return (
+              <ul key={i} className='list-disc w-10/12 xl:w-6/12 ps-10 '>
+                <li className='4xl:text-[36px] lg:text-2xl md:text-xl text-base font-medium text-[#525252] 4xl:leading-[48px]'> {items.serviceName} </li>
+              </ul>
+            )
+          })}
+          <Separator
+            className='4xl:my-[118px] xl:my-16 my-10 h-[.5px] w-full bg-[#525252]'
+            orientation='horizontal'
           />
         </div>
+      </div>
 
-        <div className='md:flex mt-10 justify-between'>
+      <div >
+        <div className=''>
+          <div className='flex w-full justify-between'>
+            <div className='text-[28px] md:text-3xl 3xl:text-[42px] leading-[56px] font-bold'>
+              What Client Said
+            </div>
+                <Image
+                  src='/worksDetail/quotes.svg'
+                  alt='img'
+                  width={90}
+                  height={30}
+                  className='3xl:w-[157px] 3xl:h-[50px] mt-2 2xl:mt-5 '
+                />
+          </div>
+         
+          <div className='flex 2xl:justify-end justify-center  '>
+            <p className=' 3xl:text-[30px] md:text-xl text-[15px] font-normal text-[#525252] 3xl:leading-[40px] mt-7 4xl:mt-[52px] text-center 2xl:text-right  2xl:w-[60%] '>CodeBiosis transformed our digital presence with an intuitive, secure, and high-performing website. Our clients love the new interface, and we've seen a remarkable increase in client inquiries</p>
+          </div>
+        </div>
+
+        {/* <div className='md:flex mt-10 justify-between'>
           <div className='hidden md:flex items-center gap-3'>
             <Image
               src='/worksDetail/person.svg'
@@ -200,18 +246,18 @@ function WorkDetails() {
               <div className='text-sm text-[#8D8D8D]'>Digital Marketer</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <Separator
-        className='block md:hidden h-px w-full bg-[#D8D8D8] my-20'
+        className='block md:hidden h-px w-full bg-[#525252] my-20'
         orientation='horizontal'
       />
 
       <div className='py-20'>
         <div className='w-fit text-center mx-auto'>
           <div className='text-3xl font-bold uppercase'>Design</div>
-          <Separator className='h-px w-full my-3 bg-[#D8D8D8]' />
+          <Separator className='h-px w-full my-3 bg-[#525252]' />
           <div className='text-[#8D8D8D]'>Our Creative Process</div>
         </div>
 
@@ -250,11 +296,11 @@ function WorkDetails() {
             />
           </div>
           <Separator
-            className='hidden md:block bg-[#D8D8D8] h-auto mx-20'
+            className='hidden md:block bg-[#525252] h-auto mx-20'
             orientation='vertical'
           />
           <Separator
-            className='block md:hidden h-px w-full bg-[#D8D8D8] my-10'
+            className='block md:hidden h-px w-full bg-[#525252] my-10'
             orientation='horizontal'
           />
 
