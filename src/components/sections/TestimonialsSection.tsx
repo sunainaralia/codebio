@@ -209,7 +209,7 @@ function TestimonialsSection() {
           </Swiper>
         </div>
 
-        <div className="flex lg:hidden justify-center items-center w-full pb-3 ">
+        <div className="flex lg:hidden justify-center items-center w-full pb-3 max-sm:mt-8 ">
           <AnimatedButton>Review all on Clutch</AnimatedButton>
         </div>
 
@@ -243,14 +243,14 @@ TestimonialsSection.TestimonialCard = ({
         <Image
           src={"/vectors/review_appos.svg"}
           alt={""}
-          width={90}
-          height={70}
-          className={` w-[50px] 4xl:w-[90px]  ${
+          width={50}
+          height={40}
+          className={` sm:w-[40px] xl:w-[90px]   ${
             inverted ? "rotate-180" : ""
           } hidden lg:block`}
         />
 
-        <div className="flex flex-row md:justify-center items-start gap-3 4xl:gap-6 mb-10 sm:mb-20 md:mb-0 mt-10 4xl:mt-24">
+        <div className="flex flex-row md:justify-center items-start gap-3 4xl:gap-6 mb-10 sm:mb-16 md:mb-0 mt-10 4xl:mt-24">
           <Image
             src={"/vectors/review_appos.svg"}
             alt={""}
@@ -264,15 +264,15 @@ TestimonialsSection.TestimonialCard = ({
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
-          <p className="min-h-[8em] xl:h-[8em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-xl lg:text-[20px] 4xl:text-[26px] font-normal overflow-hidden line-clamp-6">
+          <p className="md:min-h-[8em] xl:h-[8em] 2xl:h-[7em] text-[#2B2B2B] text-base md:text-xl lg:text-[20px] 4xl:text-[26px] font-normal overflow-hidden line-clamp-6">
             {description}
           </p>
           <Image
             src={"/vectors/review_appos.svg"}
             alt={""}
-            width={90}
-            height={70}
-            className={` w-[50px] xl:w-[90px] ${
+            width={50}
+            height={40}
+            className={`sm:w-[40px] xl:w-[90px] ${
               inverted ? "rotate-180" : ""
             } lg:hidden block`}
           />
@@ -285,12 +285,12 @@ TestimonialsSection.TestimonialCard = ({
             </Avatar>
           </div>
           <div className="block w-full min-h-20">
-            <h2 className="text-base 4xl:text-[22px] font-bold 4xl:h-[3.5rem] md:h-[2.5rem] md:text-start text-end">
+            <h2 className="text-base 4xl:text-[22px] font-bold 4xl:h-[3.5rem] lg:h-[2.5rem] md:text-start text-end">
               {name}
             </h2>
-            <Separator className="hidden md:block h-px w-full bg-primary-natural 4xl:my-4 my-2" />
+            <Separator className="hidden md:block h-px w-[90%] bg-primary-natural 4xl:my-4 my-2" />
             <div className="flex flex-row gap-3 items-center md:justify-start justify-end">
-              <h2 className="text-2xl md:text-3xl text-[#2B2B2B] font-[900] ">
+              <h2 className="text-2xl lg:text-3xl text-[#2B2B2B] font-[900] ">
                 {rating}
               </h2>
               <Rating value={rating} />

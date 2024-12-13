@@ -232,7 +232,7 @@ const CertifiedPartnersSection = () => {
           </div>
         </div>
 
-        <div className="block md:hidden">
+        <div className="block md:hidden ">
           <Swiper
             modules={[Navigation, Pagination]}
             pagination={{ clickable: true }}
@@ -242,7 +242,7 @@ const CertifiedPartnersSection = () => {
               768: { slidesPerView: 2, spaceBetween: 20 }, // For tablets
               1280: { slidesPerView: 3, spaceBetween: 30 }, // For desktops
             }}
-            className="w-full pb-10"
+            className="w-full pb-10 "
           >
             {PartnerImagesMobile.map((partners, slideIndex) => (
               <SwiperSlide key={slideIndex}>
@@ -271,7 +271,7 @@ const CertifiedPartnersSection = () => {
           </Swiper>
         </div>
 
-        <div className="flex justify-center items-center mb-20">
+        <div className="flex justify-center items-center pb-20 pt-9">
           <AnimatedButton className="md:hidden flex">
             Our Strengths
           </AnimatedButton>

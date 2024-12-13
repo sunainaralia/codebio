@@ -95,7 +95,7 @@ ResourcesSections.ResourceCard = ({
   image,
 }: ResourceCardProps) => {
   return (
-    <div key={title} className='flex  max-lg:gap-8 flex-wrap w-full justify-between items-center '>
+    <div key={title} className='flex  max-lg:gap-8 flex-wrap w-full justify-between items-center  '>
       <div className='div w-full lg:w-1/2 lg:pe-3'>
         <h2 className='text-xl md:text-4xl lg:text-[30px] 4xl:text-5xl font-bold max-w-[890px] 4xl:!leading-[64px] leading-[80px] lg:leading-[40px] text-black'>{title}</h2>
         <h4 className='font-normal text-xl 4xl:text-[30px] text-black my-3 4xl:mt-4  4xl:mb-5 text-[#8D8D8D]'>{readTime}</h4>

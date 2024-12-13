@@ -37,10 +37,7 @@ const LottieAnimation = ({ animationData , className , noAnimation = false} : an
       {
         inView && 
         <Lottie 
-        height={400}
-        width={400}
         animationData={animationData}
-        
         loop = {false}
         className={className}
       />

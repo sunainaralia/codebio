@@ -92,9 +92,7 @@ const AccordianSingle = ({
                         section={service}
                         data={data}
                         index={index}
-
                       />
-                    
                     </div>
                   ),
                 )}
@@ -118,7 +116,7 @@ const AccordianSingle = ({
               (data, index) => (
                 <Button
                   key={index}
-                  className='inline-block bg-gray-200 rounded-full px-2.5 h-[35px] text-[11px] sm:text-base font-bold text-[#2B2B2B]'
+                  className='inline-block bg-gray-200 rounded-full px-2.5 text-[11px] sm:text-base font-bold text-[#2B2B2B]'
                   variant={'outline'}
                 >
                   {data}

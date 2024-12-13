@@ -99,7 +99,7 @@ function CareersPage() {
               href="mailto:career@codebiosis.com"
               className="text-2xl md:text-3xl xl:text-4xl 4xl:text-[54px] 4xl:leading-[100px] font-bold underline underline-offset-8 mt-1 "
             >
-              career@codebiosis.com
+              contact@codebiosis.com
             </a>
           </div>
         </div>

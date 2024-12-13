@@ -35,9 +35,10 @@ const socials = [
 ];
 
 const menuItems = [
+  { title: 'Home', link: '/' },
   { title: 'Services', link: '/services' },
   { title: 'Our Work', link: '/our-work' },
-  { title: 'About As', link: '/about-us' },
+  { title: 'About Us', link: '/about-us' },
   { title: 'Resources', link: '/blog' },
   // { title: 'Case Studies', link: '/case-study' },
   // { title: "Meet Us", link: "/our-team" },
@@ -45,12 +46,12 @@ const menuItems = [
 ];
 
 const linkMap: any = {
+  '/': 'Home',
   '/services': 'Services',
   '/our-work': 'Our Work',
-  '/about-us': 'About As',
+  '/about-us': 'About Us',
   '/blog': 'Resources',
   '/case-study': 'Case Studies',
-  '/': 'Home',
   '/contact-us': 'Contact',
 };
 function NavigationBar() {
@@ -189,7 +190,7 @@ const MenueItemContainer = ({
           } w-full bg-radial-nav`}
       >
         <div
-          className={`menu  ${showMenu ? 'max-h-96 py-2 border border-[#949494] border-solid' : 'max-h-0'
+          className={`menu  ${showMenu ? 'max-h-96 py-2 ' : 'max-h-0'
             } overflow-hidden transition-max-height duration-500 ease-in-out`}
         >
           {showMenu &&
@@ -197,8 +198,8 @@ const MenueItemContainer = ({
               <div
                 key={item.link}
                 className={`text-primary-white px-12 mx-2 py-5 ${activeRoute !== "/" && item?.link?.includes(activeRoute)
-                    ? 'bg-[#949494] rounded-[30px]'
-                    : ''
+                  ? 'bg-[#949494] rounded-[30px]'
+                  : ''
                   }`}
               >
                 <Link

@@ -29,7 +29,7 @@ function Work() {
 
       <LetsCollab
         title='Got a Project'
-        substring='We’re a team of creatives who are excited about unique ideas and help companies to create amazing identity by crafting top-notch UI/UX & E-Commerce stores.'
+        substring='We’re a team of passionate professionals driven by innovative ideas, dedicated to helping businesses build exceptional digital identities through expert web development, UI/UX design, eCommerce solutions, branding, marketing, ai services and beyond.'
       />
 
       <GetInTouchSection />

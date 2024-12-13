@@ -31,7 +31,7 @@ function OurApproachSection() {
         <p className='text-[15px] md:text-lg 4xl:text-3xl text-center lg:text-start text-[#2B2B2B]'>
         We build strong digital foundations, innovate with the latest technology, and drive growth by boosting traffic and engagement. Our mission is to turn your digital goals into real-world success.
         </p>
-        <div className='flex lg:block justify-center items-center w-full pb-3'>
+        <div className='flex lg:block justify-center items-center w-full pb-3 max-sm:mt-9'>
           <AnimatedButton onClick={handleWorkNavigation}>Our Process</AnimatedButton>
         </div>
       </div>
