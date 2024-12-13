@@ -246,6 +246,7 @@ export const VLCC = [
 export const Pepr = [
     "/ourWork/Medimix/image-1.png",
     
+    
 ]
 export const Secureinteli = [
     "/ourWork/Medimix/image-1.png",

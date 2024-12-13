@@ -28,9 +28,9 @@ export const DesignLowerImage = ({img1,img2,className,classNameSeparator}:Design
   return (
     <div className={cn("md:flex items-center w-full justify-center mt-9 md:mt-20 4xl:mt-40",className)}>
 
-        <Image src={img1 || ""} alt="" className='4xl:w-[950px] 4xl:h-[500px] 2xl:min-w-[600px] 2xl:min-h-[300px] md:w-[45%] md:h-[45%]  mx-auto ' width={370} height={194}/>
+        <Image src={img1 || ""} alt="" className='4xl:w-[950px] 4xl:h-[500px] 3xl:min-w-[600px] 3xl:min-h-[300px] md:w-[35%] md:h-[35%]  mx-auto ' width={370} height={194}/>
    
-      <Separator className={`4xl:h-[500px] 2xl:min-h-80 min-h-28 hidden md:block  md:w-[.5px] bg-[#525252] md:mx-10 4xl:mx-24`}/>
+      <Separator className={`4xl:h-[500px] 2xl:min-h-[300px] min-h-28 md:h-[190px]  hidden md:block  md:w-[.5px] bg-[#525252] md:mx-10 4xl:mx-24`}/>
 
         <Image src={img2 || ""} alt="img" className='4xl:w-[950px] 4xl:h-[500px] 2xl:min-w-[600px] 2xl:min-h-[300px] md:w-[45%] md:h-[45%]  mx-auto mt-10 md:mt-0' width={370} height={194}/>
 

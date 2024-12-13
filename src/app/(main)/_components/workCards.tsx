@@ -3,7 +3,7 @@
 import { Separator } from "@radix-ui/react-separator";
 import React from "react";
 import { ParallaxHorizontalScroll } from "./horizontalScroller";
-import { images } from "@/components/data/images";
+import { images, ourWorkAlmondImg } from "@/components/data/images";
 import { ParallaxTiltedScroll } from "./tiltedScroller";
 
 interface WorkCardProps {
@@ -34,9 +34,9 @@ const WorkCards = ({
     <div className="max-2xl:max-w-[900px] 2xl:!w-full 2xl:px-16">
       <div className="relative">
         {cardType === "horizontal" ? (
-          <ParallaxHorizontalScroll images={imgArray || images} />
+          <ParallaxHorizontalScroll images={imgArray || ourWorkAlmondImg} />
         ) : (
-          <ParallaxTiltedScroll images={imgArray || images} />
+          <ParallaxTiltedScroll images={imgArray || ourWorkAlmondImg} />
         )}
         <span
           onClick={onClick}
