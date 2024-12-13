@@ -60,7 +60,7 @@ const PanoramaSlider = () => {
   return (
     <div id="panorama" className="relative">
         <Image width={100} height={100} className="w-screen absolute top-12 md:top-9 lg:top-7 left-0 z-10" src={upperCurve} alt="curve" />
-        <Image width={100} height={100} className="w-screen absolute scale-110 bottom-12 md:bottom-9 lg:bottom-7 left-0 z-10 rotate-180" src={upperCurve} alt="curve" />
+        <Image width={100} height={100} className="w-screen absolute bottom-12 md:bottom-9 lg:bottom-7 left-0 z-10 rotate-180" src={upperCurve} alt="curve" />
       <Swiper
         // effect={"coverflow"}
         grabCursor={true}

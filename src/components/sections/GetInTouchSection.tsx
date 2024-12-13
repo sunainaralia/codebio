@@ -14,7 +14,7 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
     router.push("/contact-us");
   };
   return (
-    <div className="md:w-[80%] xl:w-[90%] 2xl:w-[80%] mx-auto">
+    <div className=" sm:w-[90%]  mx-auto">
       <div
         className={cn(
           "mt-[27px] 4xl:mt-[60px] pb-[87px] xl:pb-[150px] 4xl:pb-[300px] lg:pt-10 4xl:pt-20 border-b border-[#D8D8D8]",

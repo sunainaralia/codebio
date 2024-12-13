@@ -5,13 +5,13 @@ export const cardDataCareers = [
     },
     {
         icon:"/careers/2.svg",
-        title:"Health Bnifits",
+        title:"Sick leaves",
     },{
         icon:"/careers/3.svg",
-        title:"Retirement Plans",
+        title:"Technology Allowance",
     },{
         icon:"/careers/4.svg",
-        title:"Flexible hours",
+        title:"Paid Time Off",
     },
     {
         img:"/careers/img1.svg",
@@ -19,15 +19,15 @@ export const cardDataCareers = [
         img:"/careers/img2.svg",   
     },{
       icon:"/careers/5.svg",
-      title:"Workplace Perks",
+      title:"Performance Bonus",
     },
     {
         img:"/careers/img3.svg",
     },{
         icon:"/careers/6.svg",
-        title:"Workplace Culture",
+        title:"Office Culture",
     },{
         icon:"/careers/7.svg",
-        title:"Employee Wellness Plans",
+        title:"Learning Stipends",
     }
 ]

@@ -18,8 +18,8 @@ function HeroHeader(props: {
   return (
     <>
       <div className="md:flex justify-around items-center flex-row pt-8 pb-14 md:py-14 gap-7  lg:h-[600px] 4xl:h-[750px]">
-        <div className="h-full w-full flex flex-col justify-center items-center col-span-1">
-          <div className="flex flex-row items-center gap-4">
+        <div className=" md:flex flex-col justify-center items-center col-span-1">
+          <div className="flex flex-row items-center justify-center gap-4">
             <Image src={"/vectors/Union.svg"} alt="" height={22} width={22} />
             <h3
               className={cn(
@@ -33,7 +33,7 @@ function HeroHeader(props: {
           </div>
           <h1
             className={cn(
-              "  lg:text-6xl 4xl:text-[120px] text-[42px] font-black mt-6 text-center w-full",
+              "  lg:text-6xl 4xl:text-[120px] text-[42px] font-black mt-2.5 md:mt-6 text-center w-full",
               props.titleClassName,
               "leading-[4rem] lg:leading-[5rem] 4xl:leading-[10rem]"
             )}
@@ -45,31 +45,35 @@ function HeroHeader(props: {
             {props.subText}
           </div>
 
-          {props.buttonText && (
-            <AnimatedButton className="hidden md:flex">
-              {props.buttonText}
-            </AnimatedButton>
-          )}
+          <div className="max-lg:mt-9">
+            {props.buttonText && (
+              <AnimatedButton className="hidden md:flex">
+                {props.buttonText}
+              </AnimatedButton>
+            )}
+          </div>
         </div>
         <Separator className="h-full w-px bg-[#D8D8D8]" />
-        <div className="h-full w-full flex flex-col justify-center items-center col-span-1 relative mt-6">
+        <div className="h-full w-full flex flex-col justify-center items-center col-span-1 relative ">
           {props.hasLottie ? (
             <LottieAnimation
               animationData={props.iconPath ?? ""}
-              className="max-h-[300px] max-w-[300px] md:max-h-[500px] md:max-w-[500px] "
+              className="max-h-[250px] max-w-[250px] md:max-h-[500px] md:max-w-[500px] 4xl:max-h-[600px] 4xl:max-w-[600px] "
             />
           ) : (
             <Image src={props.iconPath ?? ""} alt="" fill />
           )}
         </div>
         <div className="flex flex-col items-center md:hidden">
-          <div className="max-w-[655px] text-center text-[15px] sm:text-xl lg:text-xl 4xl:text-3xl 4xl:!leading-10 mt-5 2xl:mt-10">
+          <div className="max-w-[655px] text-center text-[15px] sm:text-xl lg:text-xl 4xl:text-3xl 4xl:!leading-10 lg:mt-5 2xl:mt-10">
             {props.subText}
           </div>
 
-          {props.buttonText && (
-            <AnimatedButton>{props.buttonText}</AnimatedButton>
-          )}
+          <div className="max-md:mt-9">
+            {props.buttonText && (
+              <AnimatedButton>{props.buttonText}</AnimatedButton>
+            )}
+          </div>
         </div>
       </div>
       <Separator className="lg:hidden block h-px w-full bg-[#D8D8D8]" />
