@@ -21,7 +21,7 @@ export interface WorkCardProps {
 export const works : WorkCardProps[] = [
    
     {
-      img: "/ourWork/work-01.png",
+      img: "/ourWork/work-01.webp",
       Design_img: "/ourWork/almond_house_design.png",
       Colorpalette_img: "/ourWork/almond_color.png",
       Font_img:"/ourWork/almond_font.png",
@@ -39,7 +39,7 @@ export const works : WorkCardProps[] = [
     What_Client_Said:"CodeBiosis transformed our digital presence with an intuitive, secure, and high-performing website. Our clients love the new interface, and we've seen a remarkable increase in client inquiries",
     },
     {
-      img: "/ourWork/work-02.png",
+      img: "/ourWork/work-02.webp",
       Design_img: "/ourWork/medimix_design.png",
       Colorpalette_img:"/ourWork/medimix_color.png",
       Font_img:"/ourWork/medimix_font.png",
@@ -57,7 +57,7 @@ export const works : WorkCardProps[] = [
     What_Client_Said:"CodeBiosis transformed our digital presence with an intuitive, secure, and high-performing website. Our clients love the new interface, and we've seen a remarkable increase in client inquiries",
     },
     {
-      img: "/ourWork/work-03.png",
+      img: "/ourWork/work-03.webp",
       Design_img: "/ourWork/vlcc_design.png",
       Colorpalette_img:"/ourWork/vlcc_color.png",
       Font_img:"/ourWork/vlcc_font.png",
@@ -75,7 +75,7 @@ export const works : WorkCardProps[] = [
     What_Client_Said:"CodeBiosis transformed our digital presence with an intuitive, secure, and high-performing website. Our clients love the new interface, and we've seen a remarkable increase in client inquiries",
     },
     {
-      img: "/ourWork/work-04.png",
+      img: "/ourWork/work-04.webp",
       Design_img: "/ourWork/pepr_design.png",
       Colorpalette_img:"/ourWork/pepr_color.png",
       Font_img:"/ourWork/pepr_font.png",
@@ -93,7 +93,7 @@ export const works : WorkCardProps[] = [
     What_Client_Said:"The team at CodeBiosis exceeded our expectations. Our online sales have surged, and the new website perfectly captures our brand ethos.",
     },
     {
-      img: "/ourWork/work-05.png",
+      img: "/ourWork/work-05.webp",
       Design_img: "/ourWork/Secureinteli_design.png",
       Colorpalette_img:"/ourWork/Secureinteli_color.png",
       Font_img:"/ourWork/Secureinteli_font.png",
@@ -102,7 +102,7 @@ export const works : WorkCardProps[] = [
       imageArr: Secureinteli,
       description: "Cybersecurity Solutions",
       strategy: "CRM Integration, SEO Optimization",
-      cardstyling:"bg-[#EFBDAE]",
+      cardstyling:"bg-[#4F7CBF]",
       design: "UI/UX, Optimization",
       mainDescription: `We were tasked with revamping their website to enhance both its security features and user experience. We integrated custom encryption protocols to strengthen data protection and streamlined their UI/UX to improve client interaction.`,
       March_2021:"Secure Inteli provides top-tier cybersecurity solutions, specializing in encryption protocols and secure network architecture for businesses of all sizes. Their focus is on safeguarding critical data while enhancing overall system performance.",
@@ -111,7 +111,7 @@ export const works : WorkCardProps[] = [
    What_Client_Said:"CodeBiosis transformed our digital presence with an intuitive, secure, and high-performing website. Our clients love the new interface, and we've seen a remarkable increase in client inquiries",
     },
     {
-      img: "/ourWork/work-06.png",
+      img: "/ourWork/work-05.webp",
       Design_img: "/ourWork/Talitha_design.png",
       Colorpalette_img:"/ourWork/Talitha_color.png",
       Font_img:"/ourWork/Talitha_font.png",

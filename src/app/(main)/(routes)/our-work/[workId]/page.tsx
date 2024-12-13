@@ -58,7 +58,7 @@ function WorkDetails() {
           onClick={() => window.history.back()}
         />
       </div>
-      <div className='w-fit text-center mx-auto pt-4 md:py-16 2xl:py-24 4xl:pt-[130px] 4xl:pb-52'>
+      <div className='w-fit text-center mx-auto pt-4 md:py-16 3xl:py-24 4xl:pt-[130px] 4xl:pb-52'>
         <div className='4xl:text-[72px] 2xl:text-6xl lg:text-5xl text-4xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center'>{data?.name}</div>
         <Separator
           className='h-[.5px] w-[250px] bg-[#525252] my-4 lg:my-5 mx-auto'
@@ -66,7 +66,7 @@ function WorkDetails() {
         />
         <div className='4xl:text-[34px] xl:text-2xl lg:text-xl text-base font-normal text-[#8D8D8D] text-center 3xl:leading-[45px]'>{data?.description}</div>
       </div>
-      <div className='mt-12  '>
+      <div>
         <Image
           src={data.img}
           alt=''
@@ -94,7 +94,7 @@ function WorkDetails() {
       />
       <div className='sm:mt-10 lg:mt-20 4xl:mt-[118px]  '>
         <div className='flex flex-col lg:flex-row w-full justify-between'>
-          <div className='lg:w-[49%] 4xl:pe-[100px] '>
+          <div className='lg:w-[49%] 4xl:pe-[100px] py-5 xl:py-10'>
             <div className='4xl:text-[70px]  3xl:text-5xl md:text-[32px] text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] flex items-center'>
               <Image
                 src='/worksDetail/tasks.svg'
@@ -126,7 +126,7 @@ function WorkDetails() {
                 <div>
                   <div className='4xl:text-[36px] xl:text-2xl lg:text-xl text-lg font-bold text-[#525252] 3xl:leading-[48px] '>
                     Strategy :{' '}  </div>
-                  <div className='hidden lg:block font-normal 3xl:text-xl text-[#525252] text-sm 4xl:mt-2.5'>{data.strategy}</div>
+                  <div className='hidden lg:block font-normal 3xl:text-xl text-[#525252] text-sm 4xl:mt-2.5'>{data.strategy}</div>  
                 </div>
               </div>{' '}
               <div className='lg:hidden font-normal 3xl:text-xl text-[#525252] text-xs mt-3'>{data.strategy}</div>
@@ -271,11 +271,11 @@ function WorkDetails() {
         </div>
       </div>
 
-      <div className='w-fit mx-auto mt-24 4xl:mt-28'>
+      <div className='w-fit mx-auto mt-[50px] xl:mt-24 4xl:mt-28'>
         <AnimatedButton>Load More</AnimatedButton>
       </div>
 
-      <div className='mt-[100px] md:mt-36 4xl:mt-[235px] '>
+      <div className='mt-[50px] xl:mt-[100px] md:mt-36 4xl:mt-[235px] '>
         <Separator
           className='block md:hidden h-[.3px] w-full bg-[#525252] mb-10'
           orientation='horizontal'
@@ -317,19 +317,28 @@ function WorkDetails() {
             />
           </div>
         </div>
+        
 
-        <div className=' justify-center mt-[75px] flex md:hidden' >
+        <div className=' justify-center mt-[50px] xl:mt-[75px] flex md:hidden' >
         <AnimatedButton className=' !mt-0'>
             All Projects
           </AnimatedButton>
         </div>
+          <Separator
+            className='4xl:my-[118px] xl:my-16 my-10 h-[.5px] w-full bg-[#525252]'
+            orientation='horizontal'
+          />
       </div>
 
       <LetsCollab
         className='py-20'
-        title='Get In Touch'
+        title='Got A Project ?'
         substring='We’re a team of creatives who are excited about unique ideas and help companies to create amazing identity by crafting top-notch UI/UX & E-Commerce stores.'
       />
+        <Separator
+            className='4xl:my-[118px] xl:my-16 my-10 h-[.5px] w-full bg-[#525252]'
+            orientation='horizontal'
+          />
     </div>
   );
 }
