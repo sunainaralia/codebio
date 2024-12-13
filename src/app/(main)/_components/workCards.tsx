@@ -16,7 +16,6 @@ interface WorkCardProps {
   hideLowerSection?: boolean;
 }
 
-
 const WorkCards = ({
   img,
   name,
