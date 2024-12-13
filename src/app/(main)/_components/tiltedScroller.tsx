@@ -103,7 +103,7 @@ export const ParallaxTiltedScroll = ({
                   <Image
                     src={el}
                     className={cn(
-                      "gap-2  md:h-[300px] w-[200]  sm:w-[500px] rounded-md max-w-[500px] md:aspect-video object-cover !m-0 !p-0",
+                      "gap-2  md:h-[300px] w-[200]  sm:w-[500px] rounded-md max-w-[500px] md:aspect-video object-cover object-top !m-0 !p-0",
                       [
                         imageH
                           ? `h-[398px] md:h-[${imageH}px] md:max-h-[${imageH}px]`

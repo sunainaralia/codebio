@@ -78,7 +78,7 @@ export const ParallaxHorizontalScroll = ({
                 <Image
                   src={el}
                   className={cn(
-                    "gap-2 h-[150px] md:h-full rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0",
+                    "gap-2 h-[150px] md:h-[350px] rounded-md w-[400px] max-w-[200px] aspect-video object-cover object-top !m-0 !p-0",
                     imageH &&
                       imageW &&
                       `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px] `
@@ -105,7 +105,7 @@ export const ParallaxHorizontalScroll = ({
                 <Image
                   src={el}
                   className={cn(
-                    "gap-2 h-[150px] md:h-[350px] rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0",
+                    "gap-2 h-[150px] md:h-[350px] rounded-md w-[400px] max-w-[200px] aspect-video object-cover object-top !m-0 !p-0",
                     imageH &&
                       imageW &&
                       `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px]`
@@ -132,7 +132,7 @@ export const ParallaxHorizontalScroll = ({
                 <Image
                   src={el}
                   className={cn(
-                    "gap-2 h-[150px] md:h-[350px] rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0",
+                    "gap-2 h-[150px] md:h-[350px] rounded-md w-[400px] max-w-[200px] aspect-video object-cover object-top !m-0 !p-0",
                     imageH &&
                       imageW &&
                       `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px]`
