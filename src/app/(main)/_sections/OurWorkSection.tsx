@@ -89,7 +89,7 @@ function OurWorkSection() {
                 <AnimatedButton
                   className="bg-[#2B2B2B] !text-primary-white hidden lg:flex"
                   btnClassName="bg-primary-white"
-                  icon="/vectors/blacktick.svg"
+                  icon="/vectors/blacktick.svg" 
                 >
                   View More Projects
                 </AnimatedButton>
