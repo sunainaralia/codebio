@@ -293,7 +293,7 @@ function WorkDetails() {
         </div>
 
         <div className='md:flex w-full mt-16 4xl:mt-[120px] justify-center'>
-          <div className=''>
+          <div className='w-full lg:w-1/2'>
             <WorkCards
               {...cardsData[0]}
               onClick={() => navigate.push(`/our-work/${cardsData[0]?.id}`)}
@@ -309,7 +309,7 @@ function WorkDetails() {
             orientation='horizontal'
           />
 
-          <div className=''>
+          <div className='w-full lg:w-1/2'>
             <WorkCards
               {...cardsData[1]}
               onClick={() => navigate.push(`/our-work/${cardsData[1]?.id}`)}

@@ -31,7 +31,7 @@ const WorkCards = ({
   onClick?: () => void;
 }) => {
   return (
-    <div className="max-2xl:max-w-[900px] 2xl:!w-full 2xl:px-16">
+    <div className="max-2xl:max-w-[900px] 2xl:w-full 2xl:px-16">
       <div className="relative">
         {cardType === "horizontal" ? (
           <ParallaxHorizontalScroll images={imageArr || images} />
