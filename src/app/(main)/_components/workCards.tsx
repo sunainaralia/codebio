@@ -23,20 +23,20 @@ const WorkCards = ({
   strategy,
   design,
   cardType,
-  imgArray,
+  imageArr,
   id,
   onClick,
   hideLowerSection = false,
-}: WorkCardProps & { cardType?: string } & { imgArray?: string[] } & {
+}: WorkCardProps & { cardType?: string } & { imageArr?: string[] } & {
   onClick?: () => void;
 }) => {
   return (
     <div className="max-2xl:max-w-[900px] 2xl:!w-full 2xl:px-16">
       <div className="relative">
         {cardType === "horizontal" ? (
-          <ParallaxHorizontalScroll images={imgArray || images} />
+          <ParallaxHorizontalScroll images={imageArr || images} />
         ) : (
-          <ParallaxTiltedScroll images={imgArray || images} />
+          <ParallaxTiltedScroll images={imageArr || images} />
         )}
         <span
           onClick={onClick}
