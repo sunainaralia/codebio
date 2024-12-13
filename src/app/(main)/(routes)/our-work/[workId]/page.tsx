@@ -15,9 +15,10 @@ import WorkCards from '@/app/(main)/_components/workCards';
 import LetsCollab from '@/app/(main)/_components/letsCollab';
 
 function WorkDetails() {
+  const { workId } = useParams();
   const [data, setData] = useState<any>({});
   const [cardsData, setCardsData] = useState<WorkCardProps[]>([]);
-  const { workId } = useParams();
+
   useEffect(() => {
     const detailPage = works.filter((work) => work.id === workId)[0]
     if (!detailPage) {
@@ -87,7 +88,7 @@ function WorkDetails() {
       </div>
 
       <div>
-        <p className='hidden md:block 4xl:text-[70px]  lg:text-5xl md:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center mt-12 lg:mt-20 2xl:mt-28 2xl:mb-8 mb-4 '>Their Problem</p>
+        <p className='hidden md:block 4xl:text-[70px] 3xl:text-5xl lg:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center mt-12 lg:mt-20 2xl:mt-28 2xl:mb-8 mb-4 '>Their Problem</p>
         <p className='3xl:text-[30px]  md:text-xl text-base font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto '>Secure Inteli struggled with a slow, underperforming website that wasn’t converting leads effectively. Their site lacked modern design and the security features necessary to attract high-value clients in the cybersecurity sector.</p>
       </div>
 
@@ -98,17 +99,17 @@ function WorkDetails() {
       <div className='sm:mt-10 lg:mt-20 4xl:mt-[118px]  '>
         <div className='flex flex-col lg:flex-row w-full justify-between'>
           <div className='lg:w-[49%] 4xl:pe-[100px] '>
-            <div className='4xl:text-[70px]  lg:text-5xl md:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] flex items-center'>
+            <div className='4xl:text-[70px]  3xl:text-5xl md:text-[32px] text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] flex items-center'>
               <Image
                 src='/worksDetail/tasks.svg'
                 alt='img'
                 width={56}
                 height={50}
-                className='4xl:w-[136px] 4xl:h-[120px] lg:w-20 lg:h-20 '
+                className='4xl:w-[136px] 4xl:h-[120px] 3xl:w-20 3xl:h-20 h-12 w-12'
               />{' '}
               Our Tasks
             </div>
-            <p className=' text-center lg:text-start 4xl:text-[36px] lg:text-2xl md:text-xl text-base font-normal text-[#525252] 4xl:leading-[45px] mt-4 2xl:mt-6 '>
+            <p className=' text-center lg:text-start text-lg sm:text-xl 3xl:text-3xl lg:text-[22px] 4xl:text-4xl font-normal text-[#525252] 4xl:leading-[45px] mt-4 2xl:mt-6 '>
               {data.mainDescription}
             </p>
           </div>
@@ -124,7 +125,7 @@ function WorkDetails() {
                   alt='img'
                   width={48}
                   height={48}
-                  className='4xl:w-[100px] 4xl:h-[100px] lg:w-[60px] lg:h-[60px]'
+                  className='4xl:w-[100px] 4xl:h-[100px] 3xl:w-[60px] w-10 h-10 3xl:h-[60px]'
                 />{' '}
                 <div>
                   <div className='4xl:text-[36px] xl:text-2xl lg:text-xl text-lg font-bold text-[#525252] 3xl:leading-[48px] '>
@@ -142,7 +143,7 @@ function WorkDetails() {
                   alt=''
                   width={48}
                   height={48}
-                  className='4xl:w-[100px] 4xl:h-[100px] lg:w-[60px] lg:h-[60px]'
+                  className='4xl:w-[100px] 4xl:h-[100px] 3xl:w-[60px] w-10 h-10 3xl:h-[60px]'
                 />
                 <div>
                   <div className='4xl:text-[36px] xl:text-2xl lg:text-xl text-lg font-bold text-[#525252] 3xl:leading-[48px] '>
@@ -157,8 +158,8 @@ function WorkDetails() {
         </div>
 
         <div className='mt-10 sm:mt-14 md:mt-[117px]'>
-          <h1 className='hidden md:block 4xl:text-[70px]  lg:text-5xl md:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center md:mb-7 4xl:mb-12 '>How We Solved It</h1>
-          <div className=' 3xl:text-[30px]  md:text-xl text-[15px] font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto '>
+          <h1 className='hidden md:block 4xl:text-[70px] 3xl:text-5xl lg:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center md:mb-7 4xl:mb-12 '>How We Solved It</h1>
+          <div className=' 3xl:text-[30px]  lg:text-lg text-[15px] font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto '>
             Enhanced the aesthetics to reinforce user experience and
             visibility. Incorporated accessibility to widen the user spectrum.
             Augmented to the features by using third-party integrations as per
@@ -174,12 +175,12 @@ function WorkDetails() {
       </div>
 
       <div className='hidden md:block'>
-        <p className=' 4xl:text-[70px]  lg:text-5xl md:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] '>Services Provided</p>
+        <p className=' 4xl:text-[70px]  3xl:text-5xl md:text-[32px] text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] '>Services Provided</p>
         <div className='4xl:mt-20 mt-10 flex flex-wrap max-4xl:justify-between'>
           {ServiceProvidedArr.map((items, i) => {
             return (
               <ul key={i} className='list-disc w-10/12 xl:w-6/12 ps-10 '>
-                <li className='4xl:text-[36px] lg:text-2xl md:text-xl text-base font-medium text-[#525252] 4xl:leading-[48px]'> {items.serviceName} </li>
+                <li className='4xl:text-[36px] 2xl:text-2xl lg:text-xl text-base font-medium text-[#525252] 4xl:leading-[48px]'> {items.serviceName} </li>
               </ul>
             )
           })}
@@ -257,10 +258,10 @@ function WorkDetails() {
       <div className='mt-10 sm:mt-16 md:mt-24 2xl:mt-36 4xl:mt-[290px]  '>
         <div className='max-sm:flex max-sm:flex-col-reverse'>
           <div className='w-fit text-center mx-auto  max-sm:flex max-sm:items-center max-sm:mt-10'>
-            <div className='4xl:text-[72px] 2xl:text-6xl lg:text-5xl text-4xl font-black text-[#2B2B2B] 4xl:leading-[97px] text-center uppercase'>Design</div>
+            <div className='4xl:text-[72px] 3xl:text-5xl text-4xl font-black text-[#2B2B2B] 4xl:leading-[97px] text-center uppercase'>Design</div>
             <Separator className='hidden sm:block h-[.5px] w-full my-3 2xl:my-5 bg-[#525252]' />
             <Separator className='sm:hidden h-[45px] w-[.5px] mx-5 bg-[#525252]' />
-            <div className='4xl:text-[34px] xl:text-2xl lg:text-xl text-lg font-normal text-[#8D8D8D] text-center 3xl:leading-[45px]'>Our Creative Process</div>
+            <div className='4xl:text-[34px] 3xl:text-2xl lg:text-xl text-lg font-normal text-[#8D8D8D] text-center 3xl:leading-[45px]'>Our Creative Process</div>
           </div>
 
           <div className='sm:mt-12 4xl:mt-[100px] '>

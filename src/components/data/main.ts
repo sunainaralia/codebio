@@ -15,7 +15,7 @@ export const works : WorkCardProps[] = [
    
     {
       img: "/ourWork/work-01.svg",
-      id: "works2",
+      id: "works1",
       name: "Almond House",
       description: "Food & Confectionery",
       strategy: "Local SEO Focus, CRM Integration",
@@ -26,7 +26,7 @@ export const works : WorkCardProps[] = [
     },
     {
       img: "/ourWork/work-02.svg",
-      id: "works3",
+      id: "works2",
       name: "Medimix",
       imageArr: Medimix,
       description: "Ayurvedic Health & Wellness",
@@ -48,7 +48,7 @@ export const works : WorkCardProps[] = [
     },
     {
       img: "/ourWork/work-02.svg",
-      id: "works3",
+      id: "works4",
       name: "Pepr",
       imageArr: Pepr,
       description: "Athleisure & Fashion",
@@ -59,7 +59,7 @@ export const works : WorkCardProps[] = [
     },
     {
       img: "/ourWork/work-02.svg",
-      id: "works3",
+      id: "works5",
       name: "Secureinteli",
       imageArr: Secureinteli,
       description: "Cybersecurity Solutions",
@@ -70,7 +70,7 @@ export const works : WorkCardProps[] = [
     },
     {
       img: "/ourWork/work-02.svg",
-      id: "works3",
+      id: "works6",
       name: "Talitha",
       imageArr: Talitha,
       description: "High-End Fashion",
@@ -81,7 +81,7 @@ export const works : WorkCardProps[] = [
     },
     {
       img: "/ourWork/work-02.svg",
-      id: "works3",
+      id: "works7",
       name: "Satgurus",
       imageArr: axisBank,
       description: "Spiritual & Religious Items",
@@ -92,7 +92,7 @@ export const works : WorkCardProps[] = [
     },
     {
       img: "/ourWork/work-02.svg",
-      id: "works3",
+      id: "works8",
       name: "Lalande",
       imageArr: axisBank,
       description: "Legal Services",
@@ -103,7 +103,7 @@ export const works : WorkCardProps[] = [
     },
     {
       img: "/ourWork/work-02.svg",
-      id: "works3",
+      id: "works9",
       name: "Kisah",
       imageArr: axisBank,
       description: "Ethnic Fashion",
