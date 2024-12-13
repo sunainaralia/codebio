@@ -58,7 +58,7 @@ export const OurWorkCustomScroller = ({
     <div className="w-full mx-auto  rounded-[25px]">
       <div
         className={cn(
-          "items-start h-[250px]  md:h-[500px] rounded-md max-w-[600px] object-center overflow-hidden  w-full hover:scale-[1.02] transition-all duration-100 ",
+          "items-start h-[250px]  md:h-[500px] rounded-md max-w-[600px] object-center overflow-hidden  w-full  ",
           className
         )}
         ref={gridRef}
@@ -78,7 +78,7 @@ export const OurWorkCustomScroller = ({
                 <Image
                   src={el}
                   className={cn(
-                    "gap-2 h-[150px] md:h-full rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0",
+                    "gap-2 h-[90px]   md:h-[270px] lg:h-[350px] xl:h-[290px] 3xl:h-[450px] rounded-xl 3xl:rounded-[30px] border-[5px] py-[6px] xl:py-[10px] bg-[#FEFEFE]  w-[400px] max-md:!w-[200px] max-lg:!w-[400px] max-2xl:!w-[450px]  aspect-video object-cover !m-0 ",
                     imageH &&
                       imageW &&
                       `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px] `
@@ -93,7 +93,7 @@ export const OurWorkCustomScroller = ({
           </div>
           <div
             className={cn(
-              "flex w-full  md:h-[270px] lg:h-[350px] xl:h-[290px] 3xl:h-[450px] overflow-x-hidden gap-[16px] md:gap-[36px] xl:gap-12 3xl:gap-24",
+              "flex w-full  h-[90px]   md:h-[270px] lg:h-[350px] xl:h-[290px] 3xl:h-[450px] overflow-x-hidden gap-[16px] md:gap-[36px] xl:gap-12 3xl:gap-24",
               imageH && imageW && `h-[${imageH}px]`
             )}
           >
@@ -102,10 +102,10 @@ export const OurWorkCustomScroller = ({
                 style={{ x: translateSecond, transitionDuration: "2s" }}
                 key={`grid-2-${idx}`}
               >
-                <Image
+                <Image  
                   src={el}
                   className={cn(
-                    "gap-2 h-[150px] md:h-[350px] xl:h-[270px] 3xl:h-[450px] rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0",
+                    "gap-2 h-[90px]   md:h-[270px] lg:h-[350px] xl:h-[290px] 3xl:h-[450px] rounded-xl 3xl:rounded-[30px] w-[400px]  max-md:!w-[200px] max-lg:!w-[400px] max-2xl:!w-[450px] aspect-video object-cover object-top !m-0 py-[6px] xl:py-[10px] bg-[#FEFEFE]",
                     imageH &&
                       imageW &&
                       `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px]`
@@ -120,7 +120,7 @@ export const OurWorkCustomScroller = ({
           </div>
           <div
             className={cn(
-              "flex w-full  md:h-[270px] lg:h-[350px] xl:h-[290px] 3xl:h-[450px] overflow-x-hidden gap-[16px] md:gap-[36px] xl:gap-12 3xl:gap-24",
+              "flex w-full  h-[90px]   md:h-[270px] lg:h-[350px] xl:h-[290px] 3xl:h-[450px]overflow-x-hidden gap-[16px] md:gap-[36px] xl:gap-12 3xl:gap-24",
               imageH && imageW && `h-[${imageH}px]`
             )}
           >
@@ -132,7 +132,7 @@ export const OurWorkCustomScroller = ({
                 <Image
                   src={el}
                   className={cn(
-                    "gap-2 h-[150px] md:h-[350px] xl:h-[250px] 3xl:h-[450px] rounded-md w-[400px] max-w-[200px] aspect-video object-cover !m-0 !p-0",
+                    "gap-2 h-[90px]   md:h-[270px] lg:h-[350px] xl:h-[290px] 3xl:h-[450px] rounded-xl 3xl:rounded-[30px] w-[400px] max-md:!w-[200px] max-lg:!w-[400px] max-2xl:!w-[450px] aspect-video object-cover !m-0 py-[6px] xl:py-[10px] bg-[#FEFEFE]",
                     imageH &&
                       imageW &&
                       `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px]`

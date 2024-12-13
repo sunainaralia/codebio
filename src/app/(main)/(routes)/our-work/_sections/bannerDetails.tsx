@@ -15,6 +15,7 @@ interface WorkCardProps {
   img: string;
   name?: string;
   description?: string;
+  cardstyling?: string;
   strategy?: string;
   design?: string;
   id?: string;
@@ -29,6 +30,7 @@ const BannerDetails = ({
   description,
   strategy,
   design,
+  cardstyling,
   id,
   mainDescription,
   buttonText,
@@ -37,7 +39,7 @@ const BannerDetails = ({
   const navigate = useRouter();
   return (
     <div className="w-full pt-5 md:pt-20">
-      <div className="relative w-full  lg:h-[500px] 3xl:h-[750px]">
+      <div className={`${cardstyling} hover:scale-[1.02] transition-all duration-100 rounded-xl 3xl:rounded-[25px] relative w-full  lg:h-[500px] 3xl:h-[750px]`}>
         {id === "works4" ? (
           <OurWorkTiltCustomScroll  
             images={imageArr || images}
@@ -78,18 +80,18 @@ const BannerDetails = ({
             <div className="text-[#8D8D8D] mt-1 3xl:mt-3 3xl:text-[34px] lg:text-[22px] sm:text-[20px] text-[18px] text-center xl:text-start">
               {description}
             </div>
-            <div className=" lg:flex text-[#525252] items-baseline my-5 justify-center">
+            <div className=" md:flex text-[#525252] items-baseline my-5 justify-center">
             <div className="flex flex-col 2xl:!flex-row items-center ">
-                <div className="mr-2 font-semibold text-[24px] 3xl:text-[28px]">Strategy:</div>
-                <div className="text-center 2xl:text-start text-[16px] 3xl:text-[20px]">{design}</div>
+                <div className="2xl:mr-2 font-semibold text-[24px] 3xl:text-[28px]">Strategy:</div>
+                <div className="text-center 2xl:text-start text-[16px] 3xl:text-[20px]">{strategy}</div>
               </div>
               <Separator className="w-px bg-[#D8D8D8] mx-6" />
               <div className="flex flex-col 2xl:!flex-row items-center">
-                <div className="mr-2 font-semibold text-[24px] 3xl:text-[28px]">Design:</div>
+                <div className="2xl:mr-2 font-semibold text-[24px] 3xl:text-[28px]">Design:</div>
                 <div className="text-center 2xl:text-start text-[16px] 3xl:text-[20px]">{design}</div>
               </div>
             </div>
-            <div className="md:hidden flex md:justify-center items-center">
+            {/* <div className="md:hidden flex md:justify-center items-center">
               <div className="flex-1">
                 <div className="md:text-center text-base font-semibold text-[#525252] py-1">
                   Strategy
@@ -101,10 +103,10 @@ const BannerDetails = ({
                 orientation="vertical"
               />
             
-            </div>
+            </div> */}
           </div>
 
-          <div className="text-[#525252] 3xl:max-w-[957px] 2xl:max-w-[740px]  2xl:text-[30px] sm:text-[20px] lg:text-[22px] font-normal 2xl:text-right text-center  w-full">
+          <div className="text-[#525252] 3xl:max-w-[957px] 2xl:max-w-[740px]  2xl:text-[30px] sm:text-[20px] lg:text-[22px] font-normal xl:text-right text-center  w-full">
             {mainDescription}
           </div>
         </div>

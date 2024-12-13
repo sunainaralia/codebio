@@ -13,7 +13,7 @@ function Work() {
   return (
     <div className='px-[30px] md:px-20'>
       {
-        works.map((work) => <BannerDetails key={work.id} {...work} buttonText="View full Details"/>)
+        works.slice(0,5).map((work) => <BannerDetails key={work.id} {...work} buttonText="View full Details"/>)
       } 
 
       <div className='flex w-full justify-center mb-10 md:mb-0'>

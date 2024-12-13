@@ -104,6 +104,18 @@ export const ourWorkAlmondImg = [
     "/works/almond-img4.png",
     "/works/almond-img5.png",
     "/works/almond-img3.png",
+    "/works/almond-img1.png",
+    "/works/almond-img2.png",
+    "/works/almond-img3.png",
+    "/works/almond-img4.png",
+    "/works/almond-img5.png",
+    "/works/almond-img3.png",
+    "/works/almond-img1.png",
+    "/works/almond-img2.png",
+    "/works/almond-img3.png",
+    "/works/almond-img4.png",
+    "/works/almond-img5.png",
+    "/works/almond-img3.png",
     
 ]
 export const ourWorkMainImg = [
@@ -210,5 +222,36 @@ export const moreClientLogos = [
 ];
 
 export const OurWorkProjects=[
+    
+]
+export const Medimix = [
+    "/ourWork/Medimix/image-1.png",
+    // "/ourWork/Medimix/image-2.png",
+    "/ourWork/Medimix/image-3.png",
+    "/ourWork/Medimix/image-4.png",
+    "/ourWork/Medimix/image-5.png",
+    "/ourWork/Medimix/image.png",
+    "/ourWork/Medimix/image-1.png",
+    // "/ourWork/Medimix/image-2.png",
+    "/ourWork/Medimix/image-3.png",
+    "/ourWork/Medimix/image-4.png",
+    "/ourWork/Medimix/image-5.png",
+    "/ourWork/Medimix/image.png",
+   
+]
+export const VLCC = [
+    "/ourWork/Medimix/image-1.png",
+    
+]
+export const Pepr = [
+    "/ourWork/Medimix/image-1.png",
+    
+]
+export const Secureinteli = [
+    "/ourWork/Medimix/image-1.png",
+    
+]
+export const Talitha = [
+    "/ourWork/Medimix/image-1.png",
     
 ]
