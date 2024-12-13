@@ -62,24 +62,24 @@ const WorkCards = ({
         {/* Conditionally Render Name and Description */}
         {(name || description) && (
           <div
-            className={`flex flex-col lg:flex-row lg:justify-center lg:text-center my-7 md:mt-12 ${
+            className={`flex flex-col lg:flex-row lg:justify-center lg:text-center my-7 md:mt-12 items-center ${
               hideLowerSection ? "flex flex-col" : "flex lg:items-center gap-1"
             }`}
           >
             {name && (
               <span className="text-2xl lg:text-[22px] 4xl:text-[38px] text-black font-bold">
-                {name}
+                {name}  
               </span>
             )}
             {!hideLowerSection && description && (
               <span className="text-[#8D8D8D] text-sm sm:text-xl  4xl:text-[26px] font-normal">
-                <span className="hidden lg:block">: {description}</span>
-                <span className="lg:hidden block">{description}</span>
+                <span className="hidden lg:block"> {description}</span>
+                <span className="lg:hidden block"> {description}</span>
               </span>
             )}
             {hideLowerSection && description && (
               <span className="text-[#8D8D8D] text-sm sm:text-xl xl:text-[26px] font-normal">
-                {description}
+                  {description}
               </span>
             )}
           </div>
