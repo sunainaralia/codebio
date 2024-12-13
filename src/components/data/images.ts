@@ -226,13 +226,13 @@ export const OurWorkProjects=[
 ]
 export const Medimix = [
     "/ourWork/Medimix/image-1.png",
-    // "/ourWork/Medimix/image-2.png",
+    "/ourWork/Medimix/image-2.png",
     "/ourWork/Medimix/image-3.png",
     "/ourWork/Medimix/image-4.png",
     "/ourWork/Medimix/image-5.png",
     "/ourWork/Medimix/image.png",
     "/ourWork/Medimix/image-1.png",
-    // "/ourWork/Medimix/image-2.png",
+    "/ourWork/Medimix/image-2.png",
     "/ourWork/Medimix/image-3.png",
     "/ourWork/Medimix/image-4.png",
     "/ourWork/Medimix/image-5.png",
