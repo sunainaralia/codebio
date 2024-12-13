@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import ArrowIconButton from "../ArrowIconButton";
 import AnimatedButton from "../AnimatedButton";
 import { cn } from "@/lib/utils";
@@ -8,13 +8,20 @@ interface GetInTouchSectionProps {
   className?: string;
 }
 function GetInTouchSection({ className }: GetInTouchSectionProps) {
+  const[subscription,setSubscription] =useState('')
   const router = useRouter();
 
   const handleContactNavigation = () => {
     router.push("/contact-us");
   };
+
+  const handleSubscribe = (e:any) => {
+    e.preventDefault();
+    console.log(subscription)
+    setSubscription:""
+  }
   return (
-    <div className=" sm:w-[90%]  mx-auto">
+    <div className="">
       <div
         className={cn(
           "mt-[27px] 4xl:mt-[60px] pb-[87px] xl:pb-[150px] 4xl:pb-[300px] lg:pt-10 4xl:pt-20 border-b border-[#D8D8D8]",
@@ -25,9 +32,11 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
           Stay Updated !
         </div>
         <div className="md:flex justify-between items-end">
-          <div className="w-full md:max-w-[650px] 3xl:max-w-[900px]">
+          <form onSubmit={handleSubscribe} className="w-full md:max-w-[650px] 3xl:max-w-[900px]">
             <div className="flex items-center border-b w-full max-w-[700px] justify-between  lg:mt-[65px] mt-[50px]">
               <input
+              onChange={(e)=>setSubscription(e.target.value)}
+              value={subscription}
                 type="text"
                 placeholder="yourname@mail.com"
                 className="w-full border-none mb-2.5 4xl:mb-[20px] text-sm sm:text-lg 4xl:text-[26px] font-normal text-[#8D8D8D] outline-none max-w-[600px]"
@@ -43,7 +52,7 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
               with future updates. Your data is stored securely and we never pass
               it on to third parties.
             </div>
-          </div>
+          </form>
           <AnimatedButton
             className="hidden xl:flex w-fit h-fit "
             onClick={handleContactNavigation}

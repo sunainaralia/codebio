@@ -50,16 +50,16 @@ const GetInTouchSection = () => {
           <div>
             <div className='font-black text-[24px] 3xl:text-[48px] xl:text-[35px] text-[#000]'>Work Enquires</div>
             <div className='text-sm lg:text-[20px] 3xl:text-[28px]  mt-2.5 md:mt-[30px] font-medium'>
-              <div className='lg:mb-[20px] mb-[12px]'>+91 6307 080 414</div>
-              <div className=''>sales@codebiosis.com</div>
+              <div className='lg:mb-[20px] mb-[12px]'><a href="tel:+91 6307 080 414">+91 6307 080 414</a></div>
+              <div className=''><a href="mailto:sales@codebiosis.com"> sales@codebiosis.com</a></div>
             </div>
           </div>
           <Separator
-            className='h-[.5px] w-full max-w-[50px] bg-[#525252] my-5 mx-auto hidden md:block'
+            className='h-[.5px] w-full max-w-[50px] bg-[#525252] my-8 mx-auto hidden md:block'
           />
           <div className='text-sm lg:text-[18px] 3xl:text-[24px] font-medium max-md:text-right'>
-            <div className='lg:mb-[15px] mb-[9px]'>Assistance Hours:</div>
-            <div className='lg:mb-[15px] mb-[9px]'>Monday - Friday</div>
+            <div className='lg:mb-5 mb-4'>Assistance Hours:</div>
+            <div className='lg:mb-5 mb-4'>Monday - Friday</div>
             <div className='flex flex-col justify-center'>
               <div className='mb-[8px]'>9:00 am to 7:00 pm IST</div>
               <div className=''>10:30 pm to 8:30 am EST</div>
@@ -72,14 +72,14 @@ const GetInTouchSection = () => {
            <div>
             <div className='font-black text-[24px] 3xl:text-[48px] xl:text-[35px] text-[#000]'>Careers & Press</div>
             <div className='text-sm lg:text-[20px] 3xl:text-[28px]  mt-2.5 md:mt-[30px] font-medium'>
-              <div className='lg:mb-[20px] mb-[12px]'>+91 6307 080 414</div>
-              <div className=''>contact@codebiosis.com</div>
+              <div className='lg:mb-[20px] mb-[12px]'><a href="tel:+91 6307 080 414"> +91 6307 080 414</a></div>
+              <div className=''><a href="mailto:contact@codebiosis.com">contact@codebiosis.com</a></div>
             </div>
           </div>
-          <Separator className='hidden md:block h-px w-full max-w-[50px] bg-[#525252] my-4 mx-auto  ' />
+          <Separator className='hidden md:block h-px w-full max-w-[50px] bg-[#525252] my-8 mx-auto  ' />
           <div className='text-sm lg:text-[18px] 3xl:text-[24px] font-medium max-md:text-right'>
-            <div className='lg:mb-[15px] mb-[9px]'>Assistance Hours:</div>
-            <div className='lg:mb-[15px] mb-[9px]'>Monday - Friday</div>
+            <div className='lg:mb-5 mb-4'>Assistance Hours:</div>
+            <div className='lg:mb-5 mb-4'>Monday - Friday</div>
             <div className='flex flex-col justify-center'>
               <div className='mb-[8px]'>9 am to 7 pm IST</div>
               <div className=''>9 am to 7 pm EST</div>

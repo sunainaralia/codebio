@@ -192,7 +192,7 @@ function OurWorkSection() {
             <div
               className="flex items-center w-fit scale-75 4xl:scale-100 h-fit m-auto gap-4 "
               style={{ cursor: "pointer" }}
-              onClick={() => navigate.push(`/our-work`)}
+              onClick={() => navigate.push(`/contact-us`)}
             >
               <FlipWords
                 className="font-bold text-[34px] md:text-5xl xl:text-[70px] whitespace-nowrap"

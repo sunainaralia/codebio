@@ -14,12 +14,12 @@ const Form = () => {
     });
   };
   return (
-    <div className="xl:w-[90%] 4xl:w-[80%] mx-auto mt-[30px] sm:mt-24 md:mt-32 2xl:mt-[200px]">
+    <div className="xl:w-[90%] 4xl:w-[80%] mx-auto mt-[30px] sm:mt-16  2xl:mt-20  ">
       <form
         action="submit"
         onSubmit={handleSubmit}
         id="form"
-        className="flex flex-col flex-wrap gap-y-11 sm:gap-y-16 md:gap-y-20 gap-x-20 2xl:gap-y-28 2xl:gap-x-36  "
+        className="flex flex-col flex-wrap gap-y-16"
       >
         <div className="flex max-md:flex-col gap-y-11 3xl:gap-[145px] sm:gap-16 lg:gap-[100px]">
           <input

@@ -69,7 +69,7 @@ const Preloader = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "100%" }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-5xl md:text-6xl font-semibold text-primary-white"
+            className="text-4xl sm:text-5xl md:text-6xl font-semibold text-primary-white text-center"
           >
             {getPathTitle()}
           </motion.h1>
