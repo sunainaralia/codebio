@@ -3,7 +3,7 @@
 import { Separator } from "@radix-ui/react-separator";
 import React from "react";
 import { ParallaxHorizontalScroll } from "./horizontalScroller";
-import { images } from "@/components/data/images";
+import { images, ourWorkAlmondImg } from "@/components/data/images";
 import { ParallaxTiltedScroll } from "./tiltedScroller";
 
 interface WorkCardProps {

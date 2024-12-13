@@ -40,7 +40,7 @@ const BannerDetails = ({
   return (
     <div className="w-full pt-5 md:pt-20">
       <div className={`${cardstyling} hover:scale-[1.02] transition-all duration-100 rounded-xl 3xl:rounded-[25px] relative w-full  lg:h-[500px] 3xl:h-[750px]`}>
-        {id === "works4" ? (
+        {/* {id === "works4" ? (
           <OurWorkTiltCustomScroll  
             images={imageArr || images}
             imageH={200}
@@ -48,14 +48,14 @@ const BannerDetails = ({
             className="max-w-full w-full md:!h-[550px]"
             childrenClassName="md:w-[200vw] ml-[-25%] mt-[-50%]"
           />
-        ) : (
+        ) : ( */}
           <OurWorkCustomScroller
             images={imageArr || images}
             imageH={150}
             imageW={800}
             className="max-w-full w-full xl:h-[500px] 3xl:h-[750px] max-h-full"
           />
-        )}
+        {/* )} */}
 
         <div className="absolute bottom-0 md:bottom-12 right-3 ">
           <AnimatedButton

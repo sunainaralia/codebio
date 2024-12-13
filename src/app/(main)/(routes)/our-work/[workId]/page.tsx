@@ -79,17 +79,13 @@ function WorkDetails() {
       <div className='text-center'>
         <div className='font-bold mt-6 mb-4 3xl:mt-12 3xl:mb-7 text-base md:text-xl lg:text-2xl 3xl:text-[28px] 3xl:leading-[37px] text-[#525252] '>March 1, 2021</div>
         <div className='3xl:text-[30px]  md:text-xl text-[15px] font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto'>
-          Developed the platform with crystal clear visions and an agile
-          development cycle. Redefined visual system for the clients with
-          upgraded search tools and content which help boost the site
-          visitors. Refactored the code to minimize time and memory complexities
-          for search optimization.
+          {data.March_2021}
         </div>
       </div>
 
       <div>
         <p className='hidden md:block 4xl:text-[70px] 3xl:text-5xl lg:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center mt-12 lg:mt-20 2xl:mt-28 2xl:mb-8 mb-4 '>Their Problem</p>
-        <p className='3xl:text-[30px]  md:text-xl text-base font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto '>Secure Inteli struggled with a slow, underperforming website that wasn’t converting leads effectively. Their site lacked modern design and the security features necessary to attract high-value clients in the cybersecurity sector.</p>
+        <p className='3xl:text-[30px]  md:text-xl text-base font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto '>{data.Their_Problem} </p>
       </div>
 
       <Separator
@@ -160,11 +156,7 @@ function WorkDetails() {
         <div className='mt-10 sm:mt-14 md:mt-[117px]'>
           <h1 className='hidden md:block 4xl:text-[70px] 3xl:text-5xl lg:text-4xl text-3xl font-black text-[#2B2B2B] 4xl:leading-[94px] text-center md:mb-7 4xl:mb-12 '>How We Solved It</h1>
           <div className=' 3xl:text-[30px]  lg:text-lg text-[15px] font-normal text-[#525252] text-center 3xl:leading-[40px] 2xl:w-[70%] mx-auto '>
-            Enhanced the aesthetics to reinforce user experience and
-            visibility. Incorporated accessibility to widen the user spectrum.
-            Augmented to the features by using third-party integrations as per
-            client requirements. A dedicated post-deployment team maintains the
-            deliverables and updates them on a regular basis.
+          {data.How_We_Solved_It}
           </div>
         </div>
 
@@ -207,7 +199,7 @@ function WorkDetails() {
           </div>
 
           <div className='flex 2xl:justify-end justify-center  '>
-            <p className=' 3xl:text-[30px] md:text-xl text-[15px] font-normal text-[#525252] 3xl:leading-[40px] mt-7 4xl:mt-[52px] text-center 2xl:text-right  2xl:w-[60%] '>CodeBiosis transformed our digital presence with an intuitive, secure, and high-performing website. Our clients love the new interface, and we've seen a remarkable increase in client inquiries</p>
+            <p className=' 3xl:text-[30px] md:text-xl text-[15px] font-normal text-[#525252] 3xl:leading-[40px] mt-7 4xl:mt-[52px] text-center 2xl:text-right  2xl:w-[60%] '>{data.What_Client_Said}</p>
           </div>
         </div>
 
@@ -265,14 +257,16 @@ function WorkDetails() {
           </div>
 
           <div className='sm:mt-12 4xl:mt-[100px] '>
-            <DesignUpperImage className='mx-auto ' imageUpper={'/worksDetail/des1.svg'} />
+            <DesignUpperImage className='mx-auto ' imageUpper={data.Design_img} />
+            
+            
           </div>
         </div>
         <div>
           <DesignText className='4xl:mt-12 mt-7 3xl:text-[30px]  md:text-xl text-[15px] font-normal text-[#525252] text-center 3xl:leading-[40px] xl:w-[85%] mx-auto' text="The redesign of Secure Inteli’s website focused on combining sleek, intuitive interfaces with cutting-edge encryption protocols. The clean, modern aesthetic helped elevate their professional image, while the enhanced functionality ensured a secure and seamless browsing experience for their clients." />
-          <DesignLowerImage
-            img1='/worksDetail/des2.svg'
-            img2='/worksDetail/des3.svg'
+          <DesignLowerImage 
+            img1={data.Colorpalette_img}
+            img2={data.Font_img}
           />
         </div>
       </div>
@@ -303,7 +297,7 @@ function WorkDetails() {
             <WorkCards
               {...cardsData[0]}
               onClick={() => navigate.push(`/our-work/${cardsData[0]?.id}`)}
-              hideLowerSection={true}
+              // hideLowerSection={true}
             />
           </div>
           <Separator
@@ -319,7 +313,7 @@ function WorkDetails() {
             <WorkCards
               {...cardsData[1]}
               onClick={() => navigate.push(`/our-work/${cardsData[1]?.id}`)}
-              hideLowerSection={true}
+              // hideLowerSection={true}
             />
           </div>
         </div>
