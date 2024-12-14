@@ -78,7 +78,7 @@ export const OurWorkCustomScroller = ({
                 <Image
                   src={el}
                   className={cn(
-                    "gap-2 h-[90px]   md:h-[270px] lg:h-[350px] xl:h-[290px] 3xl:h-[450px] rounded-xl 3xl:rounded-[30px] border-[5px] py-[6px] xl:py-[10px] bg-[#FEFEFE]  w-[400px] max-md:!w-[200px] max-lg:!w-[400px] max-2xl:!w-[450px]  aspect-video object-cover !m-0 ",
+                    "gap-2 h-[90px]   md:h-[270px] lg:h-[350px] xl:h-[290px]  3xl:h-[450px] rounded-xl 3xl:rounded-[30px] border-[5px] py-[6px] xl:py-[10px] bg-[#FEFEFE]  w-[400px] max-md:!w-[200px] max-lg:!w-[400px] max-2xl:!w-[450px]  aspect-video object-cover !m-0 ",
                     imageH &&
                       imageW &&
                       `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px] `
@@ -105,7 +105,7 @@ export const OurWorkCustomScroller = ({
                 <Image  
                   src={el}
                   className={cn(
-                    "gap-2 h-[90px]   md:h-[270px] lg:h-[350px] xl:h-[290px] 3xl:h-[450px] rounded-xl 3xl:rounded-[30px] w-[400px]  max-md:!w-[200px] max-lg:!w-[400px] max-2xl:!w-[450px] aspect-video object-cover object-top !m-0 py-[6px] xl:py-[10px] bg-[#FEFEFE]",
+                    "gap-2 h-[90px]   md:h-[270px] lg:h-[350px] xl:h-[290px] 3xl:h-[450px] rounded-xl 3xl:rounded-[30px] w-[400px]  max-md:!w-[200px] max-lg:!w-[400px] max-3xl:!w-[450px] aspect-video object-cover object-top !m-0 py-[6px] xl:py-[10px] bg-[#FEFEFE]",
                     imageH &&
                       imageW &&
                       `h-[${imageH}px] w-[${imageW}px] max-w-[${imageW}px]`

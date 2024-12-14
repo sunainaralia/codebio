@@ -71,10 +71,16 @@ function NavigationBar() {
         setIsHidden={setIsHidden}
       />
       <div className='py-10 flex flex-row relative justify-between items-center'>
-        <Menu
+        <div className='flex gap-2 items-center'>
+          <Menu
           className='w-12 h-9 cursor-pointer hidden md:block'
           onClick={() => setIsHidden(!isHidden)}
         />
+        {/* added below code for new update about Ai Labs button */}
+        {/* <Link className='border-[2px] border-[black] rounded-[30px] px-4 py-1 font-medium'  href="https://codebiosisailabs.io/">
+        Ai Labs
+        </Link> */}
+        </div>
         <Link
           href={'/'}
           className='text-[60px] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold'

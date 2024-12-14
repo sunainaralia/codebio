@@ -34,9 +34,9 @@ const WorkCards = ({
     <div className="max-2xl:max-w-[900px] 2xl:w-full 2xl:px-16">
       <div className="relative">
         {cardType === "horizontal" ? (
-          <ParallaxHorizontalScroll images={imageArr || images} />
+          <ParallaxHorizontalScroll images={imageArr || ourWorkAlmondImg} />
         ) : (
-          <ParallaxTiltedScroll images={imageArr || images} />
+          <ParallaxTiltedScroll images={imageArr || ourWorkAlmondImg} />
         )}
         <span
           onClick={onClick}
@@ -66,8 +66,8 @@ const WorkCards = ({
             }`}
           >
             {name && (
-              <span className="text-2xl lg:text-[22px] 4xl:text-[38px] text-black font-bold">
-                {name}  
+              <span className="text-2xl lg:text-[22px] 4xl:text-[38px] text-black font-bold me-2">
+                {name}:  
               </span>
             )}
             {!hideLowerSection && description && (
