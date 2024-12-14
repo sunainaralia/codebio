@@ -128,7 +128,7 @@ function HeroHeader(props: {
             {props.featureText}
           </h1>
 
-          <div className="max-w-[655px] hidden md:block text-center text-[15px] sm:text-xl lg:text-xl 4xl:text-3xl 4xl:!leading-10 mt-5 2xl:mt-10">
+          <div className="max-w-[655px] hidden md:block text-center text-[15px] sm:text-xl lg:text-xl 4xl:text-3xl 4xl:!leading-10 my-5 2xl:my-10">
             {props.subText}
           </div>
 
@@ -150,7 +150,7 @@ function HeroHeader(props: {
           )}
         </div>
         <div className="flex flex-col items-center md:hidden">
-          <div className="max-w-[655px] text-center text-[15px] sm:text-xl lg:text-xl 4xl:text-3xl 4xl:!leading-10 mt-5 2xl:mt-10">
+          <div className="max-w-[655px] text-center text-[15px] sm:text-xl lg:text-xl 4xl:text-3xl 4xl:!leading-10 my-5 2xl:mt-10">
             {props.subText}
           </div>
 

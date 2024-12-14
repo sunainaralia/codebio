@@ -53,7 +53,7 @@ const AccordianSingle = ({
             </div>
 
             <div className='hidden md:block text-2xl md:text-3xl xl:text-4xl 3xl:text-5xl 4xl:text-[72px] py-3 lg:py-6 4xl:pb-10 4xl:pt-9 uppercase font-[900] md:font-bold'>
-              {service}
+              {service} 
             </div>
 
             <div className='flex w-full mt-8 lg:my-5 justify-between'>
