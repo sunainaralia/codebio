@@ -168,7 +168,7 @@ function OurWorkSection() {
         <div className="lg:flex w-full lg:w-full  mt-9 lg:mt-16 xl:mt-32 mb-6 justify-center">
           <div className="lg:w-[calc(50%-2px)] ">
             <Link href="/our-work/works2" target="_blank">
-              <WorkCards {...works[1]} imgArray={ourWorkAlmondImg} />
+              <WorkCards {...works[1]} imageArr={ourWorkAlmondImg} />
             </Link>
           </div>
 
@@ -183,7 +183,7 @@ function OurWorkSection() {
 
           <div className="lg:min-w-[100px]  lg:w-[calc(50%-2px)]">
             <Link href="/our-work/works4" target="_blank">
-              <WorkCards {...works[2]} imgArray={kotakBank} />
+              <WorkCards {...works[2]} imageArr={kotakBank} />
             </Link>
           </div>
         </div>
@@ -197,7 +197,7 @@ function OurWorkSection() {
         {/* <div className="lg:flex w-full mt-9 lg:mt-16 xl:mt-32 mb-6 justify-center">
           <div className="lg:min-w-[100px]  lg:w-[calc(50%-2px)]">
             <Link href="/our-work/works2" target="_blank">
-              <WorkCards {...works[1]} imgArray={kotakBank} />
+              <WorkCards {...works[1]} imageArr={kotakBank} />
             </Link>
           </div>
 
@@ -212,7 +212,7 @@ function OurWorkSection() {
 
           <div className="lg:min-w-[100px]  lg:w-[calc(50%-2px)]">
             <Link href="/our-work/works4" target="_blank">
-              <WorkCards {...works[2]} imgArray={tataSonet} />
+              <WorkCards {...works[2]} imageArr={tataSonet} />
             </Link>
           </div>
         </div>
@@ -226,7 +226,7 @@ function OurWorkSection() {
         <div className="lg:flex w-full mt-9 lg:mt-16 xl:mt-32 mb-6">
           <div className="lg:min-w-[100px] min-2xl:pe-10 lg:w-[calc(48%-2px)] ">
             <Link href="/our-work/works4" target="_blank">
-              <WorkCards {...works[3]} imgArray={axisBank} />
+              <WorkCards {...works[3]} imageArr={axisBank} />
             </Link>
           </div>
 
