@@ -24,6 +24,9 @@ const config: Config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'Ai_Labs_Gradient': 'linear-gradient(135deg, #ff9a8b, #ff6a88, #a055d6, #6e8efb, #88f7ef)',
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

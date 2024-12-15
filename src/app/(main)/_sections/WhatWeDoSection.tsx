@@ -86,7 +86,7 @@ function WhatWeDoSection() {
   return (
     <div className="py-[34px] 2xl:pt-28 flex flex-col justify-center md:items-center md:text-center px-[30px] md:px-0">
       <h3 className="text-lg font-normal text-[#525252] sm:text-xl 4xl:text-[42px] lg:text-[22px]">What We do</h3>
-      <h2 className=" text-[36px] md:text-5xl lg:text-[50px] 4xl:text-[84px]  lg:!leading-[70px] 4xl:!leading-[7rem] font-bold hidden lg:block mt-[10px]">
+      <h2 className=" text-[36px] md:text-5xl lg:text-[40px] 3xl:text-[50px] 4xl:text-[84px]  lg:!leading-[50px] 3xl:!leading-[70px] 4xl:!leading-[7rem] font-bold hidden lg:block mt-[10px]">
         We provide enterprise-level
         <br /> solutions to reshape your business.
       </h2>

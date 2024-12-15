@@ -511,3 +511,40 @@ html,
 
 /*  PANORAMA SLIDER */
 
+
+
+.ai-labs-button {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(90deg, #ff7eb3, #8e86ff, #3ccdfd);
+  -webkit-background-clip: text; /* Gradient text */
+  background-clip: text;
+
+  border: 2px solid transparent;
+  border-radius: 30px; /* Rounded corners */
+  background-origin: border-box;
+  background-image: linear-gradient(#000, #000),
+    linear-gradient(90deg, #ff7eb3, #8e86ff, #3ccdfd); /* Gradient border */
+  background-clip: padding-box, border-box;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+
+.ai-labs-button:hover {
+  background: linear-gradient(90deg, #ff7eb3, #8e86ff, #3ccdfd);
+  color: #fff;
+  -webkit-background-clip: clip;
+  background-clip:clip;
+  background-position: center; /* Set gradient position to center */
+  background-size: 200% 150%; 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
