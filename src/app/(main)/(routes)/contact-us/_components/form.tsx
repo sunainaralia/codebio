@@ -1,30 +1,85 @@
 "use client";
 
 import AnimatedButton from "@/components/AnimatedButton";
-import React from "react";
+import React, { useState } from "react";
 
 const Form = () => {
-  const handleSubmit = (event: any) => {
-    event.preventDefault();
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    phoneNumber: "",
+    companyName: "",
+    companyUrl: "",
+    companyLocation: "",
+    message: "",
+    agreeToPromotions: false,
+  });
 
-    const formData = new FormData(event.target);
-
-    Array.from(formData.entries()).forEach(([key, value]) => {
-      console.log(`${key}: ${value}`);
-    });
+  const handleChange = (e:any) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prevData:any) => ({
+      ...prevData,
+      [name]: type === "checkbox" ? checked : value,
+    }));
   };
+
+  function sendemail(){
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        service_id: "service_lq5xvnq",
+        template_id: "template_j3jo7kv",
+        user_id: "baxkhSrEMk-qlKLL7",
+        template_params: {
+          username: formData.username,
+          email: formData.email,
+          phoneNumber: formData.phoneNumber,
+          companyName: formData.companyName,
+          companyUrl: formData.companyUrl,
+          companyLocation: formData.companyLocation,
+          message:
+            formData.message
+        },
+      }),
+    };
+    fetch("https://api.emailjs.com/api/v1.0/email/send", requestOptions)
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+ }
+
+  const handleSubmit = (e:any) => {
+    e.preventDefault();
+
+    console.log("Form submitted:", formData);
+    // sendemail();
+setFormData(
+  {
+    username: "",
+    email: "",
+    phoneNumber: "",
+    companyName: "",
+    companyUrl: "",
+    companyLocation: "",
+    message: "",
+    agreeToPromotions: false,
+  }
+)
+  };
+
   return (
     <div className="xl:w-[90%] 4xl:w-[80%] mx-auto mt-[30px] sm:mt-16  2xl:mt-20  ">
       <form
-        action="submit"
-        onSubmit={handleSubmit}
+      onSubmit={handleSubmit}
         id="form"
         className="flex flex-col flex-wrap gap-y-16"
       >
         <div className="flex max-md:flex-col gap-y-11 3xl:gap-[145px] sm:gap-16 lg:gap-[100px]">
           <input
             type="text"
-            name="name"
+            name="username"
+            value={formData.username}
+            onChange={handleChange}
             className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Full Name *"
             required
@@ -32,6 +87,8 @@ const Form = () => {
           <input
             type="email"
             name="email"
+            value={formData.email}
+            onChange={handleChange}
             className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Your Email Address *"
             required
@@ -40,15 +97,19 @@ const Form = () => {
 
         <div className="flex max-md:flex-col gap-y-11 3xl:gap-[145px] sm:gap-16 lg:gap-[100px]">
           <input
-            type="text"
-            name="company"
+            type="number"
+            name="phoneNumber"
+            value={formData.phoneNumber}
+            onChange={handleChange}
             className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Your Phone / Contact Number *"
             required
           />
           <input
             type="text"
-            name="phone"
+            name="companyName"
+            value={formData.companyName}
+            onChange={handleChange}
             className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Your Company / Organization’s Name"
             required
@@ -58,14 +119,18 @@ const Form = () => {
         <div className="flex max-md:flex-col gap-y-11 3xl:gap-[145px] sm:gap-16 lg:gap-[100px]">
           <input
             type="text"
-            name="company"
+            name="companyUrl"
+            value={formData.companyUrl}
+            onChange={handleChange}
             className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Your Company / Store URL"
             required
           />
           <input
             type="text"
-            name="phone"
+            name="companyLocation"
+            value={formData.companyLocation}
+            onChange={handleChange}
             className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="Company Location"
             required
@@ -76,6 +141,8 @@ const Form = () => {
           <input
             type="text"
             name="message"
+            value={formData.message}
+            onChange={handleChange}
             className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
             placeholder="How can we help ? *"
             required
@@ -94,12 +161,12 @@ const Form = () => {
             about their products and solutions.
           </p>
         </div>
-      </form>
+    
       <div className="mt-14 lg:mt-0 ">
-        <AnimatedButton className="w-fit mx-auto text-lg lg:text-xl 3xl:text-[28px] font-bold text-[#2B2B2B] ">
+        <AnimatedButton   className="w-fit mx-auto text-lg lg:text-xl 3xl:text-[28px] font-bold text-[#2B2B2B] ">
           Send Message
         </AnimatedButton>
-      </div>
+      </div>  </form>
     </div>
   );
 };

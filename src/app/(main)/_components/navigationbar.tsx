@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import AnimatedSeparator from "@/components/animatedSaperator";
@@ -40,7 +41,11 @@ const menuItems = [
   { title: "Our Work", link: "/our-work" },
   { title: "About Us", link: "/about-us" },
   { title: "Resources", link: "/blog" },
-  { title: "AI Labs", link: "https://codebiosisailabs.io/", img:"/logos/Ai Labs.svg" },
+  {
+    title: "AI Labs",
+    link: "https://codebiosisailabs.io/",
+    img: "/logos/Ai Labs.svg",
+  },
   // { title: 'Case Studies', link: '/case-study' },
   // { title: "Meet Us", link: "/our-team" },
   // { title: "Careers", link: "/careers" },
@@ -72,15 +77,24 @@ function NavigationBar() {
         setIsHidden={setIsHidden}
       />
       <div className="py-10 flex flex-row relative justify-between items-center">
-        <div className="flex gap-2 items-center">
+        <div className="gap-2 items-center  hidden md:flex">
           <Menu
             className="w-12 h-9 cursor-pointer hidden md:block"
             onClick={() => setIsHidden(!isHidden)}
           />
           {/* added below code for new update about Ai Labs button */}
-          <Link className='border-[2px] border-[black] rounded-[30px] px-4 !py-2 font-medium hover:bg-Ai_Labs_Gradient shadow-lg duration-300 ai-labs-button'  href="https://codebiosisailabs.io/">
-          <img className="" width={70} height={40}  src='/logos/Ai Labs.svg' alt="" />
-        </Link>
+          <Link
+            className="border-[2px] border-[black] rounded-[30px] px-4 !py-2 font-medium hover:bg-Ai_Labs_Gradient shadow-lg duration-300 ai-labs-button hidden md:block"
+            href="https://codebiosisailabs.io/"
+          >
+            <img
+              className=""
+              width={70}
+              height={40}
+              src="/logos/Ai Labs.svg"
+              alt=""
+            />
+          </Link>
         </div>
         <Link
           href={"/"}
@@ -217,15 +231,20 @@ const MenueItemContainer = ({
           {showMenu &&
             menuItems.map((item) =>
               item.title === "AI Labs" ? (
-                <div
-                  key={item.link}
-                  className={` px-12 mx-2 py-5 `}
-                >
-                  <Link  key={item.title} href={item.link} className="rounded-full inline-block ms-3 px-3 py-2 text-white text-center font-medium hover:bg-Ai_Labs_Gradient ai-labs-button shadow-lg duration-300" >
-                  
-                  <img className="" width={70} height={40}  src={item.img} alt="" />
-              
-              </Link>
+                <div key={item.link} className={` px-12 mx-2 py-5 `}>
+                  <Link
+                    key={item.title}
+                    href={item.link}
+                    className="rounded-full inline-block ms-3 px-3 py-2 text-white text-center font-medium hover:bg-Ai_Labs_Gradient ai-labs-button shadow-lg duration-300"
+                  >
+                    <img
+                      className=""
+                      width={70}
+                      height={40}
+                      src={item.img}
+                      alt=""
+                    />
+                  </Link>
                 </div>
               ) : (
                 <div
@@ -284,23 +303,25 @@ const MenueItemContainer = ({
             </div>
           )}
           <div className="hidden lg:flex justify-between items-center text-primary-white gap-2">
-            {menuItems.map((item) => (
-                item.title === "AI Labs" ? (
-                 
-                  <Link  key={item.title} href={item.link} className="rounded-full px-3 py-2 text-white text-center font-medium hover:bg-Ai_Labs_Gradient shadow-lg duration-300 ai-labs-button" >
-                  
-                  <img width={70} height={40}  src={item.img} alt="" />
-              
-              </Link>
-                ) : (
-              <Link
-                href={item.link}
-                key={item.link}
-                className="rounded-3xl hover:bg-primary-natural transition-all duration-500 p-3"
-              >
-                {item.title}
-              </Link>)
-            ))}
+            {menuItems.map((item) =>
+              item.title === "AI Labs" ? (
+                <Link
+                  key={item.title}
+                  href={item.link}
+                  className="rounded-full px-3 py-2 text-white text-center font-medium hover:bg-Ai_Labs_Gradient shadow-lg duration-300 ai-labs-button"
+                >
+                  <img width={70} height={40} src={item.img} alt="" />
+                </Link>
+              ) : (
+                <Link
+                  href={item.link}
+                  key={item.link}
+                  className="rounded-3xl hover:bg-primary-natural transition-all duration-500 p-3"
+                >
+                  {item.title}
+                </Link>
+              )
+            )}
           </div>
           <Link href={"/contact-us"}>
             <button className="bg-[#F3F3F3] px-[17px] py-[14px] md:px-7 md:py-3 text-primary-natural rounded-[999px] font-bold text-[18px] md:text-xl">
@@ -318,24 +339,25 @@ const MenueItemContainer = ({
         </Link>
 
         <div className="hidden lg:flex justify-between items-center text-primary-white gap-2">
-          {menuItems.map((item) => (
-              item.title === "AI Labs" ? (
-              
-                <Link  key={item.title} href={item.link} className=" ai-labs-button" >
-                  
-                <img width={70} height={40}  src={item.img} alt="" />
-            
-            </Link>
-              
-              ) : (
-            <Link
-              href={item.link}
-              key={item.link}
-              className="rounded-3xl hover:bg-primary-natural transition-all duration-500 p-3"
-            >
-              {item.title}
-            </Link>)
-          ))}
+          {menuItems.map((item) =>
+            item.title === "AI Labs" ? (
+              <Link
+                key={item.title}
+                href={item.link}
+                className=" ai-labs-button"
+              >
+                <img width={70} height={40} src={item.img} alt="" />
+              </Link>
+            ) : (
+              <Link
+                href={item.link}
+                key={item.link}
+                className="rounded-3xl hover:bg-primary-natural transition-all duration-500 p-3"
+              >
+                {item.title}
+              </Link>
+            )
+          )}
         </div>
         <Link href={"/contact-us"}>
           <button className="bg-[#F3F3F3] px-[17px] py-[14px] md:px-7 md:py-3 text-primary-natural rounded-[999px] font-bold text-[18px] md:text-xl">
