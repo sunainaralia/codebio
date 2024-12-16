@@ -130,7 +130,7 @@ function OurOfficeLocatedSection() {
       <div className="flex md:text-center md:m-auto 3xl:px-10 justify-center ">
         <div className="flex flex-col xl:flex-row xl:border-b-[.5px] xl:border-[#525252] " >
           <div
-            className={`xl:px-6 mt-6 sm:mt-10 xl:mt-0 pb-5 sm:pb-9 xl:pb-14 4xl:px-[100px] max-xl:border-b-[.5px] max-xl:border-[#525252] xl:border-r-[.5px] xl:border-[#525252] ${showMap === "blr" && "!opacity-100"
+            className={`xl:px-6 mt-6 xl:w-1/3 sm:mt-10 xl:mt-0 pb-5 sm:pb-9 xl:pb-14 4xl:px-[100px] max-xl:border-b-[.5px] max-xl:border-[#525252] xl:border-r-[.5px] xl:border-[#525252] ${showMap === "blr" && "!opacity-100"
               } transition-all duration-300`}
           >
             <div className="text-2xl font-[900] md:text-3xl 4xl:text-5xl">USA</div>
@@ -139,7 +139,7 @@ function OurOfficeLocatedSection() {
             </div>
           </div>
           <div
-            className={`xl:px-6 mt-6 sm:mt-10 xl:mt-0 pb-5 sm:pb-9 xl:pb-14 4xl:px-[100px] max-xl:border-b-[.5px] max-xl:border-[#525252] xl:border-r-[.5px] xl:border-[#525252]  ${showMap === "blr" && "!opacity-100"
+            className={`xl:px-6 mt-6 xl:w-1/3 sm:mt-10 xl:mt-0 pb-5 sm:pb-9 xl:pb-14 4xl:px-[100px] max-xl:border-b-[.5px] max-xl:border-[#525252] xl:border-r-[.5px] xl:border-[#525252]  ${showMap === "blr" && "!opacity-100"
               } transition-all duration-300`}
           >
             <div className="text-2xl font-[900] md:text-3xl 4xl:text-5xl">Bengaluru</div>
@@ -149,7 +149,7 @@ function OurOfficeLocatedSection() {
             </div>
           </div>
           <div
-            className={`xl:px-6 mt-6 sm:mt-10 xl:mt-0 pb-5 sm:pb-9 xl:pb-14 4xl:px-[100px] max-xl:border-b-[.5px] max-xl:border-[#525252]  ${showMap === "blr" && "!opacity-100"
+            className={`xl:px-6 mt-6 xl:w-1/3 sm:mt-10 xl:mt-0 pb-5 sm:pb-9 xl:pb-14 4xl:px-[100px] max-xl:border-b-[.5px] max-xl:border-[#525252]  ${showMap === "blr" && "!opacity-100"
               } transition-all duration-300`}
           >
             <div className="text-2xl font-[900] md:text-3xl 4xl:text-5xl">Lucknow</div>
