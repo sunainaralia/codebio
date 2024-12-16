@@ -214,18 +214,18 @@ const CertifiedPartnersSection = () => {
         <Separator className="h-px w-full bg-[#D8D8D8] my-8 hidden md:block" />
 
         <div className="overflow-hidden mt-14 lg:mt-32 hidden md:flex">
-          <div className="grid grid-cols-3 xl:grid-cols-5 scale-105">
+          <div className="grid grid-cols-3 xl:grid-cols-6 2xl:grid-cols-5 scale-105">
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className={`flex justify-center items-center border-r-[0.5px] border-b-[0.5px] border-black px-12 py-6`}
+                className={`flex justify-center items-center border-r-[0.5px] border-b-[0.5px] border-black px-12 py-6 `}
               >
                 <Image
                   src={partner.src}
                   alt={partner.alt}
                   width={399}
-                  height={136}
-                  className="object-contain grayscale"
+                  height={136}    
+                  className="object-contain max-2xl:!w-[150px] grayscale"
                 />
               </div>
             ))}
