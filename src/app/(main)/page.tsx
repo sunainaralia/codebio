@@ -18,7 +18,7 @@ import ChatBot from './_components/ChatBot';
 function HomePage() {
   return (
     <div>
-      <ChatBot/>
+      {/* <ChatBot/> */}
       <div className='md:px-20'>
       <HeroHeader
         title='Websites that mean business'
