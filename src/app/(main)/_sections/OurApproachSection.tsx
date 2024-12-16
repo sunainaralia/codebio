@@ -11,7 +11,7 @@ function OurApproachSection() {
   const router = useRouter();
 
   const handleWorkNavigation = () => {
-    router.push('/our-work');
+    router.push('/services');
   };
   return (
     <div className='lg:flex justify-center flex-col md:flex-row pb-14 md:pb-14 lg:mt-44 4xl:pt-28 4xl:gap-7 gap-4 4xl:h-[900px]'>

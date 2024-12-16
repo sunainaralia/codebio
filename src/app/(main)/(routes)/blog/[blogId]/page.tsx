@@ -164,7 +164,7 @@ function BlogDetails() {
           </div>
 
           <Separator
-            className="w-px bg-[#525252] h-[530px] xl:block hidden"
+            className="w-px bg-[#525252] h-[420px] 3xl:h-[530px] xl:block hidden"
             orientation="vertical"
           />
 

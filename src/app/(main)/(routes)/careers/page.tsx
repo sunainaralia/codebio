@@ -8,8 +8,13 @@ import { cn } from "@/lib/utils";
 import Recuritprocess from "./_components/recuritprocess";
 import LetsCollab from "../../_components/letsCollab";
 import { Separator } from "@/components/ui/separator";
+import { useRouter } from 'next/navigation';
 
 function CareersPage() {
+   const router = useRouter();
+  const handleNavigation = () => {
+    router.push('/contact-us');
+  };
   const recuritmentData = [
     {
       title: "Review Applications & CV’s",
@@ -65,7 +70,7 @@ function CareersPage() {
   return (
     <div className="px-[30px] md:px-20">
       <div className=" pt-[30px] pb-[50px] sm:py-24 md:py-[120px] 3xl:pt-[150px] 3xl:pb-[250px]  ">
-        <div className=" mx-auto lg:text-5xl 2xl:text-[56px] 4xl:text-[84px] sm:text-[42px] text-[30px] uppercase font-[900] text-center mb-[15px] sm:mb-6 leading-[40px] sm:leading-[3rem] 4xl:leading-[113px] ">
+        <div className=" mx-auto lg:text-5xl 3xl:text-[56px] 4xl:text-[84px] sm:text-[42px] text-[30px] uppercase font-[900] text-center mb-[15px] sm:mb-6 leading-[40px] sm:leading-[3rem] 4xl:leading-[113px] ">
           CAREERS
         </div>
 
@@ -73,7 +78,7 @@ function CareersPage() {
           {/* <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} /> */}
           <Image className='hidden sm:block' src={"/vectors/Union.svg"} alt="img" height={30} width={30} />
           <Image className='sm:hidden' src={"/vectors/Union.svg"} alt="img" height={16} width={16} />
-          <h3 className="md:text-2xl lg:text-3xl 4xl:text-[42px] text-lg text-[#525252]  font-normal">
+          <h3 className="md:text-2xl 3xl:text-3xl 4xl:text-[42px] text-lg text-[#525252]  font-normal">
             Explore Exciting Opportunities
           </h3>
           {/* <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} /> */}
@@ -91,13 +96,13 @@ function CareersPage() {
             <h3 className="font-normal text-[#525252] text-lg sm:text-xl lg:text-[28px] 4xl:text-[42px]">Job Openings</h3>
           </div>
 
-          <div className="lg:text-6xl 4xl:text-[120px] text-[36px] sm:text-[42px] leading-[48px] sm:leading-[4rem] lg:leading-[5rem] 4xl:leading-[10rem] uppercase font-[900] text-black my-7 4xl:mt-9 4xl:mb-[50px] ">Join Team</div>
+          <div className="lg:text-5xl 4xl:text-[120px] text-[36px] sm:text-[42px] leading-[48px] sm:leading-[4rem] lg:leading-[5rem] 4xl:leading-[10rem] uppercase font-[900] text-black my-6 4xl:mt-9 4xl:mb-[50px] ">Join Team</div>
 
           <div className="text-center lg:text-start   ">
             <p className="text-sm sm:text-lg  md:text-xl  4xl:text-[30px]  4xl:leading-10">Please send your resume here:</p>
             <a
               href="mailto:career@codebiosis.com"
-              className="text-2xl md:text-3xl xl:text-4xl 4xl:text-[54px] 4xl:leading-[100px] font-bold underline underline-offset-8 mt-1 "
+              className="text-2xl md:text-3xl 3xl:text-4xl 4xl:text-[54px] 4xl:leading-[100px] font-bold underline underline-offset-8 mt-1 "
             >
               contact@codebiosis.com
             </a>
@@ -121,7 +126,7 @@ function CareersPage() {
         ))}
         <div className="col-span-1 4xl:pt-7 ">
           <div className="flex w-full h-full justify-center items-center">
-            <AnimatedButton className="w-fit h-fit">Get in Touch</AnimatedButton>
+            <AnimatedButton onClick={handleNavigation} className="w-fit h-fit">Get in Touch</AnimatedButton>
           </div>
         </div>
       </div>

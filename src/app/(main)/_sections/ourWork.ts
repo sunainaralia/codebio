@@ -25,49 +25,49 @@ export const ourWorkData = [
       description:
         'Build responsive, high-performance websites with custom UI/UX designs that focus on an engaging user experience. Experienced in complex projects and API integrations, we provide tailored web solutions for eCommerce and web apps that align with clients’ goals.',
       image: '/slider/uiux image.png',
-      tags: ['AI Marketing', 'Customer Experience', 'Data-Driven', 'Predictive Insights', 'Marketing Results']
+      tags: ['Responsive Design', 'User-Centered Design', 'Frontend Development', 'Interactive Prototypes', 'Web Optimization']
     },
     {
       title: 'Data-Driven SEO & Content Marketing',
       description:
         'Enhance visibility and attract quality leads through strategic, data-driven SEO. Our services include technical SEO, keyword optimization, and on-page improvements, with a focus on content strategies that elevate organic rankings and deliver results.',
       image: '/Home_Page/homepage_images/data-driven-seo.png',
-      tags: ['AI Marketing', 'Customer Experience', 'Data-Driven', 'Predictive Insights', 'Marketing Results']
+      tags: ['SEO', 'Content', 'Analytics', 'Keywords', 'Traffic']
     },
     {
       title: 'Omnichannel Marketing & Social Media Ads',
       description:
         'Implement omnichannel strategies for social media, email, PPC, and content marketing. We maintain brand consistency and optimize ad spend on platforms such as Facebook, Instagram, and LinkedIn, driving engagement and conversions for a seamless experience.',
       image: '/Home_Page/homepage_images/social-media-adds.png',
-      tags: ['AI Marketing', 'Customer Experience', 'Data-Driven', 'Predictive Insights', 'Marketing Results']
+      tags: ['Omnichannel', 'Social Ads', 'Engagement', 'Reach', 'Targeting', 'Conversions']
     },
     {
       title: 'Lead Generation & Conversions',
       description:
         'Maximize website conversions and generate quality leads with our CRO services. Through A/B testing, user behavior analysis, and funnel optimization, we help clients refine the customer journey to boost conversion rates, especially for eCommerce websites.',
       image: '/Home_Page/homepage_images/lead-generation.png',
-      tags: ['AI Marketing', 'Customer Experience', 'Data-Driven', 'Predictive Insights', 'Marketing Results']
+      tags: ['Lead Generation', 'Traffic Growth', 'Sales Funnel', 'High Conversions', 'ROI Tracking']
     },
     {
       title: 'Website Maintenance & Monthly Support',
       description:
         'Keep clients’ websites secure and performing optimally with comprehensive maintenance and security services. This includes ongoing support, regular updates, backups, and vulnerability protection to ensure smooth and reliable site operations.',
       image: '/Home_Page/homepage_images/website-maintainance.png',
-      tags: ['AI Marketing', 'Customer Experience', 'Data-Driven', 'Predictive Insights', 'Marketing Results']
+      tags: ['Site Updates', 'Bug Fixes', 'Performance Monitoring', 'Support Plans']
     },
     {
       title: 'DevOps & Cloud Infra Management',
       description:
         'Improve development efficiency and deployment with our DevOps expertise. We set up CI/CD pipelines and manage cloud infrastructure for scalable, automated environments that support rapid app development and reduce downtime.',
       image: '/Home_Page/homepage_images/devops.png',
-      tags: ['AI Marketing', 'Customer Experience', 'Data-Driven', 'Predictive Insights', 'Marketing Results']
+      tags: ['CI/CD', 'Cloud Hosting', 'Infrastructure Automation', 'Server Management', 'Scalable Systems']
     },
     {
       title: 'Graphic Design & Video Animation',
       description:
         'Boost brand storytelling with our graphic design and video animation services. Our experts craft visuals, graphics, and animated videos for social media, websites, and campaigns, delivering impactful and unforgettable brand experiences for audiences.',
       image: '/Home_Page/homepage_images/graphic-design.png',
-      tags: ['AI Marketing', 'Customer Experience', 'Data-Driven', 'Predictive Insights', 'Marketing Results']
+      tags: ['Creative Design', 'Brand Visuals', 'Motion Graphics', 'Video Editing', 'Animated Content']
     }
   ];
   

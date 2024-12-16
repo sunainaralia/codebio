@@ -9,8 +9,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
+import { useRouter } from 'next/navigation';
 
 const CertifiedPartnersSection = () => {
+  const router = useRouter();
+  const handleNavigation = () => {
+    router.push('/services');
+  };
   const PartnerImagesMobile = [
     {
       logos: [
@@ -197,8 +202,8 @@ const CertifiedPartnersSection = () => {
   return (
     <div id="certifiedPartners">
       <div className=" lg:mt-20 4xl:mt-44">
-        <div className="md:flex w-full justify-between items-center hidden">
-          <div className="flex gap-4 items-center">
+        <div className="flex w-full max-md:justify-center justify-between items-center ">
+          <div className="flex gap-4 items-center max-md:mb-[40px] ">
             <Image src={"/vectors/Union.svg"} alt="" height={30} width={30} />
 
             <h3 className="text-lg font-normal text-[#525252] sm:text-xl lg:text-[28px] 4xl:text-[42px]">
@@ -206,15 +211,15 @@ const CertifiedPartnersSection = () => {
             </h3>
           </div>
 
-          <AnimatedButton className="mt-0 hidden md:flex">
+          <AnimatedButton onClick={handleNavigation} className="mt-0 hidden md:flex">
             Our Strength
           </AnimatedButton>
         </div>
 
         <Separator className="h-px w-full bg-[#D8D8D8] my-8 hidden md:block" />
 
-        <div className="overflow-hidden mt-14 lg:mt-32 hidden md:flex">
-          <div className="grid grid-cols-3 xl:grid-cols-6 2xl:grid-cols-5 scale-105">
+        <div className="overflow-hidden mt-14 lg:mt-32 hidden md:flex justify-end">
+          <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-5 scale-105">
             {partners.map((partner, index) => (
               <div
                 key={index}
@@ -272,7 +277,7 @@ const CertifiedPartnersSection = () => {
         </div>
 
         <div className="flex justify-center items-center pb-20 pt-9">
-          <AnimatedButton className="md:hidden flex">
+          <AnimatedButton onClick={handleNavigation} className="md:hidden ">
             Our Strengths
           </AnimatedButton>
         </div>
