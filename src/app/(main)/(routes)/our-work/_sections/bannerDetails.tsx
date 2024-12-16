@@ -39,7 +39,7 @@ const BannerDetails = ({
   const navigate = useRouter();
   return (
     <div className="w-full pt-5 md:pt-20">
-      <div className={`${cardstyling} hover:scale-[1.02] transition-all duration-100 rounded-xl 3xl:rounded-[25px] relative w-full  lg:h-[500px] 3xl:h-[750px]`}>
+      <div className={`${cardstyling} hover:scale-[1.02] transition-all duration-100 rounded-xl 3xl:rounded-[25px] relative w-full  lg:h-[500px] 3xl:h-[650px] 4xl:h-[750px]`}>
         {/* {id === "works4" ? (
           <OurWorkTiltCustomScroll  
             images={imageArr || images}
@@ -53,7 +53,7 @@ const BannerDetails = ({
             images={imageArr || images}
             imageH={150}
             imageW={800}
-            className="max-w-full w-full xl:h-[500px] 3xl:h-[750px] max-h-full"
+            className="max-w-full w-full xl:h-[500px] 3xl:h-[650px] 4xl:h-[750px] max-h-full"
           />
         {/* )} */}
 

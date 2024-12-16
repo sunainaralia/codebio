@@ -58,7 +58,7 @@ export const OurWorkCustomScroller = ({
     <div className="w-full mx-auto  rounded-[25px]">
       <div
         className={cn(
-          "items-start h-[250px]  md:h-[500px] rounded-md max-w-[600px] object-center overflow-hidden  w-full  ",
+          "items-start h-[250px]  md:h-[500px]  rounded-md max-w-[600px] object-center overflow-hidden  w-full  ",
           className
         )}
         ref={gridRef}

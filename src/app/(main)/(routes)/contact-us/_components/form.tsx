@@ -72,7 +72,7 @@ setFormData(
       <form
       onSubmit={handleSubmit}
         id="form"
-        className="flex flex-col flex-wrap gap-y-16"
+        className="flex flex-col flex-wrap gap-y-[40px] sm:gap-y-16"
       >
         <div className="flex max-md:flex-col gap-y-11 3xl:gap-[145px] sm:gap-16 lg:gap-[100px]">
           <input
@@ -80,7 +80,7 @@ setFormData(
             name="username"
             value={formData.username}
             onChange={handleChange}
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[26px] 4xl:text-[30px] text-[18px] xl:text-[18px] text-[#525252]"
             placeholder="Full Name *"
             required
           />
@@ -89,7 +89,7 @@ setFormData(
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[26px] 4xl:text-[30px] text-[18px] xl:text-[18px] text-[#525252]"
             placeholder="Your Email Address *"
             required
           />
@@ -101,7 +101,7 @@ setFormData(
             name="phoneNumber"
             value={formData.phoneNumber}
             onChange={handleChange}
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[26px] 4xl:text-[30px] text-[18px] xl:text-[18px] text-[#525252]"
             placeholder="Your Phone / Contact Number *"
             required
           />
@@ -110,7 +110,7 @@ setFormData(
             name="companyName"
             value={formData.companyName}
             onChange={handleChange}
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[26px] 4xl:text-[30px] text-[18px] xl:text-[18px] text-[#525252]"
             placeholder="Your Company / Organization’s Name"
             required
           />
@@ -122,7 +122,7 @@ setFormData(
             name="companyUrl"
             value={formData.companyUrl}
             onChange={handleChange}
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[26px] 4xl:text-[30px] text-[18px] xl:text-[18px] text-[#525252]"
             placeholder="Your Company / Store URL"
             required
           />
@@ -131,7 +131,7 @@ setFormData(
             name="companyLocation"
             value={formData.companyLocation}
             onChange={handleChange}
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[26px] 4xl:text-[30px] text-[18px] xl:text-[18px] text-[#525252]"
             placeholder="Company Location"
             required
           />
@@ -143,7 +143,7 @@ setFormData(
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[30px] text-[18px] xl:text-[22px] text-[#525252]"
+            className="w-full border-b-[1px] border-[#2B2B2B] focus:outline-none pb-[10px] xl:pb-5 3xl:text-[26px] 4xl:text-[30px] text-[18px] xl:text-[18px] text-[#525252]"
             placeholder="How can we help ? *"
             required
           />
@@ -156,13 +156,13 @@ setFormData(
             name=""
             id=""
           />
-          <p className="text-[#525252] font-medium italic 3xl:text-[30px] sm:text-lg text-[12px] xl:text-[22px] ">
+          <p className="text-[#525252] font-medium italic 3xl:text-[26px] 4xl:text-[30px] sm:text-lg text-[12px] xl:text-[18px] ">
             I agree to receive promotional and marketing emails from CodeBiosis
             about their products and solutions.
           </p>
         </div>
     
-      <div className="mt-14 lg:mt-0 ">
+      <div className="mt-4 lg:mt-0 ">
         <AnimatedButton   className="w-fit mx-auto text-lg lg:text-xl 3xl:text-[28px] font-bold text-[#2B2B2B] ">
           Send Message
         </AnimatedButton>

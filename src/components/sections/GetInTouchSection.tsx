@@ -21,7 +21,7 @@ function GetInTouchSection({ className }: GetInTouchSectionProps) {
     setSubscription:""
   }
   return (
-    <div className="">
+    <div className="sm:w-[95%] m-auto">
       <div
         className={cn(
           "mt-[27px] 4xl:mt-[60px] pb-[87px] xl:pb-[150px] 4xl:pb-[300px] lg:pt-10 4xl:pt-20 border-b border-[#D8D8D8]",

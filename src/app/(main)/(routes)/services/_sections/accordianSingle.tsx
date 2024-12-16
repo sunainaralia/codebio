@@ -16,6 +16,7 @@ import { cn } from '@/lib/utils';
 import { Separator } from '@radix-ui/react-separator';
 import Lottie, { LottiePlayer } from 'lottie-react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 
 const AccordianSingle = ({
@@ -27,6 +28,10 @@ const AccordianSingle = ({
 }) => {
   const [value, setValue] = useState('true');
   console.log('id', id);
+  const router = useRouter();
+  const handleNavigation = () => {
+    router.push('/contact-us');
+  };
 
   return (
     <div>
@@ -40,7 +45,7 @@ const AccordianSingle = ({
                   id % 2 == 0 ? 'order-last' : ''
                 }`}
               />
-              <AnimatedButton className='hidden md:flex mt-0 h-fit text-xl lg:text-[28px] font-bold text-[#2B2B2B]'>
+              <AnimatedButton onClick={handleNavigation} className='hidden md:flex mt-0 h-fit text-xl lg:text-[28px] font-bold text-[#2B2B2B]'>
                 Let us Help
               </AnimatedButton>
               <div

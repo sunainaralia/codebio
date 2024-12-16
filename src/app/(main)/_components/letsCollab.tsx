@@ -1,8 +1,10 @@
+"use client";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 import { FlipWords } from "./flipWords";
+import { useRouter } from 'next/navigation';
 
 interface LetsCollabProps {
   className?: string;
@@ -17,6 +19,11 @@ const LetsCollab = ({
   substring,
   subGHeading,
 }: LetsCollabProps) => {
+  const router = useRouter();
+  const handleNavigation = () => {
+    router.push('/contact-us');
+  };
+ 
   return (
     <div className={cn("md:flex items-center justify-between max-md:!my-0 4xl:my-[200px] lg:my-24 mb-10 sm:mt-10 mt-[50px] ", className)}>
       <div className="md:w-[49%] ">
@@ -44,7 +51,7 @@ const LetsCollab = ({
         orientation="vertical"
       />
 
-      <div className="flex gap-4 xl:gap-8 text-3xl xl:text-5xl 4xl:text-[70px] font-[900] items-center justify-center md:w-[49%] md:mt-0 mt-10">
+      <div onClick={handleNavigation} className="cursor-pointer flex gap-4 xl:gap-8 text-3xl xl:text-5xl 4xl:text-[70px] font-[900] items-center justify-center md:w-[49%] md:mt-0 mt-10">
         <FlipWords word={title} className="z-[5] w-fit px-0 pb-2" border={8} />
         <Image
           className="w-[48px] h-[48px]  4xl:w-24 4xl:h-20"

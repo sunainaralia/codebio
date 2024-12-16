@@ -334,7 +334,7 @@ const CaseStudyDetail = () => {
       <LetsCollab
         title={"Got A Project!"}
         substring={
-          "We're a team of creatives who are excited about unique ideas and help companies to create amazing identity by crafting top-notch UI/UX & E-Commerce stores."
+          "We’re a team of passionate professionals driven by innovative ideas, dedicated to helping businesses build exceptional digital identities through expert web development, UI/UX design, eCommerce solutions, branding, marketing, ai services and beyond."
         }
         className="pb-14 md:pt-16"
       />

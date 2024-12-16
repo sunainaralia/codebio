@@ -12,6 +12,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import Rating from "../Rating";
 import ArrowIconButton from "../ArrowIconButton";
 import AnimatedButton from "../AnimatedButton";
+import Link from "next/link";
 
 interface TestimonialsardProps {
   name: string;
@@ -210,7 +211,8 @@ function TestimonialsSection() {
         </div>
 
         <div className="flex lg:hidden justify-center items-center w-full pb-3 max-sm:mt-8 ">
-          <AnimatedButton>Review all on Clutch</AnimatedButton>
+          <Link href="https://clutch.co/profile/codebiosis-private#highlights">
+          <AnimatedButton>Review all on Clutch</AnimatedButton></Link>
         </div>
 
         {/* <div className='block md:hidden'>
