@@ -20,7 +20,7 @@ function Blog() {
         <div className="flex w-fit gap-3 sm:gap-4 items-center mb-5 mx-auto  ">
           <Image className='hidden sm:block'  src={"/vectors/Union.svg"} alt="" height={30} width={30} />
           <Image className='sm:hidden' src={"/vectors/Union.svg"} alt="img" height={16} width={16} />
-          <h3 className=" md:text-2xl lg:text-3xl 4xl:text-[42px] text-lg text-[#525252]  font-normal  ">
+          <h3 className=" md:text-xl lg:text-2xl 3xl:text-3xl 4xl:text-[42px] text-lg text-[#525252]  font-normal  ">
             Explore the Latest Insights
           </h3>
           <Image className='hidden sm:block' src={"/vectors/Union.svg"} alt="" height={30} width={30} />

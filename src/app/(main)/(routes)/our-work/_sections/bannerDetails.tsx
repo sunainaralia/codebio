@@ -57,7 +57,7 @@ const BannerDetails = ({
           />
         {/* )} */}
 
-        <div className="absolute bottom-0 md:bottom-12 right-3 ">
+        <div className="absolute bottom-3 md:bottom-10 right-3 md:right-10 ">
           <AnimatedButton
             className="bg-[#2B2B2B] text-primary-white"
             btnClassName="bg-primary-white"

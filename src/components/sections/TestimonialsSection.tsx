@@ -25,7 +25,7 @@ interface TestimonialsardProps {
 const testimonials = [
   {
     name: "Digital Marketer, The Revolver Club",
-    desctiption: `"They understand the requirements
+    description: `"They understand the requirements
     first before working on anything,
     and that's something that they
     do well."`,
@@ -199,7 +199,7 @@ function TestimonialsSection() {
             {testimonials.map((item, index) => (
               <SwiperSlide key={index} >
                 <TestimonialsSection.TestimonialCard
-                  description={item.desctiption}
+                  description={item.description}
                   image={item.image}
                   name={item.name}  
                   rating={item.rating}
@@ -218,7 +218,7 @@ function TestimonialsSection() {
         {/* <div className='block md:hidden'>
           {testimonials.map((item, index) => (
             <TestimonialsSection.TestimonialCard
-              description={item.desctiption}
+              description={item.description}
               image={item.image}
               name={item.name}
               rating={item.rating}
