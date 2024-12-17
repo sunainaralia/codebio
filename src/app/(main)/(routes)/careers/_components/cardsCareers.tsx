@@ -6,7 +6,7 @@ import React from "react";
 const CardsCareers = () => {
   return (
     <div>
-      <div className=" text-[30px] sm:text-5xl xl:text-6xl 3xl:text-[72px] font-black text-center">Benefits</div>
+      <div className=" text-[30px] sm:text-5xl 3xl:text-6xl 3xl:text-[72px] font-black text-center">Benefits</div>
       <Separator className="h-px max-w-[120px] lg:max-w-[250px] bg-[#525252] mt-1 sm:mt-6 mb-[50px] sm:mb-24 lg:mb-[150px] mx-auto" />
 
       <div className="flex max-w-[1490px] justify-center gap-[36px] lg:gap-[60px] mx-auto flex-wrap">

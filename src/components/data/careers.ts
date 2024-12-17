@@ -1,10 +1,11 @@
 export const cardDataCareers = [
     {
-        icon:"/careers/1.svg",
+        
+         icon:"/careers/2.svg",
         title:"Competative salary",
     },
     {
-        icon:"/careers/2.svg",
+       icon:"/careers/1.svg",
         title:"Sick leaves",
     },{
         icon:"/careers/3.svg",
@@ -18,7 +19,8 @@ export const cardDataCareers = [
     },{
         img:"/careers/img2.svg",   
     },{
-      icon:"/careers/5.svg",
+     
+      icon:"/careers/7.svg",
       title:"Performance Bonus",
     },
     {
@@ -27,7 +29,7 @@ export const cardDataCareers = [
         icon:"/careers/6.svg",
         title:"Office Culture",
     },{
-        icon:"/careers/7.svg",
+         icon:"/careers/5.svg",
         title:"Learning Stipends",
     }
 ]

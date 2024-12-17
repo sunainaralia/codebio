@@ -8,7 +8,9 @@ import { Separator } from "../ui/separator";
 import { cn } from "@/lib/utils";
 import AnimatedButton from "../AnimatedButton";
 import LottieAnimation from "@/app/(main)/_components/lottiePlayer";
+import { useRouter } from 'next/navigation';
 
+ 
 function HeroHeader(props: {
   title: string;
   featureText: string;
@@ -17,7 +19,12 @@ function HeroHeader(props: {
   buttonText?: string;
   titleClassName?: string;
   hasLottie?: boolean;
-}) {
+}) 
+{
+  const router = useRouter();
+  const handleNavigation = () => {
+    router.push('/contact-us');
+  };
   return (
     <>
       <div className="md:flex justify-around items-center flex-row pt-8 pb-14 md:py-14 gap-7  lg:h-[600px] 4xl:h-[750px]">
@@ -49,7 +56,7 @@ function HeroHeader(props: {
           </div>
 
           {props.buttonText && (
-            <AnimatedButton className="hidden md:flex">
+            <AnimatedButton onClick={handleNavigation} className="hidden md:flex">
               {props.buttonText}
             </AnimatedButton>
           )}

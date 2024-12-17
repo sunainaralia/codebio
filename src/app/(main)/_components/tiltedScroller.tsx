@@ -71,7 +71,7 @@ export const ParallaxTiltedScroll = ({
       {/* testing  */}
       <motion.div
         className={cn(
-          "grid items-start lg:ms-[-70px] mt-[120px]  4xl:mt-[200px] w-[110%] lg:w-[140%]  mx-auto gap-4 bg-[#FF8383]",
+          "grid items-start lg:ms-[-70px] mt-[120px]  4xl:mt-[200px] w-[110%] lg:w-[140%] mx-auto gap-4 bg-[#FF8383]",
           childrenClassName
         )}
         transformTemplate={(z) => `rotate(${-30}deg)`}

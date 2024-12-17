@@ -12,11 +12,13 @@ import ResourcesSections from './_sections/ResourcesSections';
 import CertifiedPartnersSection from './_sections/CertifiedPartnersSection';
 import GetInTouchSection from '@/components/sections/GetInTouchSection';
 import { Button } from '@/components/ui/button';
+import ChatBot from './_components/ChatBot';
 // import NewWorkSection from './_sections/newWorkSection';
 
 function HomePage() {
   return (
     <div>
+      {/* <ChatBot/> */}
       <div className='md:px-20'>
       <HeroHeader
         title='Websites that mean business'

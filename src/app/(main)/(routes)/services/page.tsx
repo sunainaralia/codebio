@@ -12,7 +12,7 @@ function ServicesPage() {
   return (
     <div className='px-[30px] md:px-20'>
       {/* Hero header */}
-      <div className='md:my-20'>
+      <div className='md:my-10 4xl:my-20'>
         <HeroHeader
           hasLottie
           title='What We Offer'

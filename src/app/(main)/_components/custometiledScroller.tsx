@@ -63,14 +63,14 @@ export const ParallaxTiltedScrollcustom = ({
   return (
     <div
       className={cn(
-        "items-start  rounded-3xl flex flex-col object-center overflow-hidden h-[190px] sm:h-[300px] lg:h-[500px] md:h-[400px] xl:h-[500px] 3xl:h-[800px]  w-full hover:scale-[1.02] transition-all duration-100", // Added height for larger screens
+        "items-start  rounded-3xl flex flex-col object-center overflow-hidden h-[200px] sm:h-[300px] lg:h-[500px] md:h-[400px] xl:h-[500px] 3xl:h-[800px]  w-full hover:scale-[1.02] transition-all duration-100", // Added height for larger screens
         className
       )}
       ref={gridRef}
     >
       <motion.div
         className={cn(
-          "grid items-start  ms-[-20px] sm:ms-[-80px] md:ms-[-150px] w-[700px] sm:w-[1000px]  md:w-[1500px] 2xl:w-[2000px] mx-auto gap-2 sm:gap-5 mt-[-80px] sm:mt-[-120px] md:mt-[-180px]  2xl:mt-[-200px] 4xl:mt-[-265px] bg-[#FFf] justify-center 4xl:w-[2700px]  ", // max-width and center horizontally
+          "grid items-start  ms-[-20px] sm:ms-[-80px] md:ms-[-150px] w-[700px] sm:w-[1000px]  md:w-[1500px] 2xl:w-[2000px] mx-auto gap-2 sm:gap-5 mt-[-100px] sm:mt-[-120px] md:mt-[-180px]  2xl:mt-[-200px] 4xl:mt-[-265px] bg-[#FFf] justify-center 4xl:w-[2700px]  ", // max-width and center horizontally
           childrenClassName
         )}
         transformTemplate={(z) => `rotate(${-15}deg)`}
@@ -80,7 +80,7 @@ export const ParallaxTiltedScrollcustom = ({
             <div
               key={partIdx}
               className={cn(
-                "flex w-full h-[70px] sm:h-[80px]  md:h-[150px] xl:h-[200px] 2xl:h-[240px] 4xl:h-[300px] overflow-x-hidden gap-2 sm:gap-5 justify-center items-center", // Ensure each part is centered
+                "flex w-full h-[100px] sm:h-[140px]  md:h-[150px] xl:h-[200px] 2xl:h-[240px] 4xl:h-[300px] overflow-x-hidden gap-2 sm:gap-5 justify-center items-center", // Ensure each part is centered
                 imageH ? `h-[${imageH}px]` : "" // Image height remains the same
               )}
             >
@@ -103,7 +103,7 @@ export const ParallaxTiltedScrollcustom = ({
                     <Image
                       src={el}
                       className={cn(
-                        " h-[70px] sm:h-[80px]  md:h-[150px] xl:h-[200px] 2xl:h-[240px] 4xl:h-[300px]  rounded-md max-sm:!w-[250px] max-w-[500px] md:aspect-video object-cover !m-0 !p-0   ",
+                        " h-[100px] sm:h-[140px]  md:h-[150px] xl:h-[200px] 2xl:h-[240px] 4xl:h-[300px]  rounded-md max-sm:!w-[250px] max-w-[500px] md:aspect-video object-cover !m-0 !p-0   ",
                         [
                           imageH
                             ? `h-[150px] md:h-[${imageH}px] md:max-h-[${imageH}px]`
