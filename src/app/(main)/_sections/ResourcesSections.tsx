@@ -14,25 +14,24 @@ const listOfresources = [
     title: 'Dominate the E-commerce World with a Stunning Shopify Design System',
     readTime: '10min read',
     image: '/illustrations/1.png',
-    link: 'https://codebiosis.com/e-commerce-world-with-a-stunning-shopify-design-system/',
   },
   {
     title: 'What Does an SEO Agency Do?',
     readTime: '15min read',
     image: '/illustrations/2.png',
-    link: 'https://codebiosis.com/what-does-an-seo-agency-do/',
+   
   },
   {
     title: 'What Is the Cost of Building an eCommerce Website in India?',
     readTime: '10min read',
     image: '/illustrations/3.png',
-    link: 'https://codebiosis.com/ecommerce-website-development-costs-in-india/',
+ 
   },
   {
     title: 'What Is the Cost of Building an eCommerce Website in India?',
     readTime: '10min read',
     image: '/Home_Page/homepage_images/home-resorces-img.png',
-    link: 'https://codebiosis.com/ecommerce-website-development-costs-in-india/',
+  
   },
  
 ];
@@ -85,13 +84,11 @@ interface ResourceCardProps {
   title: string;
   readTime: string;
   image: string;
-  link: string;
 }
 
 ResourcesSections.ResourceCard = ({
   title,
   readTime,
-  link,
   image,
 }: ResourceCardProps) => {
   return (
@@ -99,7 +96,7 @@ ResourcesSections.ResourceCard = ({
       <div className='div w-full lg:w-1/2 lg:pe-3'>
         <h2 className='text-xl md:text-4xl lg:text-[30px] 4xl:text-5xl font-bold max-w-[890px] 4xl:!leading-[64px] leading-[80px] lg:leading-[40px] text-black'>{title}</h2>
         <h4 className='font-normal text-xl 4xl:text-[30px] text-black my-3 4xl:mt-4  4xl:mb-5 text-[#8D8D8D]'>{readTime}</h4>
-        <ArrowIconButton invertArrow onClick={() => handleBlogClick(link)} />
+        <ArrowIconButton invertArrow />
       </div>
       <Image src={image} width={600} height={200} alt='' className='w-full lg:w-1/2' />
     </div>

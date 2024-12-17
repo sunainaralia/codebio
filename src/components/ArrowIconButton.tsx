@@ -8,7 +8,6 @@ interface ArrowIconButtonProps {
   invertArrow?: boolean;
   height?: number;
   width?: number;
-  onClick: () => void;
   className?: string;
 }
 
@@ -16,12 +15,11 @@ function ArrowIconButton({
   invertArrow,
   height,
   width,
-  onClick,
   className,
 }: ArrowIconButtonProps) {
   return (
     <div
-      onClick={onClick}
+    
       className={cn("bg-primary-natural border border-black relative rounded-full cursor-pointer !w-[34px] lg:w-[70px] !h-[34px] lg:h-[70px]", className)}
       style={{
         height: `${height ?? 32}px`,

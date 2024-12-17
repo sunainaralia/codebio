@@ -7,8 +7,9 @@ const ServiceAccordian = () => {
   return (
     <div className="my-10">
       {Object.keys(serviceDataMain).map((service, index) => {
+        console.log(service,"service")
         return (
-          <AccordianSingle service={service} key={index} id={index} />
+          <AccordianSingle service={service} key={index} id={index} section={undefined}  />
         );
       })}
     </div>

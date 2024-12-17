@@ -46,7 +46,7 @@ function OurWorkSection() {
       id: "works2",
       name: "The Almond House",
       description: " E-commerce Store, Confectionary",
-      strategy: "Brand Strategy, UX Strategy",
+      strategy: " Data Validation, Migration",
       design: "UI/UX Design, Art Direction",
        cardstyling:"",
        mainDescription:"",

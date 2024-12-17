@@ -13,6 +13,7 @@ const ServiceAccordianCards = ({
   data,
   index,
 }: ServiceAccordianCardsProps) => {
+
  
   return (
     <div className="group transition duration-300 3xl:p-4 rounded-md cursor-pointer ">
