@@ -68,9 +68,9 @@ function Footer() {
             <Link className="text-lg lg:text-xl 4xl:text-3xl" href={"/blog"}>
               Resources
             </Link>
-            <Link className="text-lg lg:text-xl 4xl:text-3xl" href={"/case-study"}>
+            {/* <Link className="text-lg lg:text-xl 4xl:text-3xl" href={"/case-study"}>
               Case Studies
-            </Link>
+            </Link> */}
             <Link className="text-lg lg:text-xl 4xl:text-3xl" href={"/contact-us"}>
               Meet Us
             </Link>

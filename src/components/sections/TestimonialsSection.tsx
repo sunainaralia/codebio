@@ -20,6 +20,7 @@ interface TestimonialsardProps {
   rating: string;
   inverted: boolean;
   image: string;
+  onClick?: () => void;
 }
 
 const testimonials = [
@@ -34,69 +35,69 @@ const testimonials = [
   },
   {
     name: "Founder, Niara Healthcare Pvt. Ltd.",
-    desctiption: `"They did a fantastic job and catered to
+    description: `"They did a fantastic job and catered to
     all my requirements."`,
     image: "/testimonials/Ellipse2.png",
     rating: "5.0",
   },
   {
     name: "Founder & Managing Director, Essens Wellness",
-    desctiption: `"Overall, their team's work process and
+    description: `"Overall, their team's work process and
     capability are impressive."`,
     image: "/testimonials/Ellipse3.png",
     rating: "5.0",
   },
   {
     name: "Marketing Director, Magicoin Investments",
-    desctiption: `"Codebiosis redesigned our website, and the result is modern, user-friendly, and aligned with our brand. We've seen a significant increase in customer engagement!"`,
+    description: `"Codebiosis redesigned our website, and the result is modern, user-friendly, and aligned with our brand. We've seen a significant increase in customer engagement!"`,
     image: "/testimonials/Ellipse4.png",
     rating: "4.0",
   },
   {
     name: "Marketing Director, TwistEats",
-    desctiption: `"The team transformed our outdated site into a fast, responsive, and visually stunning platform. Their expertise and communication were top-notch. Highly recommended!"`,
+    description: `"The team transformed our outdated site into a fast, responsive, and visually stunning platform. Their expertise and communication were top-notch. Highly recommended!"`,
     image: "/testimonials/Ellipse5.png",
     rating: "5.0",
   },
   {
     name: "Business Development Manager, Zen Zone",
-    desctiption: `"We needed a robust e-commerce solution, and Codebiosis delivered. The intuitive, secure site has boosted our online sales. Their attention to detail was outstanding."`,
+    description: `"We needed a robust e-commerce solution, and Codebiosis delivered. The intuitive, secure site has boosted our online sales. Their attention to detail was outstanding."`,
     image: "/testimonials/Ellipse6.png",
     rating: "5.0",
   },
   {
     name: "Marketing Director, Techwiz Solutions Co. Ltd.",
-    desctiption: `"Codebiosis crafted a digital marketing strategy that elevated our business. Their SEO and social media campaigns have driven traffic and boosted brand visibility."`,
+    description: `"Codebiosis crafted a digital marketing strategy that elevated our business. Their SEO and social media campaigns have driven traffic and boosted brand visibility."`,
     image: "/testimonials/Ellipse7.png",
     rating: "4.0",
   },
   {
     name: "Development Manager, SparkPlug Interactive",
-    desctiption: `"The UI/UX design services were amazing. Codebiosis created a seamless user experience for our app, resulting in increased retention and satisfaction."`,
+    description: `"The UI/UX design services were amazing. Codebiosis created a seamless user experience for our app, resulting in increased retention and satisfaction."`,
     image: "/testimonials/Ellipse8.png",
     rating: "5.0",
   },
   {
     name: "Relations Manager, RealVoyage.inc",
-    desctiption: `"Our search engine rankings improved dramatically with Codebiosis. Their SEO strategies brought a significant increase in organic traffic and leads."`,
+    description: `"Our search engine rankings improved dramatically with Codebiosis. Their SEO strategies brought a significant increase in organic traffic and leads."`,
     image: "/testimonials/Ellipse9.png",
     rating: "5.0",
   },
   {
     name: "Manager, Bharatize Solutions ",
-    desctiption: `"Codebiosis brought our app idea to life, providing innovative solutions and a fantastic final product. The development process was smooth and efficient."`,
+    description: `"Codebiosis brought our app idea to life, providing innovative solutions and a fantastic final product. The development process was smooth and efficient."`,
     image: "/testimonials/Ellipse10.png",
     rating: "4.0",
   },
   {
     name: "Marketing Director, Kaleidoscope Studio",
-    desctiption: `"Codebiosis has been crucial in our digital transformation, handling web development and marketing with professionalism and expertise. Our online presence is stronger than ever."`,
+    description: `"Codebiosis has been crucial in our digital transformation, handling web development and marketing with professionalism and expertise. Our online presence is stronger than ever."`,
     image: "/testimonials/Ellipse11.png",
     rating: "5.0",
   },
   {
     name: "CEO, BeautyBloc",
-    desctiption: `"The Codebiosis team is professional and responsive. They understood our business needs and delivered impactful solutions. We’re thrilled with their work."`,
+    description: `"The Codebiosis team is professional and responsive. They understood our business needs and delivered impactful solutions. We’re thrilled with their work."`,
     image: "/testimonials/Ellipse12.png",
     rating: "5.0",
   },
@@ -162,6 +163,7 @@ function TestimonialsSection() {
             height={70}
             width={70}
             onClick={handlePrev}
+            
             className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2 scale-75 4xl:scale-100  ${
               currentSlide === 0 ? "opacity-50" : ""
             }`}

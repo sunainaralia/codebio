@@ -41,7 +41,7 @@ function BlogDetails() {
 
   return (
     <div className="px-[30px] md:px-20">
-      <div className="mt-[43px] xl:mt-[110px] flex justify-between items-center">
+      <div onClick={() => window.history.back()} className="mt-[43px] xl:mt-[110px] flex justify-between items-center">
         <Image className="hidden md:block h-12 w-12 4xl:w-28 4xl:h-28" src={"/vectors/backButton.svg"} alt="img" width={80} height={80} />
         <Image className="md:hidden h-12 w-12 4xl:w-28 4xl:h-28" src={"/vectors/backButton.svg"} alt="img" width={45} height={45} />
         <div className="block md:hidden">
