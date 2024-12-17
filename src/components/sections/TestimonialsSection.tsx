@@ -107,12 +107,12 @@ function TestimonialsSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handlePrev = useCallback(() => {
-    if (!sliderRef.current) return;
+    // if (!sliderRef.current) return;
     sliderRef.current.swiper.slidePrev();
   }, []);
 
   const handleNext = useCallback(() => {
-    if (!sliderRef.current) return;
+    // if (!sliderRef.current) return;
     sliderRef.current.swiper.slideNext();
   }, []);
 
@@ -136,25 +136,7 @@ function TestimonialsSection() {
         </h2>
       </div>
       <Separator className="h-px w-full bg-[#525252] my-4" />
-      {/* <div className='hidden md:flex justify-around flex-row py-14 gap-7 h-[200px]'>
-        <div className='h-full w-full flex flex-col justify-center items-center col-span-1'>
-          <p>
-            It is no surprise that CodeBiosis builds some of the most elegant
-            and beautiful e-commerce experiences. Using their custom solutions,
-            you’ll be able to elevate your brand while giving your customers a
-            tailored experience they’ll love.
-          </p>
-        </div>
-        <Separator className='hidden md:block h-full w-px bg-[#D8D8D8]' />
-        <div className='h-full w-full flex flex-col justify-center items-center col-span-1 relative'>
-          <p>
-            Rather than just focusing on the deliverable, the CodeBiosis team to
-            the outcome. The team collaborated on the project remotely, which
-            made the whole process easy and stress-free. CodeBiosis is a great
-            team to work with.
-          </p>
-        </div>
-      </div> */}
+      
       <Separator className="hidden lg:block h-px w-full bg-transparent my-4" />
       <div className="py-8 pt-1">
         <div className="flex flex-row lg:justify-end items-center gap-6 2xl:translate-y-14 lg:mb-5 2xl:mb-0 relative z-10 ">
@@ -162,6 +144,7 @@ function TestimonialsSection() {
             height={70}
             width={70}
             onClick={handlePrev}
+
             className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2 scale-75 4xl:scale-100  ${
               currentSlide === 0 ? "opacity-50" : ""
             }`}
@@ -180,10 +163,8 @@ function TestimonialsSection() {
         <div className="max-sm:w-full 2xl:w-[90%]">
           <Swiper 
          
-            ref={sliderRef}
-            onSlideChange={(e) => {
-              setCurrentSlide(e.activeIndex);
-            }}
+         ref={sliderRef}
+         onSlideChange={(e) => setCurrentSlide(e.activeIndex)}
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Pagination, Navigation]}
             pagination={{
@@ -215,18 +196,7 @@ function TestimonialsSection() {
           <AnimatedButton>Review all on Clutch</AnimatedButton></Link>
         </div>
 
-        {/* <div className='block md:hidden'>
-          {testimonials.map((item, index) => (
-            <TestimonialsSection.TestimonialCard
-              description={item.desctiption}
-              image={item.image}
-              name={item.name}
-              rating={item.rating}
-              inverted={index % 2 == 0}
-              key={index}
-            />
-          ))}
-        </div> */}
+       
       </div>
     </div>
   );

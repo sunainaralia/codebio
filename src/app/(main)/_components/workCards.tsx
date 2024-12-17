@@ -14,6 +14,7 @@ interface WorkCardProps {
   design?: string;
   id?: string;
   hideLowerSection?: boolean;
+  cardstyling?: string;
 }
 
 const WorkCards = ({
@@ -25,6 +26,7 @@ const WorkCards = ({
   cardType,
   imageArr,
   id,
+  cardstyling,
   onClick,
   hideLowerSection = false,
 }: WorkCardProps & { cardType?: string } & { imageArr?: string[] } & {
@@ -36,7 +38,7 @@ const WorkCards = ({
         {cardType === "horizontal" ? (
           <ParallaxHorizontalScroll images={imageArr || ourWorkAlmondImg} />
         ) : (
-          <ParallaxTiltedScroll images={imageArr || ourWorkAlmondImg} />
+          <div className={` ${cardstyling} rounded-3xl`}><ParallaxTiltedScroll images={imageArr || ourWorkAlmondImg} /></div>
         )}
         <span
           onClick={onClick}
