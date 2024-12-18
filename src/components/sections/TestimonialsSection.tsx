@@ -103,19 +103,32 @@ const testimonials = [
   },
 ];
 
-function TestimonialsSection() {
+const TestimonialsSection: React.FC<TestimonialsardProps>=({
+  name,
+  description,
+  rating,
+  inverted,
+  image,
+}) =>{
+
   const sliderRef = useRef<any>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const handlePrev = useCallback(() => {
-    // if (!sliderRef.current) return;
-    sliderRef.current.swiper.slidePrev();
-  }, []);
+  const handlePrev = () => {
+    console.log('slider')
 
-  const handleNext = useCallback(() => {
-    // if (!sliderRef.current) return;
-    sliderRef.current.swiper.slideNext();
-  }, []);
+    if (sliderRef.current) {
+      sliderRef.current.swiper.slidePrev();
+    }
+  };
+  
+  const handleNext = () => {
+    console.log('slider')
+    if (sliderRef.current) {
+      sliderRef.current.swiper.slideNext();
+    }
+  };
+ 
 
   return (
     <div id="testimonials" className="pb-10  lg:flex flex-col ">
@@ -141,25 +154,28 @@ function TestimonialsSection() {
       <Separator className="hidden lg:block h-px w-full bg-transparent my-4" />
       <div className="py-8 pt-1">
         <div className="flex flex-row lg:justify-end items-center gap-6 2xl:translate-y-14 lg:mb-5 2xl:mb-0 relative z-10 ">
+          <button onClick={()=>handlePrev()}>
           <ArrowIconButton
             height={70}
             width={70}
-            onClick={handlePrev}
+            
             
             className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2 scale-75 4xl:scale-100  ${
               currentSlide === 0 ? "opacity-50" : ""
             }`}
-          />
+          /></button>
+          <button onClick={()=>handleNext()}>
           <ArrowIconButton
             height={70}
             width={70}
             invertArrow
-            onClick={handleNext}
+           
             className={`w-[34px] lg:!w-[70px] h-[34px] lg:!h-[70px] lg:p-2 scale-75  4xl:scale-100
               ${
                 currentSlide === testimonials.length - 1 - 2 ? "opacity-50" : ""
               }`}
           />
+          </button>
         </div>
         <div className="max-sm:w-full 2xl:w-[90%]">
           <Swiper 

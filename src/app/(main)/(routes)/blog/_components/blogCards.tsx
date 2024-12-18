@@ -1,11 +1,14 @@
 import { BlogCards } from "@/components/data/blog";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const BlogCard = ({ title, description, icon, id, time }: BlogCards) => {
+  
+  const navigate = useRouter();
   return (
-    <div className=" my-[30px] md:my-[60px] 4xl:mt-[150px] 2xl:mb-[74px] 4xl:mb-[86px] cursor-pointer px-2 flex flex-col justify-between ">
+    <div  onClick={() => navigate.push(`/blog/${id}`)} className=" my-[30px] md:my-[60px] 4xl:mt-[150px] 2xl:mb-[74px] 4xl:mb-[86px] cursor-pointer px-2 flex flex-col justify-between ">
   <div>
       <div className="h-[200px] 4xl:h-[375px] max-w-[600px]">
         <Image
