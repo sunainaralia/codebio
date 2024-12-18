@@ -40,22 +40,14 @@ const BannerDetails = ({
   return (
     <div className="w-full pt-5 md:pt-20">
       <div className={`${cardstyling} hover:scale-[1.02] transition-all duration-100 rounded-xl 3xl:rounded-[25px] relative w-full  lg:h-[500px] 3xl:h-[650px] 4xl:h-[750px]`}>
-        {/* {id === "works4" ? (
-          <OurWorkTiltCustomScroll  
-            images={imageArr || images}
-            imageH={200}
-            imageW={800}
-            className="max-w-full w-full md:!h-[550px]"
-            childrenClassName="md:w-[200vw] ml-[-25%] mt-[-50%]"
-          />
-        ) : ( */}
+      
           <OurWorkCustomScroller
             images={imageArr || images}
             imageH={150}
             imageW={800}
             className="max-w-full w-full xl:h-[500px] 3xl:h-[650px] 4xl:h-[750px] max-h-full"
           />
-        {/* )} */}
+   
 
         <div className="absolute bottom-3 md:bottom-10 right-3 md:right-10 ">
           <AnimatedButton
@@ -91,19 +83,7 @@ const BannerDetails = ({
                 <div className="text-center 2xl:text-start text-[16px] 3xl:text-[20px]">{design}</div>
               </div>
             </div>
-            {/* <div className="md:hidden flex md:justify-center items-center">
-              <div className="flex-1">
-                <div className="md:text-center text-base font-semibold text-[#525252] py-1">
-                  Strategy
-                </div>
-                <div className="text-[12px] text-[#8D8D8D]">{strategy}</div>
-              </div>
-              <Separator
-                className="w-px bg-[#D8D8D8] mx-6"
-                orientation="vertical"
-              />
-            
-            </div> */}
+          
           </div>
 
           <div className="text-[#525252] 3xl:max-w-[957px] 2xl:max-w-[740px]  2xl:text-[30px] sm:text-[20px] lg:text-[22px] font-normal xl:text-right text-center  w-full">

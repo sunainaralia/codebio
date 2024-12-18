@@ -22,10 +22,12 @@ function WorkDetails() {
   useEffect(() => {
     const detailPage = works.filter((work) => work.id === workId)[0]
     if (!detailPage) {
+      console.log(detailPage,"detailPage------------------");
       navigate.push('/our-work');
       return;
     }
     else {
+      console.log(detailPage,"detailPage");
       setData(detailPage);
     }
 
@@ -203,50 +205,10 @@ function WorkDetails() {
           </div>
         </div>
 
-        {/* <div className='md:flex mt-10 justify-between'>
-          <div className='hidden md:flex items-center gap-3'>
-            <Image
-              src='/worksDetail/person.svg'
-              alt=''
-              width={40}
-              height={40}
-            />
-
-            <div className='text-sm text-[#8D8D8D]'>
-              <div className=''>First Name Last Name</div>
-              <div className=''>Digital Marketer</div>
-            </div>
-          </div>
-
-          <div className='max-w-[700px] md:text-right mt-10 md:mt-0'>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
-          </div>
-
-          <div className='flex md:hidden items-center justify-between gap-3 my-10'>
-            <Image
-              src='/worksDetail/person.svg'
-              alt=''
-              width={40}
-              height={40}
-            />
-
-            <div className='text-right'>
-              <div className=''>First Name Last Name</div>
-              <div className='text-sm text-[#8D8D8D]'>Digital Marketer</div>
-            </div>
-          </div>
-        </div> */}
+    
       </div>
 
-      {/* <Separator
-        className='block md:hidden h-px w-full bg-[#525252] my-20'
-        orientation='horizontal'
-      /> */}
-
+   
       <div className='mt-10 sm:mt-16 md:mt-24 2xl:mt-36 4xl:mt-[290px]  '>
         <div className='max-sm:flex max-sm:flex-col-reverse'>
           <div className='w-fit text-center mx-auto  max-sm:flex max-sm:items-center max-sm:mt-10'>

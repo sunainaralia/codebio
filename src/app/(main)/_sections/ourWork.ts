@@ -1,6 +1,7 @@
 export const ourWorkData = [
     {
       title: 'AI-Powered Marketing & Predictive Analytics',
+      id: 'AI-Powered Marketing & Predictive Analytics',
       description:
         'Harness the power of AI to create personalized customer experiences and predictive insights. Our AI solutions include recommendation engines, automated insights, and behavioral analytics to help clients make data-driven marketing decisions that drive results.',
       image: '/Home_Page/homepage_images/power-Ai-img.png',
