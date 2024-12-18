@@ -95,7 +95,7 @@ function BlogDetails() {
       </div>
 
       <img
-        src={blogData ? blogData?.detailsimage : "/blog/blodDetails.svg"}
+        src={blogData ? blogData.detailsimage : "/blog/blodDetails.svg"}
         alt="img"
         className="rounded-[25px] mx -auto w-full"
         width={2100}

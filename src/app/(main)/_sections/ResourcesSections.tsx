@@ -14,23 +14,26 @@ const listOfresources = [
     title: 'Dominate the E-commerce World with a Stunning Shopify Design System',
     readTime: '10min read',
     image: '/illustrations/1.png',
+    id: "Dominate the E-commerce World with a Stunning Shopify Design System",
   },
   {
-    title: 'What Does an SEO Agency Do?',
+    title: "What Does an SEO Agency Do ?",
     readTime: '15min read',
     image: '/illustrations/2.png',
+    id: "What Does an SEO Agency Do ?",
    
   },
   {
-    title: 'What Is the Cost of Building an eCommerce Website in India?',
+    title: "What Is the Cost of Building an eCommerce Website in India ?",
     readTime: '10min read',
     image: '/illustrations/3.png',
- 
+    id: "What Is the Cost of Building an eCommerce Website in India ?",
   },
   {
-    title: 'What Is the Cost of Building an eCommerce Website in India?',
+    title: "The Power of Social Media for Restaurant",
     readTime: '10min read',
     image: '/Home_Page/homepage_images/home-resorces-img.png',
+    id: "The Power of Social Media for Restaurant",
   
   },
  

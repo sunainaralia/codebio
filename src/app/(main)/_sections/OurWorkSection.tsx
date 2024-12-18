@@ -188,7 +188,7 @@ function OurWorkSection() {
 
           <div className={`lg:min-w-[100px]  lg:w-[calc(50%-2px)] `}>
             <Link href="/our-work/works4" target="_blank">
-              <WorkCards {...works[2]} imageArr={VLCC} />
+              <WorkCards {...works[2]} imageArr={Medimix} />
             </Link>
           </div>
         </div>
@@ -231,7 +231,7 @@ function OurWorkSection() {
         <div className="lg:flex w-full mt-9 lg:mt-16 xl:mt-32 mb-6">
           <div className="lg:min-w-[100px] min-2xl:pe-10 lg:w-[calc(48%-2px)] ">
             <Link href="/our-work/works4" target="_blank">
-              <WorkCards {...works[3]} imageArr={axisBank} />
+              <WorkCards {...works[3]} imageArr={VLCC} />
             </Link>
           </div>
 

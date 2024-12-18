@@ -4,14 +4,14 @@ import Intercom from '@intercom/messenger-js-sdk';
 
 export default function ChatBot() {
   useEffect(() => {
-    // Initialize the Intercom Messenger
+   
     Intercom({
-      app_id: 'li4iksv3', // Replace with your Intercom App ID
-      alignment: 'right', // Aligns the chat widget to the right
-      hide_default_launcher: false, // Show default launcher
+      app_id: 'li4iksv3', 
+      alignment: 'right', 
+      hide_default_launcher: false, 
     });
 
-    // Return a cleanup function to reset Intercom on unmount
+    
     return () => {
       if (window.Intercom) {
         window.Intercom('shutdown');
