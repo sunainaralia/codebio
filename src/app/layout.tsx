@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Code Biosis",
@@ -9,11 +10,31 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
+ 
+
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+      <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-ELJDDL4Z88"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ELJDDL4Z88');
+          `}
+        </Script>
+
+      </head>
+      <body>
+        
+        {children}</body>
     </html>
   );
 }
