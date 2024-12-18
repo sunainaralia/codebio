@@ -283,7 +283,7 @@ function WorkDetails() {
         <div className='w-full md:flex justify-between items-center'>
           <div className='flex gap-4 items-center justify-center md:justify-start'>
             <Image className='md:hidden' src={'/vectors/Union.svg'} alt='img' height={15} width={15} />
-            <Image src={'/vectors/starJoin.svg'} alt='' height={30} width={30} className='hidden md:block 4xl:w-[50px] 4xl:h-[50px] ' />
+            <Image src={'/vectors/union.svg'} alt='' height={30} width={30} className='hidden md:block 4xl:w-[50px] 4xl:h-[50px] ' />
             <h3 className='text-lg md:text-[28px] lg:text-3xl 3xl:text-[42px] leading-[56px] font-normal text-[#525252] '>Discover More</h3>
             <Image className='md:hidden' src={'/vectors/Union.svg'} alt='img' height={15} width={15} />
           </div>

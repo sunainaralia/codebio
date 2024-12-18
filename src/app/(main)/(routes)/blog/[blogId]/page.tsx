@@ -41,7 +41,7 @@ function BlogDetails() {
 
   return (
     <div className="px-[30px] md:px-20">
-      <div className="mt-[43px] xl:mt-[110px] flex justify-between items-center">
+      <div onClick={() => window.history.back()} className="mt-[43px] xl:mt-[110px] flex justify-between items-center">
         <Image className="hidden md:block h-12 w-12 4xl:w-28 4xl:h-28" src={"/vectors/backButton.svg"} alt="img" width={80} height={80} />
         <Image className="md:hidden h-12 w-12 4xl:w-28 4xl:h-28" src={"/vectors/backButton.svg"} alt="img" width={45} height={45} />
         <div className="block md:hidden">
@@ -49,7 +49,7 @@ function BlogDetails() {
         </div>
       </div>
 
-      <div className="text-center text-[30px] md:text-4xl xl:text-5xl 4xl:text-[72px] font-[900] pt-16 4xl:pt-[130px] md:max-w-[1150px] mx-auto lg:!leading-[50px] xl:!leading-[70px] 4xl:!leading-[97px]">
+      <div className="text-center text-[30px] md:text-4xl xl:text-4xl 3xl:text-5xl 4xl:text-[72px] font-[900] pt-16 4xl:pt-[130px] md:max-w-[1150px] mx-auto lg:!leading-[50px]  4xl:!leading-[97px]">
         {blogData?.title}
       </div>
       <div className="w-full sm:w-[250px] mx-auto my-[15px] sm:my-5 border-b-[.5px] rounded-[5px] border-[#525252]"></div>
@@ -58,7 +58,7 @@ function BlogDetails() {
       </div>
 
       {/* <div className=" py-10 lg:pb-[80px] lg:pt-[98px] 2xl:pt-[130px] 2xl:pb-[100px] hidden md:block"> */}
-        {/* <MusicButton musicLink="/blog/Song.mp3" /> */}
+      {/* <MusicButton musicLink="/blog/Song.mp3" /> */}
       {/* </div> */}
 
       <div>
@@ -86,7 +86,7 @@ function BlogDetails() {
         </div> */}
       </div>
 
-      <div className="text-[#525252] text-xl xl:text-[28px] font-normal max-md:mt-10 mb-[43px] 2xl:mb-[59px] xl:leading-[40px] leading-[24px] mt-16 lg:mt-24">
+      <div className="text-[#525252] text-xl xl:text-[22px] 4xl:text-[28px] font-normal max-md:mt-10 mb-[43px] 2xl:mb-[59px] xl:leading-[32px] 3xl:leading-[40px] leading-[24px] mt-16 lg:mt-24">
         In the fast-paced world of e-commerce, standing out from the competition
         is crucial. A visually appealing and user-friendly website can make all
         the difference in capturing the attention of potential customers and
@@ -149,7 +149,7 @@ function BlogDetails() {
               </h3>
             </div>
 
-            <div className="text-[#525252] text-[15px] md:text-xl 3xl:text-[30px] 3xl:leading-[40px] lg:leading-[26px] leading-[21px] 2xl:max-w-[900px] mt-5 ">
+            <div className="text-[#525252] text-[15px] md:text-xl 4xl:text-[30px] xl:leading-[32px] 4xl:leading-[40px] lg:leading-[26px] leading-[21px] 2xl:max-w-[900px] mt-5 ">
               In the competitive world of e-commerce, a stunning Shopify design
               system can give you the edge you need to dominate the market. By
               focusing on consistent branding, intuitive navigation, mobile
@@ -178,25 +178,25 @@ function BlogDetails() {
                 variant={"outline"}
                 className="px-2.5 md:px-4 py-0 sm:py-2 lg:py-3 xl:py-4 font-bold text-[11px] sm:text-base xl:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
-              Social Media
+                Social Media
               </Button>
               <Button
                 variant={"outline"}
                 className="px-2.5 md:px-4 py-0 sm:py-2 lg:py-3 xl:py-4 font-bold text-[11px] sm:text-base xl:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
-               Digital Marketing
+                Digital Marketing
               </Button>
               <Button
                 variant={"outline"}
                 className="px-2.5 md:px-4 py-0 sm:py-2 lg:py-3 xl:py-4 font-bold text-[11px] sm:text-base xl:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
-               Online Presence
+                Online Presence
               </Button>
               <Button
                 variant={"outline"}
                 className="px-2.5 md:px-4 py-0 sm:py-2 lg:py-3 xl:py-4 font-bold text-[11px] sm:text-base xl:text-xl 3xl:text-[28px] text-[#2B2B2B] rounded-[40px]  "
               >
-               B2C
+                B2C
               </Button>
               <Button
                 variant={"outline"}

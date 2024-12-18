@@ -57,7 +57,7 @@ const BannerDetails = ({
           />
         {/* )} */}
 
-        <div className="absolute bottom-0 md:bottom-12 right-3 ">
+        <div className="absolute bottom-3 md:bottom-10 right-3 md:right-10 ">
           <AnimatedButton
             className="bg-[#2B2B2B] text-primary-white"
             btnClassName="bg-primary-white"
@@ -81,12 +81,12 @@ const BannerDetails = ({
               {description}
             </div>
             <div className=" md:flex text-[#525252] items-baseline my-5 justify-center">
-            <div className="flex flex-col 2xl:!flex-row items-center ">
+            <div className="flex flex-col 2xl:!flex-row items-center 2xl:items-start">
                 <div className="2xl:mr-2 font-semibold text-[24px] 3xl:text-[28px]">Strategy:</div>
                 <div className="text-center 2xl:text-start text-[16px] 3xl:text-[20px]">{strategy}</div>
               </div>
               <Separator className="w-px bg-[#D8D8D8] mx-6" />
-              <div className="flex flex-col 2xl:!flex-row items-center">
+              <div className="flex flex-col 2xl:!flex-row items-center 2xl:items-start">
                 <div className="2xl:mr-2 font-semibold text-[24px] 3xl:text-[28px]">Design:</div>
                 <div className="text-center 2xl:text-start text-[16px] 3xl:text-[20px]">{design}</div>
               </div>
