@@ -165,7 +165,7 @@ const Form = () => {
         </div>
     
       <div className="mt-4 lg:mt-0 ">
-        <AnimatedButton   className="w-fit mx-auto text-lg lg:text-xl 3xl:text-[28px] font-bold text-[#2B2B2B] ">
+        <AnimatedButton className="w-fit mx-auto text-lg lg:text-xl 3xl:text-[28px] font-bold text-[#2B2B2B] ">
           Send Message
         </AnimatedButton>
       </div>  </form>
@@ -174,7 +174,23 @@ const Form = () => {
   <div className="fixed inset-0 flex w-screen h-screen top-0 left-0 items-center justify-center bg-[black]/60 z-[99]">
     <div className="bg-[white] p-6 rounded-lg shadow-lg text-center relative  z-[100]">
       <h2 className="text-xl font-bold text-green-600">Success!</h2>
-      <p className="mt-2 text-gray-600">
+      <div style={{ width: '100%', paddingBottom: '56.25%', position: 'relative' }}>
+        <iframe
+          src="https://giphy.com/embed/nv6bOexvEyVV50U4Qz"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+          }}
+          frameBorder="0"
+          className="giphy-embed"
+          allowFullScreen
+          title="Giphy Embed"
+        ></iframe>
+      </div>
+      <p className="text-gray-600">
         Your email has been sent successfully.
       </p>
       
