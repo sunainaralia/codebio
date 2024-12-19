@@ -4,6 +4,7 @@ import AnimatedButton from "@/components/AnimatedButton";
 import React, { useState } from "react";
 
 const Form = () => {
+  const [showPopup, setShowPopup] = useState(false);
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -52,19 +53,20 @@ const Form = () => {
     e.preventDefault();
 
     console.log("Form submitted:", formData);
-    // sendemail();
-setFormData(
-  {
-    username: "",
-    email: "",
-    phoneNumber: "",
-    companyName: "",
-    companyUrl: "",
-    companyLocation: "",
-    message: "",
-    agreeToPromotions: false,
-  }
-)
+    setShowPopup(true);
+    setTimeout(() => {
+      setShowPopup(false);
+      setFormData({
+        username: "",
+        email: "",
+        phoneNumber: "",
+        companyName: "",
+        companyUrl: "",
+        companyLocation: "",
+        message: "",
+        agreeToPromotions: false,
+      });
+    }, 1000);
   };
 
   return (
@@ -167,6 +169,19 @@ setFormData(
           Send Message
         </AnimatedButton>
       </div>  </form>
+
+      {showPopup && (
+  <div className="fixed inset-0 flex w-screen h-screen top-0 left-0 items-center justify-center bg-[black]/60 z-[99]">
+    <div className="bg-[white] p-6 rounded-lg shadow-lg text-center relative  z-[100]">
+      <h2 className="text-xl font-bold text-green-600">Success!</h2>
+      <p className="mt-2 text-gray-600">
+        Your email has been sent successfully.
+      </p>
+      
+    </div>
+  </div>
+)}
+
     </div>
   );
 };
